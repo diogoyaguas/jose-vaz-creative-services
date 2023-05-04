@@ -21,11 +21,24 @@ body {
                     border: 0.125rem solid var(--black);
                 }
             }
+
+            .contact {
+                .email {
+                    color: var(--white);
+                    text-decoration: none;
+                }
+            }
         }
 
         footer {
             background-color: var(--black);
             color: var(--white);
+
+            a {
+                display: block;
+                color: var(--black);
+                text-decoration: none;
+            }
         }
     }
 
@@ -45,11 +58,24 @@ body {
                     border: 0.125rem solid var(--white);
                 }
             }
+
+             .contact {
+                .email {
+                    display: block;
+                    color: var(--white);
+                    text-decoration: none;
+                }
+            }
         }
 
         footer {
             background-color: var(--white);
             color: var(--black);
+
+            a {
+                color: var(--black);
+                text-decoration: none;
+            }
         }
     }
 }
@@ -73,6 +99,15 @@ footer {
     button {
         padding: 0.625rem 2.5rem;
         border-radius: 195px;
+    }
+
+    .contact {
+        padding: 10rem 33rem;
+
+        .title {
+            font-weight: 400;
+            font-size: 48px;
+        }
     }
 }
 

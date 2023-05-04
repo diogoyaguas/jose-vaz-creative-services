@@ -13,7 +13,7 @@ const Homepage = () => {
           GRAPHIC DESIGNER AND CONTENT EDITOR GRAPHIC DESIGNER AND CONTENT EDITOR
         </div>
 
-        <div className="row">
+        <div className="navigation row">
           <div className="col-md-4 col-sm-12 text-center">
             <button type="button" className="btn btn-primary">
               MY WORK
@@ -29,6 +29,18 @@ const Homepage = () => {
               CONTACT
             </button>
           </div>
+        </div>
+
+        <div className="contact text-center">
+          <div className="title">
+            INTERESTED IN WORKING TOGETHER?
+          </div>
+          <a className="email pt-5 pb-3" href="mailto:zeoliveriavaz@gmail.com" >
+            ZEOLIVEIRAVAZ@GMAIL.COM
+          </a>
+          <button type="button" className="btn btn-primary">
+            DOWNLOAD CV
+          </button>
         </div>
       </div>
     </Layout>

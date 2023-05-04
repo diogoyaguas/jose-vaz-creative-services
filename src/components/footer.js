@@ -6,12 +6,12 @@ const Footer = () => (
             <div className="col-12">
                 CREATIVE SERVICES:
             </div>
-            <div className="col-12">
+            <a className="col-12" href="mailto:zeoliveriavaz@gmail.com">
                 ZEOLIVEIRAVAZ@GMAIL.COM
-            </div>
-            <div className="col-12">
+            </a>
+            <a className="col-12" href="tel:+351910393289">
                 +351 910 393 289
-            </div>
+            </a>
         </div>
     </footer>
 )
