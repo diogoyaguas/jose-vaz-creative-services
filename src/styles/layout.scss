@@ -1,0 +1,43 @@
+@import url("https://fonts.cdnfonts.com/css/neutral-face");
+
+body {
+    font-family: "Neutral Face", sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.homepage {
+    .main-title {
+        font-weight: 400;
+        font-size: 14.313rem;
+        position: relative;
+        white-space: nowrap;
+        animation: slide 15s linear infinite;
+        transform: translate3d(0, 0, 0);
+    }
+
+    button {
+        padding: 0.625rem 2.5rem;
+        border: 0.125rem solid var(--black);
+        background-color: var(--white);
+        color: var(--black);
+        border-radius: 195px;
+
+        &:hover {
+            background-color: var(--black);
+            color: var(--white);
+            border: 0.125rem solid var(--black);
+        }
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-220%, 0, 0);
+    }
+}
