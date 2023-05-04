@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
   })
 
     return (
-        <div className={mode === " light" ? "light" : "dark"}>
+        <div className={mode === "dark" ? "light" : "dark"}>
             <Header
                 siteTitle={data.site.siteMetadata.title}
                 setMode={setMode}

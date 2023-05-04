@@ -15,12 +15,12 @@ const Homepage = () => {
       <SEO title="Homepage" />
       <div className="homepage">
         <div className="main-title py-5">
-          GRAPHIC DESIGNER AND CONTENT EDITOR
+          GRAPHIC DESIGNER AND CONTENT EDITOR GRAPHIC DESIGNER AND CONTENT EDITOR
         </div>
 
         <div className="row">
           <div className="col-4 text-center">
-            <button type="button" class="btn btn-primary"> 
+            <button type="button" class="btn btn-primary">
               MY WORK
             </button>
           </div>

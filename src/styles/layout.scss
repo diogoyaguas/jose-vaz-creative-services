@@ -2,10 +2,18 @@
 
 body {
     font-family: "Neutral Face", sans-serif;
-    background-color: var(--white);
-    color: var(--black);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+
+    .light {
+        background-color: var(--white);
+        color: var(--black);
+    }
+
+    .dark {
+        background-color: var(--black);
+        color: var(--white);
+    }
 }
 
 .homepage {
@@ -38,6 +46,6 @@ body {
         transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translate3d(-220%, 0, 0);
+        transform: translate3d(-316%, 0, 0);
     }
 }
