@@ -22,6 +22,11 @@ body {
                 }
             }
         }
+
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+        }
     }
 
     .dark {
@@ -41,7 +46,16 @@ body {
                 }
             }
         }
+
+        footer {
+            background-color: var(--white);
+            color: var(--black);
+        }
     }
+}
+
+footer {
+    padding: 3rem 8rem;
 }
 
 .homepage {

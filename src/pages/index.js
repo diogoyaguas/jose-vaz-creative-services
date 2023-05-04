@@ -1,13 +1,13 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 
 const Homepage = () => {
   return (
     <Layout>
-      <SEO title="Homepage" />
+      <Seo title="Homepage" />
       <div className="homepage">
         <div className="main-title py-5">
           GRAPHIC DESIGNER AND CONTENT EDITOR GRAPHIC DESIGNER AND CONTENT EDITOR
