@@ -3,11 +3,6 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "jquery/dist/jquery.min.js";
-import "popper.js/dist/popper.min.js";
-import "bootstrap/dist/js/bootstrap.min.js";
-
 
 const Homepage = () => {
   return (
@@ -19,18 +14,18 @@ const Homepage = () => {
         </div>
 
         <div className="row">
-          <div className="col-4 text-center">
-            <button type="button" class="btn btn-primary">
+          <div className="col-md-4 col-sm-12 text-center">
+            <button type="button" className="btn btn-primary">
               MY WORK
             </button>
           </div>
-          <div className="col-4 text-center">
-            <button type="button" class="btn btn-primary">
+          <div className="col-md-4 col-sm-12 text-center">
+            <button type="button" className="btn btn-primary">
               ABOUT ME
             </button>
           </div>
-          <div className="col-4 text-center">
-            <button type="button" class="btn btn-primary">
+          <div className="col-md-4 col-sm-12 text-center">
+            <button type="button" className="btn btn-primary">
               CONTACT
             </button>
           </div>

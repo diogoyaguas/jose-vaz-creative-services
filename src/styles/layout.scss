@@ -8,15 +8,45 @@ body {
     .light {
         background-color: var(--white);
         color: var(--black);
+
+        .homepage {
+            button {
+                border: 0.125rem solid var(--black);
+                background-color: var(--white);
+                color: var(--black);
+
+                &:hover {
+                    background-color: var(--black);
+                    color: var(--white);
+                    border: 0.125rem solid var(--black);
+                }
+            }
+        }
     }
 
     .dark {
         background-color: var(--black);
         color: var(--white);
+
+        .homepage {
+            button {
+                border: 0.125rem solid var(--white);
+                background-color: var(--black);
+                color: var(--white);
+
+                &:hover {
+                    background-color: var(--white);
+                    color: var(--black);
+                    border: 0.125rem solid var(--white);
+                }
+            }
+        }
     }
 }
 
 .homepage {
+    overflow: hidden;
+
     .main-title {
         font-weight: 400;
         font-size: 14.313rem;
@@ -28,16 +58,7 @@ body {
 
     button {
         padding: 0.625rem 2.5rem;
-        border: 0.125rem solid var(--black);
-        background-color: var(--white);
-        color: var(--black);
         border-radius: 195px;
-
-        &:hover {
-            background-color: var(--black);
-            color: var(--white);
-            border: 0.125rem solid var(--black);
-        }
     }
 }
 

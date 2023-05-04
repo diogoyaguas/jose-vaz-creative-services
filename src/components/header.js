@@ -3,7 +3,7 @@ import React from "react"
 
 const Header = ({ mode, setMode }) => {
 	return (
-		<nav class="navbar">
+		<nav className="navbar">
 			<div className="row w-100">
 				<div className="col-4">
 				</div>
