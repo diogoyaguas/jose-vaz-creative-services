@@ -6,7 +6,7 @@ const Footer = () => (
             <div className="col-12">
                 CREATIVE SERVICES:
             </div>
-            <a className="col-12" href="mailto:zeoliveriavaz@gmail.com">
+            <a className="col-12" href="mailto:zeoliveriavaz@gmail.com" target="_blank">
                 ZEOLIVEIRAVAZ@GMAIL.COM
             </a>
             <a className="col-12" href="tel:+351910393289">
