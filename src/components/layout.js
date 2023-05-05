@@ -31,12 +31,13 @@ const Layout = ({ children }) => {
   useEffect(() => {
       const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
       setMode(prefersDarkMode ? "dark" : "light" );
-  })
+  }, [])
 
     return (
         <div className={mode === "light" ? "light" : "dark"}>
             <Header
                 siteTitle={data.site.siteMetadata.title}
+                mode={mode}
                 setMode={setMode}
             />
             <main>{children}</main>

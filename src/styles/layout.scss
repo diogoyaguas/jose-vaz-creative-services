@@ -9,6 +9,14 @@ body {
         background-color: var(--white);
         color: var(--black);
 
+        .navbar {
+            .theme-mode {
+                svg {
+                    fill: var(--black);
+                }
+            }
+        }
+
         .homepage {
             button {
                 border: 0.125rem solid var(--black);
@@ -24,7 +32,8 @@ body {
 
             .contact {
                 .email {
-                    color: var(--white);
+                    display: block;
+                    color: var(--black);
                     text-decoration: none;
                 }
             }
@@ -35,7 +44,6 @@ body {
             color: var(--white);
 
             a {
-                display: block;
                 color: var(--white);
                 text-decoration: none;
             }
@@ -45,6 +53,14 @@ body {
     .dark {
         background-color: var(--black);
         color: var(--white);
+
+        .navbar {
+            .theme-mode {
+                svg {
+                    fill: var(--white);
+                }
+            }
+        }
 
         .homepage {
             button {
@@ -59,7 +75,7 @@ body {
                 }
             }
 
-             .contact {
+            .contact {
                 .email {
                     display: block;
                     color: var(--white);
@@ -78,36 +94,47 @@ body {
             }
         }
     }
-}
 
-footer {
-    padding: 3rem 8rem;
-}
+    .navbar {
+        .theme-mode {
+            text-align: right;
 
-.homepage {
-    overflow: hidden;
-
-    .main-title {
-        font-weight: 400;
-        font-size: 14.313rem;
-        position: relative;
-        white-space: nowrap;
-        animation: slide 15s linear infinite;
-        transform: translate3d(0, 0, 0);
-    }
-
-    button {
-        padding: 0.625rem 2.5rem;
-        border-radius: 195px;
-    }
-
-    .contact {
-        padding: 10rem 33rem;
-
-        .title {
-            font-weight: 400;
-            font-size: 48px;
+            svg {
+                width: 25px;
+                height: auto;
+            }
         }
+    }
+
+    .homepage {
+        overflow: hidden;
+
+        .main-title {
+            font-weight: 400;
+            font-size: 14.313rem;
+            position: relative;
+            white-space: nowrap;
+            animation: slide 15s linear infinite;
+            transform: translate3d(0, 0, 0);
+        }
+
+        button {
+            padding: 0.625rem 2.5rem;
+            border-radius: 195px;
+        }
+
+        .contact {
+            padding: 10rem 33rem;
+
+            .title {
+                font-weight: 400;
+                font-size: 48px;
+            }
+        }
+    }
+
+    footer {
+        padding: 3rem 8rem;
     }
 }
 

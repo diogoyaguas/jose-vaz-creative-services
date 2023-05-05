@@ -35,7 +35,7 @@ const Homepage = () => {
           <div className="title">
             INTERESTED IN WORKING TOGETHER?
           </div>
-          <a className="email pt-5 pb-3" href="mailto:zeoliveriavaz@gmail.com" target="_blank" >
+          <a className="email pt-5 pb-3" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer" >
             ZEOLIVEIRAVAZ@GMAIL.COM
           </a>
           <button type="button" className="btn btn-primary">
