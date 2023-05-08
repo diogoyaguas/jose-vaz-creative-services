@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
 
+import { Link } from "gatsby"
+
 const Header = ({ mode, setMode }) => {
 	return (
 		<nav className="navbar">
@@ -8,7 +10,9 @@ const Header = ({ mode, setMode }) => {
 				<div className="col-4">
 				</div>
 				<div className="col-4 text-center">
-					<span>JOSE VAZ - CREATIVE SERVICES</span>
+					<Link to="/">
+						<span>JOSE VAZ - CREATIVE SERVICES</span>
+					</Link>
 				</div>
 				<div className="col-4 theme-mode">
 					<span

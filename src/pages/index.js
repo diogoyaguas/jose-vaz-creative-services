@@ -3,6 +3,8 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import { Link } from "gatsby"
+
 
 const Homepage = () => {
   return (
@@ -20,9 +22,11 @@ const Homepage = () => {
             </button>
           </div>
           <div className="col-md-4 col-sm-12 text-center">
-            <button type="button" className="btn btn-primary">
-              ABOUT ME
-            </button>
+            <Link to="/about">
+              <button type="button" className="btn btn-primary">
+                ABOUT ME
+              </button>
+            </Link>
           </div>
           <div className="col-md-4 col-sm-12 text-center">
             <button type="button" className="btn btn-primary">
