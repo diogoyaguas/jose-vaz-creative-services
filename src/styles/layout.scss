@@ -39,6 +39,22 @@ body {
             }
         }
 
+        .about {
+            .bio {
+                .profile {
+                    svg path {
+                        stroke: var(--black);
+                    }
+                }
+            }
+
+            .experience-group {
+                .experience-header {
+                    border-top: 1px solid var(--black);
+                }
+            }
+        }
+
         footer {
             background-color: var(--black);
             color: var(--white);
@@ -84,6 +100,22 @@ body {
             }
         }
 
+        .about {
+            .bio {
+                .profile {
+                    svg path {
+                        stroke: var(--white);
+                    }
+                }
+            }
+
+            .experience-group {
+                .experience-header {
+                    border-top: 1px solid var(--white);
+                }
+            }
+        }
+
         footer {
             background-color: var(--white);
             color: var(--black);
@@ -114,7 +146,7 @@ body {
             font-size: 14.313rem;
             position: relative;
             white-space: nowrap;
-            animation: slide 15s linear infinite;
+            animation: slide-home 15s linear infinite;
             transform: translate3d(0, 0, 0);
         }
 
@@ -133,16 +165,83 @@ body {
         }
     }
 
+    .about {
+        overflow: hidden;
+
+        .main-title {
+            font-weight: 400;
+            font-size: 14.313rem;
+            position: relative;
+            white-space: nowrap;
+            animation: slide-about 15s linear infinite;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .bio {
+            margin: auto;
+            .profile {
+                position: relative;
+                max-width: 400px;
+                .gatsby-image-wrapper {
+                    border-radius: 50%;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                svg {
+                    z-index: 2;
+                    position: absolute;
+                    top: -1.875rem;
+                    right: 0.938rem;
+                }
+            }
+        }
+
+        .experience-group {
+            overflow: hidden;
+
+            .experience-header {
+                cursor: pointer;
+                padding: 50px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 36px;
+                transition: background-color 0.5s ease;
+            }
+
+            .experience-content {
+                padding: 50px;
+                display: none;
+                overflow: hidden;
+
+                &.show {
+                    display: block;
+                }
+            }
+        }
+    }
+
     footer {
         padding: 3rem 8rem;
     }
 }
 
-@keyframes slide {
+@keyframes slide-home {
     0% {
         transform: translate3d(0, 0, 0);
     }
     100% {
         transform: translate3d(-316%, 0, 0);
+    }
+}
+
+@keyframes slide-about {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-324%, 0, 0);
     }
 }
