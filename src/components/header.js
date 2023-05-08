@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const Header = ({ mode, setMode }) => {
 	return (
-		<nav className="navbar">
+		<nav className="navbar py-4">
 			<div className="row w-100">
 				<div className="col-4">
 				</div>

@@ -42,9 +42,9 @@ const Homepage = () => {
           <a className="email pt-5 pb-3" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer" >
             ZEOLIVEIRAVAZ@GMAIL.COM
           </a>
-          <button type="button" className="btn btn-primary">
+          <a href="/cv.pdf" className="btn btn-primary download-cv" download>
             DOWNLOAD CV
-          </button>
+          </a>
         </div>
       </div>
     </Layout>

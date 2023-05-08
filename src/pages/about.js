@@ -51,7 +51,7 @@ const About = ({ data }) => {
                     </div>
                 </div>
                 <div className="experience-group">
-                    <div className="experience-header">Degree - design and multimedia<span></span></div>
+                    <div className="experience-header">Degree - design and multimedia</div>
                     <div className="experience-content">
                         <p>Content for Collapsible Item 1 goes here.</p>
                     </div>
@@ -65,6 +65,12 @@ const About = ({ data }) => {
                     <div className="experience-content">
                         <p>Content for Collapsible Item 3 goes here.</p>
                     </div>
+                </div>
+
+                <div className="contact text-center">
+                    <a href="/cv.pdf" className="btn btn-primary download-cv" download>
+                        DOWNLOAD CV
+                    </a>
                 </div>
             </div>
         </Layout>

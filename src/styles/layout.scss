@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/neutral-face");
+@import url("https://fonts.cdnfonts.com/css/gotham");
 
 body {
     font-family: "Neutral Face", sans-serif;
@@ -9,6 +10,19 @@ body {
         background-color: var(--white);
         color: var(--black);
 
+        button,
+        .download-cv {
+            border: 0.125rem solid var(--black);
+            background-color: var(--white);
+            color: var(--black);
+
+            &:hover {
+                background-color: var(--black);
+                color: var(--white);
+                border: 0.125rem solid var(--black);
+            }
+        }
+
         .navbar {
             .theme-mode {
                 svg {
@@ -18,18 +32,6 @@ body {
         }
 
         .homepage {
-            button {
-                border: 0.125rem solid var(--black);
-                background-color: var(--white);
-                color: var(--black);
-
-                &:hover {
-                    background-color: var(--black);
-                    color: var(--white);
-                    border: 0.125rem solid var(--black);
-                }
-            }
-
             .contact {
                 .email {
                     display: block;
@@ -70,6 +72,19 @@ body {
         background-color: var(--black);
         color: var(--white);
 
+        button,
+        .download-cv {
+            border: 0.125rem solid var(--white);
+            background-color: var(--black);
+            color: var(--white);
+
+            &:hover {
+                background-color: var(--white);
+                color: var(--black);
+                border: 0.125rem solid var(--white);
+            }
+        }
+
         .navbar {
             .theme-mode {
                 svg {
@@ -79,18 +94,6 @@ body {
         }
 
         .homepage {
-            button {
-                border: 0.125rem solid var(--white);
-                background-color: var(--black);
-                color: var(--white);
-
-                &:hover {
-                    background-color: var(--white);
-                    color: var(--black);
-                    border: 0.125rem solid var(--white);
-                }
-            }
-
             .contact {
                 .email {
                     display: block;
@@ -127,6 +130,12 @@ body {
         }
     }
 
+    button,
+    .download-cv {
+        padding: 0.625rem 2.5rem;
+        border-radius: 195px;
+    }
+
     .navbar {
         a {
             color: unset;
@@ -153,11 +162,6 @@ body {
             white-space: nowrap;
             animation: slide-home 15s linear infinite;
             transform: translate3d(0, 0, 0);
-        }
-
-        button {
-            padding: 0.625rem 2.5rem;
-            border-radius: 195px;
         }
 
         .contact {
@@ -200,6 +204,11 @@ body {
                     right: 0.938rem;
                 }
             }
+
+            .description {
+                font-family: "Gotham", sans-serif;
+                font-weight: 400;
+            }
         }
 
         .experience-group {
@@ -225,6 +234,10 @@ body {
                     display: block;
                 }
             }
+        }
+
+        .contact {
+            padding: 100px;
         }
     }
 
