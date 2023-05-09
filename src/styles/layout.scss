@@ -53,6 +53,15 @@ body {
             .experience-group {
                 .experience-header {
                     border-top: 1px solid var(--black);
+
+                    &.active {
+                        border-bottom: 1px solid var(--black);
+                    }
+                }
+
+                div:nth-child(5),
+                div:nth-child(6) {
+                    border-bottom: 1px solid var(--black);
                 }
             }
         }
@@ -110,11 +119,25 @@ body {
                         stroke: var(--white);
                     }
                 }
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
             }
 
             .experience-group {
                 .experience-header {
                     border-top: 1px solid var(--white);
+
+                    &.active {
+                        border-bottom: 1px solid var(--white);
+                    }
+                }
+
+                div:nth-child(5),
+                div:nth-child(6) {
+                    border-bottom: 1px solid var(--white);
                 }
             }
         }
@@ -223,6 +246,19 @@ body {
                 outline: none;
                 font-size: 36px;
                 transition: background-color 0.5s ease;
+
+                svg {
+                    font-weight: 200;
+                    float: right;
+                    transform: rotate(180deg);
+                }
+
+                &.active {
+                    svg {
+                        transform: rotate(90deg);
+                        transform-origin: center center;
+                    }
+                }
             }
 
             .experience-content {
