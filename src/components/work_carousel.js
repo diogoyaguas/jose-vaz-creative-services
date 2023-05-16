@@ -46,7 +46,7 @@ const WorkCarousel = () => {
         <div className="work-carousel">
             <Slider {...settings}>
                 {data.allWorkJson.nodes.map(work => (
-                    <div key={work.name} className="work-card">
+                    <div key={work.name} className="work-card py-5">
                         <div className="row">
                             <div className="col-12">
                                 {work.video != null ?
