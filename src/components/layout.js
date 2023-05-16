@@ -1,24 +1,17 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React, { useEffect, useState } from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/vars.scss"
 import "../styles/layout.scss"
 
-import Header from "./header"
+import React, { useEffect, useState } from "react"
+import { graphql, useStaticQuery } from "gatsby"
+
 import Footer from "./footer"
+import Header from "./header"
+import PropTypes from "prop-types"
 
 const Layout = ({ children }) => {
-    const [mode, setMode] = useState("light")
-    const data = useStaticQuery(graphql`
+  const [mode, setMode] = useState("light")
+  const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -28,27 +21,36 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const saveThemeMode = () => {
+    const newMode = mode === "light" ? "dark" : "light"
+    localStorage.setItem("themeMode", newMode);
+    setMode(newMode);
+  }
+
   useEffect(() => {
-      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setMode(prefersDarkMode ? "dark" : "light" );
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const savedThemeMode = localStorage.getItem("themeMode")
+    if (savedThemeMode !== undefined) {
+      setMode(savedThemeMode)
+    } else setMode(prefersDarkMode ? "dark" : "light");
   }, [])
 
-    return (
-        <div className={mode === "light" ? "light" : "dark"}>
-            <Header
-                siteTitle={data.site.siteMetadata.title}
-                mode={mode}
-                setMode={setMode}
-            />
-            <main>{children}</main>
-            <Footer />
-        </div>
-    )
+  return (
+    <div className={mode === "light" ? "light" : "dark"}>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        mode={mode}
+        setMode={saveThemeMode}
+      />
+      <main>{children}</main>
+      <Footer />
+    </div>
+  )
 }
 
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout

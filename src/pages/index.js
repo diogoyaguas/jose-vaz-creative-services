@@ -1,7 +1,6 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
-import Navigation from "../components/navigation"
 import Seo from "../components/seo"
 import WorkCarousel from "../components/work_carousel"
 
@@ -14,7 +13,7 @@ const Homepage = () => {
           GRAPHIC DESIGNER AND CONTENT EDITOR GRAPHIC DESIGNER AND CONTENT EDITOR
         </div>
 
-        <Navigation />
+
 
         <WorkCarousel />
 

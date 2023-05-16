@@ -30,7 +30,7 @@ const WorkCarousel = () => {
 
 
     return (
-        <div className="work-carousel py-5">
+        <div className="work-carousel">
             <Carousel
                 activeSlideIndex={activeSlideIndex}
                 onRequestChange={setActiveSlideIndex}
@@ -45,8 +45,9 @@ const WorkCarousel = () => {
                                     <ReactPlayer
                                         url={work.video?.publicURL}
                                         controls={false}
-                                        autoplay={true}
+                                        autoPlay={true}
                                         playing={true}
+                                        playsInline={true}
                                         muted={true}
                                         loop={true}
                                         width="100%"

@@ -1,14 +1,38 @@
 [
     {
-        "name": "The Feeting Room - Short Takes",
-        "img": "../images/The Feeting Room.png"
-    },
-    {
-        "name": "Deepwear - Brochure Collection",
-        "img": "../images/The Feeting Room.png"
-    },
-    {
-        "name": "TFRLAB - Studio 54",
+        "name": "TFRLab_01 - STUDIO 54",
         "video": "../videos/TFRLab_01 - Studio54.mp4"
+    },
+    {
+        "name": "The Feeting Room ",
+        "img": "../images/The Feeting Room.png"
+    },
+    {
+        "name": "Algori Brand - Brandbook",
+        "video": "../videos/Algori - Brandbook.mp4"
+    },
+    {
+        "name": "Dulis Shoes - SS23 Lookbook",
+        "img": "../images/DULIS - SS23 Lookbook.png"
+    },
+    {
+        "name": "Dulis Shoes - FW22 Campaign ",
+        "video": "../videos/DULIS - FW22 Campaign.mp4"
+    },
+    {
+        "name": "Dezénhos",
+        "img": "../images/Dezenhos.png"
+    },
+    {
+        "name": "Deepwear - Global Progressive Fashion Agency",
+        "video": "../videos/Deepwear - Global Progressive Fashion Agency.mp4"
+    },
+    {
+        "name": "DAT - Design, Art and Technology",
+        "img": "../images/DAT - Design, Arte e Tecnologia.png"
+    },
+    {
+        "name": "M.A.D - Music Addiction Disorder",
+        "img": "../images/M.A.D - Music Addiction Disorder .png"
     }
 ]

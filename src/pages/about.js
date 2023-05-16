@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { graphql } from "gatsby"
 
 const About = ({ data }) => {
     const profile = data?.profile?.childImageSharp?.fluid

@@ -16,7 +16,8 @@ body {
             background-color: var(--white);
             color: var(--black);
 
-            &:hover {
+            &:hover,
+            &.active {
                 background-color: var(--black);
                 color: var(--white);
                 border: 0.125rem solid var(--black);
@@ -24,10 +25,8 @@ body {
         }
 
         .navbar {
-            .theme-mode {
-                svg {
-                    fill: var(--black);
-                }
+            svg path {
+                stroke: var(--black);
             }
         }
 
@@ -87,7 +86,8 @@ body {
             background-color: var(--black);
             color: var(--white);
 
-            &:hover {
+            &:hover,
+            &.active {
                 background-color: var(--white);
                 color: var(--black);
                 border: 0.125rem solid var(--white);
@@ -95,10 +95,8 @@ body {
         }
 
         .navbar {
-            .theme-mode {
-                svg {
-                    fill: var(--white);
-                }
+            svg path {
+                stroke: var(--white);
             }
         }
 
@@ -160,9 +158,26 @@ body {
     }
 
     .navbar {
+        .row {
+            margin: 0 !important;
+
+            .logo {
+                padding-left: 2.5rem;
+            }
+
+            .theme-mode {
+                padding-right: 2.5rem;
+            }
+        }
+
         a {
             color: unset;
             text-decoration: none;
+        }
+
+        button.btn.btn-primary {
+            font-size: 12px;
+            padding: 0.625rem 1.5rem;
         }
 
         .theme-mode {
@@ -185,11 +200,13 @@ body {
             white-space: nowrap;
             animation: slide-home 15s linear infinite;
             transform: translate3d(0, 0, 0);
+            -webkit-user-select: none; /* Safari/Chrome */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
         }
 
-
         .work-carousel {
-
             .work-card {
                 min-width: 300px;
                 min-height: 380px;
