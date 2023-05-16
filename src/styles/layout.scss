@@ -208,7 +208,7 @@ body {
 
         .work-carousel {
             .work-card {
-                min-width: 300px;
+                max-width: 300px;
                 min-height: 380px;
                 margin-left: 2rem !important;
                 margin-right: 2rem !important;
@@ -243,9 +243,11 @@ body {
 
         .bio {
             margin: auto;
+
             .profile {
                 position: relative;
                 max-width: 400px;
+
                 .gatsby-image-wrapper {
                     border-radius: 50%;
                     position: relative;

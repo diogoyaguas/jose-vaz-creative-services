@@ -1,12 +1,14 @@
-import React, { useState } from "react"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { graphql, useStaticQuery } from "gatsby"
 
-import Carousel from "react-simply-carousel";
 import Img from "gatsby-image"
+import React from "react"
 import ReactPlayer from 'react-player';
+import Slider from 'react-slick';
 
 const WorkCarousel = () => {
-    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     const data = useStaticQuery(graphql`
     query {
       allWorkJson {
@@ -27,16 +29,22 @@ const WorkCarousel = () => {
     }
   `)
 
-
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 5000,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        swipeToSlide: true,
+        focusOnSelect: true,
+    };
 
     return (
         <div className="work-carousel">
-            <Carousel
-                activeSlideIndex={activeSlideIndex}
-                onRequestChange={setActiveSlideIndex}
-                itemsToShow={0}
-                itemsToScroll={1}
-            >
+            <Slider {...settings}>
                 {data.allWorkJson.nodes.map(work => (
                     <div key={work.name} className="work-card">
                         <div className="row">
@@ -62,7 +70,7 @@ const WorkCarousel = () => {
                     </div>
                 ))}
 
-            </Carousel>
+            </Slider>
         </div>
     )
 }
