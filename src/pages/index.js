@@ -1,10 +1,9 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
+import Navigation from "../components/navigation"
 import Seo from "../components/seo"
-
-import { Link } from "gatsby"
-
+import WorkCarousel from "../components/work_carousel"
 
 const Homepage = () => {
   return (
@@ -15,34 +14,18 @@ const Homepage = () => {
           GRAPHIC DESIGNER AND CONTENT EDITOR GRAPHIC DESIGNER AND CONTENT EDITOR
         </div>
 
-        <div className="navigation row">
-          <div className="col-md-4 col-sm-12 text-center">
-            <button type="button" className="btn btn-primary">
-              MY WORK
-            </button>
-          </div>
-          <div className="col-md-4 col-sm-12 text-center">
-            <Link to="/about">
-              <button type="button" className="btn btn-primary">
-                ABOUT ME
-              </button>
-            </Link>
-          </div>
-          <div className="col-md-4 col-sm-12 text-center">
-            <button type="button" className="btn btn-primary">
-              CONTACT
-            </button>
-          </div>
-        </div>
+        <Navigation />
 
-        <div className="contact text-center">
-          <div className="title">
+        <WorkCarousel />
+
+        <div className="contact text-center row">
+          <div className="title col-12">
             INTERESTED IN WORKING TOGETHER?
           </div>
-          <a className="email pt-5 pb-3" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer" >
+          <a className="email col-12 pt-5 pb-3" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer" >
             ZEOLIVEIRAVAZ@GMAIL.COM
           </a>
-          <a href="/cv.pdf" className="btn btn-primary download-cv" download>
+          <a href="/cv.pdf" className="col-12 m-auto w-50 btn btn-primary download-cv" download>
             DOWNLOAD CV
           </a>
         </div>

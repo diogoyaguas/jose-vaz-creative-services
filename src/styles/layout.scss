@@ -187,6 +187,21 @@ body {
             transform: translate3d(0, 0, 0);
         }
 
+
+        .work-carousel {
+
+            .work-card {
+                min-width: 300px;
+                min-height: 380px;
+                margin-left: 2rem !important;
+                margin-right: 2rem !important;
+
+                .gatsby-image-wrapper,
+                video {
+                    border-radius: 35px;
+                }
+            }
+        }
         .contact {
             padding: 10rem 33rem;
 
