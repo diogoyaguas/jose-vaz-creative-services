@@ -36,7 +36,7 @@ const WorkCarousel = () => {
         speed: 5000,
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 0,
         swipeToSlide: true,
         focusOnSelect: true,
@@ -50,17 +50,20 @@ const WorkCarousel = () => {
                         <div className="row">
                             <div className="col-12">
                                 {work.video != null ?
-                                    <ReactPlayer
-                                        url={work.video?.publicURL}
-                                        controls={false}
-                                        autoPlay={true}
-                                        playing={true}
-                                        playsInline={true}
-                                        muted={true}
-                                        loop={true}
-                                        width="100%"
-                                        height="auto"
-                                    />
+                                    <>
+                                        <ReactPlayer
+                                            url={work.video?.publicURL}
+                                            controls={false}
+                                            autoPlay={true}
+                                            playing={true}
+                                            playsInline={true}
+                                            muted={true}
+                                            loop={true}
+                                            width="100%"
+                                            height="auto"
+                                        />
+                                        <div className="overlay" />
+                                    </>
                                     : <Img fixed={work.img?.childImageSharp?.fixed} />}
                             </div>
                             <div className="col-12 work-name">
