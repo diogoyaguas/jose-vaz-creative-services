@@ -8,7 +8,7 @@ import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 const Header = ({ mode, setMode }) => {
 
 	return (
-		<nav className="navbar pt-4 pb-0">
+		<nav className="navbar pt-4">
 			<div className="row w-100 align-items-center">
 				<div className="col-2 logo">
 					<Link to="/">

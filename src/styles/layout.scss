@@ -158,6 +158,8 @@ body {
     }
 
     .navbar {
+        padding-bottom: 2.26rem;
+
         .row {
             margin: 0 !important;
 
@@ -214,6 +216,7 @@ body {
                 margin-right: 2rem !important;
                 overflow: hidden;
                 transition: transform 0.3s ease;
+                font-family: "Gotham", sans-serif;
 
                 &:hover {
                     transform: scale(1.1);
@@ -281,11 +284,20 @@ body {
             }
         }
         .contact {
-            padding: 10rem 33rem;
+            padding: 6rem 33rem 12.5rem 33rem;
 
             .title {
                 font-weight: 400;
                 font-size: 48px;
+            }
+
+            .contact-me {
+                font-family: "Gotham", sans-serif;
+                font-weight: 500;
+            }
+
+            .email {
+                font-family: "Gotham", sans-serif;
             }
         }
     }

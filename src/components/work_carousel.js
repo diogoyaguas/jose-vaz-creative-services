@@ -44,7 +44,7 @@ const WorkCarousel = () => {
 
     const settings = {
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 0,
         dots: false,
         draggable: !dragging,

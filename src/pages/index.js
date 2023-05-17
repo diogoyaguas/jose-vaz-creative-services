@@ -9,7 +9,7 @@ const Homepage = () => {
     <Layout>
       <Seo title="Homepage" />
       <div className="homepage">
-        <div className="main-title py-5">
+        <div className="main-title pt-5">
           GRAPHIC DESIGNER AND CONTENT EDITOR GRAPHIC DESIGNER AND CONTENT EDITOR
         </div>
 
@@ -21,8 +21,9 @@ const Homepage = () => {
           <div className="title col-12">
             INTERESTED IN WORKING TOGETHER?
           </div>
-          <a className="email col-12 pt-5 pb-3" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer" >
-            ZEOLIVEIRAVAZ@GMAIL.COM
+          <div className="contact-me col-12 pt-3">Contact me:</div>
+          <a className="email col-12 pb-4" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer" >
+            zeoliveiravaz@gmail.com
           </a>
           <a href="/cv.pdf" className="col-12 m-auto w-50 btn btn-primary download-cv" download>
             DOWNLOAD CV
