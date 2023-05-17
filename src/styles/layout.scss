@@ -220,8 +220,15 @@ body {
 
                     .gatsby-image-wrapper::before {
                         & {
-                            background-color: rgba(255, 255, 255, 0.5); /* White transparency on hover */
-                            opacity: 1; /* Show the white overlay */
+                            background-color: rgba(255, 255, 255, 0.5);
+                            opacity: 1;
+                        }
+                    }
+
+                    .video-wrapper {
+                        .overlay {
+                            background-color: rgba(255, 255, 255, 0.5);
+                            opacity: 1;
                         }
                     }
                 }
@@ -237,9 +244,37 @@ body {
                         left: 0;
                         width: 300px;
                         min-height: 100%;
-                        background-color: rgba(255, 255, 255, 0); /* Initial transparency */
+                        background-color: rgba(255, 255, 255, 0);
                         transition: background-color 0.3s ease;
-                        opacity: 0; /* Initial opacity */
+                        opacity: 0;
+                        z-index: 10;
+                    }
+                }
+
+                .video-wrapper {
+                    position: relative;
+                    display: inline-block;
+
+                    .player-wrapper {
+                        position: relative;
+                        width: 100%;
+
+                        video {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .overlay {
+                        border-radius: 35px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 300px;
+                        min-height: 98.2%;
+                        background-color: rgba(255, 255, 255, 0);
+                        transition: background-color 0.3s ease;
+                        opacity: 0;
                         z-index: 10;
                     }
                 }

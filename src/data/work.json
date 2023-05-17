@@ -1,38 +1,47 @@
 [
     {
         "name": "TFRLab_01 - STUDIO 54",
-        "video": "../videos/TFRLab_01 - Studio54.mp4"
+        "video": "../videos/TFRLab_01 - Studio54.mp4",
+        "link": "/"
     },
     {
         "name": "The Feeting Room ",
-        "img": "../images/The Feeting Room.png"
+        "img": "../images/The Feeting Room.png",
+        "link": "/"
     },
     {
         "name": "Algori Brand - Brandbook",
-        "video": "../videos/Algori - Brandbook.mp4"
+        "video": "../videos/Algori - Brandbook.mp4",
+        "link": "/"
     },
     {
         "name": "Dulis Shoes - SS23 Lookbook",
-        "img": "../images/DULIS - SS23 Lookbook.png"
+        "img": "../images/DULIS - SS23 Lookbook.png",
+        "link": "/"
     },
     {
         "name": "Dulis Shoes - FW22 Campaign ",
-        "video": "../videos/DULIS - FW22 Campaign.mp4"
+        "video": "../videos/DULIS - FW22 Campaign.mp4",
+        "link": "/"
     },
     {
         "name": "Dezénhos",
-        "img": "../images/Dezenhos.png"
+        "img": "../images/Dezenhos.png",
+        "link": "/"
     },
     {
         "name": "Deepwear - Global Progressive Fashion Agency",
-        "video": "../videos/Deepwear - Global Progressive Fashion Agency.mp4"
+        "video": "../videos/Deepwear - Global Progressive Fashion Agency.mp4",
+        "link": "/"
     },
     {
         "name": "DAT - Design, Art and Technology",
-        "img": "../images/DAT - Design, Arte e Tecnologia.png"
+        "img": "../images/DAT - Design, Arte e Tecnologia.png",
+        "link": "/"
     },
     {
         "name": "M.A.D - Music Addiction Disorder",
-        "img": "../images/M.A.D - Music Addiction Disorder .png"
+        "img": "../images/M.A.D - Music Addiction Disorder .png",
+        "link": "/"
     }
 ]
