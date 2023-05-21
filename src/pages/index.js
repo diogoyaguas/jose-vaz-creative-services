@@ -1,10 +1,33 @@
 import * as React from "react"
 
+import { graphql, useStaticQuery } from "gatsby"
+
+import Carousel from "../components/carousel"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import WorkCarousel from "../components/work_carousel"
 
 const Homepage = () => {
+  const projects = useStaticQuery(graphql`
+    query {
+      allProjectsJson {
+        nodes {
+          name
+          link
+          video {
+            publicURL
+          }
+          img {
+            childImageSharp {
+              fixed {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
       <Seo title="Homepage" />
@@ -12,11 +35,9 @@ const Homepage = () => {
         <div className="main-title pt-5">
           GRAPHIC DESIGNER AND CONTENT EDITOR GRAPHIC DESIGNER AND CONTENT EDITOR
         </div>
-
-
-
-        <WorkCarousel />
-
+        <div className="projects-carousel">
+        <Carousel information={projects.allProjectsJson.nodes} />
+        </div>
         <div className="contact text-center row">
           <div className="title col-12">
             INTERESTED IN WORKING TOGETHER?

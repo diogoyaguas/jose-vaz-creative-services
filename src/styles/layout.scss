@@ -38,6 +38,16 @@ body {
                     text-decoration: none;
                 }
             }
+
+            .slick-dots {
+                button {
+                    color: var(--black);
+
+                    &:hover {
+                        background-color: transparent !important;
+                    }
+                }
+            }
         }
 
         .about {
@@ -106,6 +116,18 @@ body {
                     display: block;
                     color: var(--white);
                     text-decoration: none;
+                }
+            }
+
+            .slick-dots {
+                button {
+                    &::before {
+                        color: var(--white);
+                    }
+
+                    &:hover {
+                        background-color: transparent !important;
+                    }
                 }
             }
         }
@@ -211,8 +233,8 @@ body {
             user-select: none;
         }
 
-        .work-carousel {
-            .work-card {
+        .projects-carousel {
+            .info-card {
                 max-width: 300px;
                 min-height: 380px;
                 margin-left: 2rem !important;
@@ -277,7 +299,7 @@ body {
                         top: 0;
                         left: 0;
                         width: 300px;
-                        min-height: 98.2%;
+                        min-height: 97%;
                         background-color: rgba(255, 255, 255, 0);
                         transition: background-color 0.3s ease;
                         opacity: 0;
@@ -285,7 +307,16 @@ body {
                     }
                 }
             }
+
+            .slick-dots {
+                bottom: 0.25rem;
+
+                button {
+                    border: 0;
+                }
+            }
         }
+
         .contact {
             padding: 6rem 33rem 12.5rem 33rem;
 
@@ -322,7 +353,7 @@ body {
 
             .profile {
                 position: relative;
-                max-width: 400px;
+                max-width: 300px;
 
                 .gatsby-image-wrapper {
                     border-radius: 50%;
