@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
+import { graphql, useStaticQuery } from "gatsby"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
-import { graphql } from "gatsby"
 
 const About = ({ data }) => {
     const profile = data?.profile?.childImageSharp?.fluid
@@ -26,6 +26,7 @@ const About = ({ data }) => {
             });
         });
     }, []);
+
 
     return (
         <Layout>
@@ -57,20 +58,19 @@ const About = ({ data }) => {
                     </div>
                 </div>
                 <div className="experience-group">
-                    <div className="experience-header">Degree - design and multimedia<FontAwesomeIcon icon={faPlay} /></div>
-                    <div className="experience-content">
-                        <p>Content for Collapsible Item 1 goes here.</p>
-                    </div>
-
-                    <div className="experience-header">Professional Internship<FontAwesomeIcon icon={faPlay} /></div>
-                    <div className="experience-content">
-                        <p>Content for Collapsible Item 2 goes here.</p>
-                    </div>
-
-                    <div className="experience-header">Graphic Designer<FontAwesomeIcon icon={faPlay} /></div>
-                    <div className="experience-content">
-                        <p>Content for Collapsible Item 3 goes here.</p>
-                    </div>
+                    {data.allExperienceJson.nodes.map(info => (
+                        <>
+                            <div className="experience-header">{info.title}<FontAwesomeIcon icon={faPlay} /></div>
+                            <div className="experience-content">
+                                <p>{info.date}</p>
+                                <div className="experience-text pt-4"
+                                    dangerouslySetInnerHTML={({
+                                        __html: info.text
+                                    })}
+                                />
+                            </div>
+                        </>
+                    ))}
                 </div>
 
                 <div className="contact text-center">
@@ -98,7 +98,14 @@ export const query = graphql`
           ...GatsbyImageSharpFixed
         }
       }
-    }
+    },
+    allExperienceJson {
+        nodes {
+          title
+          date
+          text
+        }
+      }
   }
 `
 
