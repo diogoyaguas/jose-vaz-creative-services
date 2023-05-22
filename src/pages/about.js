@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+import Arrow from '../images/arrow.svg';
 import CallMeZe from '../images/call_me_ze.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Img from "gatsby-image"
@@ -60,7 +61,7 @@ const About = ({ data }) => {
                 <div className="experience-group">
                     {data.allExperienceJson.nodes.map(info => (
                         <div key={info.title}>
-                            <div className="experience-header">{info.title}<FontAwesomeIcon icon={faPlay} /></div>
+                            <div className="experience-header">{info.title}<Arrow /></div>
                             <div className="experience-content">
                                 <p>{info.date}</p>
                                 <div className="experience-text"
