@@ -53,13 +53,15 @@ body {
         .about {
             .bio {
                 .profile {
-                    svg path {
-                        stroke: var(--black);
+                    svg {
+                        fill: var(--black);
                     }
                 }
             }
 
             .experience-group {
+                border-top: 1px solid var(--black);
+
                 .experience-header {
                     border-top: 1px solid var(--black);
 
@@ -145,8 +147,8 @@ body {
         .about {
             .bio {
                 .profile {
-                    svg path {
-                        stroke: var(--white);
+                    svg {
+                        fill: var(--white);
                     }
                 }
                 .description {
@@ -157,6 +159,8 @@ body {
             }
 
             .experience-group {
+                border-top: 1px solid var(--white);
+
                 .experience-header {
                     border-top: 1px solid var(--white);
 
@@ -239,19 +243,6 @@ body {
 
     .homepage {
         overflow: hidden;
-
-        .main-title {
-            font-weight: 400;
-            font-size: 14.313rem;
-            position: relative;
-            white-space: nowrap;
-            animation: slide-home 15s linear infinite;
-            transform: translate3d(0, 0, 0);
-            -webkit-user-select: none; /* Safari/Chrome */
-            -moz-user-select: none; /* Firefox */
-            -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none;
-        }
 
         .projects-carousel {
             .info-card {
@@ -359,15 +350,6 @@ body {
     .about {
         overflow: hidden;
 
-        .main-title {
-            font-weight: 400;
-            font-size: 14.313rem;
-            position: relative;
-            white-space: nowrap;
-            animation: slide-about 15s linear infinite;
-            transform: translate3d(0, 0, 0);
-        }
-
         .bio {
             margin: auto;
 
@@ -390,6 +372,7 @@ body {
                 }
 
                 svg {
+                    max-width: 350px;
                     z-index: 2;
                     position: absolute;
                     animation: rotation 15s infinite linear;
@@ -404,6 +387,16 @@ body {
 
         .experience-group {
             overflow: hidden;
+
+            .sliding-text-container {
+                .text {
+                    font-size: 48px !important;
+                }
+
+                .item-separator-dot {
+                    margin: 0 10px !important;
+                }
+            }
 
             .experience-header {
                 cursor: pointer;
@@ -464,23 +457,53 @@ body {
     footer {
         padding: 3rem 8rem;
     }
+
+    .sliding-text-container {
+        display: flex;
+        white-space: nowrap;
+
+        .list {
+            display: flex;
+            align-items: center;
+            -webkit-animation: loop 10s infinite linear;
+            animation: loop 10s infinite linear;
+
+            .item {
+                display: flex;
+                align-items: center;
+
+                .text {
+                    font-family: "Neutral Face", sans-serif;
+                    font-size: 14.313rem;
+                    -webkit-user-select: none; /* Safari/Chrome */
+                    -moz-user-select: none; /* Firefox */
+                    -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none;
+                    vertical-align: baseline;
+                }
+
+                .item-separator {
+                    display: inline;
+
+                    .item-separator-dot {
+                        max-width: 20px;
+                        max-height: 20px;
+                        margin: 0 50px;
+                        padding: 10px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        transform: translateY(-30px);
+                    }
+                }
+            }
+        }
+    }
 }
 
-@keyframes slide-home {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
+@keyframes loop {
     100% {
-        transform: translate3d(-316%, 0, 0);
-    }
-}
-
-@keyframes slide-about {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-324%, 0, 0);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
     }
 }
 

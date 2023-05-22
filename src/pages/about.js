@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 
 import Arrow from '../images/arrow.svg';
-import CallMeZe from '../images/call_me_ze.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import CallMeZe from '../images/black.svg';
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import SlidingText from "../components/slidingText"
 import { graphql } from "gatsby"
 
 const About = ({ data }) => {
@@ -33,10 +32,9 @@ const About = ({ data }) => {
         <Layout>
             <Seo title="About Me" />
             <div className="about">
-                <div className="main-title py-5">
-                    ABOUT ME ABOUT ME ABOUT ME ABOUT ME ABOUT ME ABOUT ME ABOUT ME ABOUT ME
+                <div className="py-5">
+                    <SlidingText text={"ABOUT ME ABOUT ME ABOUT ME"} />
                 </div>
-
                 <div className="container row bio pb-5 mb-5">
                     <div className="col-lg-5 col-12 profile mx-auto">
                         <CallMeZe />
@@ -59,6 +57,7 @@ const About = ({ data }) => {
                     </div>
                 </div>
                 <div className="experience-group">
+                    <SlidingText text={"EDUCATION AND PROFESSIONAL EXPERIENCE EDUCATION AND PROFESSIONAL EXPERIENCE"} />
                     {data.allExperienceJson.nodes.map(info => (
                         <div key={info.title}>
                             <div className="experience-header">{info.title}<Arrow /></div>

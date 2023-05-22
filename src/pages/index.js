@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Carousel from "../components/carousel"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import SlidingText from "../components/slidingText"
 
 const Homepage = () => {
   const projects = useStaticQuery(graphql`
@@ -32,8 +33,8 @@ const Homepage = () => {
     <Layout>
       <Seo title="Homepage" />
       <div className="homepage">
-        <div className="main-title pt-5">
-          GRAPHIC DESIGNER AND CONTENT EDITOR GRAPHIC DESIGNER AND CONTENT EDITOR
+        <div className="pt-5">
+          <SlidingText text={"GRAPHIC DESIGNER AND CONTENT EDITOR"} />
         </div>
         <div className="projects-carousel">
         <Carousel information={projects.allProjectsJson.nodes} />
