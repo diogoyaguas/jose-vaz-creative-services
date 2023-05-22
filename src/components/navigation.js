@@ -9,9 +9,9 @@ const Navigation = () => {
     return (
         <div className="navigation row">
             <div className="col-md-4 col-sm-12 text-center">
-                <Link to="/work">
-                    <button type="button" className={`btn btn-primary ${currentPage.includes("work") ? "active" : ""}`}>
-                        MY WORK
+                <Link to="/projects">
+                    <button type="button" className={`btn btn-primary ${currentPage.includes("projects") ? "active" : ""}`}>
+                        PROJECTS
                     </button>
                 </Link>
             </div>

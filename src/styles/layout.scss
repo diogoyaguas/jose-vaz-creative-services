@@ -102,6 +102,13 @@ body {
             }
         }
 
+        .projects-page {
+            .graphic-design,
+            .editorial-design {
+                border-top: 1px solid var(--black);
+            }
+        }
+
         footer {
             background-color: var(--black);
             color: var(--white);
@@ -213,6 +220,13 @@ body {
                         background-color: var(--white);
                     }
                 }
+            }
+        }
+
+        .projects-page {
+            .graphic-design,
+            .editorial-design {
+                border-top: 1px solid var(--white);
             }
         }
 
@@ -491,6 +505,24 @@ body {
             .title {
                 font-size: 48px;
             }
+        }
+    }
+
+    .projects-page {
+        .sliding-text-container {
+            .text {
+                font-size: 48px !important;
+            }
+
+            .item-separator-dot {
+                margin: 0 10px !important;
+            }
+        }
+
+        .graphic-design,
+        .editorial-design {
+            padding-top: 2rem;
+            border-top: 1px solid var(--black);
         }
     }
 
