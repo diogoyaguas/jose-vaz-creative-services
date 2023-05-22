@@ -421,6 +421,18 @@ body {
                 .experience-text {
                     font-family: "Gotham", sans-serif;
                     margin-top: 3.5rem;
+
+                    ul {
+                        list-style: circle;
+
+                        li::before {
+                            content: "\2022";
+                            font-weight: bold; 
+                            display: inline-block; 
+                            width: 1rem; 
+                            margin-left: -1rem;
+                        }
+                    }
                 }
             }
         }
