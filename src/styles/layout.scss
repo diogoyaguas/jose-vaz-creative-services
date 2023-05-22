@@ -68,9 +68,14 @@ body {
                     }
                 }
 
-                div:nth-child(5),
-                div:nth-child(6) {
-                    border-bottom: 1px solid var(--black);
+                div:last-child {
+                    .experience-header {
+                        border-bottom: 1px solid var(--black);
+
+                        &.active + .experience-content {
+                            border-bottom: 1px solid var(--black);
+                        }
+                    }
                 }
             }
         }
@@ -427,9 +432,9 @@ body {
 
                         li::before {
                             content: "\2022";
-                            font-weight: bold; 
-                            display: inline-block; 
-                            width: 1rem; 
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 1rem;
                             margin-left: -1rem;
                         }
                     }
