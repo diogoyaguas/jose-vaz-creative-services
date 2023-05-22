@@ -56,7 +56,7 @@ const About = ({ data }) => {
                         </p>
                     </div>
                 </div>
-                <div className="experience-group">
+                <div className="experience-group pt-1">
                     <SlidingText text={"EDUCATION AND PROFESSIONAL EXPERIENCE EDUCATION AND PROFESSIONAL EXPERIENCE"} />
                     {data.allExperienceJson.nodes.map(info => (
                         <div key={info.title}>
