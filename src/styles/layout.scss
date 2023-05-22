@@ -87,6 +87,21 @@ body {
             }
         }
 
+        .contact-page {
+            .contact {
+                padding: 6rem 33rem 12.5rem 33rem;
+
+                .social-media {
+                    a svg {
+                        padding: 15px;
+                        border-radius: 50%;
+                        color: var(--white);
+                        background-color: var(--black);
+                    }
+                }
+            }
+        }
+
         footer {
             background-color: var(--black);
             color: var(--white);
@@ -181,6 +196,21 @@ body {
                         &.active + .experience-content {
                             border-bottom: 1px solid var(--white);
                         }
+                    }
+                }
+            }
+        }
+
+        .contact-page {
+            .contact {
+                padding: 6rem 33rem 12.5rem 33rem;
+
+                .social-media {
+                    a svg {
+                        padding: 15px;
+                        border-radius: 50%;
+                        color: var(--black);
+                        background-color: var(--white);
                     }
                 }
             }
@@ -451,6 +481,16 @@ body {
 
         .contact {
             padding: 100px;
+        }
+    }
+
+    .contact-page {
+        .contact {
+            padding: 6rem 33rem 12.5rem 33rem;
+
+            .title {
+                font-size: 48px;
+            }
         }
     }
 
