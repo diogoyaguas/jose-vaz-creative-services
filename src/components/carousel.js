@@ -1,10 +1,9 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import React, { useEffect } from "react"
-
 import Img from "gatsby-image"
 import { Link } from "gatsby"
+import React from "react"
 import ReactPlayer from 'react-player';
 import Slider from 'react-slick';
 

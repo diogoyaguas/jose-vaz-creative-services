@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
-import { graphql, useStaticQuery } from "gatsby"
 
+import CallMeZe from '../images/call_me_ze.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { graphql } from "gatsby"
 
 const About = ({ data }) => {
-    const profile = data?.profile?.childImageSharp?.fluid
-    const callMeZe = data?.callMeZe?.childImageSharp?.fixed
+    const profile = data?.profile?.childImageSharp?.fixed
 
     useEffect(() => {
         const collapsibleHeaders = document.querySelectorAll(".experience-header");
@@ -38,8 +38,8 @@ const About = ({ data }) => {
 
                 <div className="container row bio pb-5 mb-5">
                     <div className="col-lg-5 col-12 profile mx-auto">
-                        <Img fixed={callMeZe} />
-                        <Img fluid={profile} alt="José Vaz profile picture" />
+                        <CallMeZe />
+                        <Img fixed={profile} alt="José Vaz profile picture" />
 
                     </div>
                     <div className="col-lg-7 col-12 description mt-5 mt-lg-0">
@@ -59,17 +59,17 @@ const About = ({ data }) => {
                 </div>
                 <div className="experience-group">
                     {data.allExperienceJson.nodes.map(info => (
-                        <>
+                        <div key={info.title}>
                             <div className="experience-header">{info.title}<FontAwesomeIcon icon={faPlay} /></div>
                             <div className="experience-content">
                                 <p>{info.date}</p>
-                                <div className="experience-text pt-4"
+                                <div className="experience-text"
                                     dangerouslySetInnerHTML={({
                                         __html: info.text
                                     })}
                                 />
                             </div>
-                        </>
+                        </div >
                     ))}
                 </div>
 
@@ -86,13 +86,6 @@ const About = ({ data }) => {
 export const query = graphql`
   query {
     profile: file(relativePath: { eq: "profile.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    callMeZe: file(relativePath: { eq: "Ativo 4 1.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed

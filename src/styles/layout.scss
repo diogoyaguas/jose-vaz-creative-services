@@ -352,20 +352,27 @@ body {
             margin: auto;
 
             .profile {
-                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 max-width: 300px;
 
                 .gatsby-image-wrapper {
-                    border-radius: 50%;
                     position: relative;
                     overflow: hidden;
+
+                    img {
+                        border-radius: 50%;
+                        max-width: 275px;
+                        max-height: 275px;
+                        margin: auto;
+                    }
                 }
 
                 svg {
                     z-index: 2;
                     position: absolute;
-                    top: -1.875rem;
-                    right: 0.938rem;
+                    animation: rotation 15s infinite linear;
                 }
             }
 
@@ -380,12 +387,12 @@ body {
 
             .experience-header {
                 cursor: pointer;
-                padding: 50px;
+                padding: 35px;
                 width: 100%;
                 border: none;
                 text-align: left;
                 outline: none;
-                font-size: 36px;
+                font-size: 20px;
                 transition: background-color 0.5s ease;
 
                 svg {
@@ -403,7 +410,7 @@ body {
             }
 
             .experience-content {
-                padding: 50px;
+                padding: 3rem 20rem;
                 display: none;
                 overflow: hidden;
 
@@ -413,7 +420,7 @@ body {
 
                 .experience-text {
                     font-family: "Gotham", sans-serif;
-                    margin-top: 1.5rem;
+                    margin-top: 3.5rem;
                 }
             }
         }
@@ -443,5 +450,14 @@ body {
     }
     100% {
         transform: translate3d(-324%, 0, 0);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
     }
 }
