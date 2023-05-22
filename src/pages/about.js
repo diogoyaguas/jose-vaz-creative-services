@@ -85,7 +85,7 @@ const About = ({ data }) => {
 
 export const query = graphql`
   query {
-    profile: file(relativePath: { eq: "profile.jpg" }) {
+    profile: file(relativePath: { eq: "profile.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed

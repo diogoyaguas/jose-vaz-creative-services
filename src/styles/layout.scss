@@ -456,6 +456,16 @@ body {
 
     footer {
         padding: 3rem 8rem;
+        font-family: "Gotham", sans-serif;
+
+        .social-media {
+            text-align: right;
+
+            div {
+                display: inline-block;
+                margin-right: 15px;
+            }
+        }
     }
 
     .sliding-text-container {
