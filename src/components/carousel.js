@@ -11,16 +11,14 @@ const Carousel = ({ information }) => {
 
   const settings = {
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 0,
+    autoplay: false,
     dots: true,
     draggable: false,
     infinite: true,
     slidesToScroll: 1,
     slidesToShow: 5,
-    speed: 5000,
+    speed: 300,
     swipe: true,
-    pauseOnDotsHover: true,
     focusOnChange: true,
     accessibility: true,
     lazyLoad: 'ondemand',
