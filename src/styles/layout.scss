@@ -444,13 +444,17 @@ body {
 
             .experience-header {
                 cursor: pointer;
-                padding: 35px;
+                padding: 25px 35px;
                 width: 100%;
                 border: none;
                 text-align: left;
                 outline: none;
                 font-size: 20px;
                 transition: background-color 0.5s ease;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100px;
 
                 svg {
                     font-weight: 200;
