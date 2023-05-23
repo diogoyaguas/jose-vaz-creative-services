@@ -25,13 +25,13 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#000000",
         display: "minimal-ui",
-        "icon": "src/images/icon.png"
+        "icon": "src/assets/images/icon.png"
       }
     }, {
       resolve: "gatsby-source-filesystem",
       options: {
         "name": "images",
-        "path": "./src/images/"
+        "path": "./src/assets/images"
       },
       __key: "images"
     }, {
@@ -53,15 +53,14 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "videos",
-        path: "./src/videos",
+        path: "./src/assets/videos",
       },
     },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
-        rule: {
-          include: /images/
-        }
+        name: "icons",
+        path: "./src/assets/icons",
       },
     }
   ]

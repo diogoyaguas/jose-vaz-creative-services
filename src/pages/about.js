@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
-import Arrow from '../images/arrow.svg';
-import CallMeZe from '../images/black.svg';
+import Arrow from '../assets/icons/arrow.svg';
+import CallMeZe from '../assets/icons/name.svg';
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -56,8 +56,18 @@ const About = ({ data }) => {
                         </p>
                     </div>
                 </div>
-                <div className="experience-group pt-1">
-                    <SlidingText text={"EDUCATION AND PROFESSIONAL EXPERIENCE EDUCATION AND PROFESSIONAL EXPERIENCE"} />
+                <div className="experience-group">
+                    <div className="horizontal-list">
+                        {data.allSoftwareJson.nodes.map(software => (
+                            <>
+                                {console.log(software)}
+                                <img src={software.icon} alt="Icon" />
+                            </>
+                        ))}
+                    </div>
+                    <div className="sliding-text">
+                        <SlidingText text={"EDUCATION AND PROFESSIONAL EXPERIENCE EDUCATION AND PROFESSIONAL EXPERIENCE"} />
+                    </div>
                     {data.allExperienceJson.nodes.map(info => (
                         <div key={info.title}>
                             <div className="experience-header">{info.title}<Arrow /></div>
@@ -94,11 +104,18 @@ export const query = graphql`
     },
     allExperienceJson {
         nodes {
-          title
-          date
-          text
+            title
+            date
+            text
         }
-      }
+    }
+    allSoftwareJson {
+        nodes {
+            name
+            stars
+            icon
+        }
+    }
   }
 `
 

@@ -5,7 +5,7 @@ const SlidingText = ({ text }) => {
     const textArray = text.split(" ");
 
     return (
-        <section className="sliding-text-container">
+        <div className="sliding-text-container">
             <div className="list">
                 <div className="item">
                     {textArray.map(text => (
@@ -42,7 +42,7 @@ const SlidingText = ({ text }) => {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

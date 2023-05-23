@@ -432,7 +432,21 @@ body {
         .experience-group {
             overflow: hidden;
 
+            .horizontal-list {
+                padding: 15px 35px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid var(--black);
+            }
+
+            .list-item {
+                width: 100px;
+                height: 100px;
+            }
+
             .sliding-text-container {
+                margin-top: 0.5rem;
+
                 .text {
                     font-size: 48px !important;
                 }
