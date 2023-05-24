@@ -198,6 +198,25 @@ body {
                 }
             }
 
+            .software-experience-container {
+                .software-experience {
+                    background-color: var(--black);
+                    color: var(--white);
+                    border: 0.063rem solid var(--white);
+                }
+
+                .software-name {
+                    background-color: var(--white);
+                    color: var(--black);
+                    border: 0.063rem solid var(--white);
+                }
+                .software-stars {
+                    svg path {
+                        fill: var(--white);
+                    }
+                }
+            }
+
             .experience-group {
                 border-top: 0.063rem solid var(--white);
 
@@ -461,8 +480,6 @@ body {
         .software-experience-container {
             padding-bottom: 1rem;
             margin: auto;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
 
             div {
                 padding: 1rem 0.5rem;
@@ -472,15 +489,22 @@ body {
                 .software-experience {
                     left: 3rem;
                     position: relative;
+                    z-index: 2;
                 }
 
                 .software-name {
+                    opacity: 0;
                     padding-left: 4rem;
                     padding-right: 2rem;
+                    transform: translateX(-50%);
+                    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
                 }
 
                 .software-stars {
+                    opacity: 0;
                     text-align: left;
+                    transform: translateX(-50%);
+                    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
                 }
             }
         }

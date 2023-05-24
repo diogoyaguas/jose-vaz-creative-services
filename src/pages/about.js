@@ -32,13 +32,19 @@ const About = ({ data }) => {
     }, []);
 
     const setSoftwareExperience = (software) => {
-        setTooltipText(software.name)
-        setStars(getExperienceStars(software.stars))
-        document.querySelector(".software-experience-container").style.opacity = 1
+        setTooltipText(software.name);
+        setStars(getExperienceStars(software.stars));
+        document.querySelector(".software-experience-container .software-name").style.opacity = 1;
+        document.querySelector(".software-experience-container .software-stars").style.opacity = 1;
+        document.querySelector(".software-experience-container .software-name").style.transform = 'translateX(0)';
+        document.querySelector(".software-experience-container .software-stars").style.transform = 'translateX(0)';
     }
 
     const hideSoftwareExperience = () => {
-        document.querySelector(".software-experience-container").style.opacity = 0
+        document.querySelector(".software-experience-container .software-name").style.opacity = 0;
+        document.querySelector(".software-experience-container .software-stars").style.opacity = 0;
+        document.querySelector(".software-experience-container .software-name").style.transform = 'translateX(-50%)';
+        document.querySelector(".software-experience-container .software-stars").style.transform = 'translateX(-50%)';
     }
 
     const getExperienceStars = (experience) => {
@@ -47,11 +53,11 @@ const About = ({ data }) => {
         const itemElements = [];
 
         for (let i = 0; i < experience; i++) {
-            itemElements.push(<StarFull />);
+            itemElements.push(<StarFull className="full" />);
         }
 
         for (let i = 0; i < emptyStars; i++) {
-            itemElements.push(<StarEmpty />);
+            itemElements.push(<StarEmpty className="empty" />);
         }
 
         return itemElements;
