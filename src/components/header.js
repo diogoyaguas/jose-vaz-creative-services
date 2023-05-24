@@ -24,6 +24,7 @@ const Header = ({ mode, setMode }) => {
 						role="button"
 						tabIndex="0"
 						onClick={() => setMode()}
+						onKeyDown={() => setMode()}
 						title={`Toggle ${mode === "light" ? "Dark" : "Light"} Mode`}
 					>
 						<FontAwesomeIcon icon={faCircleHalfStroke} />

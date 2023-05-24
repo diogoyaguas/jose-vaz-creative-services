@@ -53,11 +53,11 @@ const About = ({ data }) => {
         const itemElements = [];
 
         for (let i = 0; i < experience; i++) {
-            itemElements.push(<StarFull className="full" />);
+            itemElements.push(<StarFull key={`full-${i}`} className="full" />);
         }
 
         for (let i = 0; i < emptyStars; i++) {
-            itemElements.push(<StarEmpty className="empty" />);
+            itemElements.push(<StarEmpty key={`empty-${i}`} className="empty" />);
         }
 
         return itemElements;
@@ -110,7 +110,15 @@ const About = ({ data }) => {
                 <div className="experience-group">
                     <div className="container software-experience-list">
                         {data.allSoftwareJson.nodes.map(software => (
-                            <div className="software-experience" key={software.name} onMouseOver={() => setSoftwareExperience(software)} onMouseOut={() => hideSoftwareExperience()}>
+                            <div 
+                                role="presentation"
+                                className="software-experience"
+                                key={software.name}
+                                onMouseOver={() => setSoftwareExperience(software)}
+                                onFocus={() => setSoftwareExperience(software)}
+                                onMouseOut={() => hideSoftwareExperience()}
+                                onBlur={() => hideSoftwareExperience()}
+                            >
                                 <img src={software.icon} alt="Icon" />
                             </div>
                         ))}

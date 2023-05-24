@@ -328,6 +328,11 @@ body {
             svg {
                 width: 1.563rem;
                 height: auto;
+
+                &:focus,
+                &:active {
+                    outline: 0;
+                }
             }
         }
     }
