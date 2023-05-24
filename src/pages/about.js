@@ -1,15 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-import Arrow from '../assets/icons/arrow.svg';
-import CallMeZe from '../assets/icons/name.svg';
+import Arrow from "../assets/icons/arrow.svg";
+import CallMeZe from "../assets/icons/name.svg";
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import SlidingText from "../components/slidingText"
+import StarEmpty from "../assets/icons/star_empty.svg"
+import StarFull from "../assets/icons/star_full.svg";
 import { graphql } from "gatsby"
 
 const About = ({ data }) => {
     const profile = data?.profile?.childImageSharp?.fixed
+    const [tooltipText, setTooltipText] = useState("")
+    const [stars, setStars] = useState("")
 
     useEffect(() => {
         const collapsibleHeaders = document.querySelectorAll(".experience-header");
@@ -27,6 +31,32 @@ const About = ({ data }) => {
         });
     }, []);
 
+    const setSoftwareExperience = (software) => {
+        setTooltipText(software.name)
+        setStars(getExperienceStars(software.stars))
+        document.querySelector(".software-experience-container").style.opacity = 1
+    }
+
+    const hideSoftwareExperience = () => {
+        document.querySelector(".software-experience-container").style.opacity = 0
+    }
+
+    const getExperienceStars = (experience) => {
+
+        const emptyStars = 5 - experience;
+        const itemElements = [];
+
+        for (let i = 0; i < experience; i++) {
+            itemElements.push(<StarFull />);
+        }
+
+        for (let i = 0; i < emptyStars; i++) {
+            itemElements.push(<StarEmpty />);
+        }
+
+        return itemElements;
+    }
+
 
     return (
         <Layout>
@@ -35,7 +65,7 @@ const About = ({ data }) => {
                 <div className="py-5">
                     <SlidingText text={"ABOUT ME ABOUT ME ABOUT ME"} />
                 </div>
-                <div className="container row bio pb-5 mb-5">
+                <div className="container row bio">
                     <div className="col-lg-5 col-12 profile mx-auto">
                         <CallMeZe />
                         <Img fixed={profile} alt="José Vaz profile picture" />
@@ -56,13 +86,27 @@ const About = ({ data }) => {
                         </p>
                     </div>
                 </div>
+                <div className="container row software-experience-container">
+                    <div className="col-lg-7 col-12 row mx-auto">
+                        <div className="col-4 software-experience">
+                            Software Experience
+                        </div>
+                        <div className="col-5 software-name">
+                            {tooltipText}
+                        </div>
+                        <div className="col-3 software-stars">
+                            {stars}
+                        </div>
+                    </div>
+                    <div className="col-lg-5 col-12 description mt-5 mt-lg-0">
+                    </div>
+                </div>
                 <div className="experience-group">
-                    <div className="horizontal-list">
+                    <div className="container software-experience-list">
                         {data.allSoftwareJson.nodes.map(software => (
-                            <>
-                                {console.log(software)}
+                            <div className="software-experience" key={software.name} onMouseOver={() => setSoftwareExperience(software)} onMouseOut={() => hideSoftwareExperience()}>
                                 <img src={software.icon} alt="Icon" />
-                            </>
+                            </div>
                         ))}
                     </div>
                     <div className="sliding-text">
