@@ -1,13 +1,13 @@
 [
     {
         "name": "TFRLab_01 - STUDIO 54",
-        "video": "../assets/videos/TFRLab_01 - Studio54.mp4",
-        "link": "/"
+        "link": "/projects/studio54",
+        "video": "../assets/videos/TFRLab_01 - Studio54.mp4"
     },
     {
         "name": "The Feeting Room ",
-        "img": "../assets/images/The Feeting Room.png",
-        "link": "/"
+        "link": "/projects/feeting_room",
+        "img": "../assets/images/The Feeting Room.png"
     },
     {
         "name": "Algori Brand - Brandbook",

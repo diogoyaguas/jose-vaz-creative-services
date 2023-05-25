@@ -15,7 +15,6 @@ const Carousel = ({ information }) => {
     dots: true,
     draggable: false,
     infinite: true,
-    initialSlide: 3,
     slidesToScroll: 1,
     slidesToShow: 5,
     speed: 300,
