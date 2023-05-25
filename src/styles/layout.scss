@@ -42,7 +42,9 @@ body {
 
             .slick-dots {
                 button {
-                    color: var(--black);
+                    &::before {
+                        color: var(--black);
+                    }
 
                     &:hover {
                         background-color: transparent !important;
@@ -395,6 +397,10 @@ body {
 
                 button {
                     border: 0;
+
+                    &::before {
+                        font-size: 0.75rem;
+                    }
                 }
             }
         }
@@ -597,6 +603,29 @@ body {
 
             .item-separator-dot {
                 margin: 0 0.625rem !important;
+            }
+        }
+
+        .projects {
+            .project-card {
+                transition: transform 0.3s ease;
+
+                .gatsby-image-wrapper {
+                    width: 300px !important;
+                    height: 300px !important;
+                    img {
+                        border-radius: 39px;
+                        transition: opacity 0.3s ease-in-out;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+
+                    .gatsby-image-wrapper picture img {
+                        opacity: 0.5 !important;
+                    }
+                }
             }
         }
 

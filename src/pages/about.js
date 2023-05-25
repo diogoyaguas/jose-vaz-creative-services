@@ -166,7 +166,7 @@ export const query = graphql`
             date
             text
         }
-    }
+    },
     allSoftwareJson {
         nodes {
             name
