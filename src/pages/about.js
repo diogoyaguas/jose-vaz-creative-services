@@ -119,7 +119,7 @@ const About = ({ data }) => {
                                 onMouseOut={() => hideSoftwareExperience()}
                                 onBlur={() => hideSoftwareExperience()}
                             >
-                                <img src={software.icon} alt="Icon" />
+                                <img src={software.icon} alt={software.name} />
                             </div>
                         ))}
                     </div>

@@ -71,7 +71,6 @@ const Carousel = ({ information }) => {
                       width="100%"
                       height="auto"
                     />
-                    <div className="overlay"></div>
                   </span>
                   : <Img fixed={info.img?.childImageSharp?.fixed} />}
               </Link>
