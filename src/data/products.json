@@ -1,0 +1,42 @@
+[
+    {
+        "img": "../assets/images/products/1.png",
+        "hover": "../assets/images/products/hover/1.jpg"
+    },
+    {
+        "img": "../assets/images/products/2.jpg",
+        "hover": "../assets/images/products/hover/2.jpg"
+    },
+    {
+        "img": "../assets/images/products/3.png",
+        "hover": "../assets/images/products/hover/3.jpg"
+    },
+    {
+        "img": "../assets/images/products/4.png",
+        "hover": "../assets/images/products/hover/4.jpg"
+    },
+    {
+        "img": "../assets/images/products/5.png",
+        "hover": "../assets/images/products/hover/5.jpg"
+    },
+    {
+        "img": "../assets/images/products/6.jpg",
+        "hover": "../assets/images/products/hover/6.jpg"
+    },
+    {
+        "img": "../assets/images/products/7.png",
+        "hover": "../assets/images/products/hover/7.jpg"
+    },
+    {
+        "img": "../assets/images/products/8.png",
+        "hover": "../assets/images/products/hover/8.jpg"
+    },
+    {
+        "img": "../assets/images/products/9.png",
+        "hover": "../assets/images/products/hover/9.jpg"
+    },
+    {
+        "img": "../assets/images/products/10.jpg",
+        "hover": "../assets/images/products/hover/10.jpg"
+    }
+]

@@ -52,11 +52,11 @@ const Carousel = ({ information }) => {
   return (
 
     <Slider {...settings}>
-      {information.map(info => (
-        <div key={info.name} className="info-card py-5">
+      {information.map((info, index) => (
+        <div key={`info-card-${index}`} className="info-card py-5">
           <div className="row">
             <div className="col-12">
-              <Link className="" to={info.link}>
+              <Link className="" to={info.link ? info.link : ""}>
                 {info.video != null ?
                   <span className="video-wrapper">
                     <ReactPlayer
@@ -75,9 +75,11 @@ const Carousel = ({ information }) => {
                   : <Img fixed={info.img?.childImageSharp?.fixed} />}
               </Link>
             </div>
-            <div className="col-12 info-name">
-              {info.name}
-            </div>
+            {info.name != null &&
+              <div className="col-12 info-name">
+                {info.name}
+              </div>
+            }
           </div>
         </div>
       ))}

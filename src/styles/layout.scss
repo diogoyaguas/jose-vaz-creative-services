@@ -19,9 +19,9 @@ body {
             &:hover,
             &:active,
             &.active {
-                background-color: var(--black);
-                color: var(--white);
-                border: 0.125rem solid var(--black);
+                background-color: var(--black) !important;
+                color: var(--white) !important;
+                border: 0.125rem solid var(--black) !important;
             }
         }
 
@@ -159,10 +159,11 @@ body {
             color: var(--white);
 
             &:hover,
+            &:active,
             &.active {
-                background-color: var(--white);
-                color: var(--black);
-                border: 0.125rem solid var(--white);
+                background-color: var(--white) !important;
+                color: var(--black) !important;
+                border: 0.125rem solid var(--white) !important;
             }
         }
 
@@ -687,6 +688,116 @@ body {
         .graphic-design,
         .editorial-design {
             padding-top: 2rem;
+        }
+    }
+
+    .studio-54-page {
+        .video {
+            video {
+                border-radius: 44px;
+            }
+        }
+
+        .products {
+            .product-card {
+                width: 20% !important;
+                padding: calc(var(--bs-gutter-x) * 0.5);
+
+                .hover {
+                    display: none;
+                }
+
+                .gatsby-image-wrapper {
+                    width: 240px !important;
+                    height: 240px !important;
+                    border-radius: 39px;
+                }
+            }
+        }
+
+        .sneak-peek,
+        .studio-carousel {
+            .sliding-text-container {
+                .text {
+                    font-size: 3rem !important;
+                }
+            }
+
+            .item-separator-dot {
+                margin: 0 0.625rem !important;
+            }
+
+            .backstage {
+                max-width: 1520px;
+                margin: auto;
+                .backstage-card {
+                    .gatsby-image-wrapper {
+                        width: 100% !important;
+                        border-radius: 39px;
+                    }
+                }
+            }
+        }
+
+        .studio-carousel {
+            .info-card {
+                pointer-events: none;
+                max-width: 300px;
+                height: 580px !important;
+                overflow: hidden;
+                margin-left: 1rem !important;
+
+                .row {
+                    height: 100% !important;
+                    width: 100% !important;
+                    margin: 0;
+
+                    .col-12 {
+                        padding: 0;
+                        height: 100% !important;
+                        width: 100% !important;
+
+                        .gatsby-image-wrapper {
+                            width: 100% !important;
+                            height: 100% !important;
+                            border-radius: 2.188rem;
+                        }
+
+                        .video-wrapper {
+                            width: 100% !important;
+                            height: 100% !important;
+                            position: relative;
+                            display: inline-block;
+
+                            .player-wrapper {
+                                width: 100% !important;
+                                height: 100% !important;
+                                position: relative;
+                                width: 100%;
+
+                                video {
+                                    object-fit: cover;
+                                    border-radius: 2.188rem;
+                                    width: 100%;
+                                    height: 484px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slick-dots {
+                bottom: 0.25rem;
+
+                button {
+                    border: 0;
+
+                    &::before {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
         }
     }
 

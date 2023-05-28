@@ -79,7 +79,7 @@ const About = ({ data }) => {
                     </div>
                     <div className="col-lg-7 col-12 description mt-5 mt-lg-0">
                         <p>
-                            I'm a highly skilled Graphic Designer, Content Editor & Creator, with a strong background in the fashion industry. Based in Porto, Portugal, I possess a passion for creating visually compelling content and delivering impactful marketing materials.
+                            I'm a Graphic Designer, Content Editor & Creator, with a strong background in the fashion industry. Based in Porto, Portugal, I possess a passion for creating visually compelling content and delivering impactful marketing materials.
                         </p>
                         <p>
                             With a keen eye for design aesthetics and a deep understanding of market trends, I excel in crafting engaging and persuasive content across various platforms. I am experienced in leveraging social media channels and digital tools to amplify brand presence and drive audience engagement.
