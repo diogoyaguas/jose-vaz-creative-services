@@ -53,7 +53,7 @@ body {
             }
         }
 
-        .about {
+        .about-page {
             .bio {
                 .profile {
                     svg {
@@ -194,7 +194,7 @@ body {
             }
         }
 
-        .about {
+        .about-page {
             .bio {
                 .profile {
                     svg {
@@ -442,7 +442,7 @@ body {
         }
     }
 
-    .about {
+    .about-page {
         overflow: hidden;
 
         .bio {
@@ -478,6 +478,7 @@ body {
             .description {
                 font-family: "Gotham", sans-serif;
                 font-weight: 400;
+                padding-right: 5.75rem;
             }
         }
 
@@ -485,8 +486,14 @@ body {
             padding-bottom: 1rem;
             margin: auto;
 
+            .row {
+                padding: 1rem 3.5rem;
+            }
+
             div {
-                padding: 1rem 0.5rem;
+                font-size: 14px;
+                line-height: 2.5rem;
+                padding: 0.25rem 0.5rem;
                 border-radius: 12.188rem;
                 text-align: center;
 
@@ -518,7 +525,7 @@ body {
             overflow: hidden;
 
             .software-experience-list {
-                padding: 0.938rem 2.188rem;
+                padding: 0.938rem 6.5rem;
                 display: flex;
                 justify-content: space-between;
 
@@ -527,7 +534,7 @@ body {
                     cursor: pointer;
 
                     img {
-                        max-height: 3rem;
+                        max-height: 2rem;
                     }
                 }
             }
@@ -571,7 +578,7 @@ body {
             }
 
             .experience-content {
-                padding: 3rem 20rem;
+                padding: 3rem 17.75rem;
                 display: none;
                 overflow: hidden;
 
@@ -636,6 +643,8 @@ body {
                 font-family: "Gotham", sans-serif;
 
                 .gatsby-image-wrapper {
+                    border-radius: 39px;
+                    background-color: var(--white);
                     width: 300px !important;
                     height: 300px !important;
 
@@ -646,6 +655,8 @@ body {
                 }
 
                 .video-wrapper {
+                    border-radius: 39px;
+                    background-color: var(--white);
                     width: 300px !important;
                     height: 300px !important;
                     position: relative;

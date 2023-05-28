@@ -67,7 +67,7 @@ const About = ({ data }) => {
     return (
         <Layout>
             <Seo title="About Me" />
-            <div className="about">
+            <div className="about-page">
                 <div className="py-5">
                     <SlidingText text={"ABOUT ME ABOUT ME ABOUT ME"} />
                 </div>
@@ -93,7 +93,7 @@ const About = ({ data }) => {
                     </div>
                 </div>
                 <div className="container row software-experience-container">
-                    <div className="col-lg-7 col-12 row mx-auto">
+                    <div className="row col-8">
                         <div className="col-4 software-experience">
                             Software Experience
                         </div>
@@ -103,8 +103,6 @@ const About = ({ data }) => {
                         <div className="col-3 software-stars">
                             {stars}
                         </div>
-                    </div>
-                    <div className="col-lg-5 col-12 description mt-5 mt-lg-0">
                     </div>
                 </div>
                 <div className="experience-group">
