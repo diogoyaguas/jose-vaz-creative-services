@@ -1,22 +1,12 @@
 [
     {
-        "name": "Dezénhos",
-        "img": "../assets/images/Dezenhos.png",
+        "name": "Dulis Shoes - SS23 Lookbook",
+        "img": "../assets/images/DULIS - SS23 Lookbook.png",
         "link": "/"
     },
     {
-        "name": "Dezénhos",
-        "img": "../assets/images/Dezenhos.png",
-        "link": "/"
-    },
-    {
-        "name": "Dezénhos",
-        "img": "../assets/images/Dezenhos.png",
-        "link": "/"
-    },
-    {
-        "name": "Dezénhos",
-        "img": "../assets/images/Dezenhos.png",
+        "name": "Algori Brand - Brandbook",
+        "video": "../assets/videos/Algori - Brandbook.mp4",
         "link": "/"
     }
 ]

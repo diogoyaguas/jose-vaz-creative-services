@@ -1,22 +1,22 @@
 [
     {
-        "name": "Dulis Shoes - SS23 Lookbook",
-        "img": "../assets/images/DULIS - SS23 Lookbook.png",
+        "name": "DAT - Design, Art and Technology",
+        "img": "../assets/images/DAT - Design, Arte e Tecnologia.png",
         "link": "/"
     },
     {
-        "name": "Dulis Shoes - SS23 Lookbook",
-        "img": "../assets/images/DULIS - SS23 Lookbook.png",
+        "name": "Deepwear - Global Progressive Fashion Agency",
+        "video": "../assets/videos/Deepwear - Global Progressive Fashion Agency.mp4",
         "link": "/"
     },
     {
-        "name": "Dulis Shoes - SS23 Lookbook",
-        "img": "../assets/images/DULIS - SS23 Lookbook.png",
+        "name": "Dezénhos",
+        "img": "../assets/images/Dezenhos.png",
         "link": "/"
     },
     {
-        "name": "Dulis Shoes - SS23 Lookbook",
-        "img": "../assets/images/DULIS - SS23 Lookbook.png",
+        "name": "Dulis Shoes - FW22 Campaign ",
+        "video": "../assets/videos/DULIS - FW22 Campaign.mp4",
         "link": "/"
     }
 ]

@@ -613,20 +613,45 @@ body {
         .projects {
             .project-card {
                 transition: transform 0.3s ease;
+                text-align: left;
+                font-family: "Gotham", sans-serif;
 
                 .gatsby-image-wrapper {
                     width: 300px !important;
                     height: 300px !important;
+
                     img {
                         border-radius: 39px;
                         transition: opacity 0.3s ease-in-out;
                     }
                 }
 
+                .video-wrapper {
+                    width: 300px !important;
+                    height: 300px !important;
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-block;
+
+                    .player-wrapper {
+                        width: inherit !important;
+                        height: inherit !important;
+
+                        video {
+                            border-radius: 39px;
+                            width: inherit !important;
+                            height: inherit !important;
+                            object-fit: cover;
+                            transition: opacity 0.3s ease-in-out;
+                        }
+                    }
+                }
+
                 &:hover {
                     transform: scale(1.1);
 
-                    .gatsby-image-wrapper picture img {
+                    .gatsby-image-wrapper picture img,
+                    .video-wrapper video {
                         opacity: 0.5 !important;
                     }
                 }
@@ -640,7 +665,8 @@ body {
     }
 
     footer {
-        padding: 3rem 8rem;
+        font-size: 12px;
+        padding: 1.5rem 8rem 1.25rem 8rem;
         font-family: "Gotham", sans-serif;
 
         .social-media {

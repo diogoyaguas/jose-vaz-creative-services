@@ -3,6 +3,7 @@ import * as React from "react"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
+import ReactPlayer from 'react-player';
 import Seo from "../components/seo"
 import SlidingText from "../components/slidingText"
 import { graphql } from "gatsby"
@@ -23,7 +24,22 @@ const Projects = ({ data }) => {
                                     <div className="row">
                                         <div className="col-12">
                                             <Link className="" to={social.link}>
-                                                <Img fixed={social.img?.childImageSharp?.fixed} />
+                                                {social.video != null ?
+                                                    <span className="video-wrapper">
+                                                        <ReactPlayer
+                                                            className="player-wrapper"
+                                                            url={social.video?.publicURL}
+                                                            controls={false}
+                                                            autoPlay={true}
+                                                            playing={true}
+                                                            playsInline={true}
+                                                            muted={true}
+                                                            loop={true}
+                                                            width="100%"
+                                                            height="auto"
+                                                        />
+                                                    </span>
+                                                    : <Img fixed={social.img?.childImageSharp?.fixed} />}
                                             </Link>
                                         </div>
                                         <div className="col-12 info-name">
@@ -46,7 +62,22 @@ const Projects = ({ data }) => {
                                     <div className="row">
                                         <div className="col-12">
                                             <Link className="" to={graphic.link}>
-                                                <Img fixed={graphic.img?.childImageSharp?.fixed} />
+                                                {graphic.video != null ?
+                                                    <span className="video-wrapper">
+                                                        <ReactPlayer
+                                                            className="player-wrapper"
+                                                            url={graphic.video?.publicURL}
+                                                            controls={false}
+                                                            autoPlay={true}
+                                                            playing={true}
+                                                            playsInline={true}
+                                                            muted={true}
+                                                            loop={true}
+                                                            width="100%"
+                                                            height="auto"
+                                                        />
+                                                    </span>
+                                                    : <Img fixed={graphic.img?.childImageSharp?.fixed} />}
                                             </Link>
                                         </div>
                                         <div className="col-12 info-name">
@@ -70,7 +101,22 @@ const Projects = ({ data }) => {
                                     <div className="row">
                                         <div className="col-12">
                                             <Link className="" to={editorial.link}>
-                                                <Img fixed={editorial.img?.childImageSharp?.fixed} />
+                                                {editorial.video != null ?
+                                                    <span className="video-wrapper">
+                                                        <ReactPlayer
+                                                            className="player-wrapper"
+                                                            url={editorial.video?.publicURL}
+                                                            controls={false}
+                                                            autoPlay={true}
+                                                            playing={true}
+                                                            playsInline={true}
+                                                            muted={true}
+                                                            loop={true}
+                                                            width="100%"
+                                                            height="auto"
+                                                        />
+                                                    </span>
+                                                    : <Img fixed={editorial.img?.childImageSharp?.fixed} />}
                                             </Link>
                                         </div>
                                         <div className="col-12 info-name">
@@ -93,6 +139,9 @@ export const query = graphql`
         nodes {
           name
           link
+          video {
+            publicURL
+          }
           img {
             childImageSharp {
               fixed {
@@ -106,6 +155,9 @@ export const query = graphql`
         nodes {
           name
           link
+          video {
+            publicURL
+          }
           img {
             childImageSharp {
               fixed {
@@ -119,6 +171,9 @@ export const query = graphql`
         nodes {
           name
           link
+          video {
+            publicURL
+          }
           img {
             childImageSharp {
               fixed {
