@@ -116,8 +116,15 @@ body {
                     a svg {
                         padding: 0.938rem;
                         border-radius: 50%;
-                        color: var(--white);
-                        background-color: var(--black);
+                        color: var(--black);
+                        background-color: var(--white);
+                        border: 0.125rem solid var(--black);
+
+                        &:hover {
+                            color: var(--white);
+                            background-color: var(--black);
+                            border: 0.125rem solid var(--black);
+                        }
                     }
                 }
             }
@@ -271,8 +278,15 @@ body {
                     a svg {
                         padding: 0.938rem;
                         border-radius: 50%;
-                        color: var(--black);
-                        background-color: var(--white);
+                        color: var(--white);
+                        background-color: var(--black);
+                        border: 0.125rem solid var(--white);
+
+                        &:hover {
+                            color: var(--black);
+                            background-color: var(--white);
+                            border: 0.125rem solid var(--white);
+                        }
                     }
                 }
             }
@@ -595,6 +609,11 @@ body {
 
             .title {
                 font-size: 3rem;
+            }
+
+            svg {
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+                    box-shadow 0.15s ease-in-out;
             }
         }
     }
