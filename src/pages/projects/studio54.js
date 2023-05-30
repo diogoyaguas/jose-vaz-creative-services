@@ -12,7 +12,7 @@ import { graphql } from "gatsby"
 
 const Studio54 = ({ data }) => {
     useEffect(() => {
-        const collapsibleHeaders = document.querySelectorAll(".experience-header");
+        const collapsibleHeaders = document.querySelectorAll(".settings-header");
 
         collapsibleHeaders.forEach((header) => {
             header.addEventListener("click", () => {
@@ -66,23 +66,25 @@ const Studio54 = ({ data }) => {
                 </div>
                 <div className="container intro">
                     <div className="row">
-                        <div className="col-12">
-                            I’m a Graphic Designer and Content Editor & Creator, based in Porto, Portugal and recently introduced to Marketing and Design in the fashion industry.
-
-                            I’m a hardworking and very committed guy who is always willing to work in a team and discuss ideas in order to evolve myself both professionally and socially. I’m currently launching my professional career outside of Portugal where my goal is to work with European brands and i’m excited to improve my experience in this area.
-
+                        <div className="col-9 mx-auto text-center">
+                            <p>
+                                TFRLab_01  is an innovative project that fosters collaboration between The Feeting Room and its partner brands in the creation of capsule collections. The focus was on reviving the essence of individual freedom and self-expression that was prominently present at Studio 54, the iconic New York nightclub that thrived during the 1970s.
+                            </p>
+                            <p>
+                                To bring this concept to life, The Feeting Room collaborated with 14 partner brands and created an exclusive capsule collection consisting of 24 distinct products that capture the essence of individuality and self-expression.
+                            </p>
                         </div>
-                        <div className="col-12">
+                        <div className="col-12 text-center mt-4">
                             <Link to="/projects">
-                                <button type="button" className={"btn btn-primary"}>
+                                <button type="button" className="btn btn-primary">
                                     Read blog
                                 </button>
                             </Link>
                         </div>
                     </div>
                 </div>
-                <div className="container">
-                    <div className="products row my-5">
+                <div className="container products">
+                    <div className=" row my-5">
                         {data.allProductsJson.nodes.map((product, index) => (
                             <div
                                 key={`product-${index}`}
@@ -103,9 +105,11 @@ const Studio54 = ({ data }) => {
                         ))}
                     </div>
                 </div>
-                <div className="experience-header">PRINTED MATERIALS FOR THE COLLECTION<Arrow /></div>
-                <div className="experience-content">
-
+                <div className="settings-header">Setting the Stage for TFRLab's Creative Direction<Arrow /></div>
+                <div className="settings-content">
+                    <p>
+                        To commence this project, it was essential to establish a cohesive visual identity for the collection, encompassing various printed and digital materials. The initial phase involved the meticulous creation of a logo and comprehensive visual guidelines, which served as the foundation for the development of promotional materials.
+                    </p>
                 </div>
                 <div className="sneak-peek">
                     <SlidingText text={"Backstage Sneak peek Backstage Sneak peek"} />
@@ -120,10 +124,24 @@ const Studio54 = ({ data }) => {
                             </div>
                         ))}
                     </div>
+                    <div className="container row mx-auto">
+                        <div className="col-9 mx-auto text-center">
+                            <p className="mb-0">
+                                I had the opportunity to collaborate with the project's Creative Director and support the photographer Pedro MKK in capturing backstage content during the photoshoot. This content holds significant value as it will be utilized for various digital marketing collateral to promote the collection across different media platforms.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div className="studio-carousel">
                     <SlidingText text={"SOCIAL MEDIA  SOCIAL MEDIA  SOCIAL MEDIA"} />
                     <Carousel information={data.allStudioJson.nodes} />
+                    <div className="container row mx-auto">
+                        <div className="col-9 mx-auto text-center">
+                            <p className="mb-0">
+                                As part of my role,  I was responsible for delivering Social Media layouts and Advertisements to promote the collection. The result was a comprehensive digital marketing campaign that successfully communicated the unique character of TFRLab_01 and effectively conveyed the collection's essence and generated interest.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Layout>

@@ -692,31 +692,83 @@ body {
     }
 
     .studio-54-page {
+        p {
+            font-family: "Gotham", sans-serif;
+        }
+
         .video {
             video {
                 border-radius: 44px;
             }
         }
 
+        .intro {
+            padding-top: 5rem;
+        }
+
         .products {
+            max-width: 1120px;
+
             .product-card {
                 width: 20% !important;
-                padding: calc(var(--bs-gutter-x) * 0.5);
+                padding: calc(var(--bs-gutter-x) * 0.25);
+                text-align: center;
 
                 .hover {
                     display: none;
                 }
 
                 .gatsby-image-wrapper {
-                    width: 240px !important;
-                    height: 240px !important;
+                    width: 200px !important;
+                    height: 200px !important;
                     border-radius: 39px;
                 }
             }
         }
 
+        .settings-header {
+            cursor: pointer;
+            padding: 1.563rem 2.188rem;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 6.25rem;
+            border-top: 1px solid var(--black);
+            border-bottom: 1px solid var(--black);
+
+            svg {
+                font-weight: 200;
+                float: right;
+            }
+
+            &.active {
+                svg {
+                    transform: rotate(-90deg);
+                    transform-origin: center center;
+                }
+            }
+        }
+
+        .settings-content {
+            border-bottom: 1px solid var(--black);
+            padding: 3rem 17.75rem;
+            display: none;
+            overflow: hidden;
+
+            &.show {
+                display: block;
+            }
+        }
+
         .sneak-peek,
         .studio-carousel {
+            margin-top: 3rem;
+
             .sliding-text-container {
                 .text {
                     font-size: 3rem !important;
@@ -797,6 +849,34 @@ body {
                         font-size: 0.75rem;
                     }
                 }
+            }
+
+            .container {
+                margin-top: 3rem;
+            }
+        }
+    }
+    
+    .algori-page {
+        overflow: hidden;
+        .flipbook {
+            .pages {
+                background-color: var(--white);
+
+                .gatsby-image-wrapper {
+                    width: 500px !important;
+                    height: 710px !important;
+                }
+            }
+        }
+
+        .info {
+            .prev {
+                text-align: right;
+            }
+
+            .next {
+                text-align: left;
             }
         }
     }
