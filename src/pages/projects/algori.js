@@ -39,12 +39,14 @@ const Algori = ({ data }) => {
     const nextButtonClick = () => {
         if (flipBook.current) {
             flipBook.current.pageFlip().flipNext();
+            setPage(page + 1)
         }
     };
 
     const prevButtonClick = () => {
         if (flipBook.current) {
             flipBook.current.pageFlip().flipPrev();
+            setPage(page - 1)
         }
     };
 
@@ -68,10 +70,10 @@ const Algori = ({ data }) => {
                         </p>
                     </div>
                     <div className="col-9 mx-auto text-center my-5 buttons">
-                        <a href="" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
+                        <a href="https://algoribrand.com/pt" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
                             VISIT WEBSITE
                         </a>
-                        <a href="" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
+                        <a href="https://instagram.com/algoribrand" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
                             STALK INSTAGRAM
                         </a>
                     </div>
@@ -83,7 +85,6 @@ const Algori = ({ data }) => {
                         minWidth={400}
                         minHeight={568}
                         showCover={true}
-                        onFlip={(e) => setPage(e.data)}
                     >
                         <PageCover><Img fixed={cover?.childImageSharp?.fixed} /></PageCover>
                         {pages.map((page, index) => (
@@ -115,7 +116,7 @@ const Algori = ({ data }) => {
                             and other digital and printed marketing materials.
                         </p>
                     </div>
-                    <div className="col-12 text-center postcard">
+                    <div className="col-12 text-center postcard mb-5">
                         <Img fixed={data.postcard?.childImageSharp?.fixed} />
                     </div>
                 </div>

@@ -3,11 +3,14 @@ import { faBehance, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from "react"
 
-const Footer = () => (
-    <footer>
+const Footer = () => {
+    const date = new Date();
+    let year = date.getFullYear();
+
+    return (<footer>
         <div className="row">
             <div className="col-12 rights">
-                @2023 - José Vaz All Rights Reserved
+                @{year} - José Vaz All Rights Reserved
             </div>
             <a className="col-12 pt-2" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer">
                 zeoliveiravaz@gmail.com
@@ -33,7 +36,7 @@ const Footer = () => (
                 </div>
             </div>
         </div>
-    </footer>
-)
+    </footer>)
+}
 
 export default Footer
