@@ -35,6 +35,7 @@ const Algori = ({ data }) => {
     const backCover = data.backCover
 
     const [totalPages] = useState(20);
+    const [lastData, setLastData] = useState(0)
 
     const nextButtonClick = () => {
         if (flipBook.current) {
@@ -48,6 +49,13 @@ const Algori = ({ data }) => {
             flipBook.current.pageFlip().flipPrev();
             setPage(page - 1)
         }
+    };
+
+    const changePage = (data) => {
+        if (lastData < data) {
+            setPage(page + 1)
+        } else setLastData(page - 1)
+        setLastData(data)
     };
 
     return (
@@ -85,6 +93,7 @@ const Algori = ({ data }) => {
                         minWidth={400}
                         minHeight={568}
                         showCover={true}
+                        onFlip={(e) => changePage(e.data)}
                     >
                         <PageCover><Img fixed={cover?.childImageSharp?.fixed} /></PageCover>
                         {pages.map((page, index) => (
