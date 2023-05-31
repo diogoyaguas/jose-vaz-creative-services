@@ -3,13 +3,14 @@ import React, { useRef, useState } from "react"
 import HTMLFlipBook from 'react-pageflip';
 import Img from "gatsby-image"
 import Layout from "../../components/layout"
+import Logo from "../../assets/images/algori/logo.svg";
 import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
 import { graphql } from "gatsby"
 
 const PageCover = React.forwardRef((props, ref) => {
     return (
-        <div className="pages page-cover" ref={ref} data-density="hard">
+        <div className="pages" ref={ref}>
             {props.children}
         </div>
     );
@@ -53,6 +54,27 @@ const Algori = ({ data }) => {
             <div className="algori-page pt-5">
                 <SlidingText text={"Algori - Brandbook 2022"} />
                 <div className="container">
+                    <div className="col-12 logo text-center">
+                        <Logo />
+                    </div>
+                    <div className="col-7 mx-auto text-center">
+                        <p>
+                            Algori is a distinguished Portuguese shoe brand that prides itself on its commitment
+                            to quality, craftsmanship, and a rich heritage.
+                        </p>
+                        <p className="mb-0">
+                            Algori's partnership with The Feeting Room's consulting department has further elevated the brand's profile. With this, one of the challenges that i had was creating a brandbook and establish a distinctive aesthetic that will resonate with shoe enthusiasts worldwide.
+
+                        </p>
+                    </div>
+                    <div className="col-9 mx-auto text-center my-5 buttons">
+                        <a href="" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
+                            VISIT WEBSITE
+                        </a>
+                        <a href="" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
+                            STALK INSTAGRAM
+                        </a>
+                    </div>
                     <HTMLFlipBook
                         className="flipbook mx-auto mb-5"
                         ref={flipBook}
@@ -72,20 +94,29 @@ const Algori = ({ data }) => {
                         <PageCover><Img fixed={backCover?.childImageSharp?.fixed} /></PageCover>
                     </HTMLFlipBook>
 
-                    <div className="row info">
-                        <div className="col-4 prev">
+                    <div className="col-7 mx-auto text-center my-5 buttons buttons-pages">
+                        <div className="w-25 prev">
                             <button type="button" className="btn btn-primary" onClick={() => prevButtonClick()}>
                                 Previous page
                             </button>
                         </div>
-                        <div className="col-4 text-center">
+                        <div className="w-25 text-center">
                             {page > 0 && <span>{page} of </span>}{totalPages} pages
                         </div>
-                        <div className="col-4 next">
+                        <div className="w-25 next">
                             <button type="button" className="btn btn-primary" onClick={() => nextButtonClick()}>
                                 Next page
                             </button>
                         </div>
+                    </div>
+                    <div className="col-7 mx-auto text-center mt-5">
+                        <p>
+                            In addition to developing the brandbook, we also create business cards, flyers,
+                            and other digital and printed marketing materials.
+                        </p>
+                    </div>
+                    <div className="col-12 text-center postcard">
+                        <Img fixed={data.postcard?.childImageSharp?.fixed} />
                     </div>
                 </div>
             </div>
@@ -103,6 +134,13 @@ export const query = graphql`
       }
     },
     backCover: file(relativePath: { eq: "algori/44.png" }) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
+    postcard: file(relativePath: { eq: "algori/Postcard Mockup 1.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed

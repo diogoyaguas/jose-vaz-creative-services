@@ -10,7 +10,7 @@ body {
         background-color: var(--white);
         color: var(--black);
 
-        button.btn.btn-primary,
+        .btn.btn-primary,
         .download-cv {
             border: 0.125rem solid var(--black);
             background-color: var(--white);
@@ -137,6 +137,20 @@ body {
             }
         }
 
+        .algori-page {
+            .logo svg {
+                fill: var(--black);
+            }
+
+            .flipbook {
+                .pages {
+                    -webkit-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                    -moz-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                    box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+
         footer {
             background-color: var(--black);
             color: var(--white);
@@ -152,7 +166,7 @@ body {
         background-color: var(--black);
         color: var(--white);
 
-        button,
+        .btn.btn-primary,
         .download-cv {
             border: 0.125rem solid var(--white);
             background-color: var(--black);
@@ -300,6 +314,12 @@ body {
             }
         }
 
+        .algori-page {
+            .logo svg g {
+                fill: var(--white);
+            }
+        }
+
         footer {
             background-color: var(--white);
             color: var(--black);
@@ -311,7 +331,7 @@ body {
         }
     }
 
-    button.btn.btn-primary,
+    .btn.btn-primary,
     .download-cv {
         padding: 0.625rem 2.5rem;
         border-radius: 12.188rem;
@@ -856,12 +876,30 @@ body {
             }
         }
     }
-    
+
     .algori-page {
         overflow: hidden;
+
+        p {
+            font-family: "Gotham", sans-serif;
+        }
+
+        .logo svg {
+            max-width: 320px;
+            height: fit-content;
+        }
+
+        .buttons {
+            justify-content: space-around;
+            display: flex;
+        }
+
         .flipbook {
             .pages {
                 background-color: var(--white);
+                -webkit-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                -moz-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
 
                 .gatsby-image-wrapper {
                     width: 500px !important;
@@ -870,13 +908,18 @@ body {
             }
         }
 
-        .info {
-            .prev {
-                text-align: right;
-            }
+        .buttons-pages {
+            font-size: 12px;
 
-            .next {
-                text-align: left;
+            button {
+                font-size: 12px;
+            }
+        }
+
+        .postcard {
+            .gatsby-image-wrapper {
+                width: 800px !important;
+                height: 534px !important;
             }
         }
     }
