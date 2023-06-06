@@ -783,6 +783,15 @@ body {
             &.show {
                 display: block;
             }
+
+            .gatsby-image-wrapper {
+                max-width: 150px !important;
+                max-height: 150px !important;
+
+                img {
+                    object-fit: contain;
+                }
+            }
         }
 
         .sneak-peek,
@@ -882,12 +891,14 @@ body {
                 text-align: center;
             }
 
-            .gatsby-image-wrapper {
-                width: 800px !important;
-                height: 534px !important;
+            .event {
+                .gatsby-image-wrapper {
+                    width: 800px !important;
+                    height: 534px !important;
 
-                img {
-                    object-fit: contain;
+                    img {
+                        object-fit: contain !important;
+                    }
                 }
             }
         }

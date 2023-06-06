@@ -16,7 +16,6 @@ const Studio54 = ({ data }) => {
 
         collapsibleHeaders.forEach((header) => {
             header.addEventListener("click", () => {
-                debugger
                 header.classList.toggle("active");
                 const content = header.nextElementSibling;
                 if (content.style.display === "block") {
@@ -107,10 +106,17 @@ const Studio54 = ({ data }) => {
                     </div>
                 </div>
                 <div className="settings-header">Setting the Stage for TFRLab's Creative Direction<Arrow /></div>
-                <div className="settings-content">
+                <div className="settings-content text-center">
                     <p>
                         To commence this project, it was essential to establish a cohesive visual identity for the collection, encompassing various printed and digital materials. The initial phase involved the meticulous creation of a logo and comprehensive visual guidelines, which served as the foundation for the development of promotional materials.
                     </p>
+                    <div className="row">
+                        {data.allPrintedJson.nodes.map((printed, index) => (
+                            <div key={`printed-${index}`} className="col-4 prined-card">
+                                <Img fixed={printed.img?.childImageSharp?.fixed} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <div className="sneak-peek">
                     <SlidingText text={"Backstage Sneak peek Backstage Sneak peek"} />
@@ -146,7 +152,7 @@ const Studio54 = ({ data }) => {
                 </div>
                 <div className="the-event mt-5">
                     <div className="title">THE EVENT</div>
-                    <div className="col-12 text-center">
+                    <div className="col-12 text-center event">
                         <Img fixed={data.event?.childImageSharp?.fixed} />
                     </div>
                     <div className="container row mx-auto">
@@ -164,7 +170,7 @@ const Studio54 = ({ data }) => {
                     </div>
                 </div>
                 <div className="logo">
-                    
+
                 </div>
             </div>
         </Layout>
@@ -227,6 +233,17 @@ export const query = graphql`
       }
     },
     allPartyJson {
+      nodes {
+        img {
+            childImageSharp {
+                fixed {
+                ...GatsbyImageSharpFixed
+                }
+            }
+        }
+      }
+    },
+    allPrintedJson {
       nodes {
         img {
             childImageSharp {
