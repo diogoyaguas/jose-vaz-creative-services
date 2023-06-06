@@ -356,10 +356,6 @@ body {
             .social-media {
                 justify-content: center;
 
-                svg {
-                    fill: var(--white);
-                }
-
                 a svg {
                     padding: 0.938rem;
                     border-radius: 50%;
@@ -372,6 +368,12 @@ body {
                         background-color: var(--white);
                         border: 0.125rem solid var(--white);
                     }
+                }
+            }
+
+            .logo {
+                svg {
+                    fill: var(--white);
                 }
             }
         }
