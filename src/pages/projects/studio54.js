@@ -16,6 +16,7 @@ const Studio54 = ({ data }) => {
 
         collapsibleHeaders.forEach((header) => {
             header.addEventListener("click", () => {
+                debugger
                 header.classList.toggle("active");
                 const content = header.nextElementSibling;
                 if (content.style.display === "block") {
@@ -143,6 +144,28 @@ const Studio54 = ({ data }) => {
                         </div>
                     </div>
                 </div>
+                <div className="the-event mt-5">
+                    <div className="title">THE EVENT</div>
+                    <div className="col-12 text-center">
+                        <Img fixed={data.event?.childImageSharp?.fixed} />
+                    </div>
+                    <div className="container row mx-auto">
+                        <div className="col-9 mx-auto text-center">
+                            <p>
+                                On the 19th of November 2021 , The Feeting Room threw a launching of the first iteration of TFRLab.
+                            </p>
+                            <p className="mb-0">
+                                I collaborated closely with the marketing team to deliver a diverse range of printed materials for the event. This included designing and producing invites, signs for the event space, coat room tickets, tattoos, stickers, envelopes, branding cups, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="studio-carousel">
+                        <Carousel information={data.allPartyJson.nodes} />
+                    </div>
+                </div>
+                <div className="logo">
+                    
+                </div>
             </div>
         </Layout>
     )
@@ -152,7 +175,14 @@ export const query = graphql`
   query {
     banner: file(relativePath: { eq: "Banner.mp4" }) {
       publicURL
-    }
+    },
+    event: file(relativePath: { eq: "event.png" }) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
     allProductsJson {
       nodes {
         img {
@@ -170,7 +200,7 @@ export const query = graphql`
             }
         }
       }
-    }
+    },
     allBackstageJson {
       nodes {
         img {
@@ -181,8 +211,8 @@ export const query = graphql`
             }
         }
       }
-    }
-     allStudioJson {
+    },
+    allStudioJson {
       nodes {
         img {
             childImageSharp {
@@ -193,6 +223,17 @@ export const query = graphql`
         }
         video {
             publicURL
+        }
+      }
+    },
+    allPartyJson {
+      nodes {
+        img {
+            childImageSharp {
+                fixed {
+                ...GatsbyImageSharpFixed
+                }
+            }
         }
       }
     }

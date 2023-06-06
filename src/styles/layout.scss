@@ -875,6 +875,22 @@ body {
                 margin-top: 3rem;
             }
         }
+
+        .the-event {
+            .title {
+                font-size: 144px;
+                text-align: center;
+            }
+
+            .gatsby-image-wrapper {
+                width: 800px !important;
+                height: 534px !important;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
     }
 
     .algori-page {
