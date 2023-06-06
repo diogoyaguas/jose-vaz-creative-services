@@ -2,12 +2,16 @@ import React, { useEffect } from "react"
 
 import Arrow from "../../assets/icons/arrow.svg";
 import Carousel from "../../components/carousel"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import { Link } from "gatsby"
+import Logo from "../../assets/icons/tfr-logo.svg";
 import ReactPlayer from 'react-player';
 import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
+import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { graphql } from "gatsby"
 
 const Studio54 = ({ data }) => {
@@ -150,7 +154,7 @@ const Studio54 = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                <div className="the-event mt-5">
+                <div className="the-event">
                     <div className="title">THE EVENT</div>
                     <div className="col-12 text-center event">
                         <Img fixed={data.event?.childImageSharp?.fixed} />
@@ -169,8 +173,20 @@ const Studio54 = ({ data }) => {
                         <Carousel information={data.allPartyJson.nodes} />
                     </div>
                 </div>
-                <div className="logo">
-
+                <div className="logo container">
+                    <div className="row">
+                        <div className="col-4 mx-auto">
+                            <Logo />
+                        </div>
+                    </div>
+                    <div className="social-media row mt-3">
+                        <a className="col-1" href="https://www.instagram.com/thefeetingroom/" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={faInstagram} size="lg" />
+                        </a>
+                        <a className="col-1" href="https://thefeetingroom.com/" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={faEarthAmericas} size="lg" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </Layout>
@@ -184,7 +200,7 @@ export const query = graphql`
     },
     event: file(relativePath: { eq: "event.png" }) {
       childImageSharp {
-        fixed {
+        fixed(quality: 100) {
           ...GatsbyImageSharpFixed
         }
       }
