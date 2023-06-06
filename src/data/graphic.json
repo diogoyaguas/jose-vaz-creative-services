@@ -2,21 +2,21 @@
     {
         "name": "DAT - Design, Art and Technology",
         "img": "../assets/images/DAT - Design, Arte e Tecnologia.png",
-        "link": "/"
+        "link": "/projects/dat"
     },
     {
         "name": "Deepwear - Global Progressive Fashion Agency",
         "video": "../assets/videos/Deepwear - Global Progressive Fashion Agency.mp4",
-        "link": "/"
+        "link": "/projects/deepwear"
     },
     {
         "name": "Dezénhos",
         "img": "../assets/images/Dezenhos.png",
-        "link": "/"
+        "link": "/projects/dezenhos"
     },
     {
         "name": "Dulis Shoes - FW22 Campaign ",
         "video": "../assets/videos/DULIS - FW22 Campaign.mp4",
-        "link": "/"
+        "link": "/projects/dulis_campaign"
     }
 ]

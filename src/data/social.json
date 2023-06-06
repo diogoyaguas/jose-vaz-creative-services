@@ -1,17 +1,17 @@
 [
     {
         "name": "The Feeting Room ",
-        "link": "/projects/feeting_room",
-        "img": "../assets/images/The Feeting Room.png"
+        "img": "../assets/images/The Feeting Room.png",
+        "link": "/projects/feeting_room"
     },
     {
         "name": "TFRLab_01 - STUDIO 54",
-        "link": "/projects/studio54",
-        "video": "../assets/videos/TFRLab_01 - Studio54.mp4"
+        "video": "../assets/videos/TFRLab_01 - Studio54.mp4",
+        "link": "/projects/studio54"
     },
     {
         "name": "M.A.D - Music Addiction Disorder",
         "img": "../assets/images/M.A.D - Music Addiction Disorder .png",
-        "link": "/"
+        "link": "/projects/mad"
     }
 ]
