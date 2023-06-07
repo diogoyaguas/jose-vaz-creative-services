@@ -26,7 +26,7 @@ const Page = React.forwardRef((props, ref) => {
 
 const Algori = ({ data }) => {
 
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(-1);
 
     let flipBook = useRef(null)
 
@@ -34,20 +34,18 @@ const Algori = ({ data }) => {
     const cover = data.cover
     const backCover = data.backCover
 
-    const [totalPages] = useState(20);
+    const totalPages = 20;
     const [lastData, setLastData] = useState(0)
 
-    const nextButtonClick = () => {
+    const nextButtonClick = (e) => {
         if (flipBook.current) {
             flipBook.current.pageFlip().flipNext();
-            setPage(page + 1)
         }
     };
 
     const prevButtonClick = () => {
         if (flipBook.current) {
             flipBook.current.pageFlip().flipPrev();
-            setPage(page - 1)
         }
     };
 
@@ -111,10 +109,10 @@ const Algori = ({ data }) => {
                             </button>
                         </div>
                         <div className="w-25 text-center">
-                            {page > 0 && <span>{page} of </span>}{totalPages} pages
+                            {page > 0 && page <= totalPages && <span>{page} of </span>}{totalPages} pages
                         </div>
                         <div className="w-25 next">
-                            <button type="button" className="btn btn-primary" onClick={() => nextButtonClick()}>
+                            <button type="button" className="btn btn-primary" onClick={(e) => nextButtonClick(e)}>
                                 Next page
                             </button>
                         </div>
