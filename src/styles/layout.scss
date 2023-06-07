@@ -395,6 +395,10 @@ body {
         }
     }
 
+    p {
+        font-family: "Gotham", sans-serif;
+    }
+
     .btn.btn-primary,
     .download-cv {
         padding: 0.625rem 2.5rem;
@@ -776,10 +780,6 @@ body {
     }
 
     .studio-54-page {
-        p {
-            font-family: "Gotham", sans-serif;
-        }
-
         .video {
             video {
                 border-radius: 44px;
@@ -975,12 +975,34 @@ body {
         }
     }
 
+    .dat-page {
+        .posters {
+            .gatsby-image-wrapper {
+                height: 800px !important;
+                width: 100% !important;
+
+                img {
+                    object-fit: contain !important;
+                }
+            }
+        }
+
+        .merch {
+            margin-bottom: 5rem;
+
+            .gatsby-image-wrapper {
+                height: 500px !important;
+                width: 100% !important;
+
+                img {
+                    object-fit: contain !important;
+                }
+            }
+        }
+    }
+
     .algori-page {
         overflow: hidden;
-
-        p {
-            font-family: "Gotham", sans-serif;
-        }
 
         .logo svg {
             max-width: 320px;
