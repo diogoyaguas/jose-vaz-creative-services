@@ -25,7 +25,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#000000",
         display: "minimal-ui",
-        "icon": "src/assets/images/icon.png"
+        "icon": "src/assets/images/common/icon.png"
       }
     }, {
       resolve: "gatsby-source-filesystem",
