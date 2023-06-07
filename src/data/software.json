@@ -2,46 +2,46 @@
     {
         "name": "Adobe Premiere",
         "stars": 4,
-        "icon": "../icons/PR-B.svg"
+        "icon": "../icons/about/PR-B.svg"
     },
     {
         "name": "Adobe Photoshop",
         "stars": 4,
-        "icon": "../icons/PS - B.svg"
+        "icon": "../icons/about/PS - B.svg"
     },
     {
         "name": "Adobe Illustrator",
         "stars": 4,
-        "icon": "../icons/AI - B.svg"
+        "icon": "../icons/about/AI - B.svg"
     },
     {
         "name": "Adobe After Effects",
         "stars": 4,
-        "icon": "../icons/AE -B.svg"
+        "icon": "../icons/about/AE -B.svg"
     },
     {
         "name": "Adobe Indesign",
         "stars": 5,
-        "icon": "../icons/ID -B.svg"
+        "icon": "../icons/about/ID -B.svg"
     },
     {
         "name": "Behance",
         "stars": 3,
-        "icon": "../icons/BE -B.svg"
+        "icon": "../icons/about/BE -B.svg"
     },
     {
         "name": "Figma",
         "stars": 4,
-        "icon": "../icons/FIGMA - B.svg"
+        "icon": "../icons/about/FIGMA - B.svg"
     },
     {
         "name": "Gempages",
         "stars": 3,
-        "icon": "../icons/GEMPAGES-B.svg"
+        "icon": "../icons/about/GEMPAGES-B.svg"
     },
     {
         "name": "Microsoft Office",
         "stars": 3,
-        "icon": "../icons/OFFICE-B.svg"
+        "icon": "../icons/about/OFFICE-B.svg"
     }
 ]

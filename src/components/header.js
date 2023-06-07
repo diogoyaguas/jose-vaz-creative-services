@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Navigation from "./navigation"
 import PropTypes from "prop-types"
 import React from "react"
-import Star from '../assets/icons/star.svg';
+import Star from '../assets/icons/common/star.svg';
 import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ mode, setMode }) => {

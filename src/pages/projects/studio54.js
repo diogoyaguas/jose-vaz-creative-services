@@ -1,12 +1,12 @@
 import React, { useEffect } from "react"
 
-import Arrow from "../../assets/icons/arrow.svg";
+import Arrow from "../../assets/icons/common/arrow.svg";
 import Carousel from "../../components/carousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import { Link } from "gatsby"
-import Logo from "../../assets/icons/tfr-logo.svg";
+import Logo from "../../assets/icons/studio_54/tfr-logo.svg";
 import ReactPlayer from 'react-player';
 import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
@@ -195,10 +195,10 @@ const Studio54 = ({ data }) => {
 
 export const query = graphql`
   query {
-    banner: file(relativePath: { eq: "Banner.mp4" }) {
+    banner: file(relativePath: { eq: "studio_54/Banner.mp4" }) {
       publicURL
     },
-    event: file(relativePath: { eq: "event.png" }) {
+    event: file(relativePath: { eq: "studio_54/event.png" }) {
       childImageSharp {
         fixed(quality: 100) {
           ...GatsbyImageSharpFixed

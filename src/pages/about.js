@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-import Arrow from "../assets/icons/arrow.svg";
-import CallMeZe from "../assets/icons/name.svg";
+import Arrow from "../assets/icons/common/arrow.svg";
+import CallMeZe from "../assets/icons/about/name.svg";
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import SlidingText from "../components/slidingText"
-import StarEmpty from "../assets/icons/star_empty.svg"
-import StarFull from "../assets/icons/star_full.svg";
+import StarEmpty from "../assets/icons/about/star_empty.svg"
+import StarFull from "../assets/icons/about/star_full.svg";
 import { graphql } from "gatsby"
 
 const About = ({ data }) => {
@@ -151,7 +151,7 @@ const About = ({ data }) => {
 
 export const query = graphql`
   query {
-    profile: file(relativePath: { eq: "profile.png" }) {
+    profile: file(relativePath: { eq: "about/profile.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed
