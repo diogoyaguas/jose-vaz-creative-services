@@ -67,7 +67,6 @@ module.exports = {
       options: {
         defaults: {
           formats: ["webp", "png", "jpg"],
-          toFormat: "webp",
           quality: 100,
           breakpoints: [576, 768, 992, 1200],
         },
