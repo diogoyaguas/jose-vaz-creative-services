@@ -959,6 +959,7 @@ body {
 
             .event {
                 .gatsby-image-wrapper {
+                    margin: auto;
                     width: 800px !important;
                     height: 534px !important;
 
@@ -978,6 +979,7 @@ body {
     .dat-page {
         .logo {
             .gatsby-image-wrapper {
+                margin: auto;
                 width: 200px !important;
                 height: 190px !important;
 
@@ -1049,8 +1051,37 @@ body {
 
         .postcard {
             .gatsby-image-wrapper {
+                margin: auto;
                 width: 800px !important;
                 height: 534px !important;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    .feeting-room-page {
+        .logo {
+            margin-bottom: 3rem;
+        }
+
+        .intro {
+            margin-bottom: 3rem;
+        }
+
+        .shorttakes {
+            margin-top: 3rem;
+
+            .sliding-text-container {
+                .text {
+                    font-size: 3rem !important;
+                }
+
+                .item-separator-dot {
+                    margin: 0 0.625rem !important;
+                }
             }
         }
     }

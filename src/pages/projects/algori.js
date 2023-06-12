@@ -124,7 +124,7 @@ const Algori = ({ data }) => {
                         </p>
                     </div>
                     <div className="col-12 text-center postcard mb-5">
-                        <Img fixed={data.postcard?.childImageSharp?.fixed} />
+                        <Img fluid={data.postcard?.childImageSharp?.fluid} />
                     </div>
                 </div>
             </div>
@@ -150,8 +150,8 @@ export const query = graphql`
     },
     postcard: file(relativePath: { eq: "algori/Postcard Mockup 1.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
         }
       }
     },

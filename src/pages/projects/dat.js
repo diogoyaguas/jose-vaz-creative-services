@@ -13,7 +13,7 @@ const DatDesign = ({ data }) => {
                 <SlidingText text={"DAT - Design, Art and Technology"} />
                 <div className="container">
                     <div className="col-12 logo text-center">
-                        <Img fixed={data.logo?.childImageSharp?.fixed} />
+                        <Img fluid={data.logo?.childImageSharp?.fluid} />
                     </div>
                     <div className="row">
                         <div className="col-9 mx-auto text-center">
@@ -27,7 +27,7 @@ const DatDesign = ({ data }) => {
                         
                     </div>
                     <div className="col-12 posters text-center">
-                        <Img fixed={data.posters?.childImageSharp?.fixed} />
+                        <Img fluid={data.posters?.childImageSharp?.fluid} />
                     </div>
                     <div className="row">
                         <div className="col-9 mx-auto text-center">
@@ -37,7 +37,7 @@ const DatDesign = ({ data }) => {
                         </div>
                     </div>
                     <div className="col-12 merch text-center">
-                        <Img fixed={data.merch?.childImageSharp?.fixed} />
+                        <Img fluid={data.merch?.childImageSharp?.fluid} />
                     </div>
                 </div>
             </div>
@@ -49,22 +49,22 @@ export const query = graphql`
   query {
     logo: file(relativePath: { eq: "dat/poster.png" }) {
       childImageSharp {
-        fixed(quality: 100) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     posters: file(relativePath: { eq: "dat/posters.png" }) {
       childImageSharp {
-        fixed(quality: 100) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     merch: file(relativePath: { eq: "dat/merch.png" }) {
       childImageSharp {
-        fixed(quality: 100) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

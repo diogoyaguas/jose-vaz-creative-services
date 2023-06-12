@@ -99,10 +99,10 @@ const Studio54 = ({ data }) => {
                             >
                                 <div className="row">
                                     <div className="col-12 normal">
-                                        <Img fixed={product.img?.childImageSharp?.fixed} quality={90} />
+                                        <Img fixed={product.img?.childImageSharp?.fixed} />
                                     </div>
                                     <div className="col-12 hover">
-                                        <Img fixed={product.hover?.childImageSharp?.fixed} quality={90} />
+                                        <Img fixed={product.hover?.childImageSharp?.fixed} />
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ const Studio54 = ({ data }) => {
                     <div className="row">
                         {data.allPrintedJson.nodes.map((printed, index) => (
                             <div key={`printed-${index}`} className="col-4 prined-card">
-                                <Img fixed={printed.img?.childImageSharp?.fixed} quality={90} />
+                                <Img fixed={printed.img?.childImageSharp?.fixed} />
                             </div>
                         ))}
                     </div>
@@ -129,7 +129,7 @@ const Studio54 = ({ data }) => {
                             <div key={`backstage-${index}`} className="col-3 backstage-card">
                                 <div className="row">
                                     <div className="col-12">
-                                        <Img fixed={product.img?.childImageSharp?.fixed} quality={90} />
+                                        <Img fixed={product.img?.childImageSharp?.fixed} />
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ const Studio54 = ({ data }) => {
                 <div className="the-event">
                     <div className="title">THE EVENT</div>
                     <div className="col-12 text-center event">
-                        <Img fixed={data.event?.childImageSharp?.fixed} quality={90} />
+                        <Img fluid={data.event?.childImageSharp?.fluid} />
                     </div>
                     <div className="container row mx-auto">
                         <div className="col-9 mx-auto text-center">
@@ -200,8 +200,8 @@ export const query = graphql`
     },
     event: file(relativePath: { eq: "studio_54/event.png" }) {
       childImageSharp {
-        fixed(quality: 100) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
         }
       }
     },
