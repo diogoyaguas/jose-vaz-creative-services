@@ -976,6 +976,17 @@ body {
     }
 
     .dat-page {
+        .logo {
+            .gatsby-image-wrapper {
+                width: 200px !important;
+                height: 190px !important;
+
+                img {
+                    object-fit: contain !important;
+                }
+            }
+        }
+
         .posters {
             .gatsby-image-wrapper {
                 height: 800px !important;

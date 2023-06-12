@@ -10,8 +10,8 @@ import { graphql } from "gatsby"
 const FeetingRoom = ({ data }) => {
     return (
         <Layout>
-            <Seo title="Studio 54" />
-            <div className="studio-54-page pt-5">
+            <Seo title="The Feeting Room" />
+            <div className="feeting-room-page pt-5">
                 <SlidingText text={"THE FEETING ROOM"} />
             </div>
         </Layout>

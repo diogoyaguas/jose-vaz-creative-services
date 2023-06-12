@@ -15,7 +15,6 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-transformer-json",
     "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp", {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -62,6 +61,15 @@ module.exports = {
         name: "icons",
         path: "./src/assets/icons",
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: ["webp", "png", "jpg"],
+          toFormat: "webp",
+        },
+      },
+    },
   ]
 };

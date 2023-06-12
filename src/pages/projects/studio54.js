@@ -99,10 +99,10 @@ const Studio54 = ({ data }) => {
                             >
                                 <div className="row">
                                     <div className="col-12 normal">
-                                        <Img fixed={product.img?.childImageSharp?.fixed} />
+                                        <Img fixed={product.img?.childImageSharp?.fixed} quality={90} />
                                     </div>
                                     <div className="col-12 hover">
-                                        <Img fixed={product.hover?.childImageSharp?.fixed} />
+                                        <Img fixed={product.hover?.childImageSharp?.fixed} quality={90} />
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ const Studio54 = ({ data }) => {
                     <div className="row">
                         {data.allPrintedJson.nodes.map((printed, index) => (
                             <div key={`printed-${index}`} className="col-4 prined-card">
-                                <Img fixed={printed.img?.childImageSharp?.fixed} />
+                                <Img fixed={printed.img?.childImageSharp?.fixed} quality={90} />
                             </div>
                         ))}
                     </div>
@@ -129,7 +129,7 @@ const Studio54 = ({ data }) => {
                             <div key={`backstage-${index}`} className="col-3 backstage-card">
                                 <div className="row">
                                     <div className="col-12">
-                                        <Img fixed={product.img?.childImageSharp?.fixed} />
+                                        <Img fixed={product.img?.childImageSharp?.fixed} quality={90} />
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ const Studio54 = ({ data }) => {
                 <div className="the-event">
                     <div className="title">THE EVENT</div>
                     <div className="col-12 text-center event">
-                        <Img fixed={data.event?.childImageSharp?.fixed} />
+                        <Img fixed={data.event?.childImageSharp?.fixed} quality={90} />
                     </div>
                     <div className="container row mx-auto">
                         <div className="col-9 mx-auto text-center">
@@ -175,16 +175,16 @@ const Studio54 = ({ data }) => {
                 </div>
                 <div className="logo container">
                     <div className="row">
-                        <div className="col-4 mx-auto">
+                        <div className="col-3 mx-auto">
                             <Logo />
                         </div>
                     </div>
-                    <div className="social-media row mt-3">
+                    <div className="social-media row mt-3 text-center">
                         <a className="col-1" href="https://www.instagram.com/thefeetingroom/" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faInstagram} size="lg" />
+                            <FontAwesomeIcon icon={faInstagram} size="sm" />
                         </a>
                         <a className="col-1" href="https://thefeetingroom.com/" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faEarthAmericas} size="lg" />
+                            <FontAwesomeIcon icon={faEarthAmericas} size="sm" />
                         </a>
                     </div>
                 </div>
