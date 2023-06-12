@@ -1084,6 +1084,34 @@ body {
                 }
             }
         }
+
+        .reels {
+            margin-top: 3rem;
+
+            .sliding-text-container {
+                .text {
+                    font-size: 3rem !important;
+                }
+
+                .item-separator-dot {
+                    margin: 0 0.625rem !important;
+                }
+            }
+        }
+
+        .campaigns {
+            margin-top: 3rem;
+
+            .sliding-text-container {
+                .text {
+                    font-size: 3rem !important;
+                }
+
+                .item-separator-dot {
+                    margin: 0 0.625rem !important;
+                }
+            }
+        }
     }
 
     footer {

@@ -200,7 +200,7 @@ export const query = graphql`
     },
     event: file(relativePath: { eq: "studio_54/event.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 2500) {
           ...GatsbyImageSharpFluid
         }
       }

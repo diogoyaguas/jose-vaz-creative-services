@@ -93,13 +93,13 @@ const Algori = ({ data }) => {
                         showCover={true}
                         onFlip={(e) => changePage(e.data)}
                     >
-                        <PageCover><Img fixed={cover?.childImageSharp?.fixed} /></PageCover>
+                        <PageCover><Img fluid={cover?.childImageSharp?.fluid} /></PageCover>
                         {pages.map((page, index) => (
                             <Page key={`page-${index}`}>
-                                <Img fixed={page.img?.childImageSharp?.fixed} />
+                                <Img fluid={page.img?.childImageSharp?.fluid} />
                             </Page>
                         ))}
-                        <PageCover><Img fixed={backCover?.childImageSharp?.fixed} /></PageCover>
+                        <PageCover><Img fluid={backCover?.childImageSharp?.fluid} /></PageCover>
                     </HTMLFlipBook>
 
                     <div className="col-7 mx-auto text-center my-5 buttons buttons-pages">
@@ -136,21 +136,21 @@ export const query = graphql`
   query {
     cover: file(relativePath: { eq: "algori/1.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 2500) {
+          ...GatsbyImageSharpFluid
         }
       }
     },
     backCover: file(relativePath: { eq: "algori/44.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 2500) {
+          ...GatsbyImageSharpFluid
         }
       }
     },
     postcard: file(relativePath: { eq: "algori/Postcard Mockup 1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 2500) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -159,8 +159,8 @@ export const query = graphql`
       nodes {
         img {
             childImageSharp {
-                fixed {
-                ...GatsbyImageSharpFixed
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
                 }
             }
         }

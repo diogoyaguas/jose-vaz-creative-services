@@ -40,11 +40,59 @@ const FeetingRoom = ({ data }) => {
                     </div>
                 </div>
                 <div className="shorttakes">
-                    <SlidingText text={"SHORT TAKES WITH JANIINA VAZ SHORT TAKES WITH JANIINA "} />
+                    <SlidingText text={"SHORT TAKES WITH JANIINA VAZ SHORT TAKES WITH JANIINA"} />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-9 intro mx-auto text-center">
+                                <p>
+                                    I'm a Graphic Designer and Content Editor & Creator, based in Porto, Portugal and recently introduced to Marketing and Design in the fashion industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="reels">
+                    <SlidingText text={"Reels Shoots Reels Shoots Reels Shoots Reels Shoots Re"} />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-9 intro mx-auto text-center">
+                                <p>
+                                    I'm a Graphic Designer and Content Editor & Creator, based in Porto, Portugal and recently introduced to Marketing and Design in the fashion industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="campaigns">
+                    <SlidingText text={"Campaigns Campaigns Campaigns Campaigns Campaigns Cam"} />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12 text-center event">
+                                <Img fluid={data.website?.childImageSharp?.fluid} />
+                            </div>
+                            <div className="col-9 intro mx-auto text-center">
+                                <p>
+                                    I'm a Graphic Designer and Content Editor & Creator, based in Porto, Portugal and recently introduced to Marketing and Design in the fashion industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Layout>
     )
 }
+
+export const query = graphql`
+  query {
+    website: file(relativePath: { eq: "feeting_room/Campaigns/website.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+  }
+`;
 
 export default FeetingRoom

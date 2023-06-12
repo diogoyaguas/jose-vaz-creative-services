@@ -49,21 +49,21 @@ export const query = graphql`
   query {
     logo: file(relativePath: { eq: "dat/poster.png" }) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 2500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     posters: file(relativePath: { eq: "dat/posters.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 2500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     merch: file(relativePath: { eq: "dat/merch.png" }) {
       childImageSharp {
-        fluid(maxWidth: 500) {
+        fluid(maxWidth: 2500) {
           ...GatsbyImageSharpFluid
         }
       }
