@@ -5,7 +5,6 @@ import Carousel from "../../components/carousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Img from "gatsby-image"
 import Layout from "../../components/layout"
-import { Link } from "gatsby"
 import Logo from "../../assets/icons/studio_54/tfr-logo.svg";
 import ReactPlayer from 'react-player';
 import Seo from "../../components/seo"
@@ -79,11 +78,13 @@ const Studio54 = ({ data }) => {
                             </p>
                         </div>
                         <div className="col-12 text-center mt-4">
-                            <Link to="/projects">
-                                <button type="button" className="btn btn-primary">
-                                    Read blog
-                                </button>
-                            </Link>
+                            <a
+                                href="https://thefeetingroom.com/blogs/travel/tfrlab_01-launch-party"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="w-25 btn btn-primary">
+                                Read blog
+                            </a>
                         </div>
                     </div>
                 </div>

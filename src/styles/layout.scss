@@ -1115,6 +1115,99 @@ body {
                     margin: 0 0.625rem !important;
                 }
             }
+
+            .intro {
+                margin-top: 3rem;
+            }
+
+            .ads {
+                .video-wrapper {
+                    width: 100% !important;
+                    height: auto !important;
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-block;
+
+                    .player-wrapper {
+                        width: inherit !important;
+                        height: inherit !important;
+
+                        video {
+                            border-radius: 39px;
+                            width: inherit !important;
+                            height: inherit !important;
+                            object-fit: cover;
+                            transition: opacity 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            .layouts {
+                .layout-card {
+                    margin-top: 3rem;
+
+                    img {
+                        border-radius: 39px;
+                    }
+                }
+
+                & + .label {
+                    margin-top: 14px;
+                }
+            }
+        }
+
+        .spotify {
+            margin-top: 3rem;
+
+            .sliding-text-container {
+                .text {
+                    font-size: 3rem !important;
+                }
+
+                .item-separator-dot {
+                    margin: 0 0.625rem !important;
+                }
+            }
+
+            .container {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
+                .video-wrapper {
+                    width: 100% !important;
+                    height: auto !important;
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-block;
+
+                    .player-wrapper {
+                        width: inherit !important;
+                        height: inherit !important;
+
+                        video {
+                            border-radius: 39px;
+                            width: inherit !important;
+                            height: inherit !important;
+                            object-fit: cover;
+                            transition: opacity 0.3s ease-in-out;
+                        }
+                    }
+                }
+
+                .playlists {
+                    .spotify-card {
+                        img {
+                            border-radius: 39px;
+                        }
+                    }
+                }
+
+                .info {
+                    margin-top: 10%;
+                }
+            }
         }
     }
 

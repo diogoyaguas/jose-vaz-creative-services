@@ -3,6 +3,7 @@ import * as React from "react"
 import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import Logo from "../../assets/icons/studio_54/tfr-logo.svg";
+import ReactPlayer from 'react-player';
 import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
 import { graphql } from "gatsby"
@@ -27,12 +28,12 @@ const FeetingRoom = ({ data }) => {
                             </p>
                         </div>
                         <div className="col-6 text-center mt-4">
-                            <a type="button" href="https://thefeetingroom.com/" className="btn btn-primary">
+                            <a type="button" href="https://thefeetingroom.com/" target="_blank" rel="noreferrer" className="btn btn-primary">
                                 Visit website
                             </a>
                         </div>
                         <div className="col-6 text-center mt-4">
-                            <a type="button" href="https://www.instagram.com/thefeetingroom/" className="btn btn-primary">
+                            <a type="button" href="https://www.instagram.com/thefeetingroom/" target="_blank" rel="noreferrer" className="btn btn-primary">
                                 Stalk instagram
                             </a>
                         </div>
@@ -75,6 +76,79 @@ const FeetingRoom = ({ data }) => {
                                 </p>
                             </div>
                         </div>
+                        <div className="row ads">
+                            {data.allAdsJson.nodes.map((ads, index) => (
+                                <div key={`ads-${index}`} className="col-4 ads-card">
+                                    <span className="video-wrapper">
+                                        <ReactPlayer
+                                            className="player-wrapper"
+                                            url={ads.video.publicURL}
+                                            controls={false}
+                                            autoPlay={true}
+                                            playing={true}
+                                            playsInline={true}
+                                            muted={true}
+                                            loop={true}
+                                            width="100%"
+                                            height="auto"
+                                        />
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="label">Ads for Instagram Posts</div>
+                        <div className="row layouts">
+                            {data.allLayoutsJson.nodes.map((layout, index) => (
+                                <div key={`layout-${index}`} className="col-4 layout-card">
+                                    <Img fluid={layout.img.childImageSharp?.fluid} />
+                                </div>
+                            ))}
+                        </div>
+                        <div className="label">Layouts and visuals for campaigns</div>
+                    </div>
+                </div>
+                <div className="spotify">
+                    <SlidingText text={"SPOTIFY LISTENING ALBUMS SPOTIFY LISTENING ALBUMS SPO"} />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-3 story">
+                                <span className="video-wrapper">
+                                    <ReactPlayer
+                                        className="player-wrapper"
+                                        url={data.story.publicURL}
+                                        controls={false}
+                                        autoPlay={true}
+                                        playing={true}
+                                        playsInline={true}
+                                        muted={true}
+                                        loop={true}
+                                        width="100%"
+                                        height="auto"
+                                    />
+                                </span>
+                            </div>
+                            <div className="col-9 playlists">
+                                <div className="row">
+                                    {data.allSpotifyJson.nodes.map((spotify, index) => (
+                                        <div key={`spotify-${index}`} className="col-3 spotify-card">
+                                            <Img fluid={spotify.img.childImageSharp?.fluid} />
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="row info">
+                                    <p className="col-8 mx-auto text-center">
+                                        I had the opportunity to collaborate with the project's creative director and support photographer Pedro MKK in capturing backstage content during the.
+                                    </p>
+                                    <a
+                                        type="button"
+                                        href="https://open.spotify.com/user/3ohma0jws40f0058l1475mfsh?si=9d6cbe61e01440a3" target="_blank"
+                                        rel="noreferrer"
+                                        className="col-5 mx-auto btn btn-primary">
+                                        Listen on Spotify
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,6 +162,38 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 2500) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    story: file(relativePath: { eq: "feeting_room/Spotify/story.mp4" }) {
+      publicURL
+    },
+    allAdsJson {
+      nodes {
+        video {
+            publicURL
+        }
+      }
+    },
+    allLayoutsJson {
+      nodes {
+        img {
+            childImageSharp {
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+      }
+    },
+    allSpotifyJson {
+      nodes {
+        img {
+            childImageSharp {
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
+                }
+            }
         }
       }
     },
