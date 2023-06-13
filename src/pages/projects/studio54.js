@@ -93,16 +93,20 @@ const Studio54 = ({ data }) => {
                             <div
                                 key={`product-${index}`}
                                 id={`product-${index}`}
+                                role="button"
+                                tabIndex={0}
                                 className="col-2 product-card"
                                 onMouseOver={() => showHover(index)}
+                                onFocus={() => showHover(index)}
                                 onMouseOut={() => hideHover(index)}
+                                onBlur={() => hideHover(index)}
                             >
                                 <div className="row">
                                     <div className="col-12 normal">
-                                        <Img fixed={product.img?.childImageSharp?.fixed} />
+                                        <Img fluid={product.img?.childImageSharp?.fluid} />
                                     </div>
                                     <div className="col-12 hover">
-                                        <Img fixed={product.hover?.childImageSharp?.fixed} />
+                                        <Img fluid={product.hover?.childImageSharp?.fluid} />
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +121,7 @@ const Studio54 = ({ data }) => {
                     <div className="row">
                         {data.allPrintedJson.nodes.map((printed, index) => (
                             <div key={`printed-${index}`} className="col-4 prined-card">
-                                <Img fixed={printed.img?.childImageSharp?.fixed} />
+                                <Img fluid={printed.img?.childImageSharp?.fluid} />
                             </div>
                         ))}
                     </div>
@@ -129,7 +133,7 @@ const Studio54 = ({ data }) => {
                             <div key={`backstage-${index}`} className="col-3 backstage-card">
                                 <div className="row">
                                     <div className="col-12">
-                                        <Img fixed={product.img?.childImageSharp?.fixed} />
+                                        <Img fluid={product.img?.childImageSharp?.fluid} />
                                     </div>
                                 </div>
                             </div>
@@ -209,15 +213,15 @@ export const query = graphql`
       nodes {
         img {
             childImageSharp {
-                fixed {
-                ...GatsbyImageSharpFixed
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
                 }
             }
         }
         hover {
             childImageSharp {
-                fixed {
-                ...GatsbyImageSharpFixed
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
                 }
             }
         }
@@ -227,8 +231,8 @@ export const query = graphql`
       nodes {
         img {
             childImageSharp {
-                fixed {
-                ...GatsbyImageSharpFixed
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
                 }
             }
         }
@@ -238,8 +242,8 @@ export const query = graphql`
       nodes {
         img {
             childImageSharp {
-                fixed {
-                ...GatsbyImageSharpFixed
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
                 }
             }
         }
@@ -252,8 +256,8 @@ export const query = graphql`
       nodes {
         img {
             childImageSharp {
-                fixed {
-                ...GatsbyImageSharpFixed
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
                 }
             }
         }
@@ -263,8 +267,8 @@ export const query = graphql`
       nodes {
         img {
             childImageSharp {
-                fixed {
-                ...GatsbyImageSharpFixed
+                fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
                 }
             }
         }

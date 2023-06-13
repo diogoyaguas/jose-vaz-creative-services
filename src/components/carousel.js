@@ -55,7 +55,7 @@ const Carousel = ({ information }) => {
       {information.map((info, index) => (
         <div key={`info-card-${index}`} className="info-card py-5">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 thumb">
               <Link className="" to={info.link ? info.link : ""}>
                 {info.video != null ?
                   <span className="video-wrapper">
@@ -72,7 +72,7 @@ const Carousel = ({ information }) => {
                       height="auto"
                     />
                   </span>
-                  : <Img fixed={info.img?.childImageSharp?.fixed} />}
+                  : <Img fluid={info.img?.childImageSharp?.fluid} />}
               </Link>
             </div>
             {info.name != null &&

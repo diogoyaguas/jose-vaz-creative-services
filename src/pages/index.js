@@ -19,8 +19,8 @@ const Homepage = () => {
           }
           img {
             childImageSharp {
-              fixed {
-                ...GatsbyImageSharpFixed
+              fluid(maxWidth: 2500) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

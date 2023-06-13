@@ -2,7 +2,6 @@ import * as React from "react"
 
 import Img from "gatsby-image"
 import Layout from "../../components/layout"
-import { Link } from "gatsby"
 import Logo from "../../assets/icons/studio_54/tfr-logo.svg";
 import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
