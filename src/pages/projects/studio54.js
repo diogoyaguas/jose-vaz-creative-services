@@ -98,11 +98,12 @@ const Studio54 = ({ data }) => {
                         To commence this project, it was essential to establish a cohesive visual identity for the collection, encompassing various printed and digital materials. The initial phase involved the meticulous creation of a logo and comprehensive visual guidelines, which served as the foundation for the development of promotional materials.
                     </p>
                     <div className="row">
-                        {data.allPrintedJson.nodes.map((printed, index) => (
-                            <div key={`printed-${index}`} className="col-4 prined-card">
-                                <Img fluid={printed.img?.childImageSharp?.fluid} />
-                            </div>
-                        ))}
+                        <div className="col-12 printed-white">
+                            <Img fluid={data.printedWhite.childImageSharp.fluid} />
+                        </div>
+                        <div className="col-12 printed-black">
+                            <Img fluid={data.printedBlack.childImageSharp.fluid} />
+                        </div>
                     </div>
                 </div>
                 <div className="sneak-peek">
@@ -202,6 +203,20 @@ export const query = graphql`
         }
       }
     },
+    printedWhite: file(relativePath: { eq: "studio_54/printed_materials/materials-white.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    printedBlack: file(relativePath: { eq: "studio_54/printed_materials/materials-black.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
     allProductsJson {
       nodes {
         img {
@@ -259,17 +274,6 @@ export const query = graphql`
         }
       }
     },
-    allPrintedJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-      }
-    }
   }
 `;
 

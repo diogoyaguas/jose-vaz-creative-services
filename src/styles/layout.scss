@@ -146,6 +146,10 @@ body {
 
             .settings-content {
                 border-bottom: 1px solid var(--black);
+
+                .printed-white {
+                    display: none;
+                }
             }
 
             .social-media {
@@ -360,6 +364,10 @@ body {
 
             .settings-content {
                 border-bottom: 1px solid var(--white);
+
+                .printed-black {
+                    display: none;
+                }
             }
 
             .social-media {
@@ -895,13 +903,8 @@ body {
                 display: block;
             }
 
-            .gatsby-image-wrapper {
-                max-width: 150px !important;
-                max-height: 150px !important;
-
-                img {
-                    object-fit: contain;
-                }
+            .gatsby-image-wrapper img {
+                object-fit: contain;
             }
         }
 
