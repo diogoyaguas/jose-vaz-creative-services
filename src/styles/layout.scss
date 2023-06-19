@@ -394,6 +394,12 @@ body {
         }
 
         .feeting-room-page {
+            .logo {
+                svg {
+                    fill: var(--white);
+                }
+            }
+
             .campaigns {
                 .light {
                     display: none;
