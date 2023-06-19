@@ -155,7 +155,24 @@ const FeetingRoom = ({ data }) => {
                             </div>
                         </div>
                         <div className="row ads">
-     
+                            {data.allAdsJson.nodes.map((ads, index) => (
+                                <div key={`ads-${index}`} className="col-4 ads-card">
+                                    <span className="video-wrapper">
+                                        <ReactPlayer
+                                            className="player-wrapper"
+                                            url={ads.video.publicURL}
+                                            controls={false}
+                                            autoPlay={true}
+                                            playing={true}
+                                            playsInline={true}
+                                            muted={true}
+                                            loop={true}
+                                            width="100%"
+                                            height="auto"
+                                        />
+                                    </span>
+                                </div>
+                            ))}
                         </div>
                         <div className="label">Ads for Instagram Posts</div>
                         <div className="row layouts">
