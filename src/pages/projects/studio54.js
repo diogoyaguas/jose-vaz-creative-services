@@ -161,7 +161,7 @@ const Studio54 = ({ data }) => {
                 </div>
                 <div className="the-event">
                     <div className="title">THE EVENT</div>
-                    <div className="col-12 text-center event">
+                    <div className="col-12 text-center event container">
                         <Img fluid={data.event?.childImageSharp?.fluid} />
                     </div>
                     <div className="container row mx-auto">
