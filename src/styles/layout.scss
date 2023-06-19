@@ -13,7 +13,7 @@ body {
 
         .btn.btn-primary,
         .download-cv {
-            border: 0.125rem solid var(--black);
+            border: 0.0625rem solid var(--black);
             background-color: var(--white);
             color: var(--black);
 
@@ -22,7 +22,7 @@ body {
             &.active {
                 background-color: var(--black) !important;
                 color: var(--white) !important;
-                border: 0.125rem solid var(--black) !important;
+                border: 0.0625rem solid var(--black) !important;
             }
         }
 
@@ -119,12 +119,12 @@ body {
                         border-radius: 50%;
                         color: var(--black);
                         background-color: var(--white);
-                        border: 0.125rem solid var(--black);
+                        border: 0.0625rem solid var(--black);
 
                         &:hover {
                             color: var(--white);
                             background-color: var(--black);
-                            border: 0.125rem solid var(--black);
+                            border: 0.0625rem solid var(--black);
                         }
                     }
                 }
@@ -152,16 +152,16 @@ body {
                 justify-content: center;
 
                 a svg {
-                    padding: 0.938rem;
+                    padding: 0.625rem;
                     border-radius: 50%;
                     color: var(--black);
                     background-color: var(--white);
-                    border: 0.125rem solid var(--black);
+                    border: 0.0625rem solid var(--black);
 
                     &:hover {
                         color: var(--white);
                         background-color: var(--black);
-                        border: 0.125rem solid var(--black);
+                        border: 0.0625rem solid var(--black);
                     }
                 }
             }
@@ -206,7 +206,7 @@ body {
 
         .btn.btn-primary,
         .download-cv {
-            border: 0.125rem solid var(--white);
+            border: 0.0625rem solid var(--white);
             background-color: var(--black);
             color: var(--white);
 
@@ -215,7 +215,7 @@ body {
             &.active {
                 background-color: var(--white) !important;
                 color: var(--black) !important;
-                border: 0.125rem solid var(--white) !important;
+                border: 0.0625rem solid var(--white) !important;
             }
         }
 
@@ -333,12 +333,12 @@ body {
                         border-radius: 50%;
                         color: var(--white);
                         background-color: var(--black);
-                        border: 0.125rem solid var(--white);
+                        border: 0.0625rem solid var(--white);
 
                         &:hover {
                             color: var(--black);
                             background-color: var(--white);
-                            border: 0.125rem solid var(--white);
+                            border: 0.0625rem solid var(--white);
                         }
                     }
                 }
@@ -366,16 +366,16 @@ body {
                 justify-content: center;
 
                 a svg {
-                    padding: 0.938rem;
+                    padding: 0.625rem;
                     border-radius: 50%;
                     color: var(--white);
                     background-color: var(--black);
-                    border: 0.125rem solid var(--white);
+                    border: 0.0625rem solid var(--white);
 
                     &:hover {
                         color: var(--black);
                         background-color: var(--white);
-                        border: 0.125rem solid var(--white);
+                        border: 0.0625rem solid var(--white);
                     }
                 }
             }
