@@ -30,22 +30,6 @@ const Studio54 = ({ data }) => {
         });
     }, []);
 
-    const showHover = (index) => {
-        const card = document.getElementById(`product-${index}`);
-        card.querySelector('.hover').style.display = 'block';
-        card.querySelector('.hover').style.opacity = 1;
-        card.querySelector('.normal').style.display = 'none';
-        card.querySelector('.normal').style.opacity = 0;
-    }
-
-    const hideHover = (index) => {
-        const card = document.getElementById(`product-${index}`);
-        card.querySelector('.hover').style.display = 'none';
-        card.querySelector('.hover').style.opacity = 0;
-        card.querySelector('.normal').style.display = 'block';
-        card.querySelector('.normal').style.opacity = 1;
-    }
-
     return (
         <Layout>
             <Seo title="Studio 54" />
@@ -94,13 +78,7 @@ const Studio54 = ({ data }) => {
                             <div
                                 key={`product-${index}`}
                                 id={`product-${index}`}
-                                role="button"
-                                tabIndex={0}
                                 className="col-2 product-card"
-                                onMouseOver={() => showHover(index)}
-                                onFocus={() => showHover(index)}
-                                onMouseOut={() => hideHover(index)}
-                                onBlur={() => hideHover(index)}
                             >
                                 <div className="row">
                                     <div className="col-12 normal">
@@ -135,6 +113,20 @@ const Studio54 = ({ data }) => {
                                 <div className="row">
                                     <div className="col-12">
                                         <Img fluid={product.img?.childImageSharp?.fluid} />
+                                        <span className="video-wrapper">
+                                            <ReactPlayer
+                                                className="player-wrapper"
+                                                url={product.video.publicURL}
+                                                controls={false}
+                                                autoPlay={true}
+                                                playing={true}
+                                                playsInline={true}
+                                                muted={true}
+                                                loop={true}
+                                                width="100%"
+                                                height="auto"
+                                            />
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -236,6 +228,9 @@ export const query = graphql`
                 ...GatsbyImageSharpFluid
                 }
             }
+        }
+        video {
+            publicURL
         }
       }
     },

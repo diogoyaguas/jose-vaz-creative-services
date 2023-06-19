@@ -1,18 +1,18 @@
 [
     {
         "img": "../assets/images/studio_54/backstage/1.png",
-        "video": ""
+        "video": "../assets/videos/studio_54/backstage/1.mp4"
     },
     {
         "img": "../assets/images/studio_54/backstage/2.png",
-        "video": ""
+        "video": "../assets/videos/studio_54/backstage/2.mp4"
     },
     {
         "img": "../assets/images/studio_54/backstage/3.png",
-        "video": ""
+        "video": "../assets/videos/studio_54/backstage/3.mp4"
     },
     {
         "img": "../assets/images/studio_54/backstage/4.png",
-        "video": ""
+        "video": "../assets/videos/studio_54/backstage/4.mp4"
     }
 ]
