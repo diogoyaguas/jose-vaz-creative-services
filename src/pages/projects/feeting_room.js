@@ -47,7 +47,7 @@ const FeetingRoom = ({ data }) => {
                     <div className="container">
                         <div className="row">
                             {data.allShorttakesJson.nodes.map((short, index) => (
-                                <a key={`shorttakes-${index}`} className="col-4 shorttakes-card" href={short.url} target="_blank" rel="noreferrer">
+                                <a key={`shorttakes-${index}`} className="col-4 shorttakes-card text-center" href={short.url} target="_blank" rel="noreferrer">
                                     <span className="video-wrapper">
                                         <ReactPlayer
                                             className="player-wrapper"
@@ -81,7 +81,7 @@ const FeetingRoom = ({ data }) => {
                     <SlidingText text={"Reels Shoots Reels Shoots Reels Shoots Reels Shoots"} />
                     <div className="videos row mx-3">
                         {data.allReelsJson.nodes.map((reel, index) => (
-                            <a key={`reels-${index}`} className="col-2 reels-card" href={reel.url} target="_blank" rel="noreferrer">
+                            <a key={`reels-${index}`} className="col-2 reels-card text-center" href={reel.url} target="_blank" rel="noreferrer">
                                 <span className="video-wrapper">
                                     <ReactPlayer
                                         className="player-wrapper"
@@ -119,34 +119,7 @@ const FeetingRoom = ({ data }) => {
                                 </p>
                             </div>
                             <div className="col-12 text-center event">
-                                <span className="video-wrapper light">
-                                    <ReactPlayer
-                                        className="player-wrapper"
-                                        url={data.websiteLight.publicURL}
-                                        controls={false}
-                                        autoPlay={true}
-                                        playing={true}
-                                        playsInline={true}
-                                        muted={true}
-                                        loop={true}
-                                        width="100%"
-                                        height="auto"
-                                    />
-                                </span>
-                                <span className="video-wrapper dark">
-                                    <ReactPlayer
-                                        className="player-wrapper"
-                                        url={data.websiteDark.publicURL}
-                                        controls={false}
-                                        autoPlay={true}
-                                        playing={true}
-                                        playsInline={true}
-                                        muted={true}
-                                        loop={true}
-                                        width="100%"
-                                        height="auto"
-                                    />
-                                </span>
+                                <Img fluid={data?.website?.childImageSharp?.fluid} />
                             </div>
                             <div className="col-9 intro mx-auto text-center">
                                 <p>
@@ -241,11 +214,12 @@ const FeetingRoom = ({ data }) => {
 
 export const query = graphql`
   query {
-    websiteLight: file(relativePath: { eq: "feeting_room/Campaigns/website-white.mp4" }) {
-      publicURL
-    },
-    websiteDark: file(relativePath: { eq: "feeting_room/Campaigns/website-black.mp4" }) {
-      publicURL
+    website: file(relativePath: { eq: "feeting_room/Campaigns/website.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
     },
     story: file(relativePath: { eq: "feeting_room/Spotify/story.mp4" }) {
       publicURL
