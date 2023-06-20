@@ -1,7 +1,5 @@
 import "../styles/vars.scss"
 import "../styles/layout.scss"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import React, { useEffect, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
