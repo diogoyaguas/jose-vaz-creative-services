@@ -4,34 +4,29 @@ import Navigation from "./navigation"
 import PropTypes from "prop-types"
 import React from "react"
 import Star from '../assets/icons/common/star.svg';
-import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ mode, setMode }) => {
 
 	return (
-		<nav className="navbar pt-4">
-			<div className="row w-100 align-items-center">
-				<div className="col-2 logo">
+
+		<nav className="navbar navbar-expand-lg sticky-top justify-content-between">
+			<div className="container">
+				<div className="navbar-brand logo">
 					<Link to="/">
 						<Star />
 					</Link>
 				</div>
-				<div className="col-8 text-center">
-					<Navigation />
+				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<FontAwesomeIcon icon={faBars} size="lg" />
+				</button>
+				<div className="collapse navbar-collapse" id="navigation">
+					<div className="navbar-nav w-100">
+						<Navigation mode={mode} setMode={setMode} />
+					</div>
 				</div>
-				<div className="col-2 theme-mode">
-					<span
-						role="button"
-						tabIndex="0"
-						onClick={() => setMode()}
-						onKeyDown={() => setMode()}
-						title={`Toggle ${mode === "light" ? "Dark" : "Light"} Mode`}
-					>
-						<FontAwesomeIcon icon={faCircleHalfStroke} />
-					</span>
-				</div>
-			</div>
 
+			</div>
 		</nav>
 	)
 }

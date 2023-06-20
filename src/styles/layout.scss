@@ -1,6 +1,10 @@
 @import url("https://fonts.cdnfonts.com/css/neutral-face");
 @import url("https://fonts.cdnfonts.com/css/gotham");
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Neutral Face", sans-serif;
     -ms-text-size-adjust: 100%;
@@ -41,6 +45,12 @@ body {
         .navbar {
             svg path {
                 stroke: var(--black);
+            }
+
+            .navbar-toggler {
+                svg path {
+                    fill: var(--black);
+                }
             }
         }
 
@@ -238,6 +248,12 @@ body {
         .navbar {
             svg path {
                 stroke: var(--white);
+            }
+
+            .navbar-toggler {
+                svg path {
+                    fill: var(--white);
+                }
             }
         }
 
@@ -456,6 +472,15 @@ body {
         width: 100%;
         z-index: 10;
 
+        .navbar-toggler {
+            border: 0;
+
+            &:active,
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
         .row {
             margin: 0 !important;
 
@@ -465,6 +490,10 @@ body {
 
             .theme-mode {
                 padding-right: 2.5rem;
+            }
+
+            .col-12 {
+                padding: 0.25rem;
             }
         }
 
@@ -494,12 +523,17 @@ body {
     }
 
     .homepage {
+        .sliding-text {
+            padding-top: 3rem;
+        }
+
         .projects-carousel {
+            text-align: center;
+
             .info-card {
                 max-width: 300px;
                 min-height: 380px;
-                margin-left: 2rem !important;
-                margin-right: 2rem !important;
+                text-align: left;
                 overflow: hidden;
                 transition: transform 0.3s ease;
                 font-family: "Gotham", sans-serif;
@@ -560,7 +594,7 @@ body {
         }
 
         .contact {
-            padding: 6rem 33rem 12.5rem 33rem;
+            padding: 6rem 0 12.5rem 0;
 
             .title {
                 font-weight: 400;
@@ -773,7 +807,7 @@ body {
         .projects {
             .project-card {
                 transition: transform 0.3s ease;
-                text-align: left;
+                text-align: center;
                 font-family: "Gotham", sans-serif;
 
                 .gatsby-image-wrapper {
@@ -1369,7 +1403,7 @@ body {
 
     footer {
         font-size: 12px;
-        padding: 1.5rem 8rem 1.25rem 8rem;
+        padding: 1.5rem 0 1.25rem 0;
         font-family: "Gotham", sans-serif;
 
         .social-media {
@@ -1420,6 +1454,23 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .homepage {
+        .sliding-text {
+            padding-top: 5rem !important;
+        }
+    }
+    .sliding-text-container {
+        .text {
+            font-size: 3rem !important;
+        }
+
+        .item-separator-dot {
+            margin: 0 0.625rem !important;
         }
     }
 }
