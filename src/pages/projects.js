@@ -20,7 +20,7 @@ const Projects = ({ data }) => {
                     <div className="container">
                         <div className="projects row my-5">
                             {data.allSocialJson.nodes.map((social, index) => (
-                                <div key={`${social.name}-${index}`} className="col-12 col-lg-3 project-card my-3">
+                                <div key={`${social.name}-${index}`} className="col-12 col-md-6 col-xxl-3 project-card my-3">
                                     <div className="row">
                                         <div className="col-12">
                                             <Link className="" to={social.link}>
@@ -58,7 +58,7 @@ const Projects = ({ data }) => {
                     <div className="container">
                         <div className="projects row my-5">
                             {data.allGraphicJson.nodes.map((graphic, index) => (
-                                <div key={`${graphic.name}-${index}`} className="col-12 col-lg-3 project-card my-3">
+                                <div key={`${graphic.name}-${index}`} className="col-12 col-md-6 col-xxl-3 project-card my-3">
                                     <div className="row">
                                         <div className="col-12">
                                             <Link className="" to={graphic.link}>
@@ -97,7 +97,7 @@ const Projects = ({ data }) => {
                     <div className="container">
                         <div className="projects row my-5">
                             {data.allEditorialJson.nodes.map((editorial, index) => (
-                                <div key={`${editorial.name}-${index}`} className="col-12 col-lg-3 project-card my-3">
+                                <div key={`${editorial.name}-${index}`} className="col-12 col-md-6 col-xxl-3 project-card my-3">
                                     <div className="row">
                                         <div className="col-12">
                                             <Link className="" to={editorial.link}>
