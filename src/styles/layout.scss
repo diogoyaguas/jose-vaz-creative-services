@@ -195,6 +195,16 @@ body {
             }
         }
 
+        .dulis-lookbook-page {
+            .flipbook {
+                .pages {
+                    -webkit-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                    -moz-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                    box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+
         .feeting-room-page {
             .campaigns {
                 .dark {
@@ -1174,6 +1184,45 @@ body {
                     object-fit: contain;
                 }
             }
+        }
+    }
+
+    .dulis-lookbook-page {
+        .logo svg {
+            max-width: 320px;
+            height: fit-content;
+        }
+
+        .buttons {
+            justify-content: space-around;
+            display: flex;
+        }
+
+        .flipbook {
+            .pages {
+                background-color: var(--white);
+                -webkit-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                -moz-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+
+                .gatsby-image-wrapper {
+                    width: 500px !important;
+                    height: 710px !important;
+                }
+            }
+        }
+
+        .buttons-pages {
+            font-size: 12px;
+
+            button {
+                font-size: 12px;
+            }
+        }
+
+        .final-text {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
         }
     }
 
