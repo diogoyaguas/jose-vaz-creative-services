@@ -1,3 +1,6 @@
+import "../styles/slick.css";
+import "../styles/slick-theme.css";
+
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 import React from "react"
