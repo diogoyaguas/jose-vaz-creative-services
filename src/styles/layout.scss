@@ -1226,6 +1226,95 @@ body {
         }
     }
 
+    .dulis-campaign-page {
+        .logo svg {
+            max-width: 320px;
+            height: fit-content;
+        }
+
+        .buttons {
+            justify-content: space-around;
+            display: flex;
+        }
+
+        .tales-text {
+            padding-top: 3rem;
+            font-size: 68px;
+        }
+
+        .tv-container {
+            position: relative;
+        }
+
+        .gatsby-image-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .video-wrapper {
+            position: absolute;
+            top: 6.2rem;
+            left: 6rem;
+        }
+
+        .tv-text {
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+        }
+
+        .kit-sliding {
+            padding-top: 0.5rem;
+
+                .text {
+                    font-size: 3rem !important;
+                }
+
+                .item-separator-dot {
+                    margin: 0 0.625rem !important;
+                }
+        }
+
+        .kit-text {
+            padding-top: 3rem;
+        }
+
+        .cards {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+
+            .flip-card {
+                height: 400px;
+
+                .flip-card-inner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
+
+                    .flip-card-front,
+                    .flip-card-back {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        -webkit-backface-visibility: hidden; /* Safari */
+                        backface-visibility: hidden;
+                    }
+
+                    .flip-card-front {
+                        transform: rotateY(180deg);
+                    }
+                }
+
+                &:hover .flip-card-inner {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+
     .feeting-room-page {
         .logo {
             margin-bottom: 3rem;
