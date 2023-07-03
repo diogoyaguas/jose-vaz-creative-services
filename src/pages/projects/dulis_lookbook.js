@@ -1,7 +1,7 @@
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 import React, { useRef, useState } from "react"
 
 import HTMLFlipBook from 'react-pageflip';
-import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import Logo from "../../assets/images/dulis-lookbook/logo.svg";
 import Seo from "../../components/seo"
@@ -31,8 +31,6 @@ const DulisLookbook = ({ data }) => {
     let flipBook = useRef(null)
 
     const pages = data.allDulislookbookJson.nodes;
-    const cover = data.cover
-    const backCover = data.backCover
 
     const totalPages = 24;
     const [lastData, setLastData] = useState(0)
@@ -89,13 +87,13 @@ const DulisLookbook = ({ data }) => {
                         showCover={true}
                         onFlip={(e) => changePage(e.data)}
                     >
-                        <PageCover><Img fluid={cover?.childImageSharp?.fluid} /></PageCover>
+                        <PageCover><StaticImage src={"../../assets/images/dulis-lookbook/1.png"} alt="Dulis Lookbook Cover" /></PageCover>
                         {pages.map((page, index) => (
                             <Page key={`page-${index}`}>
-                                <Img fluid={page.img?.childImageSharp?.fluid} />
+                                <GatsbyImage image={getImage(page.img)} alt="Dulis Lookbook Page" />
                             </Page>
                         ))}
-                        <PageCover><Img fluid={backCover?.childImageSharp?.fluid} /></PageCover>
+                        <PageCover><StaticImage src={"../../assets/images/dulis-lookbook/50.png"} alt="Dulis Lookbook Back Cover" /></PageCover>
                     </HTMLFlipBook>
 
                     <div className="col-7 mx-auto text-center my-5 buttons buttons-pages">
@@ -126,33 +124,17 @@ const DulisLookbook = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    cover: file(relativePath: { eq: "dulis-lookbook/1.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    backCover: file(relativePath: { eq: "dulis-lookbook/50.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    allDulislookbookJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 5000) {
-                ...GatsbyImageSharpFluid
-                }
-            }
+query {
+  allDulislookbookJson {
+    nodes {
+      img {
+        childImageSharp {
+          gatsbyImageData(width: 800)
         }
       }
     }
   }
+}
 `;
 
 export default DulisLookbook
