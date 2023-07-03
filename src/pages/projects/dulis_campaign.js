@@ -96,12 +96,12 @@ query {
     nodes {
       front {
         childImageSharp {
-          gatsbyImageData(width: 285)
+          gatsbyImageData(width: 200)
         }
       }
       back {
         childImageSharp {
-          gatsbyImageData(width: 285)
+          gatsbyImageData(width: 200)
         }
       }
     }

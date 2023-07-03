@@ -129,7 +129,9 @@ query {
     nodes {
       img {
         childImageSharp {
-          gatsbyImageData(width: 800)
+          gatsbyImageData(
+            width: 500
+          )
         }
       }
     }

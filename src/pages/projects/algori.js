@@ -137,7 +137,7 @@ query {
       img {
         childImageSharp {
           gatsbyImageData(
-            width: 800
+            width: 500
           )
         }
       }
