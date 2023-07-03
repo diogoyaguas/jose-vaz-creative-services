@@ -68,6 +68,8 @@ module.exports = {
         defaults: {
           formats: ["webp", "png", "jpg"],
           quality: 100,
+          backgroundColor: `transparent`,
+          placeholder: `blurred`,
           breakpoints: [576, 768, 992, 1200],
         },
       },
