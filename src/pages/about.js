@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 
 import Arrow from "../assets/icons/common/arrow.svg";
 import CallMeZe from "../assets/icons/about/name.svg";
-import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import SlidingText from "../components/slidingText"
 import StarEmpty from "../assets/icons/about/star_empty.svg"
 import StarFull from "../assets/icons/about/star_full.svg";
+import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 
 const About = ({ data }) => {
-    const profile = data?.profile?.childImageSharp?.fixed
     const [tooltipText, setTooltipText] = useState("")
     const [stars, setStars] = useState("")
 
@@ -74,7 +73,7 @@ const About = ({ data }) => {
                 <div className="container row bio">
                     <div className="col-lg-5 col-12 profile mx-auto">
                         <CallMeZe />
-                        <Img fixed={profile} alt="José Vaz profile picture" />
+                        <StaticImage src={"../assets/images/about/profile.png"} alt="José Vaz profile picture" />
 
                     </div>
                     <div className="col-lg-7 col-12 description mt-5 mt-lg-0">
@@ -151,13 +150,6 @@ const About = ({ data }) => {
 
 export const query = graphql`
   query {
-    profile: file(relativePath: { eq: "about/profile.png" }) {
-      childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    },
     allExperienceJson {
         nodes {
             title

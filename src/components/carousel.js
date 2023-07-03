@@ -9,7 +9,7 @@ import ReactPlayer from 'react-player';
 import Slider from 'react-slick';
 
 const Carousel = ({ information }) => {
-
+  
   const settings = {
     arrows: false,
     autoplay: false,
@@ -85,7 +85,7 @@ const Carousel = ({ information }) => {
                       height="auto"
                     />
                   </span>
-                  : <GatsbyImage image={getImage(info.img)} alt={info.alt}/>}
+                  : <GatsbyImage image={getImage(info.img)} alt={info.alt || info.name}/>}
               </Link>
             </div>
             {info.name != null &&

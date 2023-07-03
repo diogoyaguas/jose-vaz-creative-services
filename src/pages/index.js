@@ -1,34 +1,13 @@
 import * as React from "react"
 
-import { graphql, useStaticQuery } from "gatsby"
-
 import Carousel from "../components/carousel"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import SlidingText from "../components/slidingText"
+import { graphql } from "gatsby"
 
-const Homepage = () => {
-  const projects = useStaticQuery(graphql`
-    query {
-      allProjectsJson {
-        nodes {
-          name
-          link
-          video {
-            publicURL
-          }
-          img {
-            childImageSharp {
-              fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
+const Homepage = ({ data }) => {
+  const projects = data.allProjectsJson.nodes
   return (
     <Layout>
       <Seo title="Homepage" />
@@ -37,7 +16,7 @@ const Homepage = () => {
           <SlidingText text={"GRAPHIC DESIGNER AND CONTENT EDITOR"} />
         </div>
         <div className="projects-carousel">
-          <Carousel information={projects.allProjectsJson.nodes} />
+          <Carousel information={projects} />
         </div>
         <div className="contact container text-center">
           <div className="row">
@@ -57,5 +36,23 @@ const Homepage = () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+query {
+  allProjectsJson {
+    nodes {
+      name
+      img {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      video {
+        publicURL
+      }
+    }
+  }
+}
+`;
 
 export default Homepage
