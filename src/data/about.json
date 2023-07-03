@@ -35,7 +35,7 @@
         "software": [
             {
                 "name": "Adobe Premiere",
-                "stars": 4,
+                "stars": 5,
                 "icon": "/icons/PR-B.svg"
             },
             {
@@ -45,12 +45,12 @@
             },
             {
                 "name": "Adobe Illustrator",
-                "stars": 4,
+                "stars": 5,
                 "icon": "/icons/AI - B.svg"
             },
             {
                 "name": "Adobe After Effects",
-                "stars": 4,
+                "stars": 3,
                 "icon": "/icons/AE -B.svg"
             },
             {
@@ -75,7 +75,7 @@
             },
             {
                 "name": "Microsoft Office",
-                "stars": 3,
+                "stars": 4,
                 "icon": "/icons/OFFICE-B.svg"
             }
         ]

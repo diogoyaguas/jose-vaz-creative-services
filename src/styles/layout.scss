@@ -1265,12 +1265,14 @@ body {
 
         .tales-text {
             padding-top: 3rem;
+            padding-bottom: 1rem;
             font-size: 68px;
         }
 
         .video-container {
             video {
                 border-radius: 44px;
+                width: 600px !important;
             }
         }
 
