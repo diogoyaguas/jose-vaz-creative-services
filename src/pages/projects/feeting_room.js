@@ -1,6 +1,7 @@
 import * as React from "react"
 
-import Img from "gatsby-image"
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
+
 import Layout from "../../components/layout"
 import Logo from "../../assets/icons/studio_54/tfr-logo.svg";
 import ReactPlayer from 'react-player';
@@ -9,6 +10,7 @@ import SlidingText from "../../components/slidingText"
 import { graphql } from "gatsby"
 
 const FeetingRoom = ({ data }) => {
+    const nodes = data.allFeetingRoomJson.nodes[0];
     return (
         <Layout>
             <Seo title="The Feeting Room" />
@@ -46,7 +48,7 @@ const FeetingRoom = ({ data }) => {
                     <SlidingText text={"SHORT TAKES WITH JANIINA VAZ SHORT TAKES WITH JANIINA VAZ"} />
                     <div className="container">
                         <div className="row">
-                            {data.allShorttakesJson.nodes.map((short, index) => (
+                            {nodes.shorttakes.map((short, index) => (
                                 <a key={`shorttakes-${index}`} className="col-4 shorttakes-card text-center" href={short.url} target="_blank" rel="noreferrer">
                                     <span className="video-wrapper">
                                         <ReactPlayer
@@ -80,7 +82,7 @@ const FeetingRoom = ({ data }) => {
                 <div className="reels">
                     <SlidingText text={"Reels Shoots Reels Shoots Reels Shoots Reels Shoots"} />
                     <div className="videos row mx-3">
-                        {data.allReelsJson.nodes.map((reel, index) => (
+                        {nodes.reels.map((reel, index) => (
                             <a key={`reels-${index}`} className="col-2 reels-card text-center" href={reel.url} target="_blank" rel="noreferrer">
                                 <span className="video-wrapper">
                                     <ReactPlayer
@@ -119,7 +121,7 @@ const FeetingRoom = ({ data }) => {
                                 </p>
                             </div>
                             <div className="col-12 text-center event">
-                                <Img fluid={data?.website?.childImageSharp?.fluid} />
+                                <StaticImage src={"../../assets/images/feeting_room/Campaigns/website.png"} alt={"Feeting Room Website"} />
                             </div>
                             <div className="col-9 intro mx-auto text-center">
                                 <p>
@@ -128,7 +130,7 @@ const FeetingRoom = ({ data }) => {
                             </div>
                         </div>
                         <div className="row ads">
-                            {data.allAdsJson.nodes.map((ads, index) => (
+                            {nodes.ads.map((ads, index) => (
                                 <div key={`ads-${index}`} className="col-4 ads-card">
                                     <span className="video-wrapper">
                                         <ReactPlayer
@@ -149,9 +151,9 @@ const FeetingRoom = ({ data }) => {
                         </div>
                         <div className="label">Ads for Instagram Posts</div>
                         <div className="row layouts">
-                            {data.allLayoutsJson.nodes.map((layout, index) => (
+                            {nodes.layouts.map((layout, index) => (
                                 <div key={`layout-${index}`} className="col-4 layout-card">
-                                    <Img fluid={layout.img.childImageSharp?.fluid} />
+                                    <GatsbyImage image={getImage(layout.img)} alt={"Feeting Room Layout for Campaign"} />
                                 </div>
                             ))}
                         </div>
@@ -185,9 +187,9 @@ const FeetingRoom = ({ data }) => {
                             </div>
                             <div className="col-9 playlists">
                                 <div className="row">
-                                    {data.allSpotifyJson.nodes.map((spotify, index) => (
+                                    {nodes.spotify.map((spotify, index) => (
                                         <div key={`spotify-${index}`} className="col-3 spotify-card">
-                                            <Img fluid={spotify.img.childImageSharp?.fluid} />
+                                            <GatsbyImage image={getImage(spotify.img)} alt={"Feeting Room Spotify Playlist"} />
                                         </div>
                                     ))}
                                 </div>
@@ -213,63 +215,49 @@ const FeetingRoom = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    website: file(relativePath: { eq: "feeting_room/Campaigns/website.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    story: file(relativePath: { eq: "feeting_room/Spotify/story.mp4" }) {
-      publicURL
-    },
-    allShorttakesJson {
-      nodes {
-        video {
-            publicURL
-        }
-        url
-      }
-    },
-    allReelsJson {
-      nodes {
-        video {
-            publicURL
-        }
-        url
-      }
-    },
-    allAdsJson {
-      nodes {
-        video {
-            publicURL
-        }
-      }
-    },
-    allLayoutsJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-      }
-    },
-    allSpotifyJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-      }
-    },
+query {
+  story: file(relativePath: { eq: "feeting_room/Spotify/story.mp4" }) {
+    publicURL
   }
+  allFeetingRoomJson {
+    nodes {
+      ads {
+        video {
+          publicURL
+        }
+      }
+      layouts {
+        img {
+          childImageSharp {
+            gatsbyImageData(
+                width: 500
+            )
+          }
+        }
+      }
+      reels {
+        url
+        video {
+          publicURL
+        }
+      }
+      shorttakes {
+        video {
+          publicURL
+        }
+        url
+      }
+
+      spotify {
+        img {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  }
+}
 `;
 
 export default FeetingRoom
