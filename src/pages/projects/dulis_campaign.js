@@ -1,4 +1,5 @@
-import Img from "gatsby-image"
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
+
 import Layout from "../../components/layout"
 import Logo from "../../assets/images/dulis-campaign/logo/logo.svg";
 import React from "react"
@@ -56,7 +57,7 @@ const DulisCampaign = ({ data }) => {
                     </div>
                     <SlidingText text={"The collection kit The collection kit"} className={"kit-sliding"} />
                     <div className="col-12 mx-auto text-center">
-                        <Img fluid={data.kit?.childImageSharp?.fluid} />
+                        <StaticImage src={"../../assets/images/dulis-campaign/kit/pack.png"} alt="Dulis Shoes - Collection Kit" />
                     </div>
                     <div className="col-12 col-lg-7 mx-auto text-center kit-text">
                         <p>
@@ -71,10 +72,10 @@ const DulisCampaign = ({ data }) => {
                             <div className="flip-card col-12 col-xl-2 col-sm-6 col-md-4" key={index}>
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <Img fluid={card.front?.childImageSharp?.fluid} />
+                                        <GatsbyImage image={getImage(card.front)} alt="Dulis Shoes - front card" />
                                     </div>
                                     <div className="flip-card-back">
-                                        <Img fluid={card.back?.childImageSharp?.fluid} />
+                                        <GatsbyImage image={getImage(card.back)} alt="Dulis Shoes - back card" />
                                     </div>
                                 </div>
                             </div>
@@ -87,36 +88,25 @@ const DulisCampaign = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    video: file(relativePath: { eq: "dulis-campaign/video.mp4" }) {
-      publicURL
-    },
-    kit: file(relativePath: { eq: "dulis-campaign/kit/pack.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    allCardsJson {
-      nodes {
-        front {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        back {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-      }
-    },
+query {
+  video: file(relativePath: { eq: "dulis-campaign/video.mp4" }) {
+    publicURL
   }
+  allCardsJson {
+    nodes {
+      front {
+        childImageSharp {
+          gatsbyImageData(width: 285)
+        }
+      }
+      back {
+        childImageSharp {
+          gatsbyImageData(width: 285)
+        }
+      }
+    }
+  }
+}
 `;
 
 export default DulisCampaign
