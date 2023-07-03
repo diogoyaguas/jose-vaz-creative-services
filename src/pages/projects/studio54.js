@@ -203,7 +203,9 @@ query {
       backstage {
         img {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(
+                width: 356
+            )
           }
         }
         video {
@@ -214,19 +216,25 @@ query {
         alt
         img {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(
+                width: 300
+            )
           }
         }
       }
       products {
         hover {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(
+                width: 200
+            )
           }
         }
         img {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(
+                width: 200
+            )
           }
         }
       }
@@ -234,7 +242,9 @@ query {
         alt
         img {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(
+                width: 300
+            )
           }
         }
         video {
