@@ -75,12 +75,12 @@ const Studio54 = ({ data }) => {
                     </div>
                 </div>
                 <div className="container products">
-                    <div className=" row my-5">
+                    <div className="row my-5">
                         {nodes.products.map((product, index) => (
                             <div
                                 key={`product-${index}`}
                                 id={`product-${index}`}
-                                className="col-2 product-card"
+                                className="product-card"
                             >
                                 <div className="row">
                                     <div className="col-12 normal">
@@ -112,7 +112,7 @@ const Studio54 = ({ data }) => {
                     <SlidingText text={"BACKSTAGE SNEAK PEEK BACKSTAGE SNEAK PEEK"} small={true} />
                     <div className="backstage row my-5">
                         {nodes.backstage.map((product, index) => (
-                            <div key={`backstage-${index}`} className="col-3 backstage-card">
+                            <div key={`backstage-${index}`} className="col-lg-3 col-12 backstage-card">
                                 <div className="row">
                                     <div className="col-12">
                                         <GatsbyImage image={getImage(product.img)} alt="Studio 54 - Backstage Photoshoot" />

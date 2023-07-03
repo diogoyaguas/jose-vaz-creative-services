@@ -656,8 +656,8 @@ body {
                     overflow: hidden;
 
                     > div {
-                        max-width: 275px !important;
-                        height: 275px !important;
+                        max-width: 250px !important;
+                        height: 250px !important;
                     }
 
                     img {
@@ -893,7 +893,7 @@ body {
             max-width: 1120px;
 
             .product-card {
-                width: 20% !important;
+                width: 20%;
                 padding: calc(var(--bs-gutter-x) * 0.25);
                 text-align: center;
 
@@ -1665,12 +1665,43 @@ body {
 @media (max-width: 991px) {
     .homepage {
         .sliding-text {
-            padding-top: 5rem !important;
+            padding-top: 3rem !important;
+        }
+
+        .contact .title {
+            font-size: 2rem !important;
         }
     }
+
+    .about-page {
+        .bio {
+            .description {
+                padding-right: 0 !important;
+            }
+        }
+
+        .experience-group .software-experience-list {
+            padding: 0 !important;
+        }
+    }
+
+    .studio-54-page {
+        .intro .btn-primary {
+            width: 100% !important;
+        }
+
+        .products .product-card {
+            width: 50% !important;
+        }
+
+        .settings-content {
+            padding: 1rem 3rem !important;
+        }
+    }
+
     .sliding-text-container {
         .text {
-            font-size: 5rem !important;
+            font-size: 7rem !important;
         }
 
         .item-separator-dot {

@@ -87,14 +87,14 @@ const About = ({ data }) => {
                     </div>
                 </div>
                 <div className="container row software-experience-container">
-                    <div className="row col-8">
-                        <div className="col-4 software-experience">
+                    <div className="row col-lg-8 col-12">
+                        <div className="col-lg-4 col-12 software-experience">
                             Software Experience
                         </div>
-                        <div className="col-5 software-name">
+                        <div className="col-lg-5 col-12 software-name">
                             {tooltipText}
                         </div>
-                        <div className="col-3 software-stars">
+                        <div className="col-lg-3 col-12 software-stars">
                             {stars}
                         </div>
                     </div>
