@@ -121,8 +121,6 @@ body {
 
         .contact-page {
             .contact {
-                padding: 6rem 33rem 12.5rem 33rem;
-
                 .social-media {
                     a svg {
                         padding: 0.938rem;
@@ -355,8 +353,6 @@ body {
 
         .contact-page {
             .contact {
-                padding: 6rem 33rem 12.5rem 33rem;
-
                 .social-media {
                     a svg {
                         padding: 0.938rem;
@@ -809,8 +805,9 @@ body {
 
     .contact-page {
         .contact {
-            padding: 6rem 33rem 12.5rem 33rem;
-
+            margin-bottom: 8rem;
+            margin-top: 3rem;
+            
             .title {
                 font-size: 3rem;
             }
@@ -1696,6 +1693,17 @@ body {
 
         .settings-content {
             padding: 1rem 3rem !important;
+        }
+    }
+
+    .contact-page {
+        .contact {
+            margin-top: 2rem !important;
+            margin-bottom: 3rem !important;
+
+            .title {
+                font-size: 2rem !important;
+            }
         }
     }
 
