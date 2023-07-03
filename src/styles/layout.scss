@@ -732,11 +732,11 @@ body {
             .software-experience-list {
                 padding: 0.938rem 6.5rem;
                 display: flex;
-                justify-content: space-between;
 
                 .software-experience {
                     position: relative;
                     cursor: pointer;
+                    width: 11.11%;
 
                     img {
                         max-height: 2rem;
@@ -760,6 +760,8 @@ body {
                 svg {
                     font-weight: 200;
                     float: right;
+                    height: 15px;
+                    min-width: 15px !important;
                 }
 
                 &.active {
@@ -771,7 +773,9 @@ body {
             }
 
             .experience-content {
-                padding: 3rem 17.75rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
                 display: none;
                 overflow: hidden;
 
@@ -799,7 +803,8 @@ body {
         }
 
         .contact {
-            padding: 6.25rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
         }
     }
 
@@ -807,7 +812,7 @@ body {
         .contact {
             margin-bottom: 8rem;
             margin-top: 3rem;
-            
+
             .title {
                 font-size: 3rem;
             }
@@ -1673,12 +1678,55 @@ body {
     .about-page {
         .bio {
             .description {
-                padding-right: 0 !important;
+                padding: 0 !important;
+                text-align: center;
+            }
+        }
+
+        .software-experience-list {
+            .software-experience {
+                text-align: center;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                width: 33.3% !important;
+            }
+        }
+
+        .software-experience-container {
+            padding-bottom: 1rem;
+            margin: auto;
+
+            .row {
+                padding: 0 !important;
+                margin: auto;
+            }
+
+            div {
+                .software-experience {
+                    left: 0 !important;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .software-name {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                    text-align: center !important;
+                }
+
+                .software-stars {
+                    opacity: 0;
+                    text-align: center !important;
+                }
             }
         }
 
         .experience-group .software-experience-list {
             padding: 0 !important;
+        }
+
+        .experience-header {
+            font-size: 1rem !important;
         }
     }
 

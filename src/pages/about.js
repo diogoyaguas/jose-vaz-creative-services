@@ -86,7 +86,7 @@ const About = ({ data }) => {
                         </p>
                     </div>
                 </div>
-                <div className="container row software-experience-container">
+                <div className="container software-experience-container">
                     <div className="row col-lg-8 col-12">
                         <div className="col-lg-4 col-12 software-experience">
                             Software Experience
@@ -100,9 +100,9 @@ const About = ({ data }) => {
                     </div>
                 </div>
                 <div className="experience-group">
-                    <div className="container software-experience-list">
+                    <div className="container row software-experience-list">
                         {nodes.software.map(software => (
-                            <div 
+                            <div
                                 role="presentation"
                                 className="software-experience"
                                 key={software.name}
@@ -122,19 +122,22 @@ const About = ({ data }) => {
                         <div key={info.title}>
                             <div className="experience-header">{info.title}<Arrow /></div>
                             <div className="experience-content">
-                                <p>{info.date}</p>
-                                <div className="experience-text"
-                                    dangerouslySetInnerHTML={({
-                                        __html: info.text
-                                    })}
-                                />
+                                <div className="row">
+                                    <div className="col-lg-8 col-10 mx-auto">
+                                        <p>{info.date}</p>
+                                        <div className="experience-text"
+                                            dangerouslySetInnerHTML={({
+                                                __html: info.text
+                                            })}
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div >
                     ))}
                 </div>
-
-                <div className="contact text-center">
-                    <a href="/cv.pdf" className="btn btn-primary download-cv" download>
+                <div className="row contact text-center">
+                    <a href="/cv.pdf" className="btn btn-primary download-cv col-lg-2 col-10 mx-auto" download>
                         DOWNLOAD CV
                     </a>
                 </div>
