@@ -1,9 +1,9 @@
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 import React, { useEffect } from "react"
 
 import Arrow from "../../assets/icons/common/arrow.svg";
 import Carousel from "../../components/carousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import Logo from "../../assets/icons/studio_54/tfr-logo.svg";
 import ReactPlayer from 'react-player';
@@ -29,6 +29,8 @@ const Studio54 = ({ data }) => {
             });
         });
     }, []);
+
+    const nodes = data.allStudio54Json.nodes[0]
 
     return (
         <Layout>
@@ -74,7 +76,7 @@ const Studio54 = ({ data }) => {
                 </div>
                 <div className="container products">
                     <div className=" row my-5">
-                        {data.allProductsJson.nodes.map((product, index) => (
+                        {nodes.products.map((product, index) => (
                             <div
                                 key={`product-${index}`}
                                 id={`product-${index}`}
@@ -82,10 +84,10 @@ const Studio54 = ({ data }) => {
                             >
                                 <div className="row">
                                     <div className="col-12 normal">
-                                        <Img fluid={product.img?.childImageSharp?.fluid} />
+                                        <GatsbyImage image={getImage(product.img)} alt="Studio 54 - Product Image" />
                                     </div>
                                     <div className="col-12 hover">
-                                        <Img fluid={product.hover?.childImageSharp?.fluid} />
+                                        <GatsbyImage image={getImage(product.hover)} alt="Studio 54 - Product Photoshoot" />
                                     </div>
                                 </div>
                             </div>
@@ -99,21 +101,21 @@ const Studio54 = ({ data }) => {
                     </p>
                     <div className="row">
                         <div className="col-12 printed-white">
-                            <Img fluid={data.printedWhite.childImageSharp.fluid} />
+                            <StaticImage src={"../../assets/images/studio_54/printed_materials/materials-white.png"} alt="Studio 54 - Visual Identity" />
                         </div>
                         <div className="col-12 printed-black">
-                            <Img fluid={data.printedBlack.childImageSharp.fluid} />
+                            <StaticImage src={"../../assets/images/studio_54/printed_materials/materials-black.png"} alt="Studio 54 - Visual Identity" />
                         </div>
                     </div>
                 </div>
                 <div className="sneak-peek">
                     <SlidingText text={"Backstage Sneak peek Backstage Sneak peek"} />
                     <div className="backstage row my-5">
-                        {data.allBackstageJson.nodes.map((product, index) => (
+                        {nodes.backstage.map((product, index) => (
                             <div key={`backstage-${index}`} className="col-3 backstage-card">
                                 <div className="row">
                                     <div className="col-12">
-                                        <Img fluid={product.img?.childImageSharp?.fluid} />
+                                        <GatsbyImage image={getImage(product.img)} alt="Studio 54 - Backstage Photoshoot" />
                                         <span className="video-wrapper">
                                             <ReactPlayer
                                                 className="player-wrapper"
@@ -143,7 +145,7 @@ const Studio54 = ({ data }) => {
                 </div>
                 <div className="studio-carousel">
                     <SlidingText text={"SOCIAL MEDIA  SOCIAL MEDIA  SOCIAL MEDIA"} />
-                    <Carousel information={data.allStudioJson.nodes} />
+                    <Carousel information={nodes.studio} />
                     <div className="container row mx-auto">
                         <div className="col-9 mx-auto text-center">
                             <p className="mb-0">
@@ -155,7 +157,7 @@ const Studio54 = ({ data }) => {
                 <div className="the-event">
                     <div className="title">THE EVENT</div>
                     <div className="col-12 text-center event container">
-                        <Img fluid={data.event?.childImageSharp?.fluid} />
+                        <StaticImage src={"../../assets/images/studio_54/event.png"} alt="Studio 54 - Event" />
                     </div>
                     <div className="container row mx-auto">
                         <div className="col-9 mx-auto text-center">
@@ -168,7 +170,7 @@ const Studio54 = ({ data }) => {
                         </div>
                     </div>
                     <div className="studio-carousel">
-                        <Carousel information={data.allPartyJson.nodes} />
+                        <Carousel information={nodes.party} />
                     </div>
                 </div>
                 <div className="logo container">
@@ -192,89 +194,56 @@ const Studio54 = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    banner: file(relativePath: { eq: "studio_54/Banner.mp4" }) {
-      publicURL
-    },
-    event: file(relativePath: { eq: "studio_54/event.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    printedWhite: file(relativePath: { eq: "studio_54/printed_materials/materials-white.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    printedBlack: file(relativePath: { eq: "studio_54/printed_materials/materials-black.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    allProductsJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        hover {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-      }
-    },
-    allBackstageJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        video {
-            publicURL
-        }
-      }
-    },
-    allStudioJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        video {
-            publicURL
-        }
-      }
-    },
-    allPartyJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 2500) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-      }
-    },
+query {
+  banner: file(relativePath: { eq: "studio_54/Banner.mp4" }) {
+    publicURL
   }
+  allStudio54Json {
+    nodes {
+      backstage {
+        img {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+        video {
+          publicURL
+        }
+      }
+      party {
+        alt
+        img {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+      products {
+        hover {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+        img {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+      studio {
+        alt
+        img {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+        video {
+          publicURL
+        }
+      }
+    }
+  }
+}
 `;
 
 export default Studio54

@@ -1,7 +1,8 @@
 import "../styles/slick.css";
 import "../styles/slick-theme.css";
 
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 import { Link } from "gatsby"
 import React from "react"
 import ReactPlayer from 'react-player';
@@ -84,7 +85,7 @@ const Carousel = ({ information }) => {
                       height="auto"
                     />
                   </span>
-                  : <Img fluid={info.img?.childImageSharp?.fluid} />}
+                  : <GatsbyImage image={getImage(info.img)} alt={info.alt}/>}
               </Link>
             </div>
             {info.name != null &&
