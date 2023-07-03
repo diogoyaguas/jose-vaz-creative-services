@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import { Link } from "gatsby"
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
 import Seo from "../components/seo"
 import SlidingText from "../components/slidingText"
 import { graphql } from "gatsby"

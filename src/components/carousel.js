@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { Link } from "gatsby"
 import React from "react"
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
 import Slider from 'react-slick';
 
 const Carousel = ({ information }) => {
