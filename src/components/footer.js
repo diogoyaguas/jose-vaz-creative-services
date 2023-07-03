@@ -21,17 +21,17 @@ const Footer = () => {
                 </a>
                 <div className="col-6 social-media" >
                     <div>
-                        <a href="https://www.linkedin.com/in/jos%C3%A9-vaz-45144a1b9/" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/jos%C3%A9-vaz-45144a1b9/" target="_blank" rel="noreferrer" title="Linkedin">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </div>
                     <div>
-                        <a href="https://www.behance.net/zeoliveira2936" target="_blank" rel="noreferrer">
+                        <a href="https://www.behance.net/zeoliveira2936" target="_blank" rel="noreferrer" title="Behance">
                             <FontAwesomeIcon icon={faBehance} />
                         </a>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/sr.josevaz/" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/sr.josevaz/" target="_blank" rel="noreferrer" title="Instagram">
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
                     </div>

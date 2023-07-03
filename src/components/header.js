@@ -13,7 +13,7 @@ const Header = ({ mode, setMode }) => {
 		<nav className="navbar navbar-expand-lg sticky-top justify-content-between">
 			<div className="container">
 				<div className="navbar-brand logo">
-					<Link to="/">
+					<Link to="/" title="Logo" className="logo-svg">
 						<Star />
 					</Link>
 				</div>
