@@ -30,7 +30,7 @@ const DulisLookbook = ({ data }) => {
 
     let flipBook = useRef(null)
 
-    const pages = data.allDulislookbookJson.nodes;
+    const pages = data.allDulisLookBookJson.nodes;
 
     const totalPages = 24;
     const [lastData, setLastData] = useState(0)
@@ -125,7 +125,7 @@ const DulisLookbook = ({ data }) => {
 
 export const query = graphql`
 query {
-  allDulislookbookJson {
+  allDulisLookBookJson {
     nodes {
       img {
         childImageSharp {

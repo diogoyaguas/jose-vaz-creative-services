@@ -68,7 +68,7 @@ const DulisCampaign = ({ data }) => {
                         </p>
                     </div>
                     <div className="cards row">
-                        {data.allCardsJson.nodes.map((card, index) => (
+                        {data.allDulisCardsJson.nodes.map((card, index) => (
                             <div className="flip-card col-12 col-xl-2 col-sm-6 col-md-4" key={index}>
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
@@ -92,7 +92,7 @@ query {
   video: file(relativePath: { eq: "dulis-campaign/video.mp4" }) {
     publicURL
   }
-  allCardsJson {
+  allDulisCardsJson {
     nodes {
       front {
         childImageSharp {

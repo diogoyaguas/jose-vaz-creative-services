@@ -30,7 +30,7 @@ const Algori = ({ data }) => {
 
     let flipBook = useRef(null)
 
-    const pages = data.allAlgoriJson.nodes;
+    const pages = data.allAlgoriLookBookJson.nodes;
 
     const totalPages = 20;
     const [lastData, setLastData] = useState(0)
@@ -132,7 +132,7 @@ const Algori = ({ data }) => {
 
 export const query = graphql`
 query {
-  allAlgoriJson {
+  allAlgoriLookBookJson {
     nodes {
       img {
         childImageSharp {
