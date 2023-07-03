@@ -11,7 +11,7 @@ const Header = ({ mode, setMode }) => {
 	return (
 
 		<nav className="navbar navbar-expand-lg sticky-top justify-content-between">
-			<div className="header-container">
+			<div className="container">
 				<div className="navbar-brand logo">
 					<Link to="/" title="Logo" className="logo-svg">
 						<Star />
