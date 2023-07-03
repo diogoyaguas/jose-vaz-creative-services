@@ -35,7 +35,7 @@ const DulisCampaign = ({ data }) => {
                     <div className="col-12 mx-auto text-center title tales-text">
                         Tales of the Unexpected
                     </div>
-                    <div className="col-12 tv-container text-center">
+                    <div className="col-12 video-container text-center">
                         <span className="video-wrapper">
                             <ReactPlayer
                                 className="player-wrapper"
@@ -48,7 +48,6 @@ const DulisCampaign = ({ data }) => {
                                 height="auto"
                             />
                         </span>
-                        <Img fluid={data.tv?.childImageSharp?.fluid} />
                     </div>
                     <div className="col-12 col-lg-7 mx-auto text-center tv-text">
                         <p>
@@ -91,13 +90,6 @@ export const query = graphql`
   query {
     video: file(relativePath: { eq: "dulis-campaign/video.mp4" }) {
       publicURL
-    },
-    tv: file(relativePath: { eq: "dulis-campaign/video/tv.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
     },
     kit: file(relativePath: { eq: "dulis-campaign/kit/pack.png" }) {
       childImageSharp {

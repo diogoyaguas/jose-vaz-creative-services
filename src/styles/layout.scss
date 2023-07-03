@@ -1242,20 +1242,10 @@ body {
             font-size: 68px;
         }
 
-        .tv-container {
-            position: relative;
-        }
-
-        .gatsby-image-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .video-wrapper {
-            position: absolute;
-            top: 6.2rem;
-            left: 6rem;
+        .video-container {
+            video {
+                border-radius: 44px;
+            }
         }
 
         .tv-text {
@@ -1266,13 +1256,13 @@ body {
         .kit-sliding {
             padding-top: 0.5rem;
 
-                .text {
-                    font-size: 3rem !important;
-                }
+            .text {
+                font-size: 3rem !important;
+            }
 
-                .item-separator-dot {
-                    margin: 0 0.625rem !important;
-                }
+            .item-separator-dot {
+                margin: 0 0.625rem !important;
+            }
         }
 
         .kit-text {
