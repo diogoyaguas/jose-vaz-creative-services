@@ -15,7 +15,7 @@ const DatDesign = () => {
             <StaticImage src={"../../assets/images/dat/poster.png"} alt="DAT logo" />
           </div>
           <div className="row">
-            <div className="col-9 mx-auto text-center">
+            <div className="col-lg-9 col-12 mx-auto text-center">
               <p>
                 DAT: Design, Art, and Technology is a prestigious conference series organized by professors from the Design and Multimedia degree program at the University of Coimbra.
               </p>
@@ -28,7 +28,7 @@ const DatDesign = () => {
             <StaticImage src={"../../assets/images/dat/posters.png"} alt="DAT posters" />
           </div>
           <div className="row">
-            <div className="col-9 mx-auto text-center">
+            <div className="col-lg-9 col-12 mx-auto text-center">
               <p>
                 A university professor initiated a project to develop the visual identity, merchandising, and various printed and digital materials for the event, including the creation of a comprehensive visual identity and branding strategy.
               </p>

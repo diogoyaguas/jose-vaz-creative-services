@@ -63,7 +63,7 @@ const Algori = ({ data }) => {
                     <div className="col-12 logo text-center">
                         <Logo />
                     </div>
-                    <div className="col-7 mx-auto text-center">
+                    <div className="col-lg-7 col-12 mx-auto text-center">
                         <p>
                             Algori is a distinguished Portuguese shoe brand that prides itself on its commitment
                             to quality, craftsmanship, and a rich heritage.
@@ -73,11 +73,11 @@ const Algori = ({ data }) => {
 
                         </p>
                     </div>
-                    <div className="col-9 mx-auto text-center my-5 buttons">
-                        <a href="https://algoribrand.com/pt" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
+                    <div className="col-lg-9 col-12 row mx-auto text-center my-5 buttons">
+                        <a href="https://algoribrand.com/pt" target="_blank" rel="noreferrer" className="col-lg-4 col-12 btn btn-primary">
                             VISIT WEBSITE
                         </a>
-                        <a href="https://instagram.com/algoribrand" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
+                        <a href="https://instagram.com/algoribrand" target="_blank" rel="noreferrer" className="col-lg-4 col-12 btn btn-primary">
                             STALK INSTAGRAM
                         </a>
                     </div>
@@ -100,22 +100,22 @@ const Algori = ({ data }) => {
                         <PageCover><StaticImage src={"../../assets/images/algori/44.png"} alt="Algori Lookbook Back Cover" /></PageCover>
                     </HTMLFlipBook>
 
-                    <div className="col-7 mx-auto text-center my-5 buttons buttons-pages">
-                        <div className="w-25 prev">
+                    <div className="col-lg-7 col-12 row mx-auto text-center my-5 buttons buttons-pages">
+                        <div className="col-lg-4 col-12 prev">
                             <button type="button" className="btn btn-primary" onClick={() => prevButtonClick()}>
                                 Previous page
                             </button>
                         </div>
-                        <div className="w-25 text-center">
+                        <div className="col-lg-4 col-12 text-center">
                             {page > 0 && page <= totalPages && <span>{page} of </span>}{totalPages} pages
                         </div>
-                        <div className="w-25 next">
+                        <div className="col-lg-4 col-12 next">
                             <button type="button" className="btn btn-primary" onClick={(e) => nextButtonClick(e)}>
                                 Next page
                             </button>
                         </div>
                     </div>
-                    <div className="col-7 mx-auto text-center mt-5">
+                    <div className="col-lg-7 col-12 mx-auto text-center mt-5">
                         <p>
                             In addition to developing the brandbook, we also create business cards, flyers,
                             and other digital and printed marketing materials.

@@ -63,7 +63,7 @@ const DulisLookbook = ({ data }) => {
                     <div className="col-12 logo text-center">
                         <Logo />
                     </div>
-                    <div className="col-7 mx-auto text-center">
+                    <div className="col-lg-7 col-12 mx-auto text-center">
                         <p>
                             Dulis Shoes is a vibrant shoe brand catering to babies, kids, and moms, offering a delightful range of footwear. What sets Dulis Shoes apart is their commitment to manufacturing all their products in Portugal, a country known for its
                             exceptional craftsmanship and attention to detail.
@@ -72,8 +72,8 @@ const DulisLookbook = ({ data }) => {
                             As part of the Consulting department of The Feeting Room, I had the privilege of creating a captivating Lookbook for Dulis Shoes' Spring/Summer Collection of 2023.
                         </p>
                     </div>
-                    <div className="col-9 mx-auto text-center my-5 buttons">
-                        <a href="https://www.instagram.com/dulisshoes/" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
+                    <div className="col-lg-9 col-12 row mx-auto text-center my-5 buttons">
+                        <a href="https://www.instagram.com/dulisshoes/" target="_blank" rel="noreferrer" className="col-lg-4 col-12 btn btn-primary">
                             STALK INSTAGRAM
                         </a>
                     </div>
@@ -96,22 +96,22 @@ const DulisLookbook = ({ data }) => {
                         <PageCover><StaticImage src={"../../assets/images/dulis-lookbook/50.png"} alt="Dulis Lookbook Back Cover" /></PageCover>
                     </HTMLFlipBook>
 
-                    <div className="col-7 mx-auto text-center my-5 buttons buttons-pages">
-                        <div className="w-25 prev">
+                    <div className="col-lg-7 col-12 row mx-auto text-center my-5 buttons buttons-pages">
+                        <div className="col-lg-4 col-12 prev">
                             <button type="button" className="btn btn-primary" onClick={() => prevButtonClick()}>
                                 Previous page
                             </button>
                         </div>
-                        <div className="w-25 text-center">
+                        <div className="col-lg-4 col-12 text-center">
                             {page > 0 && page <= totalPages && <span>{page} of </span>}{totalPages} pages
                         </div>
-                        <div className="w-25 next">
+                        <div className="col-lg-4 col-12 next">
                             <button type="button" className="btn btn-primary" onClick={(e) => nextButtonClick(e)}>
                                 Next page
                             </button>
                         </div>
                     </div>
-                    <div className="col-7 mx-auto text-center final-text">
+                    <div className="col-lg-7 col-12 mx-auto text-center final-text">
                         <p>
                             Through carefully curated visuals and engaging storytelling, the Lookbook captures the essence of Dulis Shoes, highlighting the brand's Portuguese heritage
                             and its dedication to craftsmanship.

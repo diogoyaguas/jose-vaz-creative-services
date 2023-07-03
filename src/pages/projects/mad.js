@@ -30,7 +30,7 @@ const Mad = ({ data }) => {
                         </div>
                     </div>
                     <div className="col-9 mx-auto text-center my-5 buttons">
-                        <a href="https://www.instagram.com/mad.clubbing/" target="_blank" rel="noreferrer" className="w-25 btn btn-primary">
+                        <a href="https://www.instagram.com/mad.clubbing/" target="_blank" rel="noreferrer" className="col-lg-4 col-12 btn btn-primary">
                             STALK INSTAGRAM
                         </a>
                     </div>

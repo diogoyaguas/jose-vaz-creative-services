@@ -55,7 +55,7 @@ const Studio54 = ({ data }) => {
                 </div>
                 <div className="container intro">
                     <div className="row">
-                        <div className="col-9 mx-auto text-center">
+                        <div className="col-lg-9 col-12 mx-auto text-center">
                             <p>
                                 TFRLab_01  is an innovative project that fosters collaboration between The Feeting Room and its partner brands in the creation of capsule collections. The focus was on reviving the essence of individual freedom and self-expression that was prominently present at Studio 54, the iconic New York nightclub that thrived during the 1970s.
                             </p>
@@ -136,7 +136,7 @@ const Studio54 = ({ data }) => {
                         ))}
                     </div>
                     <div className="container row mx-auto">
-                        <div className="col-9 mx-auto text-center">
+                        <div className="col-lg-9 col-12 mx-auto text-center">
                             <p className="mb-0">
                                 I had the opportunity to collaborate with the project's Creative Director and support the photographer Pedro MKK in capturing backstage content during the photoshoot. This content holds significant value as it will be utilized for various digital marketing collateral to promote the collection across different media platforms.
                             </p>
@@ -147,7 +147,7 @@ const Studio54 = ({ data }) => {
                     <SlidingText text={"SOCIAL MEDIA SOCIAL MEDIA SOCIAL MEDIA"} small={true} />
                     <Carousel information={nodes.studio} />
                     <div className="container row mx-auto">
-                        <div className="col-9 mx-auto text-center">
+                        <div className="col-lg-9 col-12 mx-auto text-center">
                             <p className="mb-0">
                                 As part of my role,  I was responsible for delivering Social Media layouts and Advertisements to promote the collection. The result was a comprehensive digital marketing campaign that successfully communicated the unique character of TFRLab_01 and effectively conveyed the collection's essence and generated interest.
                             </p>
@@ -160,7 +160,7 @@ const Studio54 = ({ data }) => {
                         <StaticImage src={"../../assets/images/studio_54/event.png"} alt="Studio 54 - Event" />
                     </div>
                     <div className="container row mx-auto">
-                        <div className="col-9 mx-auto text-center">
+                        <div className="col-lg-9 col-12 mx-auto text-center">
                             <p>
                                 On the 19th of November 2021 , The Feeting Room threw a launching of the first iteration of TFRLab.
                             </p>
