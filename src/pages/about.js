@@ -100,7 +100,7 @@ const About = ({ data }) => {
                     </div>
                 </div>
                 <div className="experience-group">
-                    <div className="container row software-experience-list">
+                    <div className="container row software-experience-list mx-auto">
                         {nodes.software.map(software => (
                             <div
                                 role="presentation"
