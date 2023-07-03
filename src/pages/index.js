@@ -42,6 +42,7 @@ query {
   allProjectsJson {
     nodes {
       name
+      link
       img {
         childImageSharp {
           gatsbyImageData
