@@ -822,10 +822,11 @@ body {
 
                 .gatsby-image-wrapper {
                     width: 300px !important;
-                    height: 300px !important;
+                    height: 312px !important;
 
                     img {
                         border-radius: 39px;
+                        max-height: 300px;
                         transition: opacity 0.3s ease-in-out;
                     }
                 }

@@ -1,0 +1,55 @@
+[
+    {
+        "editorial": [
+            {
+                "name": "Dulis Shoes - SS23 Lookbook",
+                "img": "../assets/images/projects/DULIS - SS23 Lookbook.png",
+                "link": "/projects/dulis_lookbook"
+            },
+            {
+                "name": "Algori - Brandbook 2022",
+                "video": "../assets/videos/projects/Algori - Brandbook.mp4",
+                "link": "/projects/algori"
+            }
+        ],
+        "graphic": [
+            {
+                "name": "DAT - Design, Art and Technology",
+                "img": "../assets/images/projects/DAT - Design, Arte e Tecnologia.png",
+                "link": "/projects/dat"
+            },
+            {
+                "name": "Deepwear - Global Progressive Fashion Agency",
+                "video": "../assets/videos/projects/Deepwear - Global Progressive Fashion Agency.mp4",
+                "link": "/projects/deepwear"
+            },
+            {
+                "name": "Dezénhos",
+                "img": "../assets/images/projects/Dezenhos.png",
+                "link": "/projects/dezenhos"
+            },
+            {
+                "name": "Dulis Shoes - FW22 Campaign ",
+                "video": "../assets/videos/projects/DULIS - FW22 Campaign.mp4",
+                "link": "/projects/dulis_campaign"
+            }
+        ],
+        "social": [
+            {
+                "name": "The Feeting Room ",
+                "img": "../assets/images/projects/The Feeting Room.png",
+                "link": "/projects/feeting_room"
+            },
+            {
+                "name": "TFRLab_01 - STUDIO 54",
+                "video": "../assets/videos/projects/TFRLab_01 - Studio54.mp4",
+                "link": "/projects/studio54"
+            },
+            {
+                "name": "M.A.D - Music Addiction Disorder",
+                "img": "../assets/images/projects/M.A.D - Music Addiction Disorder .png",
+                "link": "/projects/mad"
+            }
+        ]
+    }
+]

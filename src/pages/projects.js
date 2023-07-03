@@ -1,6 +1,7 @@
 import * as React from "react"
 
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import ReactPlayer from 'react-player';
@@ -9,6 +10,7 @@ import SlidingText from "../components/slidingText"
 import { graphql } from "gatsby"
 
 const Projects = ({ data }) => {
+    const nodes = data.allProjectsDetailsJson.nodes[0]
     return (
         <Layout>
             <Seo title="Projects" />
@@ -19,7 +21,7 @@ const Projects = ({ data }) => {
                     </div>
                     <div className="container">
                         <div className="projects row my-5">
-                            {data.allSocialJson.nodes.map((social, index) => (
+                            {nodes.social.map((social, index) => (
                                 <div key={`${social.name}-${index}`} className="col-12 col-md-6 col-xxl-3 project-card my-3">
                                     <div className="row">
                                         <div className="col-12">
@@ -39,7 +41,7 @@ const Projects = ({ data }) => {
                                                             height="auto"
                                                         />
                                                     </span>
-                                                    : <Img fixed={social.img?.childImageSharp?.fixed} />}
+                                                    : <GatsbyImage image={getImage(social.img)} alt="Social Media Project" />}
                                             </Link>
                                         </div>
                                         <div className="col-12 info-name">
@@ -57,7 +59,7 @@ const Projects = ({ data }) => {
                     </div>
                     <div className="container">
                         <div className="projects row my-5">
-                            {data.allGraphicJson.nodes.map((graphic, index) => (
+                            {nodes.graphic.map((graphic, index) => (
                                 <div key={`${graphic.name}-${index}`} className="col-12 col-md-6 col-xxl-3 project-card my-3">
                                     <div className="row">
                                         <div className="col-12">
@@ -77,7 +79,7 @@ const Projects = ({ data }) => {
                                                             height="auto"
                                                         />
                                                     </span>
-                                                    : <Img fixed={graphic.img?.childImageSharp?.fixed} />}
+                                                    : <GatsbyImage image={getImage(graphic.img)} alt="Graphic Project" />}
                                             </Link>
                                         </div>
                                         <div className="col-12 info-name">
@@ -96,7 +98,7 @@ const Projects = ({ data }) => {
                     </div>
                     <div className="container">
                         <div className="projects row my-5">
-                            {data.allEditorialJson.nodes.map((editorial, index) => (
+                            {nodes.editorial.map((editorial, index) => (
                                 <div key={`${editorial.name}-${index}`} className="col-12 col-md-6 col-xxl-3 project-card my-3">
                                     <div className="row">
                                         <div className="col-12">
@@ -116,7 +118,7 @@ const Projects = ({ data }) => {
                                                             height="auto"
                                                         />
                                                     </span>
-                                                    : <Img fixed={editorial.img?.childImageSharp?.fixed} />}
+                                                    : <GatsbyImage image={getImage(editorial.img)} alt="Editorial Project" />}
                                             </Link>
                                         </div>
                                         <div className="col-12 info-name">
@@ -134,56 +136,54 @@ const Projects = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    allSocialJson {
-        nodes {
-          name
-          link
-          video {
-            publicURL
-          }
-          img {
-            childImageSharp {
-              fixed {
-                ...GatsbyImageSharpFixed
-              }
-            }
+query {
+    allProjectsDetailsJson {
+    nodes {
+      editorial {
+        img {
+          childImageSharp {
+            gatsbyImageData(
+                width: 330
+            )
           }
         }
-    },
-    allGraphicJson {
-        nodes {
-          name
-          link
-          video {
-            publicURL
-          }
-          img {
-            childImageSharp {
-              fixed {
-                ...GatsbyImageSharpFixed
-              }
-            }
+        link
+        name
+        video {
+          publicURL
+        }
+      }
+      graphic {
+        link
+        name
+        img {
+          childImageSharp {
+            gatsbyImageData(
+                width: 330
+            )
           }
         }
-    },
-    allEditorialJson {
-        nodes {
-          name
-          link
-          video {
-            publicURL
-          }
-          img {
-            childImageSharp {
-              fixed {
-                ...GatsbyImageSharpFixed
-              }
-            }
+        video {
+          publicURL
+        }
+      }
+      social {
+        img {
+          childImageSharp {
+            gatsbyImageData(
+                width: 330
+            )
           }
         }
+        link
+        name
+        video {
+          publicURL
+        }
+      }
     }
   }
+}
 `
 
 export default Projects
