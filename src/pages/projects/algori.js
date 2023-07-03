@@ -1,7 +1,7 @@
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 import React, { useRef, useState } from "react"
 
 import HTMLFlipBook from 'react-pageflip';
-import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import Logo from "../../assets/images/algori/logo.svg";
 import Seo from "../../components/seo"
@@ -31,8 +31,6 @@ const Algori = ({ data }) => {
     let flipBook = useRef(null)
 
     const pages = data.allAlgoriJson.nodes;
-    const cover = data.cover
-    const backCover = data.backCover
 
     const totalPages = 20;
     const [lastData, setLastData] = useState(0)
@@ -93,13 +91,13 @@ const Algori = ({ data }) => {
                         showCover={true}
                         onFlip={(e) => changePage(e.data)}
                     >
-                        <PageCover><Img fluid={cover?.childImageSharp?.fluid} /></PageCover>
+                        <PageCover><StaticImage src={"../../assets/images/algori/1.png"} alt="Algori Lookbook Cover" /></PageCover>
                         {pages.map((page, index) => (
                             <Page key={`page-${index}`}>
-                                <Img fluid={page.img?.childImageSharp?.fluid} />
+                                <GatsbyImage image={getImage(page.img)} alt="Algori Lookbook page" />
                             </Page>
                         ))}
-                        <PageCover><Img fluid={backCover?.childImageSharp?.fluid} /></PageCover>
+                        <PageCover><StaticImage src={"../../assets/images/algori/44.png"} alt="Algori Lookbook Back Cover" /></PageCover>
                     </HTMLFlipBook>
 
                     <div className="col-7 mx-auto text-center my-5 buttons buttons-pages">
@@ -124,7 +122,7 @@ const Algori = ({ data }) => {
                         </p>
                     </div>
                     <div className="col-12 text-center postcard mb-5">
-                        <Img fluid={data.postcard?.childImageSharp?.fluid} />
+                        <StaticImage src={"../../assets/images/algori/postcard.png"} alt="Algori Postcard" />
                     </div>
                 </div>
             </div>
@@ -133,40 +131,19 @@ const Algori = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    cover: file(relativePath: { eq: "algori/1.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    backCover: file(relativePath: { eq: "algori/44.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    postcard: file(relativePath: { eq: "algori/Postcard Mockup 1.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 2500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    allAlgoriJson {
-      nodes {
-        img {
-            childImageSharp {
-                fluid(maxWidth: 5000) {
-                ...GatsbyImageSharpFluid
-                }
-            }
+query {
+  allAlgoriJson {
+    nodes {
+      img {
+        childImageSharp {
+          gatsbyImageData(
+            width: 800
+          )
         }
       }
     }
   }
+}
 `;
 
 export default Algori

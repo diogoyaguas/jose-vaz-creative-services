@@ -66,7 +66,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          formats: ["webp", "png", "jpg"],
+          formats: ["webp", "auto"],
           quality: 100,
           backgroundColor: `transparent`,
           placeholder: `blurred`,
