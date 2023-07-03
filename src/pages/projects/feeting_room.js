@@ -4,7 +4,7 @@ import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../../components/layout"
 import Logo from "../../assets/icons/studio_54/tfr-logo.svg";
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
 import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
 import { graphql } from "gatsby"

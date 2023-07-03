@@ -6,7 +6,7 @@ import Carousel from "../../components/carousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Layout from "../../components/layout"
 import Logo from "../../assets/icons/studio_54/tfr-logo.svg";
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
 import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
 import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';

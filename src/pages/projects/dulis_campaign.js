@@ -3,7 +3,7 @@ import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 import Layout from "../../components/layout"
 import Logo from "../../assets/images/dulis-campaign/logo/logo.svg";
 import React from "react"
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
 import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
 import { graphql } from "gatsby"
