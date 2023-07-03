@@ -131,7 +131,7 @@ const FeetingRoom = ({ data }) => {
                         </div>
                         <div className="row ads">
                             {nodes.ads.map((ads, index) => (
-                                <div key={`ads-${index}`} className="col-4 ads-card">
+                                <div key={`ads-${index}`} className="col-4 feeting-room-ads-card">
                                     <span className="video-wrapper">
                                         <ReactPlayer
                                             className="player-wrapper"
