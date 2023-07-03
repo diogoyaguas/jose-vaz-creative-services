@@ -230,7 +230,7 @@ query {
         img {
           childImageSharp {
             gatsbyImageData(
-                width: 500
+                width: 416
             )
           }
         }
@@ -251,7 +251,9 @@ query {
       spotify {
         img {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(
+                width: 224
+            )
           }
         }
       }
