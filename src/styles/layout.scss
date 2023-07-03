@@ -453,6 +453,12 @@ body {
             }
         }
 
+        .mad-page {
+            .logo svg {
+                fill: var(--white);
+            }
+        }
+
         footer {
             background-color: var(--white);
             color: var(--black);
@@ -742,18 +748,6 @@ body {
                 }
             }
 
-            .sliding-text-container {
-                padding-top: 0.5rem;
-
-                .text {
-                    font-size: 3rem !important;
-                }
-
-                .item-separator-dot {
-                    margin: 0 0.625rem !important;
-                }
-            }
-
             .experience-header {
                 cursor: pointer;
                 padding: 1.563rem 2.188rem;
@@ -829,16 +823,6 @@ body {
     }
 
     .projects-page {
-        .sliding-text-container {
-            .text {
-                font-size: 3rem !important;
-            }
-
-            .item-separator-dot {
-                margin: 0 0.625rem !important;
-            }
-        }
-
         .projects {
             .project-card {
                 transition: transform 0.3s ease;
@@ -981,16 +965,6 @@ body {
         .sneak-peek,
         .studio-carousel {
             margin-top: 3rem;
-
-            .sliding-text-container {
-                .text {
-                    font-size: 3rem !important;
-                }
-            }
-
-            .item-separator-dot {
-                margin: 0 0.625rem !important;
-            }
 
             .backstage {
                 max-width: 1520px;
@@ -1281,18 +1255,6 @@ body {
             padding-bottom: 5rem;
         }
 
-        .kit-sliding {
-            padding-top: 0.5rem;
-
-            .text {
-                font-size: 3rem !important;
-            }
-
-            .item-separator-dot {
-                margin: 0 0.625rem !important;
-            }
-        }
-
         .kit-text {
             padding-top: 3rem;
         }
@@ -1341,16 +1303,6 @@ body {
         .shorttakes {
             margin-top: 5rem;
 
-            .sliding-text-container {
-                .text {
-                    font-size: 3rem !important;
-                }
-
-                .item-separator-dot {
-                    margin: 0 0.625rem !important;
-                }
-            }
-
             .row {
                 margin-top: 3rem !important;
 
@@ -1396,16 +1348,6 @@ body {
         .reels {
             margin-top: 3rem;
 
-            .sliding-text-container {
-                .text {
-                    font-size: 3rem !important;
-                }
-
-                .item-separator-dot {
-                    margin: 0 0.625rem !important;
-                }
-            }
-
             .videos {
                 margin-top: 3rem;
 
@@ -1450,16 +1392,6 @@ body {
 
         .campaigns {
             margin-top: 3rem;
-
-            .sliding-text-container {
-                .text {
-                    font-size: 3rem !important;
-                }
-
-                .item-separator-dot {
-                    margin: 0 0.625rem !important;
-                }
-            }
 
             .intro {
                 margin-top: 3rem;
@@ -1507,16 +1439,6 @@ body {
         .spotify {
             margin-top: 3rem;
 
-            .sliding-text-container {
-                .text {
-                    font-size: 3rem !important;
-                }
-
-                .item-separator-dot {
-                    margin: 0 0.625rem !important;
-                }
-            }
-
             .container {
                 margin-top: 3rem;
                 margin-bottom: 3rem;
@@ -1552,6 +1474,122 @@ body {
 
                 .info {
                     margin-top: 10%;
+                }
+            }
+        }
+    }
+
+    .mad-page {
+        .logo svg {
+            max-width: 390px;
+            margin-bottom: 1rem;
+        }
+
+        .merch-design {
+            .row {
+                max-width: 1520px;
+                margin: auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
+                .merch-card {
+                    .gatsby-image-wrapper {
+                        width: 100% !important;
+                        border-radius: 39px !important;
+                    }
+                }
+            }
+        }
+
+        .mad-text {
+            font-size: 68px;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .event {
+            .gatsby-image-wrapper {
+                max-width: 900px !important;
+                border-radius: 20px !important;
+            }
+        }
+
+        .event-text {
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .socia-media-design {
+            .row {
+                max-width: 1520px;
+                margin: auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
+                .col-social {
+                    flex: 0 0 auto;
+                    width: 20%;
+
+                    .gatsby-image-wrapper {
+                        width: 100% !important;
+                        border-radius: 39px !important;
+                    }
+                }
+            }
+
+            .social-text {
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+            }
+
+            .lineup-card {
+                .gatsby-image-wrapper {
+                    width: 100% !important;
+                    border-radius: 39px !important;
+                }
+            }
+        }
+
+        .reels {
+            margin-top: 5rem;
+
+            .row {
+                max-width: 1520px;
+                margin: auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
+                .video-wrapper video {
+                    border-radius: 39px;
+                }
+            }
+        }
+
+        .party {
+            margin-top: 5rem;
+            .row {
+                max-width: 1820px;
+                margin: auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
+                .gatsby-image-wrapper {
+                    width: 100% !important;
+                    border-radius: 39px !important;
+                }
+            }
+        }
+
+        .buttons {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+
+            .social-media {
+                justify-content: center;
+
+                .col-10 {
+                    display: flex;
+                    justify-content: space-around;
                 }
             }
         }
@@ -1611,6 +1649,16 @@ body {
                 }
             }
         }
+
+        &.small {
+            .text {
+                font-size: 3rem !important;
+            }
+
+            .item-separator-dot {
+                margin: 0 0.625rem !important;
+            }
+        }
     }
 }
 
@@ -1622,7 +1670,7 @@ body {
     }
     .sliding-text-container {
         .text {
-            font-size: 3rem !important;
+            font-size: 5rem !important;
         }
 
         .item-separator-dot {

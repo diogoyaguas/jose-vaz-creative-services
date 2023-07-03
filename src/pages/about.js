@@ -116,7 +116,7 @@ const About = ({ data }) => {
                         ))}
                     </div>
                     <div className="sliding-text">
-                        <SlidingText text={"EDUCATION AND PROFESSIONAL EXPERIENCE EDUCATION AND PROFESSIONAL EXPERIENCE"} />
+                        <SlidingText text={"EDUCATION AND PROFESSIONAL EXPERIENCE EDUCATION AND PROFESSIONAL EXPERIENCE"} small={true} />
                     </div>
                     {nodes.experience.map(info => (
                         <div key={info.title}>

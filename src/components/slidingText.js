@@ -1,11 +1,11 @@
 import React from "react"
 import { v4 as uuidv4 } from 'uuid';
 
-const SlidingText = ({ text, className }) => {
+const SlidingText = ({ text, small, className }) => {
     const textArray = text.split(" ");
 
     return (
-        <div className={"sliding-text-container " + className}>
+        <div className={"sliding-text-container " + (small ? "small" : "big") + " " + className}>
             <div className="list">
                 <div className="item">
                     {textArray.map(text => (

@@ -8,7 +8,7 @@ const Deepwear = ({ data }) => {
         <Layout>
             <Seo title="Deepwear - Global Progressive Fashion Agency" />
             <div className="deeepwear-page pt-5">
-                <SlidingText text={"Deepwear - Global Progressive Fashion Agency"} />
+                <SlidingText text={"DEEPWEAR - GLOBAL PROGRESSIVE FASHION AGENCY"} />
                 <div className="container">
                     <div className="col-12 logo text-center">
                     </div>

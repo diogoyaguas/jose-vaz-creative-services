@@ -8,7 +8,7 @@ const Dezenhos = ({ data }) => {
         <Layout>
             <Seo title="Dezénhos" />
             <div className="dezenhos-page pt-5">
-                <SlidingText text={"Dezénhos Dezénhos Dezénhos"} />
+                <SlidingText text={"DEZÉNHOS DEZÉNHOS DEZÉNHOS"} />
                 <div className="container">
                     <div className="col-12 logo text-center">
                     </div>

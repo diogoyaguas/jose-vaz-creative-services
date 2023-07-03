@@ -13,7 +13,7 @@ const DulisCampaign = ({ data }) => {
         <Layout>
             <Seo title="Dulis Shoes - FW22 Campaign" />
             <div className="dulis-campaign-page pt-5">
-                <SlidingText text={"Dulis Shoes - FW22 Campaign"} />
+                <SlidingText text={"DULIS SHOES - FW22 CAMPAIGN"} />
                 <div className="container">
                     <div className="col-12 logo text-center">
                         <Logo />
@@ -55,7 +55,7 @@ const DulisCampaign = ({ data }) => {
                             Embark on Dulis Shoes' Fall/Winter 2021 Collection, titled "Tales of the Unexpected." This captivating journey blends reality with mysticism, inviting you to leave everything behind and venture into a world of playful stories, unexpected friendships, and delightfully quirky styles.
                         </p>
                     </div>
-                    <SlidingText text={"The collection kit The collection kit"} className={"kit-sliding"} />
+                    <SlidingText text={"THE COLLECTION KIT THE COLLECTION KIT"} small={true} />
                     <div className="col-12 mx-auto text-center">
                         <StaticImage src={"../../assets/images/dulis-campaign/kit/pack.png"} alt="Dulis Shoes - Collection Kit" />
                     </div>

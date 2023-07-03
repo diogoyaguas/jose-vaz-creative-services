@@ -17,7 +17,7 @@ const Projects = ({ data }) => {
             <div className="projects-page pt-5">
                 <div className="social-media text-center pt-5">
                     <div >
-                        <SlidingText text={"SOCIAL MEDIA SOCIAL MEDIA"} />
+                        <SlidingText text={"SOCIAL MEDIA SOCIAL MEDIA"} small={true} />
                     </div>
                     <div className="container">
                         <div className="projects row my-5">
@@ -55,7 +55,7 @@ const Projects = ({ data }) => {
                 </div>
                 <div className="graphic-design text-center">
                     <div >
-                        <SlidingText text={"GRAPHIC DESIGN GRAPHIC DESIGN"} />
+                        <SlidingText text={"GRAPHIC DESIGN GRAPHIC DESIGN"} small={true} />
                     </div>
                     <div className="container">
                         <div className="projects row my-5">
@@ -94,7 +94,7 @@ const Projects = ({ data }) => {
 
                 <div className="editorial-design text-center">
                     <div >
-                        <SlidingText text={"EDITORIAL DESIGN EDITORIAL DESIGN"} />
+                        <SlidingText text={"EDITORIAL DESIGN EDITORIAL DESIGN"} small={true} />
                     </div>
                     <div className="container">
                         <div className="projects row my-5">

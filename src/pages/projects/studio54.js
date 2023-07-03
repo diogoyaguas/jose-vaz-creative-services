@@ -109,7 +109,7 @@ const Studio54 = ({ data }) => {
                     </div>
                 </div>
                 <div className="sneak-peek">
-                    <SlidingText text={"Backstage Sneak peek Backstage Sneak peek"} />
+                    <SlidingText text={"BACKSTAGE SNEAK PEEK BACKSTAGE SNEAK PEEK"} small={true} />
                     <div className="backstage row my-5">
                         {nodes.backstage.map((product, index) => (
                             <div key={`backstage-${index}`} className="col-3 backstage-card">
@@ -144,7 +144,7 @@ const Studio54 = ({ data }) => {
                     </div>
                 </div>
                 <div className="studio-carousel">
-                    <SlidingText text={"SOCIAL MEDIA  SOCIAL MEDIA  SOCIAL MEDIA"} />
+                    <SlidingText text={"SOCIAL MEDIA SOCIAL MEDIA SOCIAL MEDIA"} small={true} />
                     <Carousel information={nodes.studio} />
                     <div className="container row mx-auto">
                         <div className="col-9 mx-auto text-center">

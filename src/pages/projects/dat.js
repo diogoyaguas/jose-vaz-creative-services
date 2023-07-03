@@ -4,12 +4,12 @@ import Seo from "../../components/seo"
 import SlidingText from "../../components/slidingText"
 import { StaticImage } from "gatsby-plugin-image"
 
-const DatDesign = ({ data }) => {
+const DatDesign = () => {
   return (
     <Layout>
       <Seo title="DAT - Design, Art and Technology" />
       <div className="dat-page pt-5">
-        <SlidingText text={"DAT - Design, Art and Technology"} />
+        <SlidingText text={"DAT - DESIGN, ART AND TECHNOLOGY"} />
         <div className="container">
           <div className="col-12 logo text-center">
             <StaticImage src={"../../assets/images/dat/poster.png"} alt="DAT logo" />
@@ -23,7 +23,6 @@ const DatDesign = ({ data }) => {
                 With a diverse audience comprising both university members and the general public, as well as renowned national and international guests, the conference serves as a hub for groundbreaking ideas and innovation in design and multimedia.
               </p>
             </div>
-
           </div>
           <div className="col-12 posters text-center">
             <StaticImage src={"../../assets/images/dat/posters.png"} alt="DAT posters" />

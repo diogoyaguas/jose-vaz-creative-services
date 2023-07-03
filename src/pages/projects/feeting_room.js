@@ -45,7 +45,7 @@ const FeetingRoom = ({ data }) => {
                     </div>
                 </div>
                 <div className="shorttakes">
-                    <SlidingText text={"SHORT TAKES WITH JANIINA VAZ SHORT TAKES WITH JANIINA VAZ"} />
+                    <SlidingText text={"SHORT TAKES WITH JANIINA VAZ SHORT TAKES WITH JANIINA VAZ"} small={true} />
                     <div className="container">
                         <div className="row">
                             {nodes.shorttakes.map((short, index) => (
@@ -80,7 +80,7 @@ const FeetingRoom = ({ data }) => {
                     </div>
                 </div>
                 <div className="reels">
-                    <SlidingText text={"Reels Shoots Reels Shoots Reels Shoots Reels Shoots"} />
+                    <SlidingText text={"REELS SHOOTS REELS SHOOTS REELS SHOOTS REELS SHOOTS"} small={true} />
                     <div className="videos row mx-3">
                         {nodes.reels.map((reel, index) => (
                             <a key={`reels-${index}`} className="col-2 reels-card text-center" href={reel.url} target="_blank" rel="noreferrer">
@@ -112,7 +112,7 @@ const FeetingRoom = ({ data }) => {
                     </div>
                 </div>
                 <div className="campaigns">
-                    <SlidingText text={"Campaigns Campaigns Campaigns Campaigns Campaigns"} />
+                    <SlidingText text={"CAMPAIGNS CAMPAIGNS CAMPAIGNS CAMPAIGNS CAMPAIGNS"} small={true} />
                     <div className="container">
                         <div className="row">
                             <div className="col-10 intro mx-auto text-center">
@@ -166,7 +166,7 @@ const FeetingRoom = ({ data }) => {
                     </div>
                 </div>
                 <div className="spotify">
-                    <SlidingText text={"SPOTIFY LISTENING ALBUMS SPOTIFY LISTENING ALBUMS"} />
+                    <SlidingText text={"SPOTIFY LISTENING ALBUMS SPOTIFY LISTENING ALBUMS"} small={true} />
                     <div className="container">
                         <div className="row">
                             <div className="col-3 story">

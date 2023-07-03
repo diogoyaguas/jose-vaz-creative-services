@@ -58,7 +58,7 @@ const DulisLookbook = ({ data }) => {
         <Layout>
             <Seo title="Dulis Shoes - SS23 Lookbook" />
             <div className="dulis-lookbook-page pt-5">
-                <SlidingText text={"Dulis Shoes - SS23 Lookbook"} />
+                <SlidingText text={"DULIS SHOES - SS23 LOOKBOOK"} />
                 <div className="container">
                     <div className="col-12 logo text-center">
                         <Logo />

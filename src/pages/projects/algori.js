@@ -58,7 +58,7 @@ const Algori = ({ data }) => {
         <Layout>
             <Seo title="Algori - Brandbook 2022" />
             <div className="algori-page pt-5">
-                <SlidingText text={"Algori - Brandbook 2022"} />
+                <SlidingText text={"ALGORI - BRANDBOOK 2022"} />
                 <div className="container">
                     <div className="col-12 logo text-center">
                         <Logo />
