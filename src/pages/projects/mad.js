@@ -20,7 +20,7 @@ const Mad = ({ data }) => {
                         <Logo />
                     </div>
                     <div className="row">
-                        <div className="col-9 mx-auto text-center">
+                        <div className="col-lg-9 col-12 mx-auto text-center">
                             <p>
                                 M.A.D - Music Addiction Disorder is a dynamic project I've embraced as a freelance worker. As a producer and planner for music and artistic environments, M.A.D collaborates with national and international DJs, creating a safe space for music and art enthusiasts.
                             </p>
@@ -39,7 +39,7 @@ const Mad = ({ data }) => {
                     <SlidingText text={"MERCH DESIGN MERCH DESIGN MERCH DESIGN MERCH DESIGN"} small={true} />
                     <div className="row">
                         {nodes.merch.map((merch, index) => (
-                            <div key={`merch-${index}`} className="col-3 merch-card">
+                            <div key={`merch-${index}`} className="col-lg-3 col-6 merch-card">
                                 <GatsbyImage image={getImage(merch.img)} alt={"M.A.D Merch"} />
                             </div>
                         ))}
@@ -83,7 +83,7 @@ const Mad = ({ data }) => {
                     </div>
                     <div className="row">
                         {nodes.lineup.map((lineup, index) => (
-                            <div key={`lineup-${index}`} className="col-3 lineup-card">
+                            <div key={`lineup-${index}`} className="col-lg-3 col-6 lineup-card">
                                 <GatsbyImage image={getImage(lineup.img)} alt={"M.A.D Lineup"} />
                             </div>
                         ))}
@@ -93,7 +93,7 @@ const Mad = ({ data }) => {
                     <SlidingText text={"REELS WARM UP REELS WARM UP REELS WARM UP REELS WARM UP"} small={true} />
                     <div className="row">
                         {nodes.reels.map((reel, index) => (
-                            <div key={`reel-${index}`} className="col-3 reel-card">
+                            <div key={`reel-${index}`} className="col-lg-3 col-6 reel-card">
                                 <span className="video-wrapper">
                                     <ReactPlayer
                                         className="player-wrapper"
@@ -123,7 +123,7 @@ const Mad = ({ data }) => {
                     <SlidingText text={"M.A.D PARTY SHOOTS M.A.D PARTY SHOOTS M.A.D PARTY SHOOTS"} small={true} />
                     <div className="row">
                         {nodes.party.map((party, index) => (
-                            <div key={`party-${index}`} className="col-2 party-card">
+                            <div key={`party-${index}`} className="col-lg-2 col-6 party-card">
                                 <GatsbyImage image={getImage(party.img)} alt={"M.A.D Party"} />
                             </div>
                         ))}
@@ -131,11 +131,11 @@ const Mad = ({ data }) => {
                 </div>
                 <div className="buttons container">
                     <div className="social-media row mt-3 text-center">
-                        <div className="col-10">
-                            <a className="w-25 btn btn-primary" href="https://www.tiktok.com/@mad.clubbing" target="_blank" rel="noreferrer">
+                        <div className="col-lg-10 col-12 row">
+                            <a className="col-lg-4 col-12 btn btn-primary" href="https://www.tiktok.com/@mad.clubbing" target="_blank" rel="noreferrer">
                                 Watch TikTok
                             </a>
-                            <a className="w-25 btn btn-primary" href="https://www.instagram.com/mad.clubbing/" target="_blank" rel="noreferrer">
+                            <a className="col-lg-4 col-12 btn btn-primary" href="https://www.instagram.com/mad.clubbing/" target="_blank" rel="noreferrer">
                                 Stalk more events
                             </a>
                         </div>
