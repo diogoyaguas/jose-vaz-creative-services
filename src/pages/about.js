@@ -11,6 +11,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 
 const About = ({ data }) => {
+    const nodes = data.allAboutJson.nodes[0]
     const [tooltipText, setTooltipText] = useState("")
     const [stars, setStars] = useState("")
 
@@ -33,17 +34,11 @@ const About = ({ data }) => {
     const setSoftwareExperience = (software) => {
         setTooltipText(software.name);
         setStars(getExperienceStars(software.stars));
-        document.querySelector(".software-experience-container .software-name").style.opacity = 1;
-        document.querySelector(".software-experience-container .software-stars").style.opacity = 1;
-        document.querySelector(".software-experience-container .software-name").style.transform = 'translateX(0)';
-        document.querySelector(".software-experience-container .software-stars").style.transform = 'translateX(0)';
+        document.querySelector(".software-experience-container").classList.add("show-experience");
     }
 
     const hideSoftwareExperience = () => {
-        document.querySelector(".software-experience-container .software-name").style.opacity = 0;
-        document.querySelector(".software-experience-container .software-stars").style.opacity = 0;
-        document.querySelector(".software-experience-container .software-name").style.transform = 'translateX(-50%)';
-        document.querySelector(".software-experience-container .software-stars").style.transform = 'translateX(-50%)';
+        document.querySelector(".software-experience-container").classList.remove("show-experience")
     }
 
     const getExperienceStars = (experience) => {
@@ -106,7 +101,7 @@ const About = ({ data }) => {
                 </div>
                 <div className="experience-group">
                     <div className="container software-experience-list">
-                        {data.allSoftwareJson.nodes.map(software => (
+                        {nodes.software.map(software => (
                             <div 
                                 role="presentation"
                                 className="software-experience"
@@ -123,7 +118,7 @@ const About = ({ data }) => {
                     <div className="sliding-text">
                         <SlidingText text={"EDUCATION AND PROFESSIONAL EXPERIENCE EDUCATION AND PROFESSIONAL EXPERIENCE"} />
                     </div>
-                    {data.allExperienceJson.nodes.map(info => (
+                    {nodes.experience.map(info => (
                         <div key={info.title}>
                             <div className="experience-header">{info.title}<Arrow /></div>
                             <div className="experience-content">
@@ -149,22 +144,22 @@ const About = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    allExperienceJson {
-        nodes {
-            title
-            date
-            text
-        }
-    },
-    allSoftwareJson {
-        nodes {
-            name
-            stars
-            icon
-        }
+query {
+  allAboutJson {
+    nodes {
+      experience {
+        date
+        text
+        title
+      }
+      software {
+        icon
+        name
+        stars
+      }
     }
   }
+}
 `
 
 export default About

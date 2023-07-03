@@ -637,6 +637,11 @@ body {
                     position: relative;
                     overflow: hidden;
 
+                    > div {
+                        max-width: 275px !important;
+                        height: 275px !important;
+                    }
+
                     img {
                         border-radius: 50%;
                         max-width: 17.188rem;
@@ -694,6 +699,14 @@ body {
                     text-align: left;
                     transform: translateX(-50%);
                     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                }
+            }
+
+            &.show-experience {
+                .software-name,
+                .software-stars {
+                    opacity: 1;
+                    transform: translate(0);
                 }
             }
         }
