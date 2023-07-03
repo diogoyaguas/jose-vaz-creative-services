@@ -441,6 +441,18 @@ body {
             }
         }
 
+        .dulis-campaign-page {
+            .logo svg {
+                stroke: var(--white);
+
+                polygon,
+                path,
+                rect {
+                    fill: var(--white);
+                }
+            }
+        }
+
         footer {
             background-color: var(--white);
             color: var(--black);
