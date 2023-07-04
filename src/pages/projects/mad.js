@@ -87,6 +87,9 @@ const Mad = ({ data }) => {
                                 <GatsbyImage image={getImage(lineup.img)} alt={"M.A.D Lineup"} />
                             </div>
                         ))}
+                        <div className="label mt-3">
+                            LINE UP AND ARTISTS POSTS
+                        </div>
                     </div>
                 </div>
                 <div className="reels">
@@ -112,7 +115,7 @@ const Mad = ({ data }) => {
                         ))}
                     </div>
                     <div className="container">
-                        <div className="col-12 col-lg-7 mx-auto text-center tv-text">
+                        <div className="col-12 col-lg-7 mx-auto text-center reels-text">
                             <p>
                                 By showcasing the energy, atmosphere, and highlights of each event, these videos served as powerful promotional tools to generate interest and excitement among the audience.
                             </p>
@@ -127,15 +130,18 @@ const Mad = ({ data }) => {
                                 <GatsbyImage image={getImage(party.img)} alt={"M.A.D Party"} />
                             </div>
                         ))}
+                        <div className="label mt-3">
+                            SHOOTS BY PEGGY HEART
+                        </div>
                     </div>
                 </div>
                 <div className="buttons container">
                     <div className="social-media row mt-3 text-center">
-                        <div className="col-lg-10 col-12 row">
-                            <a className="col-lg-4 col-12 btn btn-primary" href="https://www.tiktok.com/@mad.clubbing" target="_blank" rel="noreferrer">
+                        <div className="col-lg-10 col-12 row justify-content-around">
+                            <a className="col-lg-3 col-12 btn btn-primary" href="https://www.tiktok.com/@mad.clubbing" target="_blank" rel="noreferrer">
                                 Watch TikTok
                             </a>
-                            <a className="col-lg-4 col-12 btn btn-primary" href="https://www.instagram.com/mad.clubbing/" target="_blank" rel="noreferrer">
+                            <a className="col-lg-3 col-12 btn btn-primary" href="https://www.instagram.com/mad.clubbing/" target="_blank" rel="noreferrer">
                                 Stalk more events
                             </a>
                         </div>
