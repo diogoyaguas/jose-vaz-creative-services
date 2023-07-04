@@ -121,7 +121,7 @@ const FeetingRoom = ({ data }) => {
                                 </p>
                             </div>
                             <div className="col-12 text-center event">
-                                <StaticImage src={"../../assets/images/feeting_room/Campaigns/website.png"} alt={"Feeting Room Website"} />
+                                <StaticImage src={"../../assets/images/feeting_room/campaigns/website.png"} alt={"Feeting Room Website"} />
                             </div>
                             <div className="col-lg-9 col-12 intro mx-auto text-center">
                                 <p>
@@ -216,7 +216,7 @@ const FeetingRoom = ({ data }) => {
 
 export const query = graphql`
 query {
-  story: file(relativePath: { eq: "feeting_room/Spotify/story.mp4" }) {
+  story: file(relativePath: { eq: "feeting_room/spotify/story.mp4" }) {
     publicURL
   }
   allFeetingRoomJson {

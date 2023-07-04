@@ -1,0 +1,115 @@
+[
+    {
+        "tiktoks": [
+            {
+                "video": "../assets/videos/deepwear/tiktok/1.mp4"
+            },
+            {
+                "video": "../assets/videos/deepwear/tiktok/2.mp4"
+            },
+            {
+                "video": "../assets/videos/deepwear/tiktok/3.mp4"
+            }
+        ],
+        "social": [
+            {
+                "img": "../assets/images/deepwear/social_media/1.png"
+            },
+            {
+                "img": "../assets/images/deepwear/social_media/2.png"
+            },
+            {
+                "img": "../assets/images/deepwear/social_media/3.png"
+            },
+            {
+                "img": "../assets/images/deepwear/social_media/4.png"
+            }
+        ],
+        "book": [
+            {
+                "img": "../assets/images/deepwear/brochures/book/2.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/3.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/4.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/5.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/6.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/7.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/8.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/9.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/10.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/11.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/12.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/13.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/14.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/15.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/16.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/17.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/18.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/19.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/20.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/21.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/22.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/23.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/24.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/25.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/26.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/27.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/28.png"
+            },
+            {
+                "img": "../assets/images/deepwear/brochures/book/29.png"
+            }
+        ]
+    }
+]

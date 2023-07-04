@@ -455,6 +455,12 @@ body {
             }
         }
 
+        .deeepwear-page {
+            .logo svg {
+                fill: var(--white);
+            }
+        }
+
         footer {
             background-color: var(--white);
             color: var(--black);
@@ -1593,6 +1599,106 @@ body {
                     display: flex;
                     justify-content: space-around;
                 }
+            }
+        }
+    }
+
+    .deeepwear-page {
+        .logo svg {
+            max-width: 120px;
+            margin-bottom: 3rem;
+        }
+
+        .tiktok {
+            margin-top: 5rem;
+
+            .tiktoks {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
+                .tiktok-card {
+                    .video-wrapper {
+                        width: 95% !important;
+                        height: auto !important;
+                        position: relative;
+                        overflow: hidden;
+                        display: inline-block;
+
+                        .player-wrapper {
+                            width: inherit !important;
+                            height: inherit !important;
+
+                            video {
+                                border-radius: 20px;
+                                width: inherit !important;
+                                height: inherit !important;
+                                object-fit: cover;
+                                transition: opacity 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .intro {
+                margin-top: 3rem;
+            }
+        }
+
+        .social-media {
+            margin-top: 5rem;
+
+            .medias {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
+                .social-card {
+                    .gatsby-image-wrapper {
+                        width: 100% !important;
+                        border-radius: 39px !important;
+                    }
+                }
+            }
+
+            .intro {
+                margin-top: 3rem;
+            }
+        }
+
+        .brochures {
+            margin-top: 5rem;
+
+            .flipbook {
+                margin-top: 3rem;
+
+                .pages {
+                    background-color: var(--white);
+                    -webkit-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                    -moz-box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+                    box-shadow: 33px 10px 29px 0px rgba(0, 0, 0, 0.6);
+
+                    .gatsby-image-wrapper {
+                        width: 500px !important;
+                        height: 710px !important;
+                    }
+                }
+            }
+
+            .buttons-pages {
+                font-size: 12px;
+
+                button {
+                    font-size: 12px;
+                }
+            }
+
+            .intro {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+
+            .brochures-image {
+                margin-bottom: 5rem;
             }
         }
     }

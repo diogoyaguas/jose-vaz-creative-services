@@ -50,7 +50,7 @@ const DulisLookbook = ({ data }) => {
     const changePage = (data) => {
         if (lastData < data) {
             setPage(page + 1)
-        } else setLastData(page - 1)
+        } else setPage(page - 1)
         setLastData(data)
     };
 
