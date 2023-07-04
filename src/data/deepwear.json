@@ -2,13 +2,16 @@
     {
         "tiktoks": [
             {
-                "video": "../assets/videos/deepwear/tiktok/1.mp4"
+                "video": "../assets/videos/deepwear/tiktok/1.mp4",
+                "url": "https://www.tiktok.com/@deepwear_/video/7207484578922024198"
             },
             {
-                "video": "../assets/videos/deepwear/tiktok/2.mp4"
+                "video": "../assets/videos/deepwear/tiktok/2.mp4",
+                "url": "https://www.tiktok.com/@deepwear_/video/7210761093579410694"
             },
             {
-                "video": "../assets/videos/deepwear/tiktok/3.mp4"
+                "video": "../assets/videos/deepwear/tiktok/3.mp4",
+                "url": "https://www.tiktok.com/@deepwear_/video/7241971467473227035"
             }
         ],
         "social": [

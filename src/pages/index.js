@@ -43,6 +43,7 @@ query {
     nodes {
       name
       link
+      unavailable
       img {
         childImageSharp {
           gatsbyImageData

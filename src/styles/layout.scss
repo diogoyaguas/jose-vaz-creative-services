@@ -578,6 +578,10 @@ body {
                     .video-wrapper video {
                         opacity: 0.5 !important;
                     }
+
+                    .soon {
+                        opacity: 1;
+                    }
                 }
 
                 video,
@@ -606,7 +610,18 @@ body {
                 }
 
                 .thumb {
+                    position: relative;
                     min-height: 392px;
+                }
+
+                .soon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
                 }
             }
 
@@ -869,12 +884,26 @@ body {
                     }
                 }
 
+                .soon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -100%);
+                    z-index: 2;
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                }
+
                 &:hover {
                     transform: scale(1.1);
 
                     .gatsby-image-wrapper picture img,
                     .video-wrapper video {
                         opacity: 0.5 !important;
+                    }
+
+                    .soon {
+                        opacity: 1;
                     }
                 }
             }
@@ -1617,6 +1646,9 @@ body {
                 margin-bottom: 3rem;
 
                 .tiktok-card {
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+
                     .video-wrapper {
                         width: 95% !important;
                         height: auto !important;
@@ -1635,6 +1667,14 @@ body {
                                 object-fit: cover;
                                 transition: opacity 0.3s ease-in-out;
                             }
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+
+                        .video-wrapper video {
+                            opacity: 0.5 !important;
                         }
                     }
                 }

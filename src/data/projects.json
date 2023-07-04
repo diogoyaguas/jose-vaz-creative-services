@@ -27,7 +27,8 @@
     {
         "name": "Dezénhos",
         "img": "../assets/images/projects/Dezenhos.png",
-        "link": "/projects/dezenhos"
+        "link": "/projects/dezenhos",
+        "unavailable": true
     },
     {
         "name": "Deepwear - Global Progressive Fashion Agency",

@@ -90,7 +90,7 @@ const Deepwear = ({ data }) => {
                     <div className="container">
                         <div className="row tiktoks">
                             {nodes.tiktoks.map((tiktok, index) => (
-                                <div key={`tiktok-${index}`} className="col-lg-4 col-12 tiktok-card text-center" >
+                                <a key={`tiktok-${index}`} className="col-lg-4 col-12 tiktok-card text-center" href={tiktok.url} target="_blank" rel="noreferrer">
                                     <span className="video-wrapper">
                                         <ReactPlayer
                                             className="player-wrapper"
@@ -105,7 +105,7 @@ const Deepwear = ({ data }) => {
                                             height="auto"
                                         />
                                     </span>
-                                </div>
+                                </a>
                             ))}
                             <div className="col-lg-10 col-12 intro mx-auto text-center">
                                 <p>
@@ -197,6 +197,7 @@ query {
   allDeepwearJson {
     nodes {
       tiktoks {
+        url
         video {
           publicURL
         }

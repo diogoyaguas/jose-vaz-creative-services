@@ -63,7 +63,7 @@ const Projects = ({ data }) => {
                                 <div key={`${graphic.name}-${index}`} className="col-12 col-md-6 col-xxl-3 project-card my-3">
                                     <div className="row">
                                         <div className="col-12">
-                                            <Link className="" to={graphic.link}>
+                                            {graphic.unavailable && <>
                                                 {graphic.video != null ?
                                                     <span className="video-wrapper">
                                                         <ReactPlayer
@@ -80,7 +80,26 @@ const Projects = ({ data }) => {
                                                         />
                                                     </span>
                                                     : <GatsbyImage image={getImage(graphic.img)} alt="Graphic Project" />}
-                                            </Link>
+                                                <span className="soon">AVAILABLE SOON</span>
+                                            </>}
+                                            {!graphic.unavailable && <Link className="" to={graphic.link}>
+                                                {graphic.video != null ?
+                                                    <span className="video-wrapper">
+                                                        <ReactPlayer
+                                                            className="player-wrapper"
+                                                            url={graphic.video?.publicURL}
+                                                            controls={false}
+                                                            autoPlay={true}
+                                                            playing={true}
+                                                            playsInline={true}
+                                                            muted={true}
+                                                            loop={true}
+                                                            width="100%"
+                                                            height="auto"
+                                                        />
+                                                    </span>
+                                                    : <GatsbyImage image={getImage(graphic.img)} alt="Graphic Project" />}
+                                            </Link>}
                                         </div>
                                         <div className="col-12 info-name">
                                             {graphic.name}
@@ -156,6 +175,7 @@ query {
       graphic {
         link
         name
+        unavailable
         img {
           childImageSharp {
             gatsbyImageData(

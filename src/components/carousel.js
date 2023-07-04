@@ -69,7 +69,29 @@ const Carousel = ({ information }) => {
         <div key={`info-card-${index}`} className="info-card py-5">
           <div className="row">
             <div className="col-12 thumb">
-              <Link className="" to={info.link ? info.link : ""} title={info.name}>
+              {info.unavailable && (<>
+                {info.video != null ?
+                  <span className="video-wrapper">
+                    <ReactPlayer
+                      className="player-wrapper"
+                      url={info.video?.publicURL}
+                      controls={false}
+                      autoPlay={true}
+                      playing={true}
+                      playsInline={true}
+                      muted={true}
+                      loop={true}
+                      width="100%"
+                      height="auto"
+                    />
+                  </span>
+                  : <GatsbyImage image={getImage(info.img)} alt={info.alt || info.name} />
+                }
+                <span className="soon">AVAILABLE SOON</span>
+              </>
+              )
+              }
+              {!info.unavailable && <Link className="" to={info.link ? info.link : ""} title={info.name} >
                 {info.video != null ?
                   <span className="video-wrapper">
                     <ReactPlayer
@@ -86,7 +108,7 @@ const Carousel = ({ information }) => {
                     />
                   </span>
                   : <GatsbyImage image={getImage(info.img)} alt={info.alt || info.name} />}
-              </Link>
+              </Link>}
             </div>
             {info.name != null &&
               <div className="col-12 info-name">
