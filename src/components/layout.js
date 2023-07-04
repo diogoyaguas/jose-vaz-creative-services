@@ -69,14 +69,14 @@ const Layout = ({ children }) => {
       {isMobile && <>
         <div className="mobile-banner container d-flex align-items-center justify-content-center">
           <div className="row">
-            <div className="col-12 text-center title">
+            <div className="col-12 text-center logo mb-3 p-0">
+              <Star />
+            </div>
+            <div className="col-12 text-center title p-0">
               MOBILE SITE COMING SOON
             </div>
-            <div className="col-12 text-center subtile">
+            <div className="col-12 text-center subtile p-0">
               AVAILABLE ON DESKTOP
-            </div>
-            <div className="col-12 text-center logo mt-2">
-              <Star />
             </div>
           </div>
         </div>
