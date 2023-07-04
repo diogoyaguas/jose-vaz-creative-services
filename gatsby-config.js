@@ -3,11 +3,11 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "Jose Vaz - Creative Services",
-    siteUrl: "https://www.yourdomain.tld",
+    title: "José Vaz - Creative Services",
+    siteUrl: "https://www.creativevaz.com",
     description: "Personal Website",
     author: "@sr.josevaz",
-    keywords: ["José Vaz", "Creative Services"],
+    keywords: ["José Vaz", "Creative Services", "Graphic Designer", "Portugal", "Feeting Room"],
   },
   plugins: [
     "gatsby-plugin-sass",
