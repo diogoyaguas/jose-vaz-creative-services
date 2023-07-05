@@ -27,7 +27,7 @@ const Homepage = ({ data }) => {
             <a className="email col-12 pb-4" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer" >
               zeoliveiravaz@gmail.com
             </a>
-            <a href="/cv.pdf" className="col-lg-3 col-md-5 col-sm-8 col-10 m-auto btn btn-primary download-cv" download>
+            <a href="/José-Vaz-CV.pdf" className="col-lg-3 col-md-5 col-sm-8 col-10 m-auto btn btn-primary download-cv" download>
               DOWNLOAD CV
             </a>
           </div>

@@ -4,10 +4,10 @@
 module.exports = {
   siteMetadata: {
     title: "José Vaz - Creative Services",
-    siteUrl: "https://www.creativevaz.com",
-    description: "Personal Website",
+    siteUrl: "https://creativevaz.com",
+    description: "Welcome to my personal website, where creativity comes to life through stunning visual experiences. As a talented Graphic Designer, I specialize in translating ideas into captivating designs that leave a lasting impression. Explore my portfolio and discover a collection of meticulously crafted logos, illustrations, branding projects, and more. With a keen eye for aesthetics and a deep understanding of design principles, I strive to create visually striking solutions that effectively communicate your brand's story. Let's collaborate and bring your design visions to reality.",
     author: "@sr.josevaz",
-    keywords: ["José Vaz", "Creative Services", "Graphic Designer", "Portugal", "Feeting Room"],
+    keywords: ["José Vaz", "Creative Services", "Graphic Designer", "Portugal", "Feeting Room", "Dulis Shoes"],
   },
   plugins: [
     "gatsby-plugin-sass",
