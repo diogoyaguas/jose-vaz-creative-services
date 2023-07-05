@@ -137,7 +137,7 @@ const About = ({ data }) => {
                     ))}
                 </div>
                 <div className="row contact text-center">
-                    <a href="/cv.pdf" className="btn btn-primary download-cv col-lg-2 col-10 mx-auto" download>
+                    <a href="/José-Vaz-CV.pdf" className="btn btn-primary download-cv col-lg-2 col-10 mx-auto" download>
                         DOWNLOAD CV
                     </a>
                 </div>
