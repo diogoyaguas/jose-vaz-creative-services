@@ -807,7 +807,7 @@ body {
 
             .experience-content {
                 margin-top: 3rem;
-                margin-bottom: 3rem;
+                padding-bottom: 3rem;
 
                 display: none;
                 overflow: hidden;
@@ -1313,7 +1313,8 @@ body {
             padding-bottom: 5rem;
 
             .flip-card {
-                height: 400px;
+                height: 352px;
+                margin-bottom: 24px;
 
                 .flip-card-inner {
                     position: relative;
