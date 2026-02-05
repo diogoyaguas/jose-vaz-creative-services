@@ -1,48 +1,75 @@
 [
-    {
-        "name": "TFRLab_01 - STUDIO 54",
-        "video": "../assets/videos/projects/TFRLab_01 - Studio54.mp4",
-        "link": "/projects/studio54"
+  {
+    "title": "TFRLab_01 - STUDIO 54",
+    "description": "Projeto de vídeo experimental",
+    "media": {
+      "video": "../assets/videos/projects/TFRLab_01 - Studio54.mp4"
     },
-    {
-        "name": "The Feeting Room ",
-        "img": "../assets/images/projects/The Feeting Room.png",
-        "link": "/projects/feeting_room"
+    "link": "/projects/studio54"
+  },
+  {
+    "title": "The Feeting Room",
+    "description": "Identidade visual do espaço",
+    "media": {
+      "img": "../assets/images/projects/The Feeting Room.png"
     },
-    {
-        "name": "Algori - Brandbook 2022",
-        "video": "../assets/videos/projects/Algori - Brandbook.mp4",
-        "link": "/projects/algori"
+    "link": "/projects/feeting_room"
+  },
+  {
+    "title": "Algori - Brandbook 2022",
+    "description": "Brandbook completo",
+    "media": {
+      "video": "../assets/videos/projects/Algori - Brandbook.mp4"
     },
-    {
-        "name": "Dulis Shoes - SS23 Lookbook",
-        "img": "../assets/images/projects/DULIS - SS23 Lookbook.png",
-        "link": "/projects/dulis_lookbook"
+    "link": "/projects/algori"
+  },
+  {
+    "title": "Dulis Shoes - SS23 Lookbook",
+    "description": "Lookbook de primavera/verão",
+    "media": {
+      "img": "../assets/images/projects/DULIS - SS23 Lookbook.png"
     },
-    {
-        "name": "Dulis Shoes - FW22 Campaign",
-        "video": "../assets/videos/projects/DULIS - FW22 Campaign.mp4",
-        "link": "/projects/dulis_campaign"
+    "link": "/projects/dulis_lookbook"
+  },
+  {
+    "title": "Dulis Shoes - FW22 Campaign",
+    "description": "Campanha de outono/inverno",
+    "media": {
+      "video": "../assets/videos/projects/DULIS - FW22 Campaign.mp4"
     },
-    {
-        "name": "Dezénhos",
-        "img": "../assets/images/projects/Dezenhos.png",
-        "link": "/projects/dezenhos",
-        "unavailable": true
+    "link": "/projects/dulis_campaign"
+  },
+  {
+    "title": "Dezénhos",
+    "description": "Projeto indisponível",
+    "media": {
+      "img": "../assets/images/projects/Dezenhos.png"
     },
-    {
-        "name": "Deepwear - Global Progressive Fashion Agency",
-        "video": "../assets/videos/projects/Deepwear - Global Progressive Fashion Agency.mp4",
-        "link": "/projects/deepwear"
+    "link": "/projects/dezenhos",
+    "unavailable": true
+  },
+  {
+    "title": "Deepwear - Global Progressive Fashion Agency",
+    "description": "Vídeo de branding global",
+    "media": {
+      "video": "../assets/videos/projects/Deepwear - Global Progressive Fashion Agency.mp4"
     },
-    {
-        "name": "DAT - Design, Art and Technology",
-        "img": "../assets/images/projects/DAT - Design, Arte e Tecnologia.png",
-        "link": "/projects/dat"
+    "link": "/projects/deepwear"
+  },
+  {
+    "title": "DAT - Design, Art and Technology",
+    "description": "Projeto de design e arte",
+    "media": {
+      "img": "../assets/images/projects/DAT - Design, Arte e Tecnologia.png"
     },
-    {
-        "name": "M.A.D - Music Addiction Disorder",
-        "img": "../assets/images/projects/M.A.D - Music Addiction Disorder .png",
-        "link": "/projects/mad"
-    }
+    "link": "/projects/dat"
+  },
+  {
+    "title": "M.A.D - Music Addiction Disorder",
+    "description": "Identidade visual e branding",
+    "media": {
+      "img": "../assets/images/projects/M.A.D - Music Addiction Disorder .png"
+    },
+    "link": "/projects/mad"
+  }
 ]
