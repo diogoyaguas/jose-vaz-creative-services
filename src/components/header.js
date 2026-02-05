@@ -1,29 +1,27 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "gatsby"
-import Navigation from "./navigation"
+import Logo from "../assets/icons/common/creative_vaz.svg"
 import PropTypes from "prop-types"
 import React from "react"
-import Star from '../assets/icons/common/star.svg';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const Header = ({ mode, setMode }) => {
-
+const Header = () => {
 	return (
-
-		<nav className="navbar navbar-expand-lg sticky-top justify-content-between">
+		<nav className="navbar navbar-expand-lg sticky-top">
 			<div className="container">
-				<div className="navbar-brand logo">
-					<Link to="/" title="Logo" className="logo-svg">
-						<Star />
-					</Link>
+
+				<div className="navbar-brand logo logo-svg">
+					<Logo />
 				</div>
-				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-					<FontAwesomeIcon icon={faBars} size="lg" />
-				</button>
-				<div className="collapse navbar-collapse" id="navigation">
-					<div className="navbar-nav w-100">
-						<Navigation mode={mode} setMode={setMode} />
-					</div>
+
+				<div className="ms-auto d-flex gap-5">
+					<Link to="/projects" className="nav-link">
+						Projetos
+					</Link>
+					<Link to="/contact" className="nav-link">
+						Contacto
+					</Link>
+					<Link to="/about" className="nav-link">
+						Sobre
+					</Link>
 				</div>
 
 			</div>
