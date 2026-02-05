@@ -1,6 +1,3 @@
-import "../styles/vars.scss"
-import "../styles/layout.scss"
-
 import React, { useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
