@@ -1,60 +1,87 @@
 import * as React from "react"
 
-import Carousel from "../components/carousel"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import SlidingText from "../components/slidingText"
-import { graphql } from "gatsby"
+import { useEffect, useRef, useState } from "react"
 
-const Homepage = ({ data }) => {
-  const projects = data.allProjectsJson.nodes
-  return (
-    <Layout>
-      <Seo title="Homepage" />
-      <div className="homepage">
-        <div className="sliding-text">
-          <SlidingText text={"GRAPHIC DESIGNER AND CONTENT EDITOR"} />
-        </div>
-        <div className="projects-carousel">
-          <Carousel information={projects} />
-        </div>
-        <div className="contact container text-center">
-          <div className="row">
-            <div className="title col-lg-8 col-12 mx-auto">
-              INTERESTED IN WORKING TOGETHER?
-            </div>
-            <div className="contact-me col-12 pt-3 mx-auto">Contact me:</div>
-            <a className="email col-12 pb-4" href="mailto:zeoliveriavaz@gmail.com" target="_blank" rel="noreferrer" >
-              zeoliveiravaz@gmail.com
-            </a>
-            <a href="/José-Vaz-CV.pdf" className="col-lg-3 col-md-5 col-sm-8 col-10 m-auto btn btn-primary download-cv" download>
-              DOWNLOAD CV
-            </a>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  )
-}
+import { navigate } from "gatsby"
 
-export const query = graphql`
-query {
-  allProjectsJson {
-    nodes {
-      name
-      link
-      unavailable
-      img {
-        childImageSharp {
-          gatsbyImageData
-        }
-      }
-      video {
-        publicURL
+const PASSWORD = "0506"
+const STORAGE_KEY = "creative_vaz_auth"
+
+const IndexPage = () => {
+  const [input, setInput] = useState("")
+  const [shake, setShake] = useState(false)
+  const [cursorVisible, setCursorVisible] = useState(true)
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    if (localStorage.getItem(STORAGE_KEY) === "true") {
+      navigate("/projects")
+    } else {
+      containerRef.current?.focus()
+    }
+  }, [])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCursorVisible((v) => !v)
+    }, 500)
+    return () => clearInterval(interval)
+  }, [])
+
+  const resetWithShake = () => {
+    setShake(true)
+    setTimeout(() => {
+      setShake(false)
+      setInput("")
+    }, 400)
+  }
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Backspace") {
+      setInput((prev) => prev.slice(0, -1))
+      return
+    }
+
+    if (e.key.length !== 1 || input.length >= PASSWORD.length) return
+
+    const next = (input + e.key).toUpperCase()
+    setInput(next)
+
+    if (next.length === PASSWORD.length) {
+      if (next === PASSWORD) {
+        localStorage.setItem(STORAGE_KEY, "true")
+        navigate("/projects")
+      } else {
+        resetWithShake()
       }
     }
   }
-}
-`;
 
-export default Homepage
+  return (
+    <div
+      className="password-page"
+      tabIndex={0}
+      onKeyDown={handleKeyDown}
+      ref={containerRef}
+    >
+      <div className={`password-container ${shake ? "shake" : ""}`}>
+        <span className="prefix-text">CREATIVE VAZ</span>
+        <span className="password-input">
+          {PASSWORD.split("").map((_, i) => {
+            const isActive = i === input.length
+            const showCursor = isActive && cursorVisible && input.length < PASSWORD.length
+
+            return (
+              <span key={i} className="char-slot">
+                {input[i] || "_"}
+                {isActive && cursorVisible && <span className="inline-cursor">▮</span>}
+              </span>
+            )
+          })}
+        </span>
+      </div>
+    </div>
+  )
+}
+
+export default IndexPage
