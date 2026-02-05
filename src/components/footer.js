@@ -1,5 +1,4 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
     const date = new Date();

@@ -10,76 +10,9 @@ body {
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
 
-  .password-page {
-    background-color: var(--black);
-    color: var(--white);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    outline: none;
-    user-select: none;
+  main {
+    padding-top: 5rem;
   }
-
-  .password-container {
-    display: flex;
-    gap: 0.5rem;
-
-    &.shake {
-      animation: shake 0.4s;
-    }
-
-    .char-slot {
-      display: inline-block;
-      width: 1.5ch;
-      text-align: center;
-      position: relative;
-
-      .inline-cursor {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: blink 1s steps(2, start) infinite;
-      }
-    }
-  }
-
-  @keyframes shake {
-    0% {
-      transform: translateX(0);
-    }
-    20% {
-      transform: translateX(-12px);
-    }
-    40% {
-      transform: translateX(12px);
-    }
-    60% {
-      transform: translateX(-8px);
-    }
-    80% {
-      transform: translateX(8px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes blink {
-    0%,
-    50% {
-      opacity: 1;
-    }
-    50.01%,
-    100% {
-      opacity: 0;
-    }
-  }
-
-
 
   .light {
     background-color: var(--white);

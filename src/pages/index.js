@@ -69,7 +69,6 @@ const IndexPage = () => {
         <span className="password-input">
           {PASSWORD.split("").map((_, i) => {
             const isActive = i === input.length
-            const showCursor = isActive && cursorVisible && input.length < PASSWORD.length
 
             return (
               <span key={i} className="char-slot">
