@@ -14,10 +14,14 @@ const ProjectCard = ({ title, description, media, link }) => {
             <div className="media">
                 {isVideo ? (
                     <ReactPlayer
-                        url={media.video}
-                        controls
-                        width="100%"
-                        height="auto"
+                        className="react-player"
+                        url={media.video.publicURL || media.video}
+                        playing={true}
+                        loop={true}
+                        muted={true}
+                        controls={false}
+                        width="101%"
+                        height="100%"
                     />
                 ) : isImage ? (
                     <GatsbyImage image={getImage(media.img)} alt={title} />
@@ -39,7 +43,10 @@ ProjectCard.propTypes = {
     description: PropTypes.string,
     media: PropTypes.shape({
         img: PropTypes.object,
-        video: PropTypes.string,
+        video: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.shape({ publicURL: PropTypes.string })
+        ]),
     }),
     link: PropTypes.string,
 }

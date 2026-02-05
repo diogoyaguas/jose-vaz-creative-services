@@ -12,7 +12,7 @@ const Projects = ({ data }) => {
             <Seo title="Projects" />
             <div className="projects-page row">
                 {projects.map((project, index) => (
-                    <div key={index} className="col-lg-4 col-md-6 mb-4">
+                    <div key={index} className="col-xl-4 col-lg-6 col-md-6 mb-5">
                         <ProjectCard
                             media={project.media}
                             title={project.title}

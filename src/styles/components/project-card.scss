@@ -1,33 +1,50 @@
 .projects-page {
-  padding: 5rem 10rem;
+  padding: 5rem 10rem 0 10rem;
 
   .project-card {
     text-decoration: none;
 
     .media {
-      width: 300px;
-      height: 200px;
+      width: 100%;
+      aspect-ratio: 4 / 2;
       overflow: hidden;
-      margin-bottom: 1rem;
       position: relative;
 
-      img,
-      .react-player {
+      filter: grayscale(100%);
+      transition: filter 0.4s ease;
+
+      > div {
+        width: 100%;
+        height: 100%;
+      }
+
+      .gatsby-image-wrapper {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: none !important;
+      }
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: grayscale(100%);
-        transition: filter 0.5s ease, transform 0.3s ease;
       }
 
-      .project-card:hover & img,
-      .project-card:hover & .react-player {
+      video {
+        width: 101%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &:hover {
+      .media {
         filter: grayscale(0%);
-        transform: scale(1.05);
       }
     }
 
     .project-title {
+      margin-top: 1rem;
       font-size: 12px;
       color: var(--black);
     }
