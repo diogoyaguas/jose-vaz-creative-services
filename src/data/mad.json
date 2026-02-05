@@ -24,6 +24,11 @@
     "organic": {
       "title": "conteúdo orgânico",
       "items": [
+        { "img": "../assets/images/mad/social_media/6.png" },
+        { "img": "../assets/images/mad/social_media/7.png" },
+        { "img": "../assets/images/mad/social_media/8.png" },
+        { "img": "../assets/images/mad/social_media/9.png" },
+        { "img": "../assets/images/mad/social_media/6.png" },
         { "img": "../assets/images/mad/social_media/1.png" },
         { "img": "../assets/images/mad/social_media/2.jpg" },
         { "img": "../assets/images/mad/social_media/3.jpg" },

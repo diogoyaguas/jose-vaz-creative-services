@@ -1,5 +1,6 @@
 import GallerySection from "../../components/gallery-section"
 import Layout from "../../components/layout"
+import OrganicContentSection from "../../components/organic-content-section"
 import ProjectHeader from "../../components/project-header"
 import React from "react"
 import Seo from "../../components/seo"
@@ -10,7 +11,7 @@ const MAD = ({ data }) => {
   return (
     <Layout>
       <Seo title={project.seoTitle} />
-      
+
       <ProjectHeader
         title={project.title}
         date={project.date}
@@ -22,9 +23,8 @@ const MAD = ({ data }) => {
         items={project.content.merch.items}
       />
 
-      <GallerySection
-        title={project.content.organic.title}
-        items={project.content.organic.items}
+      <OrganicContentSection
+        tabs={project.content.organic}
       />
 
       <GallerySection
