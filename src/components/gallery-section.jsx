@@ -1,110 +1,142 @@
 import React, { useEffect, useRef, useState } from "react"
 
+import PropTypes from "prop-types"
 import ReactPlayer from "react-player"
 
-const GallerySection = ({ title, items = [] }) => {
-    const gridRef = useRef(null)
-    const [isScrollable, setIsScrollable] = useState(false)
-    const [activeIndex, setActiveIndex] = useState(0)
+const GallerySection = ({ title, items = [], columns = 5 }) => {
+  const gridRef = useRef(null)
+  const [isScrollable, setIsScrollable] = useState(false)
+  const [activeIndex, setActiveIndex] = useState(0)
 
-    const itemsPerPage = 5
-    const totalPages = Math.ceil(items.length / itemsPerPage)
+  const safeColumns = columns === 3 ? 3 : 5
+  const itemsPerPage = safeColumns
+  const totalPages = Math.ceil(items.length / itemsPerPage)
 
-    useEffect(() => {
-        const el = gridRef.current
-        if (!el) return
+  useEffect(() => {
+    const el = gridRef.current
+    if (!el) return
 
-        const updateScrollable = () => {
-            setIsScrollable(el.scrollWidth > el.clientWidth + 1)
-        }
-
-        updateScrollable()
-
-        // Recalcular em resize (responsivo)
-        window.addEventListener("resize", updateScrollable)
-        return () => window.removeEventListener("resize", updateScrollable)
-    }, [items.length])
-
-    const handleScroll = () => {
-        const el = gridRef.current
-        if (!el) return
-
-        const maxScrollLeft = el.scrollWidth - el.clientWidth
-        if (maxScrollLeft <= 0) {
-            setActiveIndex(0)
-            return
-        }
-
-        const newIndex = Math.round((el.scrollLeft / maxScrollLeft) * (totalPages - 1))
-        setActiveIndex(newIndex)
+    const updateScrollable = () => {
+      setIsScrollable(el.scrollWidth > el.clientWidth + 1)
     }
 
-    const scrollToPage = (index) => {
-        const el = gridRef.current
-        if (!el) return
+    updateScrollable()
+    window.addEventListener("resize", updateScrollable)
+    return () => window.removeEventListener("resize", updateScrollable)
+  }, [items.length, safeColumns])
 
-        const pageWidth = el.clientWidth
-        el.scrollTo({ left: index * pageWidth, behavior: "smooth" })
+  const handleScroll = () => {
+    const el = gridRef.current
+    if (!el) return
+
+    const maxScrollLeft = el.scrollWidth - el.clientWidth
+    if (maxScrollLeft <= 0) {
+      setActiveIndex(0)
+      return
     }
 
-    return (
-        <section className="gallery-section container">
-            <h2 className="gallery-title">{title}</h2>
+    const newIndex = Math.round((el.scrollLeft / maxScrollLeft) * (totalPages - 1))
+    setActiveIndex(newIndex)
+  }
 
-            <div className={`gallery-grid-wrapper ${isScrollable ? "scrollable" : ""}`}>
-                <div className="gallery-grid" ref={gridRef} onScroll={handleScroll}>
-                    {items.map((item, index) => {
-                        if (item?.img) {
-                            return (
-                                <img
-                                    key={index}
-                                    src={item.img}
-                                    alt=""
-                                    className="gallery-item"
-                                    loading="lazy"
-                                    decoding="async"
-                                />
-                            )
-                        }
+  const scrollToPage = (index) => {
+    const el = gridRef.current
+    if (!el) return
 
-                        if (item?.video) {
-                            return (
-                                <ReactPlayer
-                                    className="react-player"
-                                    url={item.video}
-                                    playing={true}
-                                    loop={true}
-                                    muted={true}
-                                    controls={false}
-                                    width="101%"
-                                    height="100%"
-                                />
-                            )
-                        }
+    const pageWidth = el.clientWidth
+    el.scrollTo({ left: index * pageWidth, behavior: "smooth" })
+  }
 
-                        return null
-                    })}
-                </div>
+  return (
+    <section className="gallery-section container">
+      <h2 className="gallery-title">{title}</h2>
 
-                {isScrollable && totalPages > 1 && (
-                    <div className="carousel-dots">
-                        {Array.from({ length: totalPages }).map((_, i) => (
-                            <span
-                                key={i}
-                                className={`dot ${activeIndex === i ? "active" : ""}`}
-                                onClick={() => scrollToPage(i)}
-                                role="button"
-                                tabIndex={0}
-                                onKeyDown={(e) => {
-                                    if (e.key === "Enter" || e.key === " ") scrollToPage(i)
-                                }}
-                            />
-                        ))}
-                    </div>
-                )}
-            </div>
-        </section>
-    )
+      <div className={`gallery-grid-wrapper ${isScrollable ? "scrollable" : ""}`}>
+        <div
+          className={`gallery-grid cols-${safeColumns}`}
+          ref={gridRef}
+          onScroll={handleScroll}
+        >
+          {items.map((item, index) => {
+            if (item?.img) {
+              return (
+                <img
+                  key={index}
+                  src={item.img}
+                  alt=""
+                  className="gallery-item"
+                  loading="lazy"
+                  decoding="async"
+                />
+              )
+            }
+
+            if (item?.video) {
+              return (
+                <ReactPlayer
+                  key={index}
+                  className="react-player gallery-item"
+                  url={item.video}
+                  playing
+                  loop
+                  muted
+                  controls={false}
+                  playsinline
+                  width="100%"
+                  height="100%"
+                  config={{
+                    file: {
+                      attributes: {
+                        disablePictureInPicture: true,
+                        controlsList: "nodownload noplaybackrate",
+                        preload: "metadata",
+                      },
+                    },
+                  }}
+                />
+              )
+            }
+
+            return null
+          })}
+        </div>
+
+        {isScrollable && totalPages > 1 && (
+          <div className="carousel-dots">
+            {Array.from({ length: totalPages }).map((_, i) => (
+              <span
+                key={i}
+                className={`dot ${activeIndex === i ? "active" : ""}`}
+                onClick={() => scrollToPage(i)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") scrollToPage(i)
+                }}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}
+
+GallerySection.propTypes = {
+  title: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      img: PropTypes.string,
+      video: PropTypes.string,
+    })
+  ),
+  columns: PropTypes.oneOf([3, 5]),
+}
+
+GallerySection.defaultProps = {
+  title: "",
+  items: [],
+  columns: 5,
 }
 
 export default GallerySection

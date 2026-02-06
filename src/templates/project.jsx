@@ -21,6 +21,7 @@ export default function ProjectTemplate({ data }) {
             key={idx}
             title={section.title}
             items={section.items || []}
+            columns={section.columns}
           />
         )
 
@@ -87,6 +88,7 @@ export const query = graphql`
         type
         title
         subtitle
+        columns
         items { img video }
         tabs {
           title

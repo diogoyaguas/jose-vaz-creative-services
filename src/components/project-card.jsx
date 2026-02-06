@@ -7,8 +7,6 @@ const ProjectCard = ({ title, description, media, link }) => {
     const videoUrl = media?.video || null
     const imageUrl = media?.img || null
 
-    console.log(imageUrl)
-
     return (
         <Link to={link} className="project-card">
             <div className="media">

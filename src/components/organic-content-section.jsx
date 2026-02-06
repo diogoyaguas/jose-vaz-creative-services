@@ -7,8 +7,6 @@ const OrganicContentSection = ({ tabs }) => {
 
     const activeImages = tabArray[activeTab].items.slice(0, imagesPerPage)
 
-    console.log(activeImages)
-
     return (
         <div className="organic-content-section container">
             <div className="titles">

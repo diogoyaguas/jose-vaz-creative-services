@@ -89,5 +89,14 @@
     font-size: 10px;
     color: var(--black);
     line-height: 1.5;
+
+    .subtitle {
+      color: var(--grey);
+
+      a {
+        color: var(--grey);
+        text-decoration: none;
+      }
+    }
   }
 }

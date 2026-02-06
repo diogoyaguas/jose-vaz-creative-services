@@ -22,6 +22,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       type: String!         # "gallery" | "organicTabs" | "hoverVideo" | "tabbedImage"
       title: String
       subtitle: String
+      columns: Int
 
       items: [ProjectMediaItem!]
       tabs: [ProjectTab!]

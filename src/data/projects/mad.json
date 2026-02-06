@@ -29,7 +29,6 @@
         { "img": "/assets/projetos/mad/merch/4.png", "video": null }
       ]
     },
-
     {
       "type": "organicTabs",
       "title": "conteúdo orgânico",
@@ -51,7 +50,6 @@
         }
       ]
     },
-
     {
       "type": "gallery",
       "title": "eventos",

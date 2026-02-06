@@ -7,7 +7,6 @@ import { graphql } from "gatsby"
 
 const Projects = ({ data }) => {
     const projects = data.allProject.nodes
-    console.log(projects)
     return (
         <Layout>
             <Seo title="Projetos" />
