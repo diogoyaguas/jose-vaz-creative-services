@@ -15,22 +15,28 @@ exports.createSchemaCustomization = ({ actions }) => {
       smallDescription: String!
       description: String!
       cardMedia: ProjectMediaItem!
-      content: ProjectContent
-    }
-
-    type ProjectContent @dontInfer {
-      merch: ProjectSection
-      organic: ProjectSection
-      events: ProjectSection
-      reels: ProjectSection
-      socialMedia: ProjectSection
-      hoverVideo: ProjectSection
+      content: [ProjectSection!]!
     }
 
     type ProjectSection @dontInfer {
+      type: String!         # "gallery" | "organicTabs" | "hoverVideo" | "tabbedImage"
       title: String
       subtitle: String
+
+      items: [ProjectMediaItem!]
+      tabs: [ProjectTab!]
+      imageTabs: [ProjectImageTab!]
+    }
+
+     type ProjectTab @dontInfer {
+      title: String
       items: [ProjectMediaItem!]!
+    }
+
+    type ProjectImageTab @dontInfer {
+      label: String!
+      img: String!
+      alt: String
     }
 
     type ProjectMediaItem @dontInfer {

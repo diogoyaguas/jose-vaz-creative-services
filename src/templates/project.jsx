@@ -6,11 +6,55 @@ import Layout from "../components/layout"
 import OrganicContentSection from "../components/organic-content-section"
 import ProjectHeader from "../components/project-header"
 import Seo from "../components/seo"
+import TabbedImageSection from "../components/tabbed-image-section"
 import { graphql } from "gatsby"
 
 export default function ProjectTemplate({ data }) {
   const project = data.project
-  const content = project?.content
+  const sections = project?.content || []
+
+  const renderSection = (section, idx) => {
+    switch (section.type) {
+      case "gallery":
+        return (
+          <GallerySection
+            key={idx}
+            title={section.title}
+            items={section.items || []}
+          />
+        )
+
+      case "organicTabs":
+        return (
+          <OrganicContentSection
+            key={idx}
+            tabs={section.tabs || []}
+          />
+        )
+
+      case "hoverVideo":
+        return (
+          <HoverVideoGrid
+            key={idx}
+            title={section.title}
+            subtitle={section.subtitle}
+            items={section.items || []}
+          />
+        )
+
+      case "tabbedImage":
+        return (
+          <TabbedImageSection
+            key={idx}
+            title={section.title}
+            tabs={section.imageTabs || []}
+          />
+        )
+
+      default:
+        return null
+    }
+  }
 
   return (
     <Layout>
@@ -24,33 +68,7 @@ export default function ProjectTemplate({ data }) {
         media={project.banner}
       />
 
-      {content?.merch && (
-        <GallerySection title={content.merch.title} items={content.merch.items} />
-      )}
-
-      {content?.organic && (
-        <OrganicContentSection tabs={content.organic} />
-      )}
-
-      {content?.events && (
-        <GallerySection title={content.events.title} items={content.events.items} />
-      )}
-
-      {content?.socialMedia && (
-        <GallerySection
-          title={content.socialMedia.title}
-          items={content.socialMedia.items}
-        />
-      )}
-
-      {content?.hoverVideo && (
-        <HoverVideoGrid
-          title={content.hoverVideo.title}
-          subtitle={content.hoverVideo.subtitle}
-          items={content.hoverVideo.items}
-        />
-      )}
-
+      {sections.map(renderSection)}
     </Layout>
   )
 }
@@ -66,12 +84,19 @@ export const query = graphql`
       categories
       description
       content {
-        merch { title items { img video } }
-        organic { title items { img video } }
-        events { title items { img video } }
-        reels { title items { img video } }
-        socialMedia { title items { img video } }
-        hoverVideo { title subtitle items { img video } }
+        type
+        title
+        subtitle
+        items { img video }
+        tabs {
+          title
+          items { img video }
+        }
+        imageTabs {
+          label
+          img
+          alt
+        }
       }
     }
   }
