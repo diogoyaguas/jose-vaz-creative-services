@@ -7,13 +7,179 @@
   "categories": [
     "Campanhas",
     "Redes Sociais",
-    "Criação de Conteúdo"
+    "Paid Media",
+    "Mupi's",
+    "Imprensa",
+    "Eventos",
+    "Concessionários"
   ],
   "smallDescription": "Campanha de Lançamento",
   "description": "Desenvolvimento de um conceito criativo adaptado ao público português, de uma marca que está a expandir-se na europa, com desdobramento para diferentes canais online e offline. Apoio aos concessionários na criação de materiais, ativações de marca e ideias para eventos, garantindo uma comunicação coerente e alinhada com o posicionamento da marca no mercado.",
-
   "cardMedia": {
     "img": null,
-    "video": "projects/studio54.mp4"
-  }
+    "video": "/assets/projetos/firefly/spot_tv/shot.mp4"
+  },
+  "banner": {
+    "img": null,
+    "video": "/assets/projetos/firefly/spot_tv/shot.mp4"
+  },
+  "content": [
+    {
+      "type": "gallery",
+      "title": "mupi's impressos e digitais",
+      "columns": 3,
+      "items": [
+        {
+          "img": "/assets/projetos/firefly/mupis/1.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/mupis/2.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/mupis/3.png",
+          "video": null
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "paid media",
+      "items": [
+        {
+          "img": "/assets/projetos/firefly/paid_media/AD1.png",
+          "video": null
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/firefly/paid_media/AD2.mp4"
+        },
+        {
+          "img": "/assets/projetos/firefly/paid_media/AD3.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/paid_media/AD4.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/paid_media/AD5.png",
+          "video": null
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/firefly/paid_media/AD6.mp4"
+        },
+        {
+          "img": "/assets/projetos/firefly/paid_media/AD7.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/paid_media/AD8.png",
+          "video": null
+        }
+      ]
+    },
+    {
+      "type": "organicTabs",
+      "tabs": [
+        {
+          "title": "conteúdo orgânico",
+          "items": [
+            {
+              "img": "/assets/projetos/firefly/organic/Post1.png",
+              "video": null
+            },
+            {
+              "img": "/assets/projetos/firefly/organic/Post2.png",
+              "video": null
+            },
+            {
+              "img": "/assets/projetos/firefly/organic/Post3.png",
+              "video": null
+            },
+            {
+              "img": "/assets/projetos/firefly/organic/Post4.png",
+              "video": null
+            },
+            {
+              "img": "/assets/projetos/firefly/organic/Post5.png",
+              "video": null
+            },
+            {
+              "img": null,
+              "video": "/assets/projetos/firefly/organic/Story1.mp4"
+            },
+            {
+              "img": null,
+              "video": "/assets/projetos/firefly/organic/Story2.mp4"
+            },
+            {
+              "img": "/assets/projetos/firefly/organic/Story3.png",
+              "video": null
+            },
+            {
+              "img": null,
+              "video": "/assets/projetos/firefly/organic/Story4.mp4"
+            },
+            {
+              "img": "/assets/projetos/firefly/organic/Story5.png",
+              "video": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "suportes concessionários",
+      "columns": 3,
+      "items": [
+        {
+          "img": "/assets/projetos/firefly/dealers/1.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/dealers/2.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/dealers/3.png",
+          "video": null
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "suportes concessionários",
+      "columns": 3,
+      "items": [
+        {
+          "img": "/assets/projetos/firefly/events/1.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/events/2.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/events/3.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/events/4.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/events/5.png",
+          "video": null
+        },
+        {
+          "img": "/assets/projetos/firefly/events/6.png",
+          "video": null
+        }
+      ]
+    }
+  ]
 }

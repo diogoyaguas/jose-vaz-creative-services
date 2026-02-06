@@ -5,7 +5,7 @@
   "title": "agora tu, ativa-te",
   "date": "2024-2025",
 
-   "banner": {
+  "banner": {
     "img": null,
     "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4"
   },
@@ -88,10 +88,9 @@
     },
     {
       "type": "organicTabs",
-      "title": "conteúdo orgânico",
       "tabs": [
         {
-          "title": "feed",
+          "title": "conteúdo orgânico",
           "items": [
             {
               "img": "/assets/projetos/ipdj/social_media/Post1.png",
@@ -188,15 +187,15 @@
           "img": "/assets/projetos/ipdj/roadshow/5.png",
           "video": null
         },
-                {
+        {
           "img": "/assets/projetos/ipdj/roadshow/6.png",
           "video": null
         },
-                {
+        {
           "img": "/assets/projetos/ipdj/roadshow/7.png",
           "video": null
         },
-                {
+        {
           "img": "/assets/projetos/ipdj/roadshow/8.png",
           "video": null
         }
