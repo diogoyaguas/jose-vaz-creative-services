@@ -2,17 +2,17 @@ import React, { useMemo, useState } from "react"
 
 import PropTypes from "prop-types"
 
-const TabbedImageSection = ({ title, tabs, initialTab = 0 }) => {
+const TabbedImageSection = ({ title, subtitle, tabs, initialTab = 0 }) => {
   const tabArray = useMemo(
-    () => (Array.isArray(tabs) ? tabs : tabs ? [tabs] : []),
+    () => (Array.isArray(tabs) ? tabs : []),
     [tabs]
   )
 
   const [activeTab, setActiveTab] = useState(
-    Math.min(Math.max(initialTab, 0), Math.max(tabArray.length - 1, 0))
+    Math.min(Math.max(initialTab, 0), tabArray.length - 1)
   )
 
-  const active = tabArray[activeTab] || null
+  const active = tabArray[activeTab]
   const imageUrl = active?.img || ""
 
   return (
@@ -20,16 +20,15 @@ const TabbedImageSection = ({ title, tabs, initialTab = 0 }) => {
       <div className="header">
         <h2 className="title">{title}</h2>
 
-        <div className="tabs" role="tablist" aria-label={title}>
+        <div className="tabs" role="tablist">
           {tabArray.map((tab, index) => (
             <button
-              key={tab.id || tab.label || index}
+              key={tab.label || index}
               type="button"
-              className={`tab ${activeTab === index ? "active" : ""}`}
+              className={`tab ${index === activeTab ? "active" : ""}`}
               onClick={() => setActiveTab(index)}
               role="tab"
-              aria-selected={activeTab === index}
-              tabIndex={activeTab === index ? 0 : -1}
+              aria-selected={index === activeTab}
             >
               {tab.label}
             </button>
@@ -39,40 +38,37 @@ const TabbedImageSection = ({ title, tabs, initialTab = 0 }) => {
 
       <div className="media">
         {imageUrl ? (
-          <img
-            src={imageUrl}
-            alt={active?.alt || ""}
-            className="image"
-            loading="lazy"
-            decoding="async"
-          />
+          <>
+            <img
+              key={imageUrl}
+              src={imageUrl}
+              alt={active?.alt || ""}
+              className="image is-active"
+              loading="lazy"
+              decoding="async"
+            />
+          </>
         ) : (
           <div className="placeholder" />
         )}
       </div>
+
+      {subtitle && <p className="subtitle">{subtitle}</p>}
     </section>
   )
 }
 
 TabbedImageSection.propTypes = {
   title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
   initialTab: PropTypes.number,
-  tabs: PropTypes.oneOfType([
-    PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string,
-        label: PropTypes.string.isRequired,
-        img: PropTypes.string.isRequired,
-        alt: PropTypes.string,
-      })
-    ),
+  tabs: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
       label: PropTypes.string.isRequired,
       img: PropTypes.string.isRequired,
       alt: PropTypes.string,
-    }),
-  ]).isRequired,
+    })
+  ).isRequired,
 }
 
 export default TabbedImageSection
