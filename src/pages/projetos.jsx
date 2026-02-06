@@ -17,7 +17,7 @@ const Projects = ({ data }) => {
                         <ProjectCard
                             media={project.cardMedia}
                             title={project.title}
-                            description={project.description}
+                            description={project.smallDescription}
                             link={`/projects/${project.slug}`}
                         />
                     </div>
@@ -30,11 +30,11 @@ const Projects = ({ data }) => {
 
 export const query = graphql`
   query ProjectsPage {
-    allProject(sort: { title: ASC }) {
+    allProject(sort: { index: ASC }) {
       nodes {
         slug
         title
-        description
+        smallDescription
         cardMedia {
           img {
             childImageSharp {
