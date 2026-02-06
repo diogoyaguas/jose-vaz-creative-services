@@ -6,14 +6,37 @@
   "date": "2022",
   "categories": [
     "Campanhas",
-    "Redes Sociais",
-    "Criação de Conteúdo"
+    "Conteúdo orgânico",
+    "Paid Media",
+    "Fotografia",
+    "Suportes impressos"
   ],
   "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
-  "description": "M.A.D is a music-focused creative project combining visual identity, event communication and digital content to build a strong and immersive brand universe.",
-
+  "description": "Estágio profissional como Designer Gráfico, em colaboração com as equipas de Marketing e Consulting. Desenvolvimento de visuais para campanhas, conteúdos para redes sociais e soluções gráficas físicas e digitais para a marca e parceiros.<br><br>Responsável pela criação da série de vídeo Short Takes para Instagram, desde o conceito à pós-produção, bem como pelo apoio visual às lojas e campanhas online, garantindo uma comunicação coerente e alinhada com a identidade da marca.",
   "cardMedia": {
     "img": null,
     "video": "projects/studio54.mp4"
-  }
+  },
+
+  "content": [
+    {
+      "type": "gallery",
+      "title": "short takes",
+      "subtitle": "with Janina Vaz",
+      "items": [
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4"
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4"
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
+        }
+      ]
+    }
+  ]
 }
