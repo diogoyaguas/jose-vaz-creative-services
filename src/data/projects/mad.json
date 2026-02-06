@@ -11,10 +11,10 @@
     "Merchandising"
   ],
   "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
-  "description": "M.A.D is a music-focused creative project combining visual identity, event communication and digital content to build a strong and immersive brand universe.",
+  "description": "Projeto freelance focado no rebranding da marca e na criação de identidades visuais para eventos. Desenvolvimento de conteúdos para redes sociais, materiais promocionais e merchandising, garantindo uma comunicação visual consistente e experiências memoráveis para a comunidade.",
 
   "cardMedia": {
-    "img": "projects/mad.png",
+    "img": "../assets/projetos/thumbnails/mad.png",
     "video": null
   },
 
@@ -22,38 +22,38 @@
     "merch": {
       "title": "merch",
       "items": [
-        { "img": "mad/merch/1.png", "video": null },
-        { "img": "mad/merch/2.png", "video": null },
-        { "img": "mad/merch/3.png", "video": null },
-        { "img": "mad/merch/4.png", "video": null }
+        { "img": "../../../assets/projetos/mad/merch/1.png", "video": null },
+        { "img": "../../assets/projetos/mad/merch/2.png", "video": null },
+        { "img": "../../assets/projetos/mad/merch/3.png", "video": null },
+        { "img": "../../assets/projetos/mad/merch/4.png", "video": null }
       ]
     },
 
     "organic": {
       "title": "conteúdo orgânico",
       "items": [
-        { "img": "mad/social_media/6.png", "video": null },
-        { "img": "mad/social_media/7.png", "video": null },
-        { "img": "mad/social_media/8.png", "video": null },
-        { "img": "mad/social_media/9.png", "video": null },
-        { "img": "mad/social_media/6.png", "video": null },
-        { "img": "mad/social_media/1.png", "video": null },
-        { "img": "mad/social_media/2.jpg", "video": null },
-        { "img": "mad/social_media/3.jpg", "video": null },
-        { "img": "mad/social_media/4.jpg", "video": null },
-        { "img": "mad/social_media/5.jpg", "video": null }
+        { "img": "../../assets/projetos/mad/social_media/6.png", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/7.png", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/8.png", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/9.png", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/6.png", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/1.png", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/2.jpg", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/3.jpg", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/4.jpg", "video": null },
+        { "img": "../../assets/projetos/mad/social_media/5.jpg", "video": null }
       ]
     },
 
     "events": {
       "title": "eventos",
       "items": [
-        { "img": "mad/party/1.jpg", "video": null },
-        { "img": "mad/party/2.jpg", "video": null },
-        { "img": "mad/party/3.jpg", "video": null },
-        { "img": "mad/party/4.jpg", "video": null },
-        { "img": "mad/party/5.jpg", "video": null },
-        { "img": "mad/party/6.jpg", "video": null }
+        { "img": "../../assets/projetos/mad/party/1.jpg", "video": null },
+        { "img": "../../assets/projetos/mad/party/2.jpg", "video": null },
+        { "img": "../../assets/projetos/mad/party/3.jpg", "video": null },
+        { "img": "../../assets/projetos/mad/party/4.jpg", "video": null },
+        { "img": "../../assets/projetos/mad/party/5.jpg", "video": null },
+        { "img": "../../assets/projetos/mad/party/6.jpg", "video": null }
       ]
     },
 

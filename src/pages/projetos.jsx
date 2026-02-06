@@ -10,7 +10,7 @@ const Projects = ({ data }) => {
     console.log(projects)
     return (
         <Layout>
-            <Seo title="Projects" />
+            <Seo title="Projetos" />
             <div className="projects-page row">
                 {projects.map((project) => (
                     <div key={project.slug} className="col-xl-4 col-lg-6 col-md-6 mb-5">
@@ -18,7 +18,7 @@ const Projects = ({ data }) => {
                             media={project.cardMedia}
                             title={project.title}
                             description={project.smallDescription}
-                            link={`/projects/${project.slug}`}
+                            link={`/projetos/${project.slug}`}
                         />
                     </div>
                 ))}
@@ -36,14 +36,8 @@ export const query = graphql`
         title
         smallDescription
         cardMedia {
-          img {
-            childImageSharp {
-              gatsbyImageData(width: 330)
-            }
-          }
-          video {
-            publicURL
-          }
+          img 
+          video
         }
       }
     }

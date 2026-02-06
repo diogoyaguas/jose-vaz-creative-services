@@ -6,16 +6,18 @@ import React from "react"
 import ReactPlayer from "react-player"
 
 const ProjectCard = ({ title, description, media, link }) => {
-    const isVideo = media?.video
-    const isImage = media?.img
+    const videoUrl = media?.video || null
+    const imageUrl = media?.img || null
+
+    console.log(imageUrl)
 
     return (
         <Link to={link} className="project-card">
             <div className="media">
-                {isVideo ? (
+                {videoUrl ? (
                     <ReactPlayer
                         className="react-player"
-                        url={media.video.publicURL || media.video}
+                        url={videoUrl}
                         playing={true}
                         loop={true}
                         muted={true}
@@ -23,14 +25,20 @@ const ProjectCard = ({ title, description, media, link }) => {
                         width="101%"
                         height="100%"
                     />
-                ) : isImage ? (
-                    <GatsbyImage image={getImage(media.img)} alt={title} />
+                ) : imageUrl ? (
+                    <img
+                        src={imageUrl}
+                        alt={title}
+                        className="project-card-image"
+                        loading="lazy"
+                        decoding="async"
+                    />
                 ) : null}
             </div>
             <h3 className="project-title">{title}</h3>
             <p className="project-description">{description}</p>
             {link && (
-                <span className="project-button" href={link} target="_blank" rel="noreferrer">
+                <span className="project-button">
                     Ver projeto
                 </span>
             )}

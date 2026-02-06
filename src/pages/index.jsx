@@ -15,7 +15,7 @@ const IndexPage = () => {
 
   useEffect(() => {
     if (localStorage.getItem(STORAGE_KEY) === "true") {
-      navigate("/projects")
+      navigate("/projetos")
     } else {
       containerRef.current?.focus()
     }
@@ -50,7 +50,7 @@ const IndexPage = () => {
     if (next.length === PASSWORD.length) {
       if (next === PASSWORD) {
         localStorage.setItem(STORAGE_KEY, "true")
-        navigate("/projects")
+        navigate("/projetos")
       } else {
         resetWithShake()
       }

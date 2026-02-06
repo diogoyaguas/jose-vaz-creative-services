@@ -1,3 +1,5 @@
+const path = require("path")
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
@@ -29,8 +31,39 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type ProjectMediaItem @dontInfer {
-      img: File
-      video: File
+      img: String
+      video: String
     }
   `)
+}
+
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions
+
+  const result = await graphql(`
+    {
+      allProject(sort: { index: ASC }) {
+        nodes {
+          slug
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panicOnBuild(result.errors)
+    return
+  }
+
+  const template = path.resolve("src/templates/project.jsx")
+
+  result.data.allProject.nodes.forEach((p) => {
+    console.log("Creating page for:", p.slug)
+
+    createPage({
+      path: `/projetos/${p.slug}`,
+      component: template,
+      context: { slug: p.slug },
+    })
+  })
 }

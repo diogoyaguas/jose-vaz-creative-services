@@ -1,4 +1,3 @@
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 
 const OrganicContentSection = ({ tabs }) => {
@@ -7,6 +6,8 @@ const OrganicContentSection = ({ tabs }) => {
     const imagesPerPage = 10
 
     const activeImages = tabArray[activeTab].items.slice(0, imagesPerPage)
+
+    console.log(activeImages)
 
     return (
         <div className="organic-content-section container">
@@ -23,11 +24,17 @@ const OrganicContentSection = ({ tabs }) => {
             </div>
 
             <div className="main-images">
-                {activeImages.map((imgObj, idx) => {
-                    const image = getImage(imgObj.img)
+                {activeImages.map((img, index) => {
                     return (
-                        <div key={idx} className="main-image">
-                            <GatsbyImage image={image} alt={`${tabArray[activeTab].title} ${idx}`} />
+                        <div key={index} className="main-image">
+                            <img
+                                key={index}
+                                src={img}
+                                alt=""
+                                className="gallery-item"
+                                loading="lazy"
+                                decoding="async"
+                            />
                         </div>
                     )
                 })}
