@@ -5,6 +5,11 @@
   "title": "agora tu, ativa-te",
   "date": "2024-2025",
 
+   "banner": {
+    "img": null,
+    "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4"
+  },
+
   "categories": [
     "Campanhas",
     "Conteúdo Orgânico",
