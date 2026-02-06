@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import GallerySection from "../components/gallery-section"
+import HoverVideoGrid from "../components/hover-video-grid"
 import Layout from "../components/layout"
 import OrganicContentSection from "../components/organic-content-section"
 import ProjectHeader from "../components/project-header"
@@ -42,6 +43,14 @@ export default function ProjectTemplate({ data }) {
         />
       )}
 
+      {content?.hoverVideo && (
+        <HoverVideoGrid
+          title={content.hoverVideo.title}
+          subtitle={content.hoverVideo.subtitle}
+          items={content.hoverVideo.items}
+        />
+      )}
+
     </Layout>
   )
 }
@@ -62,6 +71,7 @@ export const query = graphql`
         events { title items { img video } }
         reels { title items { img video } }
         socialMedia { title items { img video } }
+        hoverVideo { title subtitle items { img video } }
       }
     }
   }

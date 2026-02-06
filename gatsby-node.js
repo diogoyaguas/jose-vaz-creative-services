@@ -24,10 +24,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       events: ProjectSection
       reels: ProjectSection
       socialMedia: ProjectSection
+      hoverVideo: ProjectSection
     }
 
     type ProjectSection @dontInfer {
       title: String
+      subtitle: String
       items: [ProjectMediaItem!]!
     }
 

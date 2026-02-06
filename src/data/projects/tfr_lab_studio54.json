@@ -47,6 +47,16 @@
         { "img": "/assets/projetos/studio_54/social_media/18.jpg", "video": null },
         { "img": "/assets/projetos/studio_54/social_media/19.jpg", "video": null }
       ]
+    },
+    "hoverVideo": {
+      "title": "backstage",
+      "subtitle": "photoshoot",
+      "items": [
+        { "img": "/assets/projetos/studio_54/backstage/1.png", "video": "/assets/projetos/studio_54/backstage/1.mp4" },
+        { "img": "/assets/projetos/studio_54/backstage/2.png", "video": "/assets/projetos/studio_54/backstage/2.mp4" },
+        { "img": "/assets/projetos/studio_54/backstage/3.png", "video": "/assets/projetos/studio_54/backstage/3.mp4" },
+        { "img": "/assets/projetos/studio_54/backstage/4.png", "video": "/assets/projetos/studio_54/backstage/4.mp4" }
+      ]
     }
   }
 }
