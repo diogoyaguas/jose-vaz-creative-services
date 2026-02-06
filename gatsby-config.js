@@ -13,7 +13,6 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
-    "gatsby-transformer-json",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp", {
       resolve: "gatsby-plugin-manifest",
@@ -44,8 +43,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "data",
-        path: "./src/data",
+        name: "projects",
+        path: "./src/data/projects",
       },
     },
     {
@@ -60,6 +59,15 @@ module.exports = {
       options: {
         name: "icons",
         path: "./src/assets/icons",
+      },
+    },
+    {
+      resolve: "gatsby-transformer-json",
+      options: {
+        typeName: ({ node }) => {
+          if (node.sourceInstanceName === "projects") return "Project"
+          return "Data"
+        },
       },
     },
     {

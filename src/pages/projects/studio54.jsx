@@ -1,3 +1,4 @@
+import GallerySection from "../../components/gallery-section"
 import Layout from "../../components/layout"
 import ProjectHeader from "../../components/project-header"
 import React from "react"
@@ -5,7 +6,7 @@ import Seo from "../../components/seo"
 import { graphql } from "gatsby"
 
 const Studio54 = ({ data }) => {
-    const project = data.allDataJson.nodes[0]
+    const project = data.project
     return (
         <Layout>
             <Seo title={project.seoTitle} />
@@ -16,26 +17,29 @@ const Studio54 = ({ data }) => {
                 categories={project.categories}
                 description={project.description} />
 
+            <GallerySection
+                title={project.social_media.title}
+                items={project.social_media.items}
+              />
+
         </Layout>
     )
 }
 
 export const query = graphql`
-query {
-  allStudio54Json {
-    nodes {
+  query Studio54Page {
+    project(slug: { eq: "studio-54" }) {
+      slug
       seoTitle
       title
-      date
-      categories
       description
       content {
-        merch {
+        socialMedia {
           title
           items {
             img {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData(width: 900)
               }
             }
             video {
@@ -46,8 +50,6 @@ query {
       }
     }
   }
-}
 `
-
 
 export default Studio54

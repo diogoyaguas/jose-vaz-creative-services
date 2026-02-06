@@ -1,0 +1,66 @@
+{
+  "slug": "mad",
+  "seoTitle": "M.A.D — Music Addiction Disorder",
+  "title": "m.a.d",
+  "date": "2023",
+  "categories": [
+    "Campanhas",
+    "Redes Sociais",
+    "Criação de Conteúdo",
+    "Merchandising"
+  ],
+  "description": "M.A.D is a music-focused creative project combining visual identity, event communication and digital content to build a strong and immersive brand universe.",
+  "cardMedia": {
+    "img": "projects/mad.png",
+    "video": null
+  },
+  "content": {
+    "merch": {
+      "title": "merch",
+      "items": [
+        { "img": "mad/merch/1.png" },
+        { "img": "mad/merch/2.png" },
+        { "img": "mad/merch/3.png" },
+        { "img": "mad/merch/4.png" }
+      ]
+    },
+
+    "organic": {
+      "title": "conteúdo orgânico",
+      "items": [
+        { "img": "mad/social_media/6.png" },
+        { "img": "mad/social_media/7.png" },
+        { "img": "mad/social_media/8.png" },
+        { "img": "mad/social_media/9.png" },
+        { "img": "mad/social_media/6.png" },
+        { "img": "mad/social_media/1.png" },
+        { "img": "mad/social_media/2.jpg" },
+        { "img": "mad/social_media/3.jpg" },
+        { "img": "mad/social_media/4.jpg" },
+        { "img": "mad/social_media/5.jpg" }
+      ]
+    },
+
+    "events": {
+      "title": "eventos",
+      "items": [
+        { "img": "mad/party/1.jpg" },
+        { "img": "mad/party/2.jpg" },
+        { "img": "mad/party/3.jpg" },
+        { "img": "mad/party/4.jpg" },
+        { "img": "mad/party/5.jpg" },
+        { "img": "mad/party/6.jpg" }
+      ]
+    },
+
+    "reels": {
+      "title": "reels",
+      "items": [
+        { "video": "mad/reels/1.mp4" },
+        { "video": "mad/reels/2.mov" },
+        { "video": "mad/reels/3.mov" },
+        { "video": "mad/reels/4.mov" }
+      ]
+    }
+  }
+}

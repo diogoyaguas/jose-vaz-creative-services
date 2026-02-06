@@ -7,7 +7,8 @@ import Seo from "../../components/seo"
 import { graphql } from "gatsby"
 
 const MAD = ({ data }) => {
-  const project = data.allDataJson.nodes[0]
+  console.log(data)
+  const project = data.project
   return (
     <Layout>
       <Seo title={project.seoTitle} />
@@ -36,9 +37,9 @@ const MAD = ({ data }) => {
 }
 
 export const query = graphql`
-query {
-  allDataJson {
-    nodes {
+  query MADPage {
+    project(slug: { eq: "mad" }) {
+      slug
       seoTitle
       title
       date
@@ -53,6 +54,9 @@ query {
                 gatsbyImageData
               }
             }
+            video {
+              publicURL
+            }
           }
         }
         organic {
@@ -62,6 +66,9 @@ query {
               childImageSharp {
                 gatsbyImageData
               }
+            }
+            video {
+              publicURL
             }
           }
         }
@@ -73,11 +80,19 @@ query {
                 gatsbyImageData
               }
             }
+            video {
+              publicURL
+            }
           }
         }
         reels {
           title
           items {
+            img {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
             video {
               publicURL
             }
@@ -86,7 +101,6 @@ query {
       }
     }
   }
-}
 `
 
 export default MAD
