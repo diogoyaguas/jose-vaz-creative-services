@@ -4,11 +4,13 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(`
     type Project implements Node @dontInfer {
       slug: String!
+      index: Int!
       seoTitle: String
       title: String!
       date: String
       categories: [String!]!
-      description: String
+      smallDescription: String!
+      description: String!
       cardMedia: ProjectMediaItem!
       content: ProjectContent
     }
