@@ -12,6 +12,7 @@
       font-size: 10px;
       margin-bottom: 0.5rem;
       color: var(--grey);
+      cursor: pointer;
 
       &.active {
         color: var(--black);
@@ -22,15 +23,62 @@
   .main-images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: auto;
     gap: 1rem;
 
     .main-image {
-      img {
+      position: relative;
+      overflow: hidden;
+
+      img,
+      video {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
+        display: block;
       }
+
+      video {
+        background: #000;
+      }
+
+      .sound-toggle {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        border: 0;
+        background: transparent;
+        opacity: 0;
+        transition: opacity 200ms ease;
+        cursor: pointer;
+
+        svg {
+          width: 15px;
+          height: 15px;
+
+          g,
+          path {
+            fill: var(--white);
+          }
+        }
+      }
+
+      &:hover .sound-toggle {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 0 2rem;
+
+    .main-images {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .main-images {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
