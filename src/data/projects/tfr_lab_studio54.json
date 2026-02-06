@@ -1,6 +1,7 @@
 {
-  "slug": "studio54",
-  "seoTitle": "Studio 54",
+  "slug": "tfr_lab-studio54",
+  "index": 7,
+  "seoTitle": "tfr_lab",
   "title": "tfr_lab - studio 54",
   "date": "2022",
   "categories": [
@@ -8,6 +9,7 @@
     "Redes Sociais",
     "Criação de Conteúdo"
   ],
+  "smallDescription": "Campanha de Lançamento | Coleção Cápsula",
   "description": "M.A.D is a music-focused creative project combining visual identity, event communication and digital content to build a strong and immersive brand universe.",
 
   "cardMedia": {
