@@ -20,6 +20,7 @@ export default function ProjectTemplate({ data }) {
           <GallerySection
             key={idx}
             title={section.title}
+            subtitle={section.subtitle}
             items={section.items || []}
             columns={section.columns}
           />

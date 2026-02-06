@@ -2,10 +2,21 @@
   padding: 0 10rem;
   margin-bottom: 3rem;
 
-  .gallery-title {
-    font-size: 10px;
+  .gallery-header {
     margin-bottom: 0.5rem;
-    color: var(--black);
+    display: flex;
+
+    .gallery-title {
+      font-size: 10px;
+      margin: 0;
+      color: var(--black);
+    }
+
+    .gallery-subtitle {
+      font-size: 10px;
+      margin: 0 0 0 0.25rem;
+      color: var(--grey);
+    }
   }
 
   .gallery-grid-wrapper {
@@ -33,6 +44,31 @@
         height: 100%;
         object-fit: cover;
         scroll-snap-align: start;
+      }
+
+      .sound-toggle {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        border: 0;
+        background: transparent;
+        opacity: 0;
+        transition: opacity 200ms ease;
+        cursor: pointer;
+
+        svg {
+          width: 15px;
+          height: 15px;
+
+          g,
+          path {
+            fill: var(--white);
+          }
+        }
+      }
+
+      &:hover .sound-toggle {
+        opacity: 1;
       }
 
       &::-webkit-scrollbar {

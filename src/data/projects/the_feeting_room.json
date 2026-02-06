@@ -23,6 +23,7 @@
       "type": "gallery",
       "title": "short takes",
       "subtitle": "with Janina Vaz",
+      "columns": 3,
       "items": [
         {
           "img": null,
@@ -35,6 +36,69 @@
         {
           "img": null,
           "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "redes sociais",
+      "items": [
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/social_media/1.mp4"
+        },
+        {
+          "img": "/assets/projetos/feeting_room/social_media/2.png",
+          "video": null
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/social_media/3.mp4"
+        },
+        {
+          "img": "/assets/projetos/feeting_room/social_media/4.jpg",
+          "video": null
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/social_media/5.mp4"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "instagram reels",
+      "items": [
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/reels/1.mp4"
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/reels/2.mp4"
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/reels/3.mp4"
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/reels/4.mp4"
+        },
+        {
+          "img": null,
+          "video": "/assets/projetos/feeting_room/reels/5.mp4"
+        }
+      ]
+    },
+    {
+      "type": "tabbedImage",
+      "title": "campanhas",
+      "imageTabs": [
+        {
+          "label": "",
+          "img": "/assets/projetos/feeting_room/social_media/website.png",
+          "alt": "website"
         }
       ]
     }
