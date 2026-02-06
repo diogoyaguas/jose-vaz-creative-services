@@ -43,7 +43,7 @@ const HoverVideoGrid = ({ title, subtitle, items }) => {
                 <img
                   src={item.img}
                   alt={item.alt}
-                  className={`media image ${isHovered && hasVideo ? "hidden" : ""}`}
+                  className={`media image ${isHovered && hasVideo ? "fade-out" : "fade-in"}`}
                   loading="lazy"
                   decoding="async"
                 />
@@ -52,7 +52,7 @@ const HoverVideoGrid = ({ title, subtitle, items }) => {
               )}
 
               {hasVideo ? (
-                <div className={`media video ${isHovered ? "visible" : ""}`}>
+                <div className={`media video ${isHovered ? "fade-in" : "fade-out"}`}>
                   <ReactPlayer
                     url={item.video}
                     playing={isHovered}
