@@ -1,5 +1,5 @@
 {
-  "slug": "studio-54",
+  "slug": "studio54",
   "seoTitle": "Studio 54",
   "title": "tfr_lab - studio 54",
   "date": "2022",
@@ -9,33 +9,35 @@
     "Criação de Conteúdo"
   ],
   "description": "M.A.D is a music-focused creative project combining visual identity, event communication and digital content to build a strong and immersive brand universe.",
+
   "cardMedia": {
     "img": null,
     "video": "projects/studio54.mp4"
   },
+
   "content": {
-    "social_media": {
+    "socialMedia": {
       "title": "redes sociais",
       "items": [
-        { "video": null, "img":"studio_54/social_media/1.png" },
-        { "video": "studio_54/social_media/2.mp4", "img": null },
-        { "video": null, "img":"studio_54/social_media/3.jpg" },
-        { "video": null, "img":"studio_54/social_media/4.jpg" },
-        { "video": "studio_54/social_media/8.mp4", "img": null },
-        { "video": null, "img":"studio_54/social_media/9.jpg" },
-        { "video": null, "img":"studio_54/social_media/10.jpg" },
-        { "video": "studio_54/social_media/5.mp4", "img": null },
-        { "video": null, "img":"studio_54/social_media/6.jpg" },
-        { "video": null, "img":"studio_54/social_media/7.jpg" },
-        { "video": ".studio_54/social_media/11.mp4", "img": null },
-        { "video": null, "img":"studio_54/social_media/12.jpg" },
-        { "video": null, "img":"studio_54/social_media/13.jpg" },
-        { "video": "studio_54/social_media/14.mp4", "img": null },
-        { "video": null, "img":"studio_54/social_media/15.jpg" },
-        { "video": null, "img":"studio_54/social_media/16.jpg" },
-        { "video": "studio_54/social_media/17.mp4", "img": null },
-        { "video": null, "img":"studio_54/social_media/18.jpg" },
-        { "video": null, "img":"studio_54/social_media/19.jpg" }
+        { "img": "studio_54/social_media/1.png", "video": null },
+        { "img": null, "video": "studio_54/social_media/2.mp4" },
+        { "img": "studio_54/social_media/3.jpg", "video": null },
+        { "img": "studio_54/social_media/4.jpg", "video": null },
+        { "img": null, "video": "studio_54/social_media/8.mp4" },
+        { "img": "studio_54/social_media/9.jpg", "video": null },
+        { "img": "studio_54/social_media/10.jpg", "video": null },
+        { "img": null, "video": "studio_54/social_media/5.mp4" },
+        { "img": "studio_54/social_media/6.jpg", "video": null },
+        { "img": "studio_54/social_media/7.jpg", "video": null },
+        { "img": null, "video": "studio_54/social_media/11.mp4" },
+        { "img": "studio_54/social_media/12.jpg", "video": null },
+        { "img": "studio_54/social_media/13.jpg", "video": null },
+        { "img": null, "video": "studio_54/social_media/14.mp4" },
+        { "img": "studio_54/social_media/15.jpg", "video": null },
+        { "img": "studio_54/social_media/16.jpg", "video": null },
+        { "img": null, "video": "studio_54/social_media/17.mp4" },
+        { "img": "studio_54/social_media/18.jpg", "video": null },
+        { "img": "studio_54/social_media/19.jpg", "video": null }
       ]
     }
   }

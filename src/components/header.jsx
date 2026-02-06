@@ -9,17 +9,19 @@ const Header = () => {
 			<div className="container">
 
 				<div className="navbar-brand logo logo-svg">
-					<Logo />
+					<Link to="/projetos" className="nav-link">
+						<Logo />
+					</Link>
 				</div>
 
 				<div className="ms-auto d-flex gap-5">
-					<Link to="/projects" className="nav-link">
+					<Link to="/projetos" className="nav-link">
 						Projetos
 					</Link>
-					<Link to="/contact" className="nav-link">
+					<Link to="/contacto" className="nav-link">
 						Contacto
 					</Link>
-					<Link to="/about" className="nav-link">
+					<Link to="/sobre" className="nav-link">
 						Sobre
 					</Link>
 				</div>

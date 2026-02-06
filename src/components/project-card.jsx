@@ -30,9 +30,9 @@ const ProjectCard = ({ title, description, media, link }) => {
             <h3 className="project-title">{title}</h3>
             <p className="project-description">{description}</p>
             {link && (
-                <a className="project-button" href={link} target="_blank" rel="noreferrer">
+                <span className="project-button" href={link} target="_blank" rel="noreferrer">
                     Ver projeto
-                </a>
+                </span>
             )}
         </Link>
     )

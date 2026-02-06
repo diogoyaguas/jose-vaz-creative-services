@@ -7,6 +7,7 @@ import { graphql } from "gatsby"
 
 const Studio54 = ({ data }) => {
     const project = data.project
+    console.log(project)
     return (
         <Layout>
             <Seo title={project.seoTitle} />
@@ -18,8 +19,8 @@ const Studio54 = ({ data }) => {
                 description={project.description} />
 
             <GallerySection
-                title={project.social_media.title}
-                items={project.social_media.items}
+                title={project.content.socialMedia.title}
+                items={project.content.socialMedia.items}
               />
 
         </Layout>
@@ -28,7 +29,7 @@ const Studio54 = ({ data }) => {
 
 export const query = graphql`
   query Studio54Page {
-    project(slug: { eq: "studio-54" }) {
+    project(slug: { eq: "studio54" }) {
       slug
       seoTitle
       title

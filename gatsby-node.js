@@ -27,8 +27,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type ProjectMediaItem @dontInfer {
-      img: File @fileByRelativePath
-      video: File @fileByRelativePath
+      img: File
+      video: File
     }
   `)
 }
