@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import Logo from "../../static/assets/icons/common/creative_vaz.svg"
+import Logo from "../assets/icons/common/creative_vaz.svg"
 import PropTypes from "prop-types"
 import React from "react"
 

@@ -12,58 +12,53 @@
   ],
   "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
   "description": "Projeto freelance focado no rebranding da marca e na criação de identidades visuais para eventos. Desenvolvimento de conteúdos para redes sociais, materiais promocionais e merchandising, garantindo uma comunicação visual consistente e experiências memoráveis para a comunidade.",
-
   "cardMedia": {
-    "img": "../assets/projetos/thumbnails/mad.png",
+    "img": "/assets/projetos/thumbnails/mad.png",
     "video": null
   },
-
   "content": {
     "merch": {
       "title": "merch",
       "items": [
-        { "img": "../../../assets/projetos/mad/merch/1.png", "video": null },
-        { "img": "../../assets/projetos/mad/merch/2.png", "video": null },
-        { "img": "../../assets/projetos/mad/merch/3.png", "video": null },
-        { "img": "../../assets/projetos/mad/merch/4.png", "video": null }
+        { "img": "/assets/projetos/mad/merch/1.png", "video": null },
+        { "img": "/assets/projetos/mad/merch/2.png", "video": null },
+        { "img": "/assets/projetos/mad/merch/3.png", "video": null },
+        { "img": "/assets/projetos/mad/merch/4.png", "video": null }
       ]
     },
-
     "organic": {
       "title": "conteúdo orgânico",
       "items": [
-        { "img": "../../assets/projetos/mad/social_media/6.png", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/7.png", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/8.png", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/9.png", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/6.png", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/1.png", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/2.jpg", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/3.jpg", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/4.jpg", "video": null },
-        { "img": "../../assets/projetos/mad/social_media/5.jpg", "video": null }
+        { "img": "/assets/projetos/mad/social_media/6.png", "video": null },
+        { "img": "/assets/projetos/mad/social_media/7.png", "video": null },
+        { "img": "/assets/projetos/mad/social_media/8.png", "video": null },
+        { "img": "/assets/projetos/mad/social_media/9.png", "video": null },
+        { "img": "/assets/projetos/mad/social_media/6.png", "video": null },
+        { "img": "/assets/projetos/mad/social_media/1.png", "video": null },
+        { "img": "/assets/projetos/mad/social_media/2.jpg", "video": null },
+        { "img": "/assets/projetos/mad/social_media/3.jpg", "video": null },
+        { "img": "/assets/projetos/mad/social_media/4.jpg", "video": null },
+        { "img": "/assets/projetos/mad/social_media/5.jpg", "video": null }
       ]
     },
-
     "events": {
       "title": "eventos",
       "items": [
-        { "img": "../../assets/projetos/mad/party/1.jpg", "video": null },
-        { "img": "../../assets/projetos/mad/party/2.jpg", "video": null },
-        { "img": "../../assets/projetos/mad/party/3.jpg", "video": null },
-        { "img": "../../assets/projetos/mad/party/4.jpg", "video": null },
-        { "img": "../../assets/projetos/mad/party/5.jpg", "video": null },
-        { "img": "../../assets/projetos/mad/party/6.jpg", "video": null }
+        { "img": "/assets/projetos/mad/party/1.jpg", "video": null },
+        { "img": "/assets/projetos/mad/party/2.jpg", "video": null },
+        { "img": "/assets/projetos/mad/party/3.jpg", "video": null },
+        { "img": "/assets/projetos/mad/party/4.jpg", "video": null },
+        { "img": "/assets/projetos/mad/party/5.jpg", "video": null },
+        { "img": "/assets/projetos/mad/party/6.jpg", "video": null }
       ]
     },
-
     "reels": {
       "title": "reels",
       "items": [
-        { "img": null, "video": "mad/reels/1.mp4" },
-        { "img": null, "video": "mad/reels/2.mov" },
-        { "img": null, "video": "mad/reels/3.mov" },
-        { "img": null, "video": "mad/reels/4.mov" }
+        { "img": null, "video": "/assets/projetos/mad/reels/1.mp4" },
+        { "img": null, "video": "/assets/projetos/mad/reels/2.mov" },
+        { "img": null, "video": "/assets/projetos/mad/reels/3.mov" },
+        { "img": null, "video": "/assets/projetos/mad/reels/4.mov" }
       ]
     }
   }

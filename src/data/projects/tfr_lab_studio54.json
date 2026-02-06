@@ -1,45 +1,51 @@
 {
   "slug": "tfr_lab-studio54",
   "index": 7,
-  "seoTitle": "tfr_lab",
+  "seoTitle": "tfr_lab - Studio 54",
   "title": "tfr_lab - studio 54",
   "date": "2022",
+
+  "banner": {
+    "img": null,
+    "video": "/assets/projetos/studio_54/banner.mp4"
+  },
+
   "categories": [
     "Campanhas",
     "Redes Sociais",
     "Criação de Conteúdo"
   ],
   "smallDescription": "Campanha de Lançamento | Coleção Cápsula",
-  "description": "M.A.D is a music-focused creative project combining visual identity, event communication and digital content to build a strong and immersive brand universe.",
-
+  "description": "Projeto colaborativo entre a The Feeting Room e marcas parceiras para o desenvolvimento de uma cápsula inspirada no espírito de liberdade e autoexpressão do Studio 54. Apoio na criação da identidade visual da coleção, incluindo logótipo, guidelines e materiais gráficos digitais e impressos.<br> <br>Colaboração com a direção criativa, produção de conteúdos de backstage e desenvolvimento de suportes gráficos para o evento de lançamento, assegurando uma comunicação coerente da coleção em todos os pontos de contacto.",
+  
   "cardMedia": {
     "img": null,
-    "video": "../assets/projetos/studio54.mp4"
+    "video": "/assets/projetos/thumbnails/studio54.mp4"
   },
 
   "content": {
     "socialMedia": {
       "title": "redes sociais",
       "items": [
-        { "img": "studio_54/social_media/1.png", "video": null },
-        { "img": null, "video": "studio_54/social_media/2.mp4" },
-        { "img": "studio_54/social_media/3.jpg", "video": null },
-        { "img": "studio_54/social_media/4.jpg", "video": null },
-        { "img": null, "video": "studio_54/social_media/8.mp4" },
-        { "img": "studio_54/social_media/9.jpg", "video": null },
-        { "img": "studio_54/social_media/10.jpg", "video": null },
-        { "img": null, "video": "studio_54/social_media/5.mp4" },
-        { "img": "studio_54/social_media/6.jpg", "video": null },
-        { "img": "studio_54/social_media/7.jpg", "video": null },
-        { "img": null, "video": "studio_54/social_media/11.mp4" },
-        { "img": "studio_54/social_media/12.jpg", "video": null },
-        { "img": "studio_54/social_media/13.jpg", "video": null },
-        { "img": null, "video": "studio_54/social_media/14.mp4" },
-        { "img": "studio_54/social_media/15.jpg", "video": null },
-        { "img": "studio_54/social_media/16.jpg", "video": null },
-        { "img": null, "video": "studio_54/social_media/17.mp4" },
-        { "img": "studio_54/social_media/18.jpg", "video": null },
-        { "img": "studio_54/social_media/19.jpg", "video": null }
+        { "img": "/assets/projetos/studio_54/social_media/1.png", "video": null },
+        { "img": null, "video": "/assets/projetos/studio_54/social_media/2.mp4" },
+        { "img": "/assets/projetos/studio_54/social_media/3.jpg", "video": null },
+        { "img": "/assets/projetos/studio_54/social_media/4.jpg", "video": null },
+        { "img": null, "video": "/assets/projetos/studio_54/social_media/8.mp4" },
+        { "img": "/assets/projetos/studio_54/social_media/9.jpg", "video": null },
+        { "img": "/assets/projetos/studio_54/social_media/10.jpg", "video": null },
+        { "img": null, "video": "/assets/projetos/studio_54/social_media/5.mp4" },
+        { "img": "/assets/projetos/studio_54/social_media/6.jpg", "video": null },
+        { "img": "/assets/projetos/studio_54/social_media/7.jpg", "video": null },
+        { "img": null, "video": "/assets/projetos/studio_54/social_media/11.mp4" },
+        { "img": "/assets/projetos/studio_54/social_media/12.jpg", "video": null },
+        { "img": "/assets/projetos/studio_54/social_media/13.jpg", "video": null },
+        { "img": null, "video": "/assets/projetos/studio_54/social_media/14.mp4" },
+        { "img": "/assets/projetos/studio_54/social_media/15.jpg", "video": null },
+        { "img": "/assets/projetos/studio_54/social_media/16.jpg", "video": null },
+        { "img": null, "video": "/assets/projetos/studio_54/social_media/17.mp4" },
+        { "img": "/assets/projetos/studio_54/social_media/18.jpg", "video": null },
+        { "img": "/assets/projetos/studio_54/social_media/19.jpg", "video": null }
       ]
     }
   }

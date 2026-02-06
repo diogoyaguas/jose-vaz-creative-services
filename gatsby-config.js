@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "José Vaz - Creative Services",
+    title: "Creative Vaz",
     siteUrl: "https://creativevaz.com",
     description: "Welcome to my personal website, where creativity comes to life through stunning visual experiences. As a talented Graphic Designer, I specialize in translating ideas into captivating designs that leave a lasting impression. Explore my portfolio and discover a collection of meticulously crafted logos, illustrations, branding projects, and more. With a keen eye for aesthetics and a deep understanding of design principles, I strive to create visually striking solutions that effectively communicate your brand's story. Let's collaborate and bring your design visions to reality.",
     author: "@sr.josevaz",
@@ -11,7 +11,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
-    "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp", {
@@ -23,16 +22,10 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#000000",
         display: "minimal-ui",
-        "icon": "static/assets/images/common/icon.png"
+        "icon": "static/assets/icons/common/logo.svg"
       }
-    }, {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        "name": "images",
-        "path": "./static/assets/images"
-      },
-      __key: "images"
-    }, {
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         "name": "pages",
@@ -48,13 +41,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "videos",
-        path: "./static/assets/videos",
-      },
-    },
-    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         name: "icons",
@@ -67,18 +53,6 @@ module.exports = {
         typeName: ({ node }) => {
           if (node.sourceInstanceName === "projects") return "Project"
           return "Data"
-        },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          formats: ["webp", "auto"],
-          quality: 100,
-          backgroundColor: `transparent`,
-          placeholder: `blurred`,
-          breakpoints: [576, 768, 992, 1200],
         },
       },
     },

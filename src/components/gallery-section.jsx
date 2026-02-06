@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 
+import ReactPlayer from "react-player"
+
 const GallerySection = ({ title, items = [] }) => {
     const gridRef = useRef(null)
     const [isScrollable, setIsScrollable] = useState(false)
@@ -67,12 +69,15 @@ const GallerySection = ({ title, items = [] }) => {
 
                         if (item?.video) {
                             return (
-                                <video
-                                    key={index}
-                                    src={item.video}
-                                    controls
-                                    className="gallery-item"
-                                    preload="metadata"
+                                <ReactPlayer
+                                    className="react-player"
+                                    url={item.video}
+                                    playing={true}
+                                    loop={true}
+                                    muted={true}
+                                    controls={false}
+                                    width="101%"
+                                    height="100%"
                                 />
                             )
                         }

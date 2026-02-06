@@ -24,12 +24,12 @@ const OrganicContentSection = ({ tabs }) => {
             </div>
 
             <div className="main-images">
-                {activeImages.map((img, index) => {
+                {activeImages.map((item, index) => {
                     return (
                         <div key={index} className="main-image">
                             <img
                                 key={index}
-                                src={img}
+                                src={item.img}
                                 alt=""
                                 className="gallery-item"
                                 loading="lazy"

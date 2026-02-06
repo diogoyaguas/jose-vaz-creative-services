@@ -20,6 +20,7 @@ export default function ProjectTemplate({ data }) {
         date={project.date}
         categories={project.categories}
         description={project.description}
+        media={project.banner}
       />
 
       {content?.merch && (
@@ -52,6 +53,7 @@ export const query = graphql`
       seoTitle
       title
       date
+      banner { img video }
       categories
       description
       content {
