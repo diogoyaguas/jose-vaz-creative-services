@@ -1,19 +1,42 @@
-{
-  "slug": "marketplace_medis",
-  "index": 5,
-  "seoTitle": "Marketplace Medis",
-  "title": "marketplace médis",
-  "date": "2024-2026",
-  "categories": [
-    "Campanhas",
-    "Redes Sociais",
-    "Criação de Conteúdo"
-  ],
-  "smallDescription": "Campanhas Paid Media",
-  "description": "M.A.D is a music-focused creative project combining visual identity, event communication and digital content to build a strong and immersive brand universe.",
-
-  "cardMedia": {
-    "img": null,
-    "video": "projects/studio54.mp4"
+[
+  {
+    "translationKey": "marketplace_medis",
+    "locale": "pt",
+    "slug": "marketplace_medis",
+    "index": 5,
+    "seoTitle": "Marketplace Médis",
+    "title": "marketplace médis",
+    "date": "2024–2026",
+    "categories": [
+      "Campanhas",
+      "Redes Sociais",
+      "Criação de Conteúdo"
+    ],
+    "smallDescription": "Campanhas Paid Media",
+    "description": "Projeto criativo com foco no desenvolvimento de campanhas digitais, combinando identidade visual, comunicação estratégica e conteúdos para diferentes plataformas, com o objetivo de reforçar a presença e o posicionamento da marca no mercado.",
+    "cardMedia": {
+      "img": null,
+      "video": "projects/studio54.mp4"
+    }
+  },
+  {
+    "translationKey": "marketplace_medis",
+    "locale": "en",
+    "slug": "marketplace_medis",
+    "index": 5,
+    "seoTitle": "Médis Marketplace",
+    "title": "Médis Marketplace",
+    "date": "2024–2026",
+    "categories": [
+      "Campaigns",
+      "Social Media",
+      "Content Creation"
+    ],
+    "smallDescription": "Paid Media Campaigns",
+    "description": "Creative project focused on the development of digital campaigns, combining visual identity, strategic communication, and content for multiple platforms to strengthen the brand’s presence and positioning in the market.",
+    "cardMedia": {
+      "img": null,
+      "video": "projects/studio54.mp4"
+    }
   }
-}
+]

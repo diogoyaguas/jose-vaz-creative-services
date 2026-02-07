@@ -1,19 +1,42 @@
-{
-  "slug": "vieira_de_castro",
-  "index": 4,
-  "seoTitle": "Vieira de castro",
-  "title": "vieira de castro",
-  "date": "2024-2026",
-  "categories": [
-    "Campanhas",
-    "Redes Sociais",
-    "Criação de Conteúdo"
-  ],
-  "smallDescription": "Campanhas de Marketing | Conteúdos Orgânicos | Paid media",
-  "description": "M.A.D is a music-focused creative project combining visual identity, event communication and digital content to build a strong and immersive brand universe.",
-
-  "cardMedia": {
-    "img": null,
-    "video": "projects/studio54.mp4"
+[
+  {
+    "translationKey": "vieira_de_castro",
+    "locale": "pt",
+    "slug": "vieira_de_castro",
+    "index": 4,
+    "seoTitle": "Vieira de Castro",
+    "title": "vieira de castro",
+    "date": "2024-2026",
+    "categories": [
+      "Campanhas",
+      "Redes Sociais",
+      "Criação de Conteúdo"
+    ],
+    "smallDescription": "Campanhas de Marketing | Conteúdos Orgânicos | Paid Media",
+    "description": "Projeto criativo focado no desenvolvimento de campanhas de marketing, conteúdos orgânicos e estratégias de paid media, combinando identidade visual, comunicação estratégica e conteúdos digitais para reforçar a presença e o posicionamento da marca.",
+    "cardMedia": {
+      "img": null,
+      "video": "projects/studio54.mp4"
+    }
+  },
+  {
+    "translationKey": "vieira_de_castro",
+    "locale": "en",
+    "slug": "vieira_de_castro",
+    "index": 4,
+    "seoTitle": "Vieira de Castro",
+    "title": "Vieira de Castro",
+    "date": "2024-2026",
+    "categories": [
+      "Campaigns",
+      "Social Media",
+      "Content Creation"
+    ],
+    "smallDescription": "Marketing Campaigns | Organic Content | Paid Media",
+    "description": "Creative project focused on the development of marketing campaigns, organic content, and paid media strategies, combining visual identity, strategic communication, and digital content to strengthen the brand’s presence and positioning.",
+    "cardMedia": {
+      "img": null,
+      "video": "projects/studio54.mp4"
+    }
   }
-}
+]

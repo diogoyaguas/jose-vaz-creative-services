@@ -1,5 +1,7 @@
 const path = require("path")
 
+const SUPPORTED_LOCALES = new Set(["pt", "en"])
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
@@ -7,6 +9,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Project implements Node @dontInfer {
       slug: String!
       index: Int!
+      locale: String!
+      translationKey: String!
       seoTitle: String
       title: String!
       date: String
@@ -19,7 +23,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type ProjectSection @dontInfer {
-      type: String!         # "gallery" | "organicTabs" | "hoverVideo" | "tabbedImage"
+      type: String!
       title: String
       subtitle: String
       columns: Int
@@ -29,7 +33,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       imageTabs: [ProjectImageTab!]
     }
 
-     type ProjectTab @dontInfer {
+    type ProjectTab @dontInfer {
       title: String
       items: [ProjectMediaItem!]!
     }
@@ -55,6 +59,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       allProject(sort: { index: ASC }) {
         nodes {
           slug
+          locale
+          translationKey
         }
       }
     }
@@ -67,13 +73,39 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const template = path.resolve("src/templates/project.jsx")
 
-  result.data.allProject.nodes.forEach((p) => {
-    console.log("Creating page for:", p.slug)
+  const nodes = result.data.allProject.nodes || []
+
+  nodes.forEach((p) => {
+    const locale = (p.locale || "").toLowerCase()
+
+    if (!SUPPORTED_LOCALES.has(locale)) {
+      reporter.warn(
+        `[i18n] Skipping project "${p.slug}" because locale "${p.locale}" is not supported.`
+      )
+      return
+    }
+
+    if (!p.translationKey) {
+      reporter.warn(
+        `[i18n] Project "${p.slug}" is missing translationKey. (Needed to link PT/EN versions.)`
+      )
+    }
+
+    const slug = String(p.slug || "").replace(/^\/+|\/+$/g, "")
+    const isPT = locale === "pt"
+
+    const pagePath = isPT
+      ? `/projetos/${slug}`
+      : `/en/projects/${slug}`
 
     createPage({
-      path: `/projetos/${p.slug}`,
+      path: pagePath,
       component: template,
-      context: { slug: p.slug },
+      context: {
+        slug: p.slug,
+        locale,
+        translationKey: p.translationKey,
+      },
     })
   })
 }

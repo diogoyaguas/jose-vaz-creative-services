@@ -1,95 +1,176 @@
-{
-  "slug": "deepwear",
-  "index": 9,
-  "seoTitle": "Deepwear",
-  "title": "deepwear",
-  "date": "2022",
-  "categories": ["Conteúdo orgânico", "Fotografia / Vídeo", "Catálogos"],
-  "smallDescription": "Project Manager | Criação de Conteúdos",
-  "description": "Criação de identidades visuais, conteúdos para redes sociais e materiais de comunicação para marcas de moda, em colaboração com equipas globais. Desenvolvimento de conteúdos audiovisuais e catálogos para fábricas parceiras, reforçando a presença e posicionamento da marca.",
-  "cardMedia": {
-    "img": null,
-    "video": "../assets/projetos/studio54.mp4"
+[
+  {
+    "translationKey": "deepwear",
+    "locale": "pt",
+    "slug": "deepwear",
+    "index": 9,
+    "seoTitle": "Deepwear",
+    "title": "deepwear",
+    "date": "2022",
+    "categories": ["Conteúdo orgânico", "Fotografia / Vídeo", "Catálogos"],
+    "smallDescription": "Project Manager | Criação de Conteúdos",
+    "description": "Criação de identidades visuais, conteúdos para redes sociais e materiais de comunicação para marcas de moda, em colaboração com equipas globais. Desenvolvimento de conteúdos audiovisuais e catálogos para fábricas parceiras, reforçando a presença e posicionamento da marca.",
+    "cardMedia": {
+      "img": null,
+      "video": "../assets/projetos/studio54.mp4"
+    },
+    "content": [
+      {
+        "type": "gallery",
+        "title": "instagram reels",
+        "columns": 3,
+        "items": [
+          { "img": null, "video": "/assets/projetos/deepwear/reels/1.mp4" },
+          { "img": null, "video": "/assets/projetos/deepwear/reels/2.mp4" },
+          { "img": null, "video": "/assets/projetos/deepwear/reels/3.mp4" }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "redes sociais",
+        "columns": 4,
+        "items": [
+          {
+            "img": "/assets/projetos/deepwear/social_media/1.png",
+            "video": null
+          },
+          {
+            "img": "/assets/projetos/deepwear/social_media/2.png",
+            "video": null
+          },
+          {
+            "img": "/assets/projetos/deepwear/social_media/3.png",
+            "video": null
+          },
+          {
+            "img": "/assets/projetos/deepwear/social_media/4.png",
+            "video": null
+          }
+        ]
+      },
+      {
+        "type": "flipbook",
+        "title": "catálogos",
+        "items": [
+          { "img": "/assets/projetos/deepwear/book/1.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/2.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/3.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/4.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/5.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/6.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/7.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/8.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/9.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/10.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/11.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/12.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/13.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/14.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/15.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/16.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/17.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/18.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/19.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/20.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/21.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/22.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/23.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/24.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/25.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/26.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/27.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/28.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/29.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/30.png", "video": null }
+        ]
+      }
+    ]
   },
-
-  "content": [
-    {
-      "type": "gallery",
-      "title": "instagram reels",
-      "columns": 3,
-      "items": [
-        {
-          "img": null,
-          "video": "/assets/projetos/deepwear/reels/1.mp4"
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/deepwear/reels/2.mp4"
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/deepwear/reels/3.mp4"
-        }
-      ]
+  {
+    "translationKey": "deepwear",
+    "locale": "en",
+    "slug": "deepwear",
+    "index": 9,
+    "seoTitle": "Deepwear",
+    "title": "deepwear",
+    "date": "2022",
+    "categories": ["Organic Content", "Photography / Video", "Catalogues"],
+    "smallDescription": "Project Manager | Content Creation",
+    "description": "Creation of visual identities, social media content, and communication materials for fashion brands, working in collaboration with global teams. Development of audiovisual content and catalogues for partner factories, strengthening the brand’s presence and positioning.",
+    "cardMedia": {
+      "img": null,
+      "video": "../assets/projetos/studio54.mp4"
     },
-    {
-      "type": "gallery",
-      "title": "redes sociais",
-      "columns": 4,
-      "items": [
-        {
-          "img": "/assets/projetos/deepwear/social_media/1.png",
-          "video": null
-        },
-        {
-          "img": "/assets/projetos/deepwear/social_media/2.png",
-          "video": null
-        },
-        {
-          "img": "/assets/projetos/deepwear/social_media/3.png",
-          "video": null
-        },
-        {
-          "img": "/assets/projetos/deepwear/social_media/4.png",
-          "video": null
-        }
-      ]
-    },
-    {
-      "type": "flipbook",
-      "title": "catálogos",
-      "items": [
-        { "img": "/assets/projetos/deepwear/book/1.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/2.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/3.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/4.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/5.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/6.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/7.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/8.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/9.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/10.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/11.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/12.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/13.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/14.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/15.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/16.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/17.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/18.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/19.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/20.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/21.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/22.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/23.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/24.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/25.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/26.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/27.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/28.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/29.png", "video": null },
-        { "img": "/assets/projetos/deepwear/book/30.png", "video": null }
-      ]
-    }
-  ]
-}
+    "content": [
+      {
+        "type": "gallery",
+        "title": "instagram reels",
+        "columns": 3,
+        "items": [
+          { "img": null, "video": "/assets/projetos/deepwear/reels/1.mp4" },
+          { "img": null, "video": "/assets/projetos/deepwear/reels/2.mp4" },
+          { "img": null, "video": "/assets/projetos/deepwear/reels/3.mp4" }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "social media",
+        "columns": 4,
+        "items": [
+          {
+            "img": "/assets/projetos/deepwear/social_media/1.png",
+            "video": null
+          },
+          {
+            "img": "/assets/projetos/deepwear/social_media/2.png",
+            "video": null
+          },
+          {
+            "img": "/assets/projetos/deepwear/social_media/3.png",
+            "video": null
+          },
+          {
+            "img": "/assets/projetos/deepwear/social_media/4.png",
+            "video": null
+          }
+        ]
+      },
+      {
+        "type": "flipbook",
+        "title": "catalogues",
+        "items": [
+          { "img": "/assets/projetos/deepwear/book/1.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/2.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/3.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/4.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/5.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/6.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/7.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/8.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/9.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/10.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/11.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/12.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/13.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/14.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/15.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/16.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/17.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/18.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/19.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/20.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/21.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/22.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/23.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/24.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/25.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/26.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/27.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/28.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/29.png", "video": null },
+          { "img": "/assets/projetos/deepwear/book/30.png", "video": null }
+        ]
+      }
+    ]
+  }
+]

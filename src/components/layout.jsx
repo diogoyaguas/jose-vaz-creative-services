@@ -1,14 +1,13 @@
 import React, { useEffect } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, navigate, useStaticQuery } from "gatsby"
 
 import Footer from "./footer"
 import Header from "./header"
 import PropTypes from "prop-types"
-import { navigate } from "gatsby"
 
 const STORAGE_KEY = "creative_vaz_auth"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, locale = "pt", other, otherPath }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,20 +25,44 @@ const Layout = ({ children }) => {
     }
   }, [])
 
+  const otherFromProject =
+    other?.locale === "en"
+      ? `/en/projects/${other.slug}`
+      : other?.locale === "pt"
+        ? `/projetos/${other.slug}`
+        : null
+
+  const switchPath = otherPath || otherFromProject || null
+
   return (
     <div>
       <Header
         siteTitle={data.site.siteMetadata.title}
+        locale={locale}
+        otherPath={switchPath}
       />
+
       <main>{children}</main>
+
       <Footer />
     </div>
   )
 }
 
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  locale: PropTypes.oneOf(["pt", "en"]),
+  otherPath: PropTypes.string,
+  other: PropTypes.shape({
+    slug: PropTypes.string.isRequired,
+    locale: PropTypes.oneOf(["pt", "en"]).isRequired,
+  }),
+}
+
+Layout.defaultProps = {
+  locale: "pt",
+  otherPath: null,
+  other: null,
 }
 
 export default Layout

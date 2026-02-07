@@ -1,66 +1,134 @@
-{
-  "slug": "mad",
-  "index": 10,
-  "seoTitle": "M.A.D — Music Addiction Disorder",
-  "title": "m.a.d",
-  "date": "2023",
-  "categories": [
-    "Campanhas",
-    "Redes Sociais",
-    "Criação de Conteúdo",
-    "Merchandising"
-  ],
-  "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
-  "description": "Projeto freelance focado no rebranding da marca e na criação de identidades visuais para eventos. Desenvolvimento de conteúdos para redes sociais, materiais promocionais e merchandising, garantindo uma comunicação visual consistente e experiências memoráveis para a comunidade.",
-
-  "cardMedia": {
-    "img": "/assets/projetos/thumbnails/mad.png",
-    "video": null
+[
+  {
+    "translationKey": "mad",
+    "locale": "pt",
+    "slug": "mad",
+    "index": 10,
+    "seoTitle": "M.A.D — Music Addiction Disorder",
+    "title": "m.a.d",
+    "date": "2023",
+    "categories": [
+      "Campanhas",
+      "Redes Sociais",
+      "Criação de Conteúdo",
+      "Merchandising"
+    ],
+    "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
+    "description": "Projeto freelance focado no rebranding da marca e na criação de identidades visuais para eventos. Desenvolvimento de conteúdos para redes sociais, materiais promocionais e merchandising, garantindo uma comunicação visual consistente e experiências memoráveis para a comunidade.",
+    "cardMedia": {
+      "img": "/assets/projetos/thumbnails/mad.png",
+      "video": null
+    },
+    "content": [
+      {
+        "type": "gallery",
+        "title": "merch",
+        "items": [
+          { "img": "/assets/projetos/mad/merch/1.png", "video": null },
+          { "img": "/assets/projetos/mad/merch/2.png", "video": null },
+          { "img": "/assets/projetos/mad/merch/3.png", "video": null },
+          { "img": "/assets/projetos/mad/merch/4.png", "video": null }
+        ]
+      },
+      {
+        "type": "organicTabs",
+        "title": "conteúdo orgânico",
+        "tabs": [
+          {
+            "title": "feed",
+            "items": [
+              { "img": "/assets/projetos/mad/social_media/6.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/7.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/8.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/9.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/6.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/1.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/2.jpg", "video": null },
+              { "img": "/assets/projetos/mad/social_media/3.jpg", "video": null },
+              { "img": "/assets/projetos/mad/social_media/4.jpg", "video": null },
+              { "img": "/assets/projetos/mad/social_media/5.jpg", "video": null }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "eventos",
+        "items": [
+          { "img": "/assets/projetos/mad/party/1.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/2.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/3.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/4.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/5.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/6.jpg", "video": null }
+        ]
+      }
+    ]
   },
-
-  "content": [
-    {
-      "type": "gallery",
-      "title": "merch",
-      "items": [
-        { "img": "/assets/projetos/mad/merch/1.png", "video": null },
-        { "img": "/assets/projetos/mad/merch/2.png", "video": null },
-        { "img": "/assets/projetos/mad/merch/3.png", "video": null },
-        { "img": "/assets/projetos/mad/merch/4.png", "video": null }
-      ]
+  {
+    "translationKey": "mad",
+    "locale": "en",
+    "slug": "mad",
+    "index": 10,
+    "seoTitle": "M.A.D — Music Addiction Disorder",
+    "title": "m.a.d",
+    "date": "2023",
+    "categories": [
+      "Campaigns",
+      "Social Media",
+      "Content Creation",
+      "Merchandising"
+    ],
+    "smallDescription": "Organic content | Content creation",
+    "description": "Freelance project focused on the brand’s rebranding and the creation of visual identities for events. Development of social media content, promotional materials, and merchandising, ensuring consistent visual communication and memorable experiences for the community.",
+    "cardMedia": {
+      "img": "/assets/projetos/thumbnails/mad.png",
+      "video": null
     },
-    {
-      "type": "organicTabs",
-      "title": "conteúdo orgânico",
-      "tabs": [
-        {
-          "title": "feed",
-          "items": [
-            { "img": "/assets/projetos/mad/social_media/6.png", "video": null },
-            { "img": "/assets/projetos/mad/social_media/7.png", "video": null },
-            { "img": "/assets/projetos/mad/social_media/8.png", "video": null },
-            { "img": "/assets/projetos/mad/social_media/9.png", "video": null },
-            { "img": "/assets/projetos/mad/social_media/6.png", "video": null },
-            { "img": "/assets/projetos/mad/social_media/1.png", "video": null },
-            { "img": "/assets/projetos/mad/social_media/2.jpg", "video": null },
-            { "img": "/assets/projetos/mad/social_media/3.jpg", "video": null },
-            { "img": "/assets/projetos/mad/social_media/4.jpg", "video": null },
-            { "img": "/assets/projetos/mad/social_media/5.jpg", "video": null }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "title": "eventos",
-      "items": [
-        { "img": "/assets/projetos/mad/party/1.jpg", "video": null },
-        { "img": "/assets/projetos/mad/party/2.jpg", "video": null },
-        { "img": "/assets/projetos/mad/party/3.jpg", "video": null },
-        { "img": "/assets/projetos/mad/party/4.jpg", "video": null },
-        { "img": "/assets/projetos/mad/party/5.jpg", "video": null },
-        { "img": "/assets/projetos/mad/party/6.jpg", "video": null }
-      ]
-    }
-  ]
-}
+    "content": [
+      {
+        "type": "gallery",
+        "title": "merch",
+        "items": [
+          { "img": "/assets/projetos/mad/merch/1.png", "video": null },
+          { "img": "/assets/projetos/mad/merch/2.png", "video": null },
+          { "img": "/assets/projetos/mad/merch/3.png", "video": null },
+          { "img": "/assets/projetos/mad/merch/4.png", "video": null }
+        ]
+      },
+      {
+        "type": "organicTabs",
+        "title": "organic content",
+        "tabs": [
+          {
+            "title": "feed",
+            "items": [
+              { "img": "/assets/projetos/mad/social_media/6.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/7.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/8.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/9.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/6.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/1.png", "video": null },
+              { "img": "/assets/projetos/mad/social_media/2.jpg", "video": null },
+              { "img": "/assets/projetos/mad/social_media/3.jpg", "video": null },
+              { "img": "/assets/projetos/mad/social_media/4.jpg", "video": null },
+              { "img": "/assets/projetos/mad/social_media/5.jpg", "video": null }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "events",
+        "items": [
+          { "img": "/assets/projetos/mad/party/1.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/2.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/3.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/4.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/5.jpg", "video": null },
+          { "img": "/assets/projetos/mad/party/6.jpg", "video": null }
+        ]
+      }
+    ]
+  }
+]

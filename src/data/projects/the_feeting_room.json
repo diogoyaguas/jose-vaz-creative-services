@@ -1,106 +1,186 @@
-{
-  "slug": "the_feeting_room",
-  "index": 8,
-  "seoTitle": "The feeting room",
-  "title": "the feeting room",
-  "date": "2022",
-  "categories": [
-    "Campanhas",
-    "Conteúdo orgânico",
-    "Paid Media",
-    "Fotografia",
-    "Suportes impressos"
-  ],
-  "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
-  "description": "Estágio profissional como Designer Gráfico, em colaboração com as equipas de Marketing e Consulting. Desenvolvimento de visuais para campanhas, conteúdos para redes sociais e soluções gráficas físicas e digitais para a marca e parceiros.<br><br>Responsável pela criação da série de vídeo Short Takes para Instagram, desde o conceito à pós-produção, bem como pelo apoio visual às lojas e campanhas online, garantindo uma comunicação coerente e alinhada com a identidade da marca.",
-  "cardMedia": {
-    "img": null,
-    "video": "projects/studio54.mp4"
+[
+  {
+    "translationKey": "the_feeting_room",
+    "locale": "pt",
+    "slug": "the_feeting_room",
+    "index": 8,
+    "seoTitle": "The Feeting room",
+    "title": "the feeting room",
+    "date": "2022",
+    "categories": [
+      "Campanhas",
+      "Conteúdo orgânico",
+      "Paid Media",
+      "Fotografia",
+      "Suportes impressos"
+    ],
+    "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
+    "description": "Estágio profissional como Designer Gráfico, em colaboração com as equipas de Marketing e Consulting. Desenvolvimento de visuais para campanhas, conteúdos para redes sociais e soluções gráficas físicas e digitais para a marca e parceiros.<br><br>Responsável pela criação da série de vídeo Short Takes para Instagram, desde o conceito à pós-produção, bem como pelo apoio visual às lojas e campanhas online, garantindo uma comunicação coerente e alinhada com a identidade da marca.",
+    "cardMedia": {
+      "img": null,
+      "video": "projects/studio54.mp4"
+    },
+    "content": [
+      {
+        "type": "gallery",
+        "title": "short takes",
+        "subtitle": "with Janina Vaz",
+        "columns": 3,
+        "items": [
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
+          }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "redes sociais",
+        "items": [
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/social_media/1.mp4"
+          },
+          {
+            "img": "/assets/projetos/feeting_room/social_media/2.png",
+            "video": null
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/social_media/3.mp4"
+          },
+          {
+            "img": "/assets/projetos/feeting_room/social_media/4.jpg",
+            "video": null
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/social_media/5.mp4"
+          }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "instagram reels",
+        "items": [
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/1.mp4" },
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/2.mp4" },
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/3.mp4" },
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/4.mp4" },
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/5.mp4" }
+        ]
+      },
+      {
+        "type": "tabbedImage",
+        "title": "campanhas",
+        "imageTabs": [
+          {
+            "label": "",
+            "img": "/assets/projetos/feeting_room/social_media/website.png",
+            "alt": "website"
+          }
+        ]
+      }
+    ]
   },
-
-  "content": [
-    {
-      "type": "gallery",
-      "title": "short takes",
-      "subtitle": "with Janina Vaz",
-      "columns": 3,
-      "items": [
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4"
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4"
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
-        }
-      ]
+  {
+    "translationKey": "the_feeting_room",
+    "locale": "en",
+    "slug": "the_feeting_room",
+    "index": 8,
+    "seoTitle": "The Feeting Room",
+    "title": "the feeting room",
+    "date": "2022",
+    "categories": [
+      "Campaigns",
+      "Organic content",
+      "Paid media",
+      "Photography",
+      "Print materials"
+    ],
+    "smallDescription": "Organic content | Content creation",
+    "description": "Professional internship as a Graphic Designer, working alongside the Marketing and Consulting teams. Creation of campaign visuals, social media content, and physical and digital graphic solutions for the brand and its partners.<br><br>Responsible for creating the Instagram video series Short Takes from concept to post-production, as well as providing visual support for stores and online campaigns, ensuring consistent communication aligned with the brand’s identity.",
+    "cardMedia": {
+      "img": null,
+      "video": "projects/studio54.mp4"
     },
-    {
-      "type": "gallery",
-      "title": "redes sociais",
-      "items": [
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/social_media/1.mp4"
-        },
-        {
-          "img": "/assets/projetos/feeting_room/social_media/2.png",
-          "video": null
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/social_media/3.mp4"
-        },
-        {
-          "img": "/assets/projetos/feeting_room/social_media/4.jpg",
-          "video": null
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/social_media/5.mp4"
-        }
-      ]
-    },
-    {
-      "type": "gallery",
-      "title": "instagram reels",
-      "items": [
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/reels/1.mp4"
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/reels/2.mp4"
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/reels/3.mp4"
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/reels/4.mp4"
-        },
-        {
-          "img": null,
-          "video": "/assets/projetos/feeting_room/reels/5.mp4"
-        }
-      ]
-    },
-    {
-      "type": "tabbedImage",
-      "title": "campanhas",
-      "imageTabs": [
-        {
-          "label": "",
-          "img": "/assets/projetos/feeting_room/social_media/website.png",
-          "alt": "website"
-        }
-      ]
-    }
-  ]
-}
+    "content": [
+      {
+        "type": "gallery",
+        "title": "short takes",
+        "subtitle": "with Janina Vaz",
+        "columns": 3,
+        "items": [
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
+          }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "social media",
+        "items": [
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/social_media/1.mp4"
+          },
+          {
+            "img": "/assets/projetos/feeting_room/social_media/2.png",
+            "video": null
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/social_media/3.mp4"
+          },
+          {
+            "img": "/assets/projetos/feeting_room/social_media/4.jpg",
+            "video": null
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/social_media/5.mp4"
+          }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "instagram reels",
+        "items": [
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/1.mp4" },
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/2.mp4" },
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/3.mp4" },
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/4.mp4" },
+          { "img": null, "video": "/assets/projetos/feeting_room/reels/5.mp4" }
+        ]
+      },
+      {
+        "type": "tabbedImage",
+        "title": "campaigns",
+        "imageTabs": [
+          {
+            "label": "",
+            "img": "/assets/projetos/feeting_room/social_media/website.png",
+            "alt": "website"
+          }
+        ]
+      }
+    ]
+  }
+]
