@@ -2,11 +2,60 @@ import React, { useEffect, useMemo, useRef, useState } from "react"
 
 import Mute from "../assets/icons/common/mute.svg"
 import PropTypes from "prop-types"
-import ReactPlayer from "react-player"
 import Unmute from "../assets/icons/common/unmute.svg"
+import useInView from "../hooks/useInView"
+
+const GalleryVideoItem = ({ src, muted, onToggleSound }) => {
+  const { ref, inView } = useInView({ rootMargin: "250px", threshold: 0.15 })
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const v = videoRef.current
+    if (!v) return
+
+    if (inView) {
+      const p = v.play()
+      if (p && typeof p.catch === "function") p.catch(() => {})
+    } else {
+      v.pause()
+    }
+  }, [inView])
+
+  return (
+    <div ref={ref} className="gallery-item">
+      <video
+        ref={videoRef}
+        className="gallery-video"
+        src={src}
+        loop
+        muted={muted}
+        playsInline
+        preload="metadata"
+        controls={false}
+      />
+
+      <button
+        type="button"
+        className="sound-toggle"
+        onClick={onToggleSound}
+        aria-label={muted ? "Unmute" : "Mute"}
+      >
+        {muted ? <Unmute /> : <Mute />}
+      </button>
+    </div>
+  )
+}
+
+GalleryVideoItem.propTypes = {
+  src: PropTypes.string.isRequired,
+  muted: PropTypes.bool.isRequired,
+  onToggleSound: PropTypes.func.isRequired,
+}
 
 const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
   const gridRef = useRef(null)
+  const rafRef = useRef(null)
+
   const [isScrollable, setIsScrollable] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
   const [unmutedIndex, setUnmutedIndex] = useState(null)
@@ -62,14 +111,19 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
     const el = gridRef.current
     if (!el) return
 
-    const maxScrollLeft = el.scrollWidth - el.clientWidth
-    if (maxScrollLeft <= 0) {
-      setActiveIndex(0)
-      return
-    }
+    if (rafRef.current) return
+    rafRef.current = requestAnimationFrame(() => {
+      rafRef.current = null
 
-    const newIndex = Math.round((el.scrollLeft / maxScrollLeft) * (totalPages - 1))
-    setActiveIndex(newIndex)
+      const maxScrollLeft = el.scrollWidth - el.clientWidth
+      if (maxScrollLeft <= 0) {
+        if (activeIndex !== 0) setActiveIndex(0)
+        return
+      }
+
+      const newIndex = Math.round((el.scrollLeft / maxScrollLeft) * (totalPages - 1))
+      if (newIndex !== activeIndex) setActiveIndex(newIndex)
+    })
   }
 
   const scrollToPage = (index) => {
@@ -108,28 +162,12 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
 
             if (item?.video) {
               return (
-                <div key={index} className="gallery-item">
-                  <ReactPlayer
-                    className="react-player"
-                    url={item.video}
-                    playing
-                    loop
-                    muted={unmutedIndex !== index}
-                    controls={false}
-                    playsInline
-                    width="100%"
-                    height="100%"
-                  />
-
-                  <button
-                    type="button"
-                    className="sound-toggle"
-                    onClick={() => toggleSound(index)}
-                    aria-label={unmutedIndex === index ? "Mute video" : "Unmute video"}
-                  >
-                    {unmutedIndex === index ? <Mute /> : <Unmute />}
-                  </button>
-                </div>
+                <GalleryVideoItem
+                  key={index}
+                  src={item.video}
+                  muted={unmutedIndex !== index}
+                  onToggleSound={() => toggleSound(index)}
+                />
               )
             }
 
@@ -138,18 +176,14 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
         </div>
 
         {isScrollable && totalPages > 1 && (
-          <div className="carousel-dots">
+          <div className="carousel-dots" role="navigation" aria-label="Paginação da galeria">
             {Array.from({ length: totalPages }).map((_, i) => (
-              <span
+              <button
                 key={i}
+                type="button"
                 className={`dot ${activeIndex === i ? "active" : ""}`}
                 onClick={() => scrollToPage(i)}
-                role="button"
                 aria-label={`Ir para a página ${i + 1} de ${totalPages}`}
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") scrollToPage(i)
-                }}
               />
             ))}
           </div>
