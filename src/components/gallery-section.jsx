@@ -11,7 +11,7 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const [unmutedIndex, setUnmutedIndex] = useState(null)
 
-  const safeColumns = columns
+  const safeColumns = columns ?? 5;
   const itemsPerPage = safeColumns
   const totalPages = Math.ceil(items.length / itemsPerPage)
 
