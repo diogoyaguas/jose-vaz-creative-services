@@ -70,23 +70,22 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
           {items.map((item, index) => {
             if (item?.img) {
               return (
-                <img
-                  key={index}
-                  src={item.img}
-                  alt=""
-                  className="gallery-item"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <div key={index} className="gallery-item">
+                  <img
+                    src={item.img}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               )
             }
 
             if (item?.video) {
               return (
-                <>
+                <div key={index} className="gallery-item">
                   <ReactPlayer
-                    
-                    className="react-player gallery-item"
+                    className="react-player"
                     url={item.video}
                     playing
                     loop
@@ -98,18 +97,14 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
                   />
 
                   <button
+                    type="button"
                     className="sound-toggle"
                     onClick={() => toggleSound(index)}
                     aria-label={unmutedIndex === index ? "Mute video" : "Unmute video"}
                   >
-                    {unmutedIndex === index ? (
-                      <Mute />
-                    ) : (
-                      <Unmute />
-                    )}
+                    {unmutedIndex === index ? <Mute /> : <Unmute />}
                   </button>
-
-                </>
+                </div>
               )
             }
 
@@ -140,6 +135,7 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
 
 GallerySection.propTypes = {
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       img: PropTypes.string,
@@ -151,6 +147,7 @@ GallerySection.propTypes = {
 
 GallerySection.defaultProps = {
   title: "",
+  subtitle: "",
   items: [],
   columns: 5,
 }
