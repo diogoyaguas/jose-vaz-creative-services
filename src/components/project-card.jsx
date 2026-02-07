@@ -25,7 +25,6 @@ const ProjectCard = ({ title, description, media, link }) => {
                             file: {
                                 attributes: {
                                     playsInline: true,
-                                    webkitPlaysInline: true,
                                     muted: true,
                                     autoPlay: true,
                                     loop: true,

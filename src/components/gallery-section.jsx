@@ -116,7 +116,7 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
                     loop
                     muted={unmutedIndex !== index}
                     controls={false}
-                    playsinline
+                    playsInline
                     width="100%"
                     height="100%"
                   />
@@ -145,6 +145,7 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
                 className={`dot ${activeIndex === i ? "active" : ""}`}
                 onClick={() => scrollToPage(i)}
                 role="button"
+                aria-label={`Ir para a página ${i + 1} de ${totalPages}`}
                 tabIndex={0}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") scrollToPage(i)

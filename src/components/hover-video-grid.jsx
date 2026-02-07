@@ -61,7 +61,7 @@ const HoverVideoGrid = ({ title, subtitle, items }) => {
                     loop
                     muted
                     controls={false}
-                    playsinline
+                    playsInline
                     width="100%"
                     height="100%"
                   />

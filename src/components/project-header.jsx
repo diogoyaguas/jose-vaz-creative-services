@@ -46,7 +46,7 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
                                 loop
                                 muted={muted}
                                 controls={false}
-                                playsinline
+                                playsInline
                                 width="100%"
                                 height="100%"
                             />

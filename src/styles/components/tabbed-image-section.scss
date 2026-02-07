@@ -67,7 +67,7 @@
   .placeholder {
     position: absolute;
     inset: 0;
-    background: #eee;
+    background: var(--grey);
   }
 
   .subtitle {

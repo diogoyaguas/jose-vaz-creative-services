@@ -40,6 +40,11 @@ const OrganicContentSection = ({ tabs }) => {
               setActiveTab(index)
               setUnmutedIndex(null)
             }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+              }
+            }}
             role="button"
             tabIndex={0}
           >
@@ -71,7 +76,6 @@ const OrganicContentSection = ({ tabs }) => {
                     file: {
                       attributes: {
                         playsInline: true,
-                        webkitPlaysInline: true,
                         muted: true,
                         autoPlay: true,
                         loop: true,

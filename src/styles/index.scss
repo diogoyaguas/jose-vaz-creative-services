@@ -1,15 +1,15 @@
+@import './base/404.scss';
 @import './base/layout.scss';
 @import './base/vars.scss';
-@import './base/404.scss';
 
 // Components
-@import './components/password.scss';
-@import './components/header.scss';
+@import './components/flipbook.scss';
 @import './components/footer.scss';
+@import './components/gallery-section.scss';
+@import './components/header.scss';
+@import './components/hover-video-grid.scss';
+@import './components/organic-content-section.scss';
+@import './components/password.scss';
 @import './components/project-card.scss';
 @import './components/project-header.scss';
-@import './components/gallery-section.scss';
-@import './components/organic-content-section.scss';
-@import './components/hover-video-grid.scss';
 @import './components/tabbed-image-section.scss';
-@import './components/flipbook.scss';
