@@ -2,25 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react"
 
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-
-const useInView = (options = { rootMargin: "200px", threshold: 0.1 }) => {
-    const ref = useRef(null)
-    const [inView, setInView] = useState(false)
-
-    useEffect(() => {
-        const el = ref.current
-        if (!el) return
-
-        const obs = new IntersectionObserver(([entry]) => {
-            setInView(entry.isIntersecting)
-        }, options)
-
-        obs.observe(el)
-        return () => obs.disconnect()
-    }, [options])
-
-    return { ref, inView }
-}
+import useInView from "../hooks/useInView"
 
 const ProjectCard = ({ title, description, media, link }) => {
     const videoUrl = useMemo(() => {
