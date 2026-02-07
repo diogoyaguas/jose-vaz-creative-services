@@ -1,20 +1,25 @@
 .flipbook-section {
   padding: 0 10rem;
   margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 
   .flipbook-header {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
 
     .flipbook-title {
-      font-size: 10px;
+      font-size: clamp(10px, 1vw, 12px);
       margin: 0;
       color: var(--black);
     }
 
     .flipbook-subtitle {
-      font-size: 10px;
+      font-size: clamp(10px, 1vw, 12px);
       margin: 0 0 0 0.25rem;
       color: var(--grey);
     }
@@ -24,7 +29,7 @@
     display: grid;
     grid-template-columns: 30px 1fr 30px;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(0.75rem, 2vw, 1rem);
     padding-top: 1rem;
   }
 
@@ -32,7 +37,7 @@
     border: 0;
     background: transparent;
     cursor: pointer;
-    font-size: 24px;
+    font-size: clamp(20px, 3vw, 24px);
     line-height: 1;
     color: var(--black);
     opacity: 0.85;
@@ -46,10 +51,16 @@
   .flipbook-book {
     display: flex;
     justify-content: center;
+    width: 100%;
 
     position: relative;
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.25))
       drop-shadow(0 5px 10px rgba(0, 0, 0, 0.15));
+  }
+
+  .flipbook-book .flipbook {
+    width: min(100%, 900px);
+    height: auto;
   }
 
   .flipbook-page {
@@ -78,12 +89,59 @@
 
     .flipbook-counter {
       margin-top: 0.5rem;
-      font-size: 10px;
+      font-size: clamp(10px, 1vw, 12px);
       color: var(--grey);
     }
   }
+}
 
-  @media (max-width: 992px) {
+@media (max-width: 1400px) {
+  .flipbook-section {
+    padding: 0 6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .flipbook-section {
     padding: 0 2rem;
+
+    .flipbook-wrapper {
+      grid-template-columns: 26px 1fr 26px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .flipbook-section {
+    padding: 0 1.5rem;
+
+    .flipbook-wrapper {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      justify-items: center;
+    }
+
+    .flipbook-nav {
+      display: none;
+    }
+
+    .flipbook-book {
+      filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.18))
+        drop-shadow(0 4px 8px rgba(0, 0, 0, 0.12));
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .flipbook-section {
+    padding: 0 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flipbook-section {
+    .flipbook-book {
+      filter: none;
+    }
   }
 }
