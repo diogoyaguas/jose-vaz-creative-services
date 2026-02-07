@@ -52,6 +52,11 @@
           transform: scale(1.08);
         }
       }
+
+      .project-button {
+        background-color: var(--black);
+        color: var(--white);
+      }
     }
 
     .project-title {
@@ -71,13 +76,31 @@
       border: 1px solid var(--grey);
       padding: 0.5rem 1rem;
       text-decoration: none;
-      transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  }
+}
 
-      &:hover {
-        background-color: var(--black);
-        color: var(--white);
+@media (hover: none) and (pointer: coarse) {
+  .projects-page {
+    .project-card {
+      .media {
+        filter: grayscale(0%);
+      }
+
+      &:active {
+        .media {
+          > div,
+          img,
+          video {
+            transform: scale(1.04);
+          }
+        }
+
+        .project-button {
+          background-color: var(--black);
+          color: var(--white);
+        }
       }
     }
   }
