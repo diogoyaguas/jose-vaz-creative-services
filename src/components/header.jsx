@@ -16,10 +16,10 @@ const Header = ({ locale = "pt", otherPath }) => {
         projects: "/en/projects",
         contact: "/en/contact",
         about: "/en/about",
-        labelProjects: "Projects",
-        labelContact: "Contact",
-        labelAbout: "About",
-        switchLabel: "EN",
+        labelProjects: "projects",
+        labelContact: "contact",
+        labelAbout: "about",
+        switchLabel: "en",
       }
     }
 
@@ -27,10 +27,10 @@ const Header = ({ locale = "pt", otherPath }) => {
       projects: "/projetos",
       contact: "/contacto",
       about: "/sobre",
-      labelProjects: "Projetos",
-      labelContact: "Contacto",
-      labelAbout: "Sobre",
-      switchLabel: "PT",
+      labelProjects: "projetos",
+      labelContact: "contacto",
+      labelAbout: "sobre",
+      switchLabel: "pt",
     }
   }, [locale])
 
@@ -39,7 +39,7 @@ const Header = ({ locale = "pt", otherPath }) => {
       <div className="container">
         <div className="navbar-brand logo logo-svg">
           <Link to={nav.projects} className="nav-link" onClick={closeMenu} aria-label="Home">
-            <Logo />
+            creative <span className="blue">vaz</span>
           </Link>
         </div>
 
@@ -55,7 +55,7 @@ const Header = ({ locale = "pt", otherPath }) => {
         </button>
 
         <div id="mainNavbar" className={`collapse navbar-collapse ${open ? "show" : ""}`}>
-          <div className="ms-auto d-flex align-items-center gap-5 navbar-links">
+          <div className="ms-auto d-flex gap-5 navbar-links">
             <Link to={nav.projects} className="nav-link" onClick={closeMenu}>
               {nav.labelProjects}
             </Link>
@@ -69,7 +69,7 @@ const Header = ({ locale = "pt", otherPath }) => {
             {otherPath ? (
               <Link
                 to={otherPath}
-                className="nav-link"
+                className="nav-link language"
                 onClick={closeMenu}
                 aria-label={locale === "en" ? "PT" : "EN"}
               >

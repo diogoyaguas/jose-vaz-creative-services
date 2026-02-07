@@ -11,10 +11,13 @@
   align-items: center;
 }
 
-.navbar .logo-svg svg {
-  width: 90px;
-  height: auto;
-  display: block;
+.navbar .logo {
+  font-size: 12px;
+  font-weight: 800;
+
+  .blue {
+    color: var(--blue);
+  }
 }
 
 .navbar .nav-link {
@@ -22,6 +25,10 @@
   line-height: 1.2;
   white-space: nowrap;
   color: var(--black);
+
+  &.language {
+    color: var(--grey);
+  }
 }
 
 .navbar-toggler {
