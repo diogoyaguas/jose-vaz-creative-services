@@ -1,5 +1,6 @@
 import * as React from "react"
 
+import FlipbookSection from "../components/flipbook"
 import GallerySection from "../components/gallery-section"
 import HoverVideoGrid from "../components/hover-video-grid"
 import Layout from "../components/layout"
@@ -50,6 +51,15 @@ export default function ProjectTemplate({ data }) {
             key={idx}
             title={section.title}
             tabs={section.imageTabs || []}
+          />
+        )
+
+      case "flipbook":
+        return (
+          <FlipbookSection
+            key={idx}
+            title={section.title}
+            pages={section.items || []}
           />
         )
 

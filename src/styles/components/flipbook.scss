@@ -1,0 +1,88 @@
+.flipbook-section {
+  padding: 0 10rem;
+  margin-bottom: 3rem;
+
+  .flipbook-header {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: baseline;
+
+    .flipbook-title {
+      font-size: 10px;
+      margin: 0;
+      color: var(--black);
+    }
+
+    .flipbook-subtitle {
+      font-size: 10px;
+      margin: 0 0 0 0.25rem;
+      color: var(--grey);
+    }
+  }
+
+  .flipbook-wrapper {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .flipbook-nav {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--black);
+    opacity: 0.85;
+
+    &:disabled {
+      opacity: 0.25;
+      cursor: default;
+    }
+  }
+
+  .flipbook-book {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.25))
+      drop-shadow(0 5px 10px rgba(0, 0, 0, 0.15));
+  }
+
+  .flipbook-page {
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    overflow: hidden;
+  }
+
+  .flipbook-page-inner {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .flipbook-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .flipbook-counter {
+      font-size: 10px;
+      color: var(--grey);
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 0 2rem;
+  }
+}
