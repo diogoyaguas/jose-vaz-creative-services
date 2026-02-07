@@ -6,6 +6,7 @@ import HoverVideoGrid from "../components/hover-video-grid"
 import Layout from "../components/layout"
 import OrganicContentSection from "../components/organic-content-section"
 import ProjectHeader from "../components/project-header"
+import Reveal from "../components/reveal"
 import Seo from "../components/seo"
 import TabbedImageSection from "../components/tabbed-image-section"
 import { graphql } from "gatsby"
@@ -13,89 +14,85 @@ import { graphql } from "gatsby"
 export default function ProjectTemplate({ data, pageContext }) {
   const project = data.project
   const other = data.other
-
   const sections = project?.content || []
+
+  const renderSection = (section, idx) => {
+    switch (section.type) {
+      case "gallery":
+        return (
+          <Reveal key={idx}>
+            <GallerySection
+              title={section.title}
+              subtitle={section.subtitle}
+              items={section.items || []}
+              columns={section.columns}
+            />
+          </Reveal>
+        )
+
+      case "organicTabs":
+        return (
+          <Reveal key={idx}>
+            <OrganicContentSection tabs={section.tabs || []} />
+          </Reveal>
+        )
+
+      case "hoverVideo":
+        return (
+          <Reveal key={idx}>
+            <HoverVideoGrid
+              title={section.title}
+              subtitle={section.subtitle}
+              items={section.items || []}
+            />
+          </Reveal>
+        )
+
+      case "tabbedImage":
+        return (
+          <Reveal key={idx}>
+            <TabbedImageSection title={section.title} tabs={section.imageTabs || []} />
+          </Reveal>
+        )
+
+      case "flipbook":
+        return (
+          <Reveal key={idx}>
+            <FlipbookSection title={section.title} pages={section.items || []} />
+          </Reveal>
+        )
+
+      default:
+        return null
+    }
+  }
 
   return (
     <Layout
       locale={pageContext.locale}
-      translationKey={pageContext.translationKey}
       other={other}
       projectType="project"
+      translationKey={pageContext.translationKey}
     >
       <Seo title={project.seoTitle || project.title} />
 
-      <ProjectHeader
-        title={project.title}
-        date={project.date}
-        categories={project.categories}
-        description={project.description}
-        media={project.banner}
-      />
+      <Reveal delay={0.05}>
+        <ProjectHeader
+          title={project.title}
+          date={project.date}
+          categories={project.categories}
+          description={project.description}
+          media={project.banner}
+        />
+      </Reveal>
 
-      {sections.map((section, idx) => {
-        switch (section.type) {
-          case "gallery":
-            return (
-              <GallerySection
-                key={idx}
-                title={section.title}
-                subtitle={section.subtitle}
-                items={section.items || []}
-                columns={section.columns}
-              />
-            )
-
-          case "organicTabs":
-            return (
-              <OrganicContentSection
-                key={idx}
-                tabs={section.tabs || []}
-              />
-            )
-
-          case "hoverVideo":
-            return (
-              <HoverVideoGrid
-                key={idx}
-                title={section.title}
-                subtitle={section.subtitle}
-                items={section.items || []}
-              />
-            )
-
-          case "tabbedImage":
-            return (
-              <TabbedImageSection
-                key={idx}
-                title={section.title}
-                tabs={section.imageTabs || []}
-              />
-            )
-
-          case "flipbook":
-            return (
-              <FlipbookSection
-                key={idx}
-                title={section.title}
-                pages={section.items || []}
-              />
-            )
-
-          default:
-            return null
-        }
-      })}
+      {sections.map(renderSection)}
     </Layout>
   )
 }
 
 export const query = graphql`
-  query ProjectBySlug(
-    $slug: String!
-    $locale: String!
-    $translationKey: String!
-  ) {
+  query ProjectBySlug($slug: String!, $locale: String!, $translationKey: String!) {
     project(slug: { eq: $slug }, locale: { eq: $locale }) {
       slug
       locale
@@ -133,10 +130,7 @@ export const query = graphql`
       }
     }
 
-    other: project(
-      translationKey: { eq: $translationKey }
-      locale: { ne: $locale }
-    ) {
+    other: project(translationKey: { eq: $translationKey }, locale: { ne: $locale }) {
       slug
       locale
     }
