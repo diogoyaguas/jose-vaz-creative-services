@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useMemo, useRef, useState } from "react"
 
 import Mute from "../assets/icons/common/mute.svg"
 import PropTypes from "prop-types"
@@ -10,23 +10,53 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
   const [isScrollable, setIsScrollable] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
   const [unmutedIndex, setUnmutedIndex] = useState(null)
+  const [itemsPerPage, setItemsPerPage] = useState(columns ?? 5)
 
-  const safeColumns = columns ?? 5;
-  const itemsPerPage = safeColumns
-  const totalPages = Math.ceil(items.length / itemsPerPage)
+  const safeColumns = columns ?? 5
+
+  const totalPages = useMemo(() => {
+    const perPage = Math.max(1, itemsPerPage || 1)
+    return Math.ceil(items.length / perPage)
+  }, [items.length, itemsPerPage])
 
   useEffect(() => {
     const el = gridRef.current
     if (!el) return
 
-    const updateScrollable = () => {
+    const computeLayout = () => {
+      const child = el.querySelector(".gallery-item")
+      const childWidth = child?.getBoundingClientRect()?.width || 0
+      const containerWidth = el.clientWidth || 0
+
+      const computedPerPage =
+        childWidth > 0 && containerWidth > 0
+          ? Math.max(1, Math.round(containerWidth / childWidth))
+          : safeColumns
+
+      setItemsPerPage(computedPerPage)
       setIsScrollable(el.scrollWidth > el.clientWidth + 1)
     }
 
-    updateScrollable()
-    window.addEventListener("resize", updateScrollable)
-    return () => window.removeEventListener("resize", updateScrollable)
+    computeLayout()
+
+    const onResize = () => computeLayout()
+    window.addEventListener("resize", onResize)
+
+    let ro
+    if (typeof ResizeObserver !== "undefined") {
+      ro = new ResizeObserver(() => computeLayout())
+      ro.observe(el)
+    }
+
+    return () => {
+      window.removeEventListener("resize", onResize)
+      if (ro) ro.disconnect()
+    }
   }, [items.length, safeColumns])
+
+  useEffect(() => {
+    setActiveIndex(0)
+  }, [itemsPerPage, items.length])
 
   const handleScroll = () => {
     const el = gridRef.current
@@ -71,12 +101,7 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
             if (item?.img) {
               return (
                 <div key={index} className="gallery-item">
-                  <img
-                    src={item.img}
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <img src={item.img} alt="" loading="lazy" decoding="async" />
                 </div>
               )
             }
@@ -142,7 +167,7 @@ GallerySection.propTypes = {
       video: PropTypes.string,
     })
   ),
-  columns: PropTypes.oneOf([3, 5]),
+  columns: PropTypes.oneOf([3, 4, 5]),
 }
 
 GallerySection.defaultProps = {
