@@ -43,7 +43,9 @@ const HoverVideoGrid = ({ title, subtitle, items }) => {
                 <img
                   src={item.img}
                   alt={item.alt}
-                  className={`media image ${isHovered && hasVideo ? "fade-out" : "fade-in"}`}
+                  className={`media image ${
+                    isHovered && hasVideo ? "fade-out" : "fade-in"
+                  }`}
                   loading="lazy"
                   decoding="async"
                 />
