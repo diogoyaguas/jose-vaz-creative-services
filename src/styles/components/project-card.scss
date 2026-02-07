@@ -1,5 +1,7 @@
 .projects-page {
   padding: 0 10rem 0 10rem;
+  max-width: 1400px;
+  margin: 0 auto;
 
   .project-card {
     text-decoration: none;
@@ -54,27 +56,53 @@
 
     .project-title {
       margin-top: 1rem;
-      font-size: 12px;
+      font-size: clamp(12px, 1.2vw, 14px);
       color: var(--black);
     }
 
     .project-description {
-      font-size: 10px;
+      font-size: clamp(10px, 1vw, 12px);
       color: var(--grey);
     }
 
     .project-button {
-      font-size: 10px;
+      font-size: clamp(10px, 1vw, 12px);
       color: var(--black);
       border: 1px solid var(--grey);
       padding: 0.5rem 1rem;
       text-decoration: none;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 
       &:hover {
         background-color: var(--black);
         color: var(--white);
       }
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  .projects-page {
+    padding: 0 6rem 0 6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-page {
+    padding: 0 3rem 0 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-page {
+    padding: 0 1rem 0 1rem;
   }
 }
