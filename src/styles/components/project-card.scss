@@ -4,6 +4,8 @@
   margin: 0 auto;
 
   .project-card {
+    content-visibility: auto;
+    contain-intrinsic-size: 420px;
     text-decoration: none;
 
     .media {
@@ -11,8 +13,8 @@
       aspect-ratio: 4 / 2;
       overflow: hidden;
       position: relative;
-      pointer-events: none;
-
+      backface-visibility: hidden;
+      transform: translateZ(0);
       filter: grayscale(100%);
       transition: filter 0.4s ease;
 
@@ -29,7 +31,7 @@
 
       img,
       video {
-        width: 100%;
+        width: 101%;
         height: 100%;
         object-fit: cover;
       }
@@ -39,7 +41,11 @@
       video {
         transform: scale(1);
         transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-        will-change: transform;
+      }
+
+      video,
+      .react-player {
+        pointer-events: none;
       }
     }
 
@@ -51,6 +57,7 @@
         img,
         video {
           transform: scale(1.08);
+          will-change: transform;
         }
       }
 
@@ -95,6 +102,7 @@
           img,
           video {
             transform: scale(1.04);
+            will-change: transform;
           }
         }
 
@@ -102,6 +110,29 @@
           background-color: var(--black);
           color: var(--white);
         }
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-page {
+    .project-card {
+      .media {
+        transition: none;
+        filter: grayscale(0%);
+      }
+
+      .media > div,
+      .media img,
+      .media video {
+        transition: none;
+        transform: none !important;
+        will-change: auto;
+      }
+
+      .project-button {
+        transition: none;
       }
     }
   }

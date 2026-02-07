@@ -1,37 +1,67 @@
+import React, { useEffect, useMemo, useRef, useState } from "react"
+
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
-import ReactPlayer from "react-player"
+
+const useInView = (options = { rootMargin: "200px", threshold: 0.1 }) => {
+    const ref = useRef(null)
+    const [inView, setInView] = useState(false)
+
+    useEffect(() => {
+        const el = ref.current
+        if (!el) return
+
+        const obs = new IntersectionObserver(([entry]) => {
+            setInView(entry.isIntersecting)
+        }, options)
+
+        obs.observe(el)
+        return () => obs.disconnect()
+    }, [options])
+
+    return { ref, inView }
+}
 
 const ProjectCard = ({ title, description, media, link }) => {
-    const videoUrl = media?.video || null
-    const imageUrl = media?.img || null
+    const videoUrl = useMemo(() => {
+        if (!media?.video) return null
+        if (typeof media.video === "string") return media.video
+        return media.video.publicURL || null
+    }, [media])
+
+    const imageUrl = useMemo(() => {
+        if (!media?.img) return null
+        if (typeof media.img === "string") return media.img
+        return media.img.publicURL || null
+    }, [media])
+
+    const { ref, inView } = useInView()
+    const videoRef = useRef(null)
+
+    useEffect(() => {
+        const v = videoRef.current
+        if (!v) return
+
+        if (inView) {
+            const p = v.play()
+            if (p && typeof p.catch === "function") p.catch(() => { })
+        } else {
+            v.pause()
+        }
+    }, [inView])
 
     return (
-        <Link to={link} className="project-card">
+        <Link to={link} className="project-card" ref={ref}>
             <div className="media">
                 {videoUrl ? (
-                    <ReactPlayer
-                        className="react-player"
-                        url={videoUrl}
-                        playing={true}
-                        loop={true}
-                        muted={true}
-                        playsInline={true}
-                        controls={false}
-                        width="101%"
-                        height="100%"
-                        config={{
-                            file: {
-                                attributes: {
-                                    playsInline: true,
-                                    muted: true,
-                                    autoPlay: true,
-                                    loop: true,
-                                    controls: false,
-                                },
-                            },
-                        }}
+                    <video
+                        ref={videoRef}
+                        className="project-card-video"
+                        src={videoUrl}
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
                     />
                 ) : imageUrl ? (
                     <img
@@ -43,13 +73,11 @@ const ProjectCard = ({ title, description, media, link }) => {
                     />
                 ) : null}
             </div>
+
             <h3 className="project-title">{title}</h3>
             <p className="project-description">{description}</p>
-            {link && (
-                <span className="project-button">
-                    Ver projeto
-                </span>
-            )}
+
+            {link ? <span className="project-button">Ver projeto</span> : null}
         </Link>
     )
 }
@@ -58,11 +86,8 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
     media: PropTypes.shape({
-        img: PropTypes.object,
-        video: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.shape({ publicURL: PropTypes.string })
-        ]),
+        img: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({ publicURL: PropTypes.string })]),
+        video: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({ publicURL: PropTypes.string })]),
     }),
     link: PropTypes.string,
 }
@@ -73,4 +98,4 @@ ProjectCard.defaultProps = {
     link: null,
 }
 
-export default ProjectCard
+export default React.memo(ProjectCard)
