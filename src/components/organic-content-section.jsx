@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react"
 
 import GallerySection from "./gallery-section"
 import Mute from "../assets/icons/common/mute.svg"
+import ReactPlayer from "react-player"
 import Unmute from "../assets/icons/common/unmute.svg"
 
 const OrganicContentSection = ({ tabs }) => {
@@ -56,12 +57,28 @@ const OrganicContentSection = ({ tabs }) => {
 
             {item?.video && (
               <>
-                <video
-                  src={item.video}
-                  autoPlay
-                  loop
+                <ReactPlayer
+                  className="react-player"
+                  url={item.video}
+                  playing={true}
+                  loop={true}
                   muted={unmutedIndex !== index}
-                  playsInline
+                  playsInline={true}
+                  controls={false}
+                  width="101%"
+                  height="100%"
+                  config={{
+                    file: {
+                      attributes: {
+                        playsInline: true,
+                        webkitPlaysInline: true,
+                        muted: true,
+                        autoPlay: true,
+                        loop: true,
+                        controls: false,
+                      },
+                    },
+                  }}
                 />
 
                 <button

@@ -11,6 +11,7 @@
       aspect-ratio: 4 / 2;
       overflow: hidden;
       position: relative;
+      pointer-events: none;
 
       filter: grayscale(100%);
       transition: filter 0.4s ease;
@@ -61,17 +62,17 @@
 
     .project-title {
       margin-top: 1rem;
-      font-size: clamp(12px, 1.2vw, 14px);
+      font-size: 12px;
       color: var(--black);
     }
 
     .project-description {
-      font-size: clamp(10px, 1vw, 12px);
+      font-size: 10px;
       color: var(--grey);
     }
 
     .project-button {
-      font-size: clamp(10px, 1vw, 12px);
+      font-size: 10px;
       color: var(--black);
       border: 1px solid var(--grey);
       padding: 0.5rem 1rem;

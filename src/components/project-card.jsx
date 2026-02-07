@@ -17,9 +17,22 @@ const ProjectCard = ({ title, description, media, link }) => {
                         playing={true}
                         loop={true}
                         muted={true}
+                        playsInline={true}
                         controls={false}
                         width="101%"
                         height="100%"
+                        config={{
+                            file: {
+                                attributes: {
+                                    playsInline: true,
+                                    webkitPlaysInline: true,
+                                    muted: true,
+                                    autoPlay: true,
+                                    loop: true,
+                                    controls: false,
+                                },
+                            },
+                        }}
                     />
                 ) : imageUrl ? (
                     <img

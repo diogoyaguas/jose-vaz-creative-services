@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useLayoutEffect, useRef, useState } from "react"
 
 import { navigate } from "gatsby"
 
@@ -11,15 +11,13 @@ const IndexPage = () => {
   const [input, setInput] = useState("")
   const [shake, setShake] = useState(false)
   const [cursorVisible, setCursorVisible] = useState(true)
+  const [liftPx, setLiftPx] = useState(0)
 
-  const containerRef = useRef(null)
-  const hiddenInputRef = useRef(null)
+  const overlayInputRef = useRef(null)
 
   useEffect(() => {
     if (localStorage.getItem(STORAGE_KEY) === "true") {
       navigate("/projetos")
-    } else {
-      containerRef.current?.focus()
     }
   }, [])
 
@@ -30,12 +28,37 @@ const IndexPage = () => {
     return () => clearInterval(interval)
   }, [])
 
+  useLayoutEffect(() => {
+    const vv = window.visualViewport
+    if (!vv) return
+
+    const updateLift = () => {
+      const keyboardHeight = Math.max(
+        0,
+        window.innerHeight - vv.height - vv.offsetTop
+      )
+      setLiftPx(
+        keyboardHeight > 0 ? Math.min(220, Math.round(keyboardHeight * 0.55)) : 0
+      )
+    }
+
+    updateLift()
+    vv.addEventListener("resize", updateLift)
+    vv.addEventListener("scroll", updateLift)
+
+    return () => {
+      vv.removeEventListener("resize", updateLift)
+      vv.removeEventListener("scroll", updateLift)
+    }
+  }, [])
+
   const resetWithShake = () => {
     setShake(true)
     setTimeout(() => {
       setShake(false)
       setInput("")
-      if (hiddenInputRef.current) hiddenInputRef.current.value = ""
+      if (overlayInputRef.current) overlayInputRef.current.value = ""
+      overlayInputRef.current?.focus()
     }, 400)
   }
 
@@ -50,26 +73,7 @@ const IndexPage = () => {
     }
   }
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Backspace") {
-      setInput((prev) => {
-        const next = prev.slice(0, -1)
-        if (hiddenInputRef.current) hiddenInputRef.current.value = next
-        return next
-      })
-      return
-    }
-
-    if (e.key.length !== 1 || input.length >= PASSWORD.length) return
-    if (!/[0-9]/.test(e.key)) return
-
-    const next = (input + e.key).toUpperCase()
-    setInput(next)
-    if (hiddenInputRef.current) hiddenInputRef.current.value = next
-    trySubmit(next)
-  }
-
-  const handleHiddenInputChange = (e) => {
+  const handleOverlayChange = (e) => {
     const raw = e.target.value || ""
     const digitsOnly = raw.replace(/\D/g, "")
     const next = digitsOnly.slice(0, PASSWORD.length)
@@ -80,45 +84,47 @@ const IndexPage = () => {
   }
 
   const focusKeyboard = () => {
-    hiddenInputRef.current?.focus()
+    overlayInputRef.current?.focus({ preventScroll: true })
   }
 
   return (
     <div
       className="password-page"
-      tabIndex={0}
-      onKeyDown={handleKeyDown}
       onPointerDown={focusKeyboard}
       onTouchStart={focusKeyboard}
-      ref={containerRef}
     >
       <input
-        ref={hiddenInputRef}
-        className="hidden-password-input"
+        ref={overlayInputRef}
+        className="password-overlay-input"
         type="tel"
         inputMode="numeric"
         pattern="[0-9]*"
         autoComplete="one-time-code"
         aria-label="Password"
-        onChange={handleHiddenInputChange}
+        onChange={handleOverlayChange}
       />
 
-      <div className={`password-container ${shake ? "shake" : ""}`}>
-        <span className="prefix-text">CREATIVE VAZ</span>
-        <span className="password-input">
-          {PASSWORD.split("").map((_, i) => {
-            const isActive = i === input.length
+      <div
+        className="password-lift"
+        style={{ transform: `translateY(-${liftPx}px)` }}
+      >
+        <div className={`password-container ${shake ? "shake" : ""}`}>
+          <span className="prefix-text">CREATIVE VAZ</span>
 
-            return (
-              <span key={i} className="char-slot">
-                {input[i] || "_"}
-                {isActive && cursorVisible && (
-                  <span className="inline-cursor">▮</span>
-                )}
-              </span>
-            )
-          })}
-        </span>
+          <span className="password-input">
+            {PASSWORD.split("").map((_, i) => {
+              const isActive = i === input.length
+              return (
+                <span key={i} className="char-slot">
+                  {input[i] || "_"}
+                  {isActive && cursorVisible && (
+                    <span className="inline-cursor">▮</span>
+                  )}
+                </span>
+              )
+            })}
+          </span>
+        </div>
       </div>
     </div>
   )

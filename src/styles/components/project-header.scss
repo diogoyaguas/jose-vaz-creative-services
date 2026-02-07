@@ -63,8 +63,8 @@
   }
 
   .project-title {
-    font-size: clamp(28px, 4.8vw, 50px);
-    margin-bottom: clamp(1.25rem, 3vw, 2rem);
+    font-size: 28px;
+    margin-bottom: 1.25rem;
     color: var(--black);
     word-break: break-word;
   }
@@ -81,14 +81,14 @@
     margin: 0;
 
     li {
-      font-size: clamp(10px, 1vw, 12px);
+      font-size: 10px;
       color: var(--grey);
       line-height: 1.6;
     }
   }
 
   .meta-value {
-    font-size: clamp(10px, 1vw, 12px);
+    font-size: 10px;
     color: var(--black);
     line-height: 1.5;
 
