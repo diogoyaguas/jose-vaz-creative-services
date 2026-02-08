@@ -32,11 +32,11 @@
         "title": "key visuals",
         "columns": 3,
         "items": [
-          { "img": "/assets/projetos/ipdj/key_visuals/1.png", "video": null },
-          { "img": "/assets/projetos/ipdj/key_visuals/2.png", "video": null },
-          { "img": "/assets/projetos/ipdj/key_visuals/3.png", "video": null },
-          { "img": "/assets/projetos/ipdj/key_visuals/4.png", "video": null },
-          { "img": "/assets/projetos/ipdj/key_visuals/5.png", "video": null }
+          { "img": "projetos/ipdj/key_visuals/1.png", "video": null },
+          { "img": "projetos/ipdj/key_visuals/2.png", "video": null },
+          { "img": "projetos/ipdj/key_visuals/3.png", "video": null },
+          { "img": "projetos/ipdj/key_visuals/4.png", "video": null },
+          { "img": "projetos/ipdj/key_visuals/5.png", "video": null }
         ]
       },
       {
@@ -44,12 +44,12 @@
         "title": "mupi's impressos e digitais",
         "columns": 3,
         "items": [
-          { "img": "/assets/projetos/ipdj/mupis/1.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/2.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/3.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/4.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/5.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/6.png", "video": null }
+          { "img": "projetos/ipdj/mupis/1.png", "video": null },
+          { "img": "projetos/ipdj/mupis/2.png", "video": null },
+          { "img": "projetos/ipdj/mupis/3.png", "video": null },
+          { "img": "projetos/ipdj/mupis/4.png", "video": null },
+          { "img": "projetos/ipdj/mupis/5.png", "video": null },
+          { "img": "projetos/ipdj/mupis/6.png", "video": null }
         ]
       },
       {
@@ -59,27 +59,27 @@
             "title": "conteúdo orgânico",
             "items": [
               {
-                "img": "/assets/projetos/ipdj/social_media/Post1.png",
+                "img": "projetos/ipdj/social_media/Post1.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Post2.png",
+                "img": "projetos/ipdj/social_media/Post2.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Post3.png",
+                "img": "projetos/ipdj/social_media/Post3.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Post4.png",
+                "img": "projetos/ipdj/social_media/Post4.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Post5.png",
+                "img": "projetos/ipdj/social_media/Post5.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Story1.png",
+                "img": "projetos/ipdj/social_media/Story1.png",
                 "video": null
               },
               {
@@ -87,7 +87,7 @@
                 "video": "/assets/projetos/ipdj/social_media/Story2.mp4"
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Story3.png",
+                "img": "projetos/ipdj/social_media/Story3.png",
                 "video": null
               },
               {
@@ -95,7 +95,7 @@
                 "video": "/assets/projetos/ipdj/social_media/Story4.mp4"
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Story5.png",
+                "img": "projetos/ipdj/social_media/Story5.png",
                 "video": null
               }
             ]
@@ -106,11 +106,11 @@
         "type": "gallery",
         "title": "merch",
         "items": [
-          { "img": "/assets/projetos/ipdj/merch/1.png", "video": null },
-          { "img": "/assets/projetos/ipdj/merch/2.png", "video": null },
-          { "img": "/assets/projetos/ipdj/merch/3.png", "video": null },
-          { "img": "/assets/projetos/ipdj/merch/4.png", "video": null },
-          { "img": "/assets/projetos/ipdj/merch/5.png", "video": null }
+          { "img": "projetos/ipdj/merch/1.png", "video": null },
+          { "img": "projetos/ipdj/merch/2.png", "video": null },
+          { "img": "projetos/ipdj/merch/3.png", "video": null },
+          { "img": "projetos/ipdj/merch/4.png", "video": null },
+          { "img": "projetos/ipdj/merch/5.png", "video": null }
         ]
       },
       {
@@ -118,14 +118,14 @@
         "title": "roadshow",
         "columns": 3,
         "items": [
-          { "img": "/assets/projetos/ipdj/roadshow/1.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/2.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/3.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/4.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/5.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/6.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/7.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/8.png", "video": null }
+          { "img": "projetos/ipdj/roadshow/1.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/2.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/3.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/4.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/5.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/6.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/7.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/8.png", "video": null }
         ]
       }
     ]
@@ -163,11 +163,11 @@
         "title": "key visuals",
         "columns": 3,
         "items": [
-          { "img": "/assets/projetos/ipdj/key_visuals/1.png", "video": null },
-          { "img": "/assets/projetos/ipdj/key_visuals/2.png", "video": null },
-          { "img": "/assets/projetos/ipdj/key_visuals/3.png", "video": null },
-          { "img": "/assets/projetos/ipdj/key_visuals/4.png", "video": null },
-          { "img": "/assets/projetos/ipdj/key_visuals/5.png", "video": null }
+          { "img": "projetos/ipdj/key_visuals/1.png", "video": null },
+          { "img": "projetos/ipdj/key_visuals/2.png", "video": null },
+          { "img": "projetos/ipdj/key_visuals/3.png", "video": null },
+          { "img": "projetos/ipdj/key_visuals/4.png", "video": null },
+          { "img": "projetos/ipdj/key_visuals/5.png", "video": null }
         ]
       },
       {
@@ -175,12 +175,12 @@
         "title": "printed and digital MUPIs",
         "columns": 3,
         "items": [
-          { "img": "/assets/projetos/ipdj/mupis/1.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/2.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/3.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/4.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/5.png", "video": null },
-          { "img": "/assets/projetos/ipdj/mupis/6.png", "video": null }
+          { "img": "projetos/ipdj/mupis/1.png", "video": null },
+          { "img": "projetos/ipdj/mupis/2.png", "video": null },
+          { "img": "projetos/ipdj/mupis/3.png", "video": null },
+          { "img": "projetos/ipdj/mupis/4.png", "video": null },
+          { "img": "projetos/ipdj/mupis/5.png", "video": null },
+          { "img": "projetos/ipdj/mupis/6.png", "video": null }
         ]
       },
       {
@@ -190,27 +190,27 @@
             "title": "organic content",
             "items": [
               {
-                "img": "/assets/projetos/ipdj/social_media/Post1.png",
+                "img": "projetos/ipdj/social_media/Post1.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Post2.png",
+                "img": "projetos/ipdj/social_media/Post2.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Post3.png",
+                "img": "projetos/ipdj/social_media/Post3.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Post4.png",
+                "img": "projetos/ipdj/social_media/Post4.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Post5.png",
+                "img": "projetos/ipdj/social_media/Post5.png",
                 "video": null
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Story1.png",
+                "img": "projetos/ipdj/social_media/Story1.png",
                 "video": null
               },
               {
@@ -218,7 +218,7 @@
                 "video": "/assets/projetos/ipdj/social_media/Story2.mp4"
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Story3.png",
+                "img": "projetos/ipdj/social_media/Story3.png",
                 "video": null
               },
               {
@@ -226,7 +226,7 @@
                 "video": "/assets/projetos/ipdj/social_media/Story4.mp4"
               },
               {
-                "img": "/assets/projetos/ipdj/social_media/Story5.png",
+                "img": "projetos/ipdj/social_media/Story5.png",
                 "video": null
               }
             ]
@@ -237,11 +237,11 @@
         "type": "gallery",
         "title": "merch",
         "items": [
-          { "img": "/assets/projetos/ipdj/merch/1.png", "video": null },
-          { "img": "/assets/projetos/ipdj/merch/2.png", "video": null },
-          { "img": "/assets/projetos/ipdj/merch/3.png", "video": null },
-          { "img": "/assets/projetos/ipdj/merch/4.png", "video": null },
-          { "img": "/assets/projetos/ipdj/merch/5.png", "video": null }
+          { "img": "projetos/ipdj/merch/1.png", "video": null },
+          { "img": "projetos/ipdj/merch/2.png", "video": null },
+          { "img": "projetos/ipdj/merch/3.png", "video": null },
+          { "img": "projetos/ipdj/merch/4.png", "video": null },
+          { "img": "projetos/ipdj/merch/5.png", "video": null }
         ]
       },
       {
@@ -249,14 +249,14 @@
         "title": "roadshow",
         "columns": 3,
         "items": [
-          { "img": "/assets/projetos/ipdj/roadshow/1.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/2.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/3.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/4.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/5.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/6.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/7.png", "video": null },
-          { "img": "/assets/projetos/ipdj/roadshow/8.png", "video": null }
+          { "img": "projetos/ipdj/roadshow/1.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/2.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/3.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/4.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/5.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/6.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/7.png", "video": null },
+          { "img": "projetos/ipdj/roadshow/8.png", "video": null }
         ]
       }
     ]

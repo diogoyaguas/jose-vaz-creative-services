@@ -1,3 +1,4 @@
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 
 import PropTypes from "prop-types"
@@ -11,6 +12,15 @@ const HoverVideoCell = React.memo(function HoverVideoCell({
 }) {
   const videoRef = useRef(null)
   const hasVideo = Boolean(item.video)
+
+  const gatsbyImage = useMemo(() => {
+    if (!item?.imgFile) return null
+    return (
+      getImage(item.imgFile) ||
+      getImage(item.imgFile?.childImageSharp?.gatsbyImageData) ||
+      null
+    )
+  }, [item?.imgFile])
 
   useEffect(() => {
     const v = videoRef.current
@@ -35,11 +45,20 @@ const HoverVideoCell = React.memo(function HoverVideoCell({
       onBlur={onDeactivate}
       aria-label={item.label || `Item ${index + 1}`}
     >
-      {item.img ? (
+      {gatsbyImage ? (
+        <GatsbyImage
+          image={gatsbyImage}
+          alt={item.alt || ""}
+          className={`media image ${isActive && hasVideo ? "fade-out" : "fade-in"
+            }`}
+          loading="lazy"
+        />
+      ) : item.img ? (
         <img
           src={item.img}
           alt={item.alt || ""}
-          className={`media image ${isActive && hasVideo ? "fade-out" : "fade-in"}`}
+          className={`media image ${isActive && hasVideo ? "fade-out" : "fade-in"
+            }`}
           loading="lazy"
           decoding="async"
         />
@@ -67,6 +86,7 @@ const HoverVideoCell = React.memo(function HoverVideoCell({
 HoverVideoCell.propTypes = {
   item: PropTypes.shape({
     img: PropTypes.string,
+    imgFile: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     video: PropTypes.string,
     alt: PropTypes.string,
     label: PropTypes.string,
@@ -83,6 +103,7 @@ const HoverVideoGrid = ({ title, subtitle, items }) => {
   const normalized = useMemo(() => {
     return (items || []).slice(0, 4).map((it) => ({
       img: it?.img || null,
+      imgFile: it?.imgFile || null,
       video: it?.video || null,
       alt: it?.alt || "",
       label: it?.label || "",
@@ -121,6 +142,7 @@ HoverVideoGrid.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       img: PropTypes.string,
+      imgFile: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
       video: PropTypes.string,
       alt: PropTypes.string,
       label: PropTypes.string,

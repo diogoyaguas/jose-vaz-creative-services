@@ -1,3 +1,4 @@
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useEffect, useMemo, useRef, useState } from "react"
 
 import Mute from "../assets/icons/common/mute.svg"
@@ -138,6 +139,28 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
     setUnmutedIndex((prev) => (prev === index ? null : index))
   }
 
+  const renderImageItem = (item, index) => {
+    const gatsbyImage = getImage(item?.imgFile)
+
+    if (gatsbyImage) {
+      return (
+        <div key={index} className="gallery-item">
+          <GatsbyImage image={gatsbyImage} alt="" loading="lazy" />
+        </div>
+      )
+    }
+
+    if (typeof item?.img === "string" && item.img) {
+      return (
+        <div key={index} className="gallery-item">
+          <img src={item.img} alt="" loading="lazy" decoding="async" />
+        </div>
+      )
+    }
+
+    return null
+  }
+
   return (
     <section className="gallery-section container">
       <div className="gallery-header">
@@ -152,13 +175,7 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
           onScroll={handleScroll}
         >
           {items.map((item, index) => {
-            if (item?.img) {
-              return (
-                <div key={index} className="gallery-item">
-                  <img src={item.img} alt="" loading="lazy" decoding="async" />
-                </div>
-              )
-            }
+            if (item?.img || item?.imgFile) return renderImageItem(item, index)
 
             if (item?.video) {
               return (
@@ -198,7 +215,7 @@ GallerySection.propTypes = {
   subtitle: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      img: PropTypes.string,
+      img: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
       video: PropTypes.string,
     })
   ),

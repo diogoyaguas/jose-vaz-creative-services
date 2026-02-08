@@ -41,12 +41,14 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type ProjectImageTab @dontInfer {
       label: String!
-      img: String!
+      img: String
+      imgFile: File @link(from: "img", by: "relativePath")
       alt: String
     }
 
     type ProjectMediaItem @dontInfer {
       img: String
+      imgFile: File @link(from: "img", by: "relativePath")
       video: String
     }
   `)

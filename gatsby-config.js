@@ -23,6 +23,8 @@ module.exports = {
   },
 
   plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
@@ -58,6 +60,13 @@ module.exports = {
       options: {
         name: "icons",
         path: "./static/assets/icons",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/static/assets`
       },
     },
     {

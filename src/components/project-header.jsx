@@ -1,3 +1,4 @@
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useCallback, useMemo, useRef, useState } from "react"
 
 import Mute from "../assets/icons/common/mute.svg"
@@ -13,6 +14,12 @@ const sanitizeHtml = (html = "") => {
 
 const ProjectHeader = ({ title, date, categories, description, media }) => {
     const videoUrl = media?.video || null
+
+    const gatsbyImage = useMemo(() => {
+        if (!media?.imgFile) return null
+        return getImage(media.imgFile)
+    }, [media])
+
     const imageUrl = media?.img || null
 
     const videoRef = useRef(null)
@@ -41,12 +48,14 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
         })
     }, [])
 
+    const hasMedia = Boolean(videoUrl || gatsbyImage || imageUrl)
+
     return (
         <header className="project-header">
-            {(videoUrl || imageUrl) && (
+            {hasMedia && (
                 <div className="project-header-media">
                     {videoUrl ? (
-                        <div className="project-header-media">
+                        <>
                             <video
                                 ref={videoRef}
                                 className="project-header-video"
@@ -66,7 +75,14 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
                             >
                                 {muted ? <Unmute /> : <Mute />}
                             </button>
-                        </div>
+                        </>
+                    ) : gatsbyImage ? (
+                        <GatsbyImage
+                            image={gatsbyImage}
+                            alt={title}
+                            className="project-header-image"
+                            loading="eager"
+                        />
                     ) : (
                         <img
                             src={imageUrl}
@@ -117,6 +133,7 @@ ProjectHeader.propTypes = {
     media: PropTypes.shape({
         img: PropTypes.string,
         video: PropTypes.string,
+        imgFile: PropTypes.any,
     }),
 }
 

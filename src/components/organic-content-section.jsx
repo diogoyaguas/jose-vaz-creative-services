@@ -1,3 +1,4 @@
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 
 import GallerySection from "./gallery-section"
@@ -56,16 +57,25 @@ OrganicVideoItem.propTypes = {
   onToggleSound: PropTypes.func.isRequired,
 }
 
-const OrganicImageItem = React.memo(function OrganicImageItem({ src }) {
+const OrganicImageItem = React.memo(function OrganicImageItem({ image, alt }) {
+  const gImg = getImage(image)
+
+  if (!gImg) return null
+
   return (
     <div className="main-image">
-      <img src={src} alt="" loading="lazy" decoding="async" />
+      <GatsbyImage image={gImg} alt={alt || ""} className="organic-image" />
     </div>
   )
 })
 
 OrganicImageItem.propTypes = {
-  src: PropTypes.string.isRequired,
+  image: PropTypes.any.isRequired,
+  alt: PropTypes.string,
+}
+
+OrganicImageItem.defaultProps = {
+  alt: "",
 }
 
 const OrganicContentSection = ({ tabs }) => {
@@ -122,14 +132,20 @@ const OrganicContentSection = ({ tabs }) => {
 
       <div className="main-images">
         {activeItems.map((item, index) => {
-          if (item?.img) {
-            return <OrganicImageItem key={index} src={item.img} />
+          if (item?.imgFile) {
+            return (
+              <OrganicImageItem
+                key={item.id || index}
+                image={item.imgFile}
+                alt={item.alt}
+              />
+            )
           }
 
           if (item?.video) {
             return (
               <OrganicVideoItem
-                key={index}
+                key={item.id || index}
                 src={item.video}
                 isMuted={unmutedIndex !== index}
                 onToggleSound={() => toggleSound(index)}
@@ -156,7 +172,9 @@ OrganicContentSection.propTypes = {
         title: PropTypes.string,
         items: PropTypes.arrayOf(
           PropTypes.shape({
-            img: PropTypes.string,
+            id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+            alt: PropTypes.string,
+            image: PropTypes.any,
             video: PropTypes.string,
           })
         ),

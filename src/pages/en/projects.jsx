@@ -66,7 +66,17 @@ export const query = graphql`
         title
         smallDescription
         cardMedia {
-          img
+          imgFile {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                quality: 70
+                layout: CONSTRAINED
+                width: 900
+              )
+            }
+          }
           video
         }
       }

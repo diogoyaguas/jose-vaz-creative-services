@@ -1,22 +1,56 @@
-import React, { forwardRef, useMemo, useRef, useState } from "react"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import React, {
+  forwardRef,
+  useCallback,
+  useMemo,
+  useRef,
+  useState,
+} from "react"
 
 import HTMLFlipBook from "react-pageflip"
 import PropTypes from "prop-types"
 
 const FlipbookPage = forwardRef(function FlipbookPage({ page }, ref) {
+  const gatsbyImage = useMemo(() => {
+    if (!page?.imgFile) return null
+    return (
+      getImage(page.imgFile) ||
+      getImage(page.imgFile?.childImageSharp?.gatsbyImageData) ||
+      null
+    )
+  }, [page?.imgFile])
+
   return (
     <div className="flipbook-page" ref={ref}>
       <div className="flipbook-page-inner">
-        <img
-          src={page.img}
-          alt={page.alt || ""}
-          loading="lazy"
-          decoding="async"
-        />
+        {gatsbyImage ? (
+          <GatsbyImage
+            image={gatsbyImage}
+            alt={page.alt || ""}
+            className="flipbook-image"
+            loading="lazy"
+          />
+        ) : page.img ? (
+          <img
+            src={page.img}
+            alt={page.alt || ""}
+            className="flipbook-image"
+            loading="lazy"
+            decoding="async"
+          />
+        ) : null}
       </div>
     </div>
   )
 })
+
+FlipbookPage.propTypes = {
+  page: PropTypes.shape({
+    img: PropTypes.string,
+    imgFile: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+    alt: PropTypes.string,
+  }).isRequired,
+}
 
 const FlipbookSection = ({
   title,
@@ -29,20 +63,27 @@ const FlipbookSection = ({
   const bookRef = useRef(null)
   const [pageIndex, setPageIndex] = useState(0)
 
-  const safePages = useMemo(
-    () => pages.filter((p) => p && p.img),
-    [pages]
-  )
+  const safePages = useMemo(() => {
+    return (pages || []).filter((p) => {
+      if (!p) return false
+      return Boolean(p.imgFile) || Boolean(p.img)
+    })
+  }, [pages])
 
   const total = safePages.length
 
-  const goPrev = () => bookRef.current?.pageFlip()?.flipPrev()
-  const goNext = () => bookRef.current?.pageFlip()?.flipNext()
+  const goPrev = useCallback(() => {
+    bookRef.current?.pageFlip()?.flipPrev()
+  }, [])
 
-  const onFlip = (e) => {
+  const goNext = useCallback(() => {
+    bookRef.current?.pageFlip()?.flipNext()
+  }, [])
+
+  const onFlip = useCallback((e) => {
     const nextIndex = typeof e?.data === "number" ? e.data : 0
     setPageIndex(nextIndex)
-  }
+  }, [])
 
   return (
     <section className="flipbook-section container">
@@ -76,7 +117,7 @@ const FlipbookSection = ({
             maxHeight={1200}
             maxShadowOpacity={0.25}
             showCover={showCover}
-            mobileScrollSupport={true}
+            mobileScrollSupport
             onFlip={onFlip}
             className="flipbook"
           >
@@ -113,7 +154,9 @@ FlipbookSection.propTypes = {
   subtitle: PropTypes.string,
   pages: PropTypes.arrayOf(
     PropTypes.shape({
-      img: PropTypes.string.isRequired,
+      img: PropTypes.string, 
+      imgFile: PropTypes.oneOfType([PropTypes.object, PropTypes.array]), 
+      alt: PropTypes.string,
     })
   ),
   width: PropTypes.number,

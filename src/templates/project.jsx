@@ -16,6 +16,11 @@ export default function ProjectTemplate({ data, pageContext }) {
   const other = data.other
   const sections = project?.content || []
 
+  const seoImage =
+  project?.cardMedia?.imgFile?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+
+  console.log(project);
+
   const renderSection = (section, idx) => {
     switch (section.type) {
       case "gallery":
@@ -78,7 +83,7 @@ export default function ProjectTemplate({ data, pageContext }) {
         title={project.seoTitle || project.title}
         description={project.seoDescription}
         locale={project.locale}
-        image={project.cardMedia.img} />
+        image={seoImage} />
 
       <Reveal delay={0.05}>
         <ProjectHeader
@@ -105,11 +110,31 @@ export const query = graphql`
       title
       date
       banner {
-        img
+        imgFile {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+              quality: 70
+              layout: CONSTRAINED
+              width: 900
+            )
+          }
+        }
         video
       }
       cardMedia {
-        img
+        imgFile {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+              quality: 70
+              layout: CONSTRAINED
+              width: 900
+            )
+          }
+        }
         video
       }
       categories
@@ -121,19 +146,49 @@ export const query = graphql`
         subtitle
         columns
         items {
-          img
+          imgFile {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                quality: 70
+                layout: CONSTRAINED
+                width: 900
+              )
+            }
+          }
           video
         }
         tabs {
           title
           items {
-            img
+            imgFile {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                  quality: 70
+                  layout: CONSTRAINED
+                  width: 900
+                )
+              }
+            }
             video
           }
         }
         imageTabs {
           label
-          img
+          imgFile {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                quality: 70
+                layout: CONSTRAINED
+                width: 900
+              )
+            }
+          }
           alt
         }
       }

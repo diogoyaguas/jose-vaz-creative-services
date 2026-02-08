@@ -51,7 +51,7 @@
             "video": "/assets/projetos/feeting_room/social_media/1.mp4"
           },
           {
-            "img": "/assets/projetos/feeting_room/social_media/2.png",
+            "img": "projetos/feeting_room/social_media/2.png",
             "video": null
           },
           {
@@ -59,7 +59,7 @@
             "video": "/assets/projetos/feeting_room/social_media/3.mp4"
           },
           {
-            "img": "/assets/projetos/feeting_room/social_media/4.jpg",
+            "img": "projetos/feeting_room/social_media/4.jpg",
             "video": null
           },
           {
@@ -85,7 +85,7 @@
         "imageTabs": [
           {
             "label": "",
-            "img": "/assets/projetos/feeting_room/social_media/website.png",
+            "img": "projetos/feeting_room/social_media/website.png",
             "alt": "website"
           }
         ]
@@ -144,7 +144,7 @@
             "video": "/assets/projetos/feeting_room/social_media/1.mp4"
           },
           {
-            "img": "/assets/projetos/feeting_room/social_media/2.png",
+            "img": "projetos/feeting_room/social_media/2.png",
             "video": null
           },
           {
@@ -152,7 +152,7 @@
             "video": "/assets/projetos/feeting_room/social_media/3.mp4"
           },
           {
-            "img": "/assets/projetos/feeting_room/social_media/4.jpg",
+            "img": "projetos/feeting_room/social_media/4.jpg",
             "video": null
           },
           {
@@ -178,7 +178,7 @@
         "imageTabs": [
           {
             "label": "",
-            "img": "/assets/projetos/feeting_room/social_media/website.png",
+            "img": "projetos/feeting_room/social_media/website.png",
             "alt": "website"
           }
         ]
