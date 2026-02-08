@@ -28,7 +28,8 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
-    "gatsby-transformer-sharp", {
+    "gatsby-transformer-sharp", 
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "José Vaz",
@@ -37,7 +38,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#000000",
         display: "minimal-ui",
-        "icon": "static/assets/icons/logo.svg"
+        "icon": "src/assets/creative_vaz.png"
       }
     },
     {
@@ -78,5 +79,6 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-offline`
   ]
 };

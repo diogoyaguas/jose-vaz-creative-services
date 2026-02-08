@@ -26,6 +26,12 @@ const Layout = ({ children, locale = "pt", other, otherPath }) => {
   `)
 
   useEffect(() => {
+    if (typeof window !== "undefined" && locale) {
+      window.localStorage.setItem("lang", locale)
+    }
+  }, [locale])
+
+  useEffect(() => {
     const run = async () => {
       if (isDevMode) {
         const authorized = localStorage.getItem(STORAGE_KEY)
