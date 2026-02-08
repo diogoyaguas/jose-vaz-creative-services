@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 
 const Contacto = () => {
     return (
-        <Layout>
+        <Layout locale="pt" otherPath="/en/contact">
             <Seo title="Contacto" />
 
         </Layout>
