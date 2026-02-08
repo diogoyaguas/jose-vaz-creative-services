@@ -19,7 +19,6 @@ const Header = ({ locale = "pt", otherPath }) => {
         labelProjects: "projects",
         labelContact: "contact",
         labelAbout: "about",
-        switchLabel: "en",
       }
     }
 
@@ -30,7 +29,6 @@ const Header = ({ locale = "pt", otherPath }) => {
       labelProjects: "projetos",
       labelContact: "contacto",
       labelAbout: "sobre",
-      switchLabel: "pt",
     }
   }, [locale])
 
@@ -69,11 +67,13 @@ const Header = ({ locale = "pt", otherPath }) => {
             {otherPath ? (
               <Link
                 to={otherPath}
-                className="nav-link language"
+                className="nav-link language-switch"
                 onClick={closeMenu}
                 aria-label={locale === "en" ? "PT" : "EN"}
               >
-                {nav.switchLabel}
+                <span className={locale === "pt" ? "active" : ""}>pt</span>
+                <span className="separator"> | </span>
+                <span className={locale === "en" ? "active" : ""}>en</span>
               </Link>
             ) : null}
           </div>
