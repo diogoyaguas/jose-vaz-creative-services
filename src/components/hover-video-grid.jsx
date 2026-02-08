@@ -11,15 +11,16 @@ const HoverVideoCell = React.memo(function HoverVideoCell({
 }) {
   const videoRef = useRef(null)
   const hasVideo = Boolean(item.video)
+  const imgFile = item?.imgFile
 
   const gatsbyImage = useMemo(() => {
-    if (!item?.imgFile) return null
+    if (!imgFile) return null
     return (
-      getImage(item.imgFile) ||
-      getImage(item.imgFile?.childImageSharp?.gatsbyImageData) ||
+      getImage(imgFile) ||
+      getImage(imgFile?.childImageSharp?.gatsbyImageData) ||
       null
     )
-  }, [item?.imgFile])
+  }, [imgFile])
 
   useEffect(() => {
     const v = videoRef.current

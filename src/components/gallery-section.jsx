@@ -16,7 +16,7 @@ const GalleryVideoItem = ({ src, muted, onToggleSound }) => {
 
     if (inView) {
       const p = v.play()
-      if (p && typeof p.catch === "function") p.catch(() => { })
+      if (p && typeof p.catch === "function") p.catch(() => {})
     } else {
       v.pause()
     }
@@ -108,7 +108,8 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
   }, [items.length, safeColumns])
 
   useEffect(() => {
-    setActiveIndex(0)
+    const id = requestAnimationFrame(() => setActiveIndex(0))
+    return () => cancelAnimationFrame(id)
   }, [itemsPerPage, items.length])
 
   const handleScroll = () => {
@@ -125,7 +126,9 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
         return
       }
 
-      const newIndex = Math.round((el.scrollLeft / maxScrollLeft) * (totalPages - 1))
+      const newIndex = Math.round(
+        (el.scrollLeft / maxScrollLeft) * (totalPages - 1)
+      )
       if (newIndex !== activeIndex) setActiveIndex(newIndex)
     })
   }
@@ -196,7 +199,11 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
         </div>
 
         {isScrollable && totalPages > 1 && (
-          <div className="carousel-dots" role="navigation" aria-label="Paginação da galeria">
+          <div
+            className="carousel-dots"
+            role="navigation"
+            aria-label="Paginação da galeria"
+          >
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
                 key={i}
@@ -219,6 +226,7 @@ GallerySection.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       img: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+      imgFile: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
       video: PropTypes.string,
     })
   ),

@@ -17,18 +17,12 @@
     "lint": "eslint . --ext .js,.jsx"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mdx-js/react": "^2.3.0",
     "bcryptjs": "^3.0.3",
     "bootstrap": "^5.3.0",
     "eslint-plugin-unused-imports": "^4.3.0",
     "framer-motion": "^12.33.0",
     "gatsby": "^5.3.3",
-    "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-mdx": "^5.9.0",
@@ -36,28 +30,20 @@
     "gatsby-plugin-sass": "^6.9.0",
     "gatsby-plugin-sharp": "^5.16.0",
     "gatsby-plugin-sitemap": "^6.9.0",
-    "gatsby-plugin-typegen": "^3.1.0",
     "gatsby-source-filesystem": "^5.9.0",
     "gatsby-transformer-json": "^5.10.0",
     "gatsby-transformer-sharp": "^5.16.0",
-    "jquery": "^3.7.0",
     "jsonwebtoken": "^9.0.3",
-    "popper.js": "^1.16.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-pageflip": "^2.0.3",
-    "react-player": "^2.12.0",
-    "react-simply-carousel": "^9.0.0",
-    "react-slick": "^0.29.0",
-    "sass": "^1.62.1",
-    "sharp": "^0.32.1",
-    "uuid": "^9.0.0"
+    "sass": "^1.62.1"
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.6",
-    "depcheck": "^1.4.7",
     "eslint-plugin-import": "^2.32.0",
-    "typescript": "^5.9.3"
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1"
   }
 }

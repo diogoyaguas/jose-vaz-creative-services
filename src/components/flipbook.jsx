@@ -1,23 +1,19 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import React, {
-  forwardRef,
-  useCallback,
-  useMemo,
-  useRef,
-  useState,
-} from "react"
+import React, { forwardRef, useCallback, useMemo, useRef, useState } from "react"
 import HTMLFlipBook from "react-pageflip"
 import PropTypes from "prop-types"
 
 const FlipbookPage = forwardRef(function FlipbookPage({ page }, ref) {
+  const imgFile = page?.imgFile
+
   const gatsbyImage = useMemo(() => {
-    if (!page?.imgFile) return null
+    if (!imgFile) return null
     return (
-      getImage(page.imgFile) ||
-      getImage(page.imgFile?.childImageSharp?.gatsbyImageData) ||
+      getImage(imgFile) ||
+      getImage(imgFile?.childImageSharp?.gatsbyImageData) ||
       null
     )
-  }, [page?.imgFile])
+  }, [imgFile])
 
   return (
     <div className="flipbook-page" ref={ref}>
@@ -153,8 +149,8 @@ FlipbookSection.propTypes = {
   subtitle: PropTypes.string,
   pages: PropTypes.arrayOf(
     PropTypes.shape({
-      img: PropTypes.string, 
-      imgFile: PropTypes.oneOfType([PropTypes.object, PropTypes.array]), 
+      img: PropTypes.string,
+      imgFile: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
       alt: PropTypes.string,
     })
   ),
