@@ -21,11 +21,11 @@
     "description": "Desenvolvimento de um conceito criativo adaptado ao público português, para uma marca em expansão na Europa, com desdobramento para diferentes canais online e offline. Apoio aos concessionários na criação de materiais, ativações de marca e ideias para eventos, garantindo uma comunicação coerente e alinhada com o posicionamento da marca no mercado.",
     "cardMedia": {
       "img": null,
-      "video": "/assets/projetos/firefly/spot_tv/shot.mp4"
+      "video": "../assets/projetos/firefly/card_media.mp4"
     },
     "banner": {
       "img": null,
-      "video": "/assets/projetos/firefly/spot_tv/shot.mp4"
+      "video": "../assets/projetos/firefly/spot_tv/shot.mp4"
     },
     "content": [
       {
@@ -173,7 +173,7 @@
     "description": "Development of a creative concept tailored to the Portuguese market for a brand expanding across Europe, rolled out across multiple online and offline channels. Support for dealers through the creation of materials, brand activations, and event concepts, ensuring consistent communication aligned with the brand’s market positioning.",
     "cardMedia": {
       "img": null,
-      "video": "/assets/projetos/firefly/spot_tv/shot.mp4"
+      "video": "/assets/projetos/firefly/card_media.mp4"
     },
     "banner": {
       "img": null,

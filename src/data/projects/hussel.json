@@ -6,7 +6,7 @@
     "index": 6,
     "seoTitle": "Hussel",
     "title": "hussel",
-    "date": "2024–2025",
+    "date": "2024-2025",
     "categories": [
       "Campanhas",
       "Redes Sociais",
@@ -15,8 +15,8 @@
     "smallDescription": "Conteúdos Orgânicos | Paid Media",
     "description": "M.A.D é um projeto criativo com foco na música, que combina identidade visual, comunicação de eventos e conteúdos digitais para construir um universo de marca forte e imersivo.",
     "cardMedia": {
-      "img": null,
-      "video": "projects/studio54.mp4"
+      "img": "projetos/hussel/card_media.png",
+      "video": null
     },
     "content": []
   },
@@ -27,7 +27,7 @@
     "index": 6,
     "seoTitle": "Hussel",
     "title": "Hussel",
-    "date": "2024–2025",
+    "date": "2024-2025",
     "categories": [
       "Campaigns",
       "Social Media",
@@ -36,8 +36,8 @@
     "smallDescription": "Organic Content | Paid Media",
     "description": "M.A.D is a music-focused creative project combining visual identity, event communication, and digital content to build a strong and immersive brand universe.",
     "cardMedia": {
-      "img": null,
-      "video": "projects/studio54.mp4"
+      "img": "projetos/hussel/card_media.png",
+      "video": null
     },
     "content": []
   }

@@ -16,7 +16,7 @@
     "description": "Projeto criativo focado no desenvolvimento de campanhas de marketing, conteúdos orgânicos e estratégias de paid media, combinando identidade visual, comunicação estratégica e conteúdos digitais para reforçar a presença e o posicionamento da marca.",
     "cardMedia": {
       "img": null,
-      "video": "projects/studio54.mp4"
+      "video": "../assets/projetos/vieira/card_media.mp4"
     },
     "content": []
   },
@@ -37,7 +37,7 @@
     "description": "Creative project focused on the development of marketing campaigns, organic content, and paid media strategies, combining visual identity, strategic communication, and digital content to strengthen the brand’s presence and positioning.",
     "cardMedia": {
       "img": null,
-      "video": "projects/studio54.mp4"
+      "video": "../assets/projetos/vieira/card_media.mp4"
     },
     "content": []
   }

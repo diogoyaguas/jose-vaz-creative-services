@@ -12,8 +12,8 @@
     "smallDescription": "Project Manager | Criação de Conteúdos",
     "description": "Criação de identidades visuais, conteúdos para redes sociais e materiais de comunicação para marcas de moda, em colaboração com equipas globais. Desenvolvimento de conteúdos audiovisuais e catálogos para fábricas parceiras, reforçando a presença e posicionamento da marca.",
     "cardMedia": {
-      "img": null,
-      "video": "../assets/projetos/studio54.mp4"
+      "img": "projetos/deepwear/card_media.png",
+      "video": null
     },
     "content": [
       {
@@ -100,8 +100,8 @@
     "smallDescription": "Project Manager | Content Creation",
     "description": "Creation of visual identities, social media content, and communication materials for fashion brands, working in collaboration with global teams. Development of audiovisual content and catalogues for partner factories, strengthening the brand’s presence and positioning.",
     "cardMedia": {
-      "img": null,
-      "video": "../assets/projetos/studio54.mp4"
+      "img": "projetos/deepwear/card_media.png",
+      "video": null
     },
     "content": [
       {

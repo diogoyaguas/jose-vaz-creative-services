@@ -37,9 +37,13 @@
       }
 
       > div,
-      img,
-      video {
+      img {
         transform: scale(1);
+        transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      video {
+        transform: scale(1.01);
         transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
       }
 
@@ -54,9 +58,13 @@
         filter: grayscale(0%);
 
         > div,
-        img,
+        img {
+          transform: scale(1.04);
+          will-change: transform;
+        }
+
         video {
-          transform: scale(1.08);
+          transform: scale(1.2);
           will-change: transform;
         }
       }
@@ -84,7 +92,9 @@
       border: 1px solid var(--grey);
       padding: 0.5rem 1rem;
       text-decoration: none;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
     }
   }
 }

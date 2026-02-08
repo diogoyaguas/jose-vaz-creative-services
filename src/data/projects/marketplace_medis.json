@@ -15,8 +15,8 @@
     "smallDescription": "Campanhas Paid Media",
     "description": "Projeto criativo com foco no desenvolvimento de campanhas digitais, combinando identidade visual, comunicação estratégica e conteúdos para diferentes plataformas, com o objetivo de reforçar a presença e o posicionamento da marca no mercado.",
     "cardMedia": {
-      "img": null,
-      "video": "projects/studio54.mp4"
+      "img": "projetos/medis/card_media.png",
+      "video": null
     },
     "content": []
   },
@@ -36,8 +36,8 @@
     "smallDescription": "Paid Media Campaigns",
     "description": "Creative project focused on the development of digital campaigns, combining visual identity, strategic communication, and content for multiple platforms to strengthen the brand’s presence and positioning in the market.",
     "cardMedia": {
-      "img": null,
-      "video": "projects/studio54.mp4"
+      "img": "projetos/medis/card_media.png",
+      "video": null
     },
     "content": []
   }
