@@ -5,10 +5,23 @@ module.exports = {
   siteMetadata: {
     title: "Creative Vaz",
     siteUrl: "https://creativevaz.com",
-    description: "Welcome to my personal website, where creativity comes to life through stunning visual experiences. As a talented Graphic Designer, I specialize in translating ideas into captivating designs that leave a lasting impression. Explore my portfolio and discover a collection of meticulously crafted logos, illustrations, branding projects, and more. With a keen eye for aesthetics and a deep understanding of design principles, I strive to create visually striking solutions that effectively communicate your brand's story. Let's collaborate and bring your design visions to reality.",
+    description:
+      "Portefólio de José Vaz, designer gráfico e criativo em Portugal. Projetos de branding, campanhas, social media, conteúdo digital e direção criativa.",
     author: "@sr.josevaz",
-    keywords: ["José Vaz", "Creative Services", "Graphic Designer", "Portugal", "Feeting Room", "Dulis Shoes"],
+    keywords: [
+      "José Vaz",
+      "Creative Vaz",
+      "Designer Gráfico",
+      "Direção Criativa",
+      "Branding",
+      "Campanhas",
+      "Social Media",
+      "Conteúdo Digital",
+      "Design Portugal",
+    ],
+    defaultImage: "/og/default.png",
   },
+
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
@@ -22,7 +35,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#000000",
         display: "minimal-ui",
-        "icon": "static/assets/icons/common/logo.svg"
+        "icon": "static/assets/icons/logo.svg"
       }
     },
     {

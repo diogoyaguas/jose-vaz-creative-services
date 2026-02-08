@@ -16,6 +16,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: String
       banner: ProjectMediaItem
       categories: [String!]!
+      seoDescription: String
       smallDescription: String!
       description: String!
       cardMedia: ProjectMediaItem!

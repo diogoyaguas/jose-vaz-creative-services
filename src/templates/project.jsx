@@ -74,7 +74,11 @@ export default function ProjectTemplate({ data, pageContext }) {
       projectType="project"
       translationKey={pageContext.translationKey}
     >
-      <Seo title={project.seoTitle || project.title} />
+      <Seo
+        title={project.seoTitle || project.title}
+        description={project.seoDescription}
+        locale={project.locale}
+        image={project.cardMedia.img} />
 
       <Reveal delay={0.05}>
         <ProjectHeader
@@ -104,7 +108,12 @@ export const query = graphql`
         img
         video
       }
+      cardMedia {
+        img
+        video
+      }
       categories
+      seoDescription
       description
       content {
         type
