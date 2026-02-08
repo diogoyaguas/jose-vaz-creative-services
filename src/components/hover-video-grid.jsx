@@ -1,6 +1,5 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
-
 import PropTypes from "prop-types"
 
 const HoverVideoCell = React.memo(function HoverVideoCell({

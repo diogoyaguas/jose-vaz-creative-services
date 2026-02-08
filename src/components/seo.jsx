@@ -1,6 +1,5 @@
 import React, { useMemo } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-
 import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 

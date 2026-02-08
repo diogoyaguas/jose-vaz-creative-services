@@ -1,8 +1,8 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useCallback, useMemo, useRef, useState } from "react"
+import PropTypes from "prop-types"
 
 import Mute from "../assets/icons/common/mute.svg"
-import PropTypes from "prop-types"
 import Unmute from "../assets/icons/common/unmute.svg"
 
 const sanitizeHtml = (html = "") => {

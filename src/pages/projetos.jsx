@@ -1,10 +1,11 @@
 import * as React from "react"
+import PropTypes from "prop-types"
+import { graphql } from "gatsby"
+import { motion } from "framer-motion"
 
 import Layout from "../components/layout"
 import ProjectCard from "../components/project-card"
 import Seo from "../components/seo"
-import { graphql } from "gatsby"
-import { motion } from "framer-motion"
 
 const containerVariants = {
   hidden: {},
@@ -56,6 +57,28 @@ const Projects = ({ data }) => {
       </motion.div>
     </Layout>
   )
+}
+
+Projects.propTypes = {
+  data: PropTypes.shape({
+    allProject: PropTypes.shape({
+      nodes: PropTypes.arrayOf(
+        PropTypes.shape({
+          slug: PropTypes.string.isRequired,
+          title: PropTypes.string,
+          smallDescription: PropTypes.string,
+          cardMedia: PropTypes.shape({
+            video: PropTypes.string,
+            imgFile: PropTypes.shape({
+              childImageSharp: PropTypes.shape({
+                gatsbyImageData: PropTypes.any,
+              }),
+            }),
+          }),
+        })
+      ).isRequired,
+    }).isRequired,
+  }).isRequired,
 }
 
 export const query = graphql`

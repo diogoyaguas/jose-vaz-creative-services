@@ -57,6 +57,7 @@
   "devDependencies": {
     "@types/bootstrap": "^5.2.6",
     "depcheck": "^1.4.7",
+    "eslint-plugin-import": "^2.32.0",
     "typescript": "^5.9.3"
   }
 }

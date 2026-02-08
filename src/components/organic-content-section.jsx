@@ -1,11 +1,12 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
-
-import GallerySection from "./gallery-section"
-import Mute from "../assets/icons/common/mute.svg"
 import PropTypes from "prop-types"
+
+import Mute from "../assets/icons/common/mute.svg"
 import Unmute from "../assets/icons/common/unmute.svg"
 import useInView from "../hooks/useInView"
+
+import GallerySection from "./gallery-section"
 
 const OrganicVideoItem = React.memo(function OrganicVideoItem({
   src,

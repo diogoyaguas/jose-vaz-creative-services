@@ -1,4 +1,6 @@
 import * as React from "react"
+import PropTypes from "prop-types"
+import { graphql } from "gatsby"
 
 import FlipbookSection from "../components/flipbook"
 import GallerySection from "../components/gallery-section"
@@ -9,7 +11,6 @@ import ProjectHeader from "../components/project-header"
 import Reveal from "../components/reveal"
 import Seo from "../components/seo"
 import TabbedImageSection from "../components/tabbed-image-section"
-import { graphql } from "gatsby"
 
 export default function ProjectTemplate({ data, pageContext }) {
   const project = data.project
@@ -66,7 +67,11 @@ export default function ProjectTemplate({ data, pageContext }) {
       case "flipbook":
         return (
           <Reveal key={idx}>
-            <FlipbookSection title={section.title} subtitle={section.subtitle} pages={section.flipbookPages || []} />
+            <FlipbookSection
+              title={section.title}
+              subtitle={section.subtitle}
+              pages={section.flipbookPages || []}
+            />
           </Reveal>
         )
 
@@ -103,6 +108,93 @@ export default function ProjectTemplate({ data, pageContext }) {
     </Layout>
   )
 }
+
+ProjectTemplate.propTypes = {
+  pageContext: PropTypes.shape({
+    locale: PropTypes.oneOf(["pt", "en"]).isRequired,
+    translationKey: PropTypes.string.isRequired,
+  }).isRequired,
+  data: PropTypes.shape({
+    project: PropTypes.shape({
+      title: PropTypes.string,
+      seoTitle: PropTypes.string,
+      seoDescription: PropTypes.string,
+      locale: PropTypes.oneOf(["pt", "en"]),
+      date: PropTypes.string,
+      categories: PropTypes.arrayOf(PropTypes.string),
+      description: PropTypes.string,
+      banner: PropTypes.shape({
+        video: PropTypes.string,
+        imgFile: PropTypes.shape({
+          childImageSharp: PropTypes.shape({
+            gatsbyImageData: PropTypes.any,
+          }),
+        }),
+      }),
+      cardMedia: PropTypes.shape({
+        video: PropTypes.string,
+        imgFile: PropTypes.shape({
+          childImageSharp: PropTypes.shape({
+            gatsbyImageData: PropTypes.shape({
+              images: PropTypes.shape({
+                fallback: PropTypes.shape({
+                  src: PropTypes.string,
+                }),
+              }),
+            }),
+          }),
+        }),
+      }),
+      content: PropTypes.arrayOf(
+        PropTypes.shape({
+          type: PropTypes.string.isRequired,
+          title: PropTypes.string,
+          subtitle: PropTypes.string,
+          columns: PropTypes.number,
+          items: PropTypes.arrayOf(
+            PropTypes.shape({
+              video: PropTypes.string,
+              imgFile: PropTypes.object,
+            })
+          ),
+          tabs: PropTypes.arrayOf(
+            PropTypes.shape({
+              title: PropTypes.string,
+              items: PropTypes.arrayOf(
+                PropTypes.shape({
+                  video: PropTypes.string,
+                  imgFile: PropTypes.object,
+                })
+              ),
+            })
+          ),
+          imageTabs: PropTypes.arrayOf(
+            PropTypes.shape({
+              label: PropTypes.string,
+              alt: PropTypes.string,
+              imgFile: PropTypes.object,
+            })
+          ),
+          flipbookPages: PropTypes.arrayOf(
+            PropTypes.shape({
+              alt: PropTypes.string,
+              imgFile: PropTypes.object,
+            })
+          ),
+        })
+      ),
+    }).isRequired,
+    other: PropTypes.shape({
+      slug: PropTypes.string.isRequired,
+      locale: PropTypes.oneOf(["pt", "en"]).isRequired,
+    }),
+  }).isRequired,
+}
+
+ProjectTemplate.defaultProps = {
+  data: undefined,
+}
+ProjectTemplate.defaultProps = {}
 
 export const query = graphql`
   fragment ProjectImageSmall on File {
@@ -214,4 +306,3 @@ export const query = graphql`
     }
   }
 `
-

@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import PropTypes from "prop-types"
 import { motion } from "framer-motion"
 
 const variants = {
@@ -26,4 +26,11 @@ export default function Reveal({ children, as: Tag = "div", delay = 0, once = tr
       {children}
     </motion.div>
   )
+}
+
+Reveal.propTypes = {
+  children: PropTypes.node.isRequired,
+  as: PropTypes.elementType,
+  delay: PropTypes.number,
+  once: PropTypes.bool,
 }

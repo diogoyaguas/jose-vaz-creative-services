@@ -1,6 +1,5 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useMemo, useState } from "react"
-
 import PropTypes from "prop-types"
 
 const TabbedImageSection = ({ title, subtitle, tabs, initialTab = 0 }) => {

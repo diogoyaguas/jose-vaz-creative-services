@@ -1,7 +1,5 @@
 import * as React from "react"
-
 import { useEffect, useLayoutEffect, useRef, useState } from "react"
-
 import { navigate } from "gatsby"
 
 const DEV_PASSWORD = "1234"

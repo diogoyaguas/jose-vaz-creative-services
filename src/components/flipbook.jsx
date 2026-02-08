@@ -6,7 +6,6 @@ import React, {
   useRef,
   useState,
 } from "react"
-
 import HTMLFlipBook from "react-pageflip"
 import PropTypes from "prop-types"
 

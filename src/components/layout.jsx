@@ -1,9 +1,10 @@
 import React, { useEffect } from "react"
 import { graphql, navigate, useStaticQuery } from "gatsby"
+import PropTypes from "prop-types"
 
 import Footer from "./footer"
 import Header from "./header"
-import PropTypes from "prop-types"
+
 
 const STORAGE_KEY = "creative_vaz_auth"
 

@@ -1,8 +1,8 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useEffect, useMemo, useRef } from "react"
-
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+
 import useInView from "../hooks/useInView"
 
 const ProjectCard = ({ title, description, media, link }) => {
@@ -90,6 +90,7 @@ ProjectCard.propTypes = {
   description: PropTypes.string,
   media: PropTypes.shape({
     img: PropTypes.any,
+    imgFile: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     video: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.shape({ publicURL: PropTypes.string }),
