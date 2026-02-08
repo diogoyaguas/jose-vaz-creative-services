@@ -21,7 +21,7 @@
     "description": "Desenvolvimento de um conceito criativo adaptado ao público português, para uma marca em expansão na Europa, com desdobramento para diferentes canais online e offline. Apoio aos concessionários na criação de materiais, ativações de marca e ideias para eventos, garantindo uma comunicação coerente e alinhada com o posicionamento da marca no mercado.",
     "cardMedia": {
       "img": null,
-      "video": "../assets/projetos/firefly/card_media.mp4"
+      "video": "/assets/projetos/firefly/card_media.mp4"
     },
     "banner": {
       "img": null,
