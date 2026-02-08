@@ -224,6 +224,199 @@
       "img": "projetos/hussel/card_media.png",
       "video": null
     },
-    "content": []
+    "content": [
+      {
+        "type": "organicTabs",
+        "title": "campanha",
+        "columns": 4,
+        "tabs": [
+          {
+            "title": "dubai chocolate",
+            "items": [
+              {
+                "img": "projetos/hussel/chocolate_dubai/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/chocolate_dubai/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/chocolate_dubai/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/chocolate_dubai/Post4.png",
+                "video": null
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/hussel/chocolate_dubai/Story1.mp4"
+              },
+              {
+                "img": "projetos/hussel/chocolate_dubai/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/chocolate_dubai/Story3.png",
+                "video": null
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/hussel/chocolate_dubai/Story4.mp4"
+              }
+            ]
+          },
+          {
+            "title": "father's day",
+            "items": [
+              {
+                "img": "projetos/hussel/dia_do_pai/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/dia_do_pai/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/dia_do_pai/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/dia_do_pai/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/dia_do_pai/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/dia_do_pai/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/dia_do_pai/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/dia_do_pai/Story4.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "35th birthday",
+            "items": [
+              {
+                "img": "projetos/hussel/35_anos/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/35_anos/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/35_anos/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/35_anos/Post4.png",
+                "video": null
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/hussel/35_anos/Story1.mp4"
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/hussel/35_anos/Story2.mp4"
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/hussel/35_anos/Story3.mp4"
+              },
+              {
+                "img": "projetos/hussel/35_anos/Story4.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "easter",
+            "items": [
+              {
+                "img": "projetos/hussel/pascoa/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/pascoa/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/pascoa/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/pascoa/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/pascoa/Story1.png",
+                "video": null
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/hussel/pascoa/Story2.mp4"
+              },
+              {
+                "img": "projetos/hussel/pascoa/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/pascoa/Story4.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "halloween",
+            "items": [
+              {
+                "img": "projetos/hussel/halloween/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/halloween/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/halloween/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/halloween/Post4.png",
+                "video": null
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/hussel/halloween/Story1.mp4"
+              },
+              {
+                "img": "projetos/hussel/halloween/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/halloween/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/hussel/halloween/Story4.png",
+                "video": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

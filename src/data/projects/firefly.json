@@ -25,7 +25,7 @@
     },
     "banner": {
       "img": null,
-      "video": "../assets/projetos/firefly/spot_tv/shot.mp4"
+      "video": "/assets/projetos/firefly/spot_tv/shot.mp4"
     },
     "content": [
       {
