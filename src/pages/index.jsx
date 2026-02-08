@@ -4,8 +4,14 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react"
 
 import { navigate } from "gatsby"
 
-const PASSWORD = "0506"
+const DEV_PASSWORD = "1234"
 const STORAGE_KEY = "creative_vaz_auth"
+
+const NETLIFY_CONTEXT =
+  typeof process !== "undefined" ? process.env.GATSBY_NETLIFY_CONTEXT : undefined
+
+const isProdNetlify = NETLIFY_CONTEXT === "production"
+const isDevMode = !isProdNetlify
 
 const IndexPage = () => {
   const [input, setInput] = useState("")
@@ -16,15 +22,13 @@ const IndexPage = () => {
   const overlayInputRef = useRef(null)
 
   useEffect(() => {
-    if (localStorage.getItem(STORAGE_KEY) === "true") {
+    if (isDevMode && localStorage.getItem(STORAGE_KEY) === "true") {
       navigate("/projetos")
     }
   }, [])
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCursorVisible((v) => !v)
-    }, 500)
+    const interval = setInterval(() => setCursorVisible(v => !v), 500)
     return () => clearInterval(interval)
   }, [])
 
@@ -62,9 +66,9 @@ const IndexPage = () => {
     }, 400)
   }
 
-  const trySubmit = (next) => {
-    if (next.length === PASSWORD.length) {
-      if (next === PASSWORD) {
+  const trySubmitDev = (next) => {
+    if (next.length === DEV_PASSWORD.length) {
+      if (next === DEV_PASSWORD) {
         localStorage.setItem(STORAGE_KEY, "true")
         navigate("/projetos")
       } else {
@@ -73,10 +77,36 @@ const IndexPage = () => {
     }
   }
 
+  const trySubmitProd = async (next) => {
+    if (next.length !== 4) return
+
+    try {
+      const res = await fetch("/.netlify/functions/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code: next }),
+      })
+
+      if (res.ok) {
+        navigate("/projetos")
+      } else {
+        resetWithShake()
+      }
+    } catch {
+      resetWithShake()
+    }
+  }
+
+  const trySubmit = (next) => {
+    if (isDevMode) return trySubmitDev(next)
+    return trySubmitProd(next)
+  }
+
   const handleOverlayChange = (e) => {
     const raw = e.target.value || ""
     const digitsOnly = raw.replace(/\D/g, "")
-    const next = digitsOnly.slice(0, PASSWORD.length)
+    const maxLen = isDevMode ? DEV_PASSWORD.length : 4
+    const next = digitsOnly.slice(0, maxLen)
 
     setInput(next)
     if (e.target.value !== next) e.target.value = next
@@ -86,6 +116,8 @@ const IndexPage = () => {
   const focusKeyboard = () => {
     overlayInputRef.current?.focus({ preventScroll: true })
   }
+
+  const slotsLen = isDevMode ? DEV_PASSWORD.length : 4
 
   return (
     <div
@@ -112,7 +144,7 @@ const IndexPage = () => {
           <span className="prefix-text">CREATIVE VAZ</span>
 
           <span className="password-input">
-            {PASSWORD.split("").map((_, i) => {
+            {Array.from({ length: slotsLen }).map((_, i) => {
               const isActive = i === input.length
               return (
                 <span key={i} className="char-slot">

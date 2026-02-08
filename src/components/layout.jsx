@@ -7,6 +7,12 @@ import PropTypes from "prop-types"
 
 const STORAGE_KEY = "creative_vaz_auth"
 
+const NETLIFY_CONTEXT =
+  typeof process !== "undefined" ? process.env.GATSBY_NETLIFY_CONTEXT : undefined
+
+const isProdNetlify = NETLIFY_CONTEXT === "production"
+const isDevMode = !isProdNetlify
+
 const Layout = ({ children, locale = "pt", other, otherPath }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -19,10 +25,22 @@ const Layout = ({ children, locale = "pt", other, otherPath }) => {
   `)
 
   useEffect(() => {
-    const authorized = localStorage.getItem(STORAGE_KEY)
-    if (authorized !== "true") {
-      navigate("/")
+    const run = async () => {
+      if (isDevMode) {
+        const authorized = localStorage.getItem(STORAGE_KEY)
+        if (authorized !== "true") navigate("/")
+        return
+      }
+
+      try {
+        const res = await fetch("/.netlify/functions/verify", { method: "GET" })
+        if (!res.ok) navigate("/")
+      } catch {
+        navigate("/")
+      }
     }
+
+    run()
   }, [])
 
   const otherFromProject =
