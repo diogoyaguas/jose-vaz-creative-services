@@ -1,49 +1,123 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# José Vaz — Creative Services
 
-## 🚀 Quick start
+Official website and creative portfolio built with **Gatsby**, focused on performance, smooth animations, and a carefully crafted visual experience.
 
-1.  **Create a Gatsby site.**
+Includes a protected projects area with lightweight authentication and an optimized production build deployed on **Netlify**.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+---
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Tech Stack
 
-2.  **Start developing.**
+- Gatsby (React)
+- Framer Motion (animations)
+- SCSS (Dart Sass) using `@use` / `@forward`
+- Netlify (Hosting + Functions)
+- ESLint (linting & auto-fix)
+- Yarn v1
 
-    Navigate into your new site’s directory and start it up.
+---
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Authentication
 
-3.  **Open the code and start customizing!**
+The projects area is protected by a simple access code.
 
-    Your site is now running at http://localhost:8000!
+### Production
+- Server-side validation via Netlify Functions
+- Password stored as a bcrypt hash
+- Session handled via HttpOnly cookies
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Development
+- Simplified local authentication
 
-4.  **Learn more**
+No plaintext passwords are shipped in the client bundle.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+---
 
-## 🚀 Quick start (Netlify)
+## Local Development
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+```bash
+yarn install
+yarn develop
+```
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+The site will be available at:  
+http://localhost:8000
+
+---
+
+## Production Build
+
+```bash
+yarn build
+```
+
+---
+
+## Linting
+
+```bash
+yarn lint
+yarn lint:fix
+```
+
+- Automatically removes unused imports
+- Rules tailored for Gatsby and modern React patterns
+
+---
+
+## Styling (SCSS)
+
+- Modular SCSS architecture using `@use` and `@forward`
+- No deprecated `@import` usage
+- Organized structure with `base/` and `components/` layers
+
+---
+
+## Project Structure (simplified)
+
+```text
+src/
+  components/
+  pages/
+  templates/
+  styles/
+netlify/
+  functions/
+```
+
+---
+
+## Environment Variables (Netlify)
+
+Required in production:
+
+- CREATIVE_VAZ_PASSWORD_HASH
+- SESSION_SECRET
+
+---
+
+## Dependency Maintenance
+
+Tools used:
+- depcheck
+- knip
+
+Recommended flow:
+
+```bash
+yarn depcheck
+yarn build
+```
+
+---
+
+## Deployment
+
+Automatic deployment via Netlify on every push to the `main` branch.
+
+---
+
+## License
+
+Private project.  
+All rights reserved.
