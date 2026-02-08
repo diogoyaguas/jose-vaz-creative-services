@@ -22,7 +22,7 @@
     "description": "Projeto colaborativo entre a The Feeting Room e marcas parceiras para o desenvolvimento de uma cápsula inspirada no espírito de liberdade e autoexpressão do Studio 54. Apoio na criação da identidade visual da coleção, incluindo logótipo, guidelines e materiais gráficos digitais e impressos.<br><br>Colaboração com a direção criativa, produção de conteúdos de backstage e desenvolvimento de suportes gráficos para o evento de lançamento, assegurando uma comunicação coerente da coleção em todos os pontos de contacto.",
     "cardMedia": {
       "img": null,
-      "video": "/assets/projetos/thumbnails/studio54.mp4"
+      "video": "/assets/projetos/studio_54/card_media.mp4"
     },
     "content": [
       {
@@ -89,7 +89,7 @@
     "date": "2022",
     "banner": {
       "img": null,
-      "video": "/assets/projetos/studio_54/banner.mp4"
+      "video": "/assets/projetos/studio_54/card_media.mp4"
     },
     "categories": [
       "Launch Campaign",
