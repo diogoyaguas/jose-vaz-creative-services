@@ -1,11 +1,9 @@
 [
   {
     "banner": {
-      "img": null,
       "video": "/assets/projetos/studio_54/banner.mp4"
     },
     "cardMedia": {
-      "img": null,
       "video": "/assets/projetos/studio_54/card_media.mp4"
     },
     "categories": [
@@ -18,80 +16,61 @@
       {
         "items": [
           {
-            "img": "projetos/studio_54/social_media/1.png",
-            "video": null
+            "img": "projetos/studio_54/social_media/1.png"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/2.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/3.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/3.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/4.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/4.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/8.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/9.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/9.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/10.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/10.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/5.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/6.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/6.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/7.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/7.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/11.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/12.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/12.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/13.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/13.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/14.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/15.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/15.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/16.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/16.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/17.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/18.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/18.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/19.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/19.jpg"
           }
         ],
         "title": "redes sociais",
@@ -150,11 +129,9 @@
   },
   {
     "banner": {
-      "img": null,
       "video": "/assets/projetos/studio_54/banner.mp4"
     },
     "cardMedia": {
-      "img": null,
       "video": "/assets/projetos/studio_54/card_media.mp4"
     },
     "categories": [
@@ -167,80 +144,61 @@
       {
         "items": [
           {
-            "img": "projetos/studio_54/social_media/1.png",
-            "video": null
+            "img": "projetos/studio_54/social_media/1.png"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/2.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/3.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/3.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/4.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/4.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/8.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/9.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/9.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/10.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/10.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/5.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/6.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/6.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/7.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/7.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/11.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/12.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/12.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/13.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/13.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/14.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/15.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/15.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/16.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/16.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/studio_54/social_media/17.mp4"
           },
           {
-            "img": "projetos/studio_54/social_media/18.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/18.jpg"
           },
           {
-            "img": "projetos/studio_54/social_media/19.jpg",
-            "video": null
+            "img": "projetos/studio_54/social_media/19.jpg"
           }
         ],
         "title": "social media",

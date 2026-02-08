@@ -1,28 +1,20 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/deepwear/card_media.png",
-      "video": null
+      "img": "projetos/deepwear/card_media.png"
     },
-    "categories": [
-      "Conteúdo orgânico",
-      "Fotografia / Vídeo",
-      "Catálogos"
-    ],
+    "categories": ["Conteúdo orgânico", "Fotografia / Vídeo", "Catálogos"],
     "content": [
       {
         "columns": 3,
         "items": [
           {
-            "img": null,
             "video": "/assets/projetos/deepwear/reels/1.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/deepwear/reels/2.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/deepwear/reels/3.mp4"
           }
         ],
@@ -33,20 +25,16 @@
         "columns": 4,
         "items": [
           {
-            "img": "projetos/deepwear/social_media/1.png",
-            "video": null
+            "img": "projetos/deepwear/social_media/1.png"
           },
           {
-            "img": "projetos/deepwear/social_media/2.png",
-            "video": null
+            "img": "projetos/deepwear/social_media/2.png"
           },
           {
-            "img": "projetos/deepwear/social_media/3.png",
-            "video": null
+            "img": "projetos/deepwear/social_media/3.png"
           },
           {
-            "img": "projetos/deepwear/social_media/4.png",
-            "video": null
+            "img": "projetos/deepwear/social_media/4.png"
           }
         ],
         "title": "redes sociais",
@@ -55,124 +43,94 @@
       {
         "items": [
           {
-            "img": "projetos/deepwear/book/1.png",
-            "video": null
+            "img": "projetos/deepwear/book/1.png"
           },
           {
-            "img": "projetos/deepwear/book/2.png",
-            "video": null
+            "img": "projetos/deepwear/book/2.png"
           },
           {
-            "img": "projetos/deepwear/book/3.png",
-            "video": null
+            "img": "projetos/deepwear/book/3.png"
           },
           {
-            "img": "projetos/deepwear/book/4.png",
-            "video": null
+            "img": "projetos/deepwear/book/4.png"
           },
           {
-            "img": "projetos/deepwear/book/5.png",
-            "video": null
+            "img": "projetos/deepwear/book/5.png"
           },
           {
-            "img": "projetos/deepwear/book/6.png",
-            "video": null
+            "img": "projetos/deepwear/book/6.png"
           },
           {
-            "img": "projetos/deepwear/book/7.png",
-            "video": null
+            "img": "projetos/deepwear/book/7.png"
           },
           {
-            "img": "projetos/deepwear/book/8.png",
-            "video": null
+            "img": "projetos/deepwear/book/8.png"
           },
           {
-            "img": "projetos/deepwear/book/9.png",
-            "video": null
+            "img": "projetos/deepwear/book/9.png"
           },
           {
-            "img": "projetos/deepwear/book/10.png",
-            "video": null
+            "img": "projetos/deepwear/book/10.png"
           },
           {
-            "img": "projetos/deepwear/book/11.png",
-            "video": null
+            "img": "projetos/deepwear/book/11.png"
           },
           {
-            "img": "projetos/deepwear/book/12.png",
-            "video": null
+            "img": "projetos/deepwear/book/12.png"
           },
           {
-            "img": "projetos/deepwear/book/13.png",
-            "video": null
+            "img": "projetos/deepwear/book/13.png"
           },
           {
-            "img": "projetos/deepwear/book/14.png",
-            "video": null
+            "img": "projetos/deepwear/book/14.png"
           },
           {
-            "img": "projetos/deepwear/book/15.png",
-            "video": null
+            "img": "projetos/deepwear/book/15.png"
           },
           {
-            "img": "projetos/deepwear/book/16.png",
-            "video": null
+            "img": "projetos/deepwear/book/16.png"
           },
           {
-            "img": "projetos/deepwear/book/17.png",
-            "video": null
+            "img": "projetos/deepwear/book/17.png"
           },
           {
-            "img": "projetos/deepwear/book/18.png",
-            "video": null
+            "img": "projetos/deepwear/book/18.png"
           },
           {
-            "img": "projetos/deepwear/book/19.png",
-            "video": null
+            "img": "projetos/deepwear/book/19.png"
           },
           {
-            "img": "projetos/deepwear/book/20.png",
-            "video": null
+            "img": "projetos/deepwear/book/20.png"
           },
           {
-            "img": "projetos/deepwear/book/21.png",
-            "video": null
+            "img": "projetos/deepwear/book/21.png"
           },
           {
-            "img": "projetos/deepwear/book/22.png",
-            "video": null
+            "img": "projetos/deepwear/book/22.png"
           },
           {
-            "img": "projetos/deepwear/book/23.png",
-            "video": null
+            "img": "projetos/deepwear/book/23.png"
           },
           {
-            "img": "projetos/deepwear/book/24.png",
-            "video": null
+            "img": "projetos/deepwear/book/24.png"
           },
           {
-            "img": "projetos/deepwear/book/25.png",
-            "video": null
+            "img": "projetos/deepwear/book/25.png"
           },
           {
-            "img": "projetos/deepwear/book/26.png",
-            "video": null
+            "img": "projetos/deepwear/book/26.png"
           },
           {
-            "img": "projetos/deepwear/book/27.png",
-            "video": null
+            "img": "projetos/deepwear/book/27.png"
           },
           {
-            "img": "projetos/deepwear/book/28.png",
-            "video": null
+            "img": "projetos/deepwear/book/28.png"
           },
           {
-            "img": "projetos/deepwear/book/29.png",
-            "video": null
+            "img": "projetos/deepwear/book/29.png"
           },
           {
-            "img": "projetos/deepwear/book/30.png",
-            "video": null
+            "img": "projetos/deepwear/book/30.png"
           }
         ],
         "title": "catálogos",
@@ -192,28 +150,20 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/deepwear/card_media.png",
-      "video": null
+      "img": "projetos/deepwear/card_media.png"
     },
-    "categories": [
-      "Organic Content",
-      "Photography / Video",
-      "Catalogues"
-    ],
+    "categories": ["Organic Content", "Photography / Video", "Catalogues"],
     "content": [
       {
         "columns": 3,
         "items": [
           {
-            "img": null,
             "video": "/assets/projetos/deepwear/reels/1.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/deepwear/reels/2.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/deepwear/reels/3.mp4"
           }
         ],
@@ -224,20 +174,16 @@
         "columns": 4,
         "items": [
           {
-            "img": "projetos/deepwear/social_media/1.png",
-            "video": null
+            "img": "projetos/deepwear/social_media/1.png"
           },
           {
-            "img": "projetos/deepwear/social_media/2.png",
-            "video": null
+            "img": "projetos/deepwear/social_media/2.png"
           },
           {
-            "img": "projetos/deepwear/social_media/3.png",
-            "video": null
+            "img": "projetos/deepwear/social_media/3.png"
           },
           {
-            "img": "projetos/deepwear/social_media/4.png",
-            "video": null
+            "img": "projetos/deepwear/social_media/4.png"
           }
         ],
         "title": "social media",
@@ -246,124 +192,94 @@
       {
         "flipbookPages": [
           {
-            "img": "projetos/deepwear/book/1.png",
-            "video": null
+            "img": "projetos/deepwear/book/1.png"
           },
           {
-            "img": "projetos/deepwear/book/2.png",
-            "video": null
+            "img": "projetos/deepwear/book/2.png"
           },
           {
-            "img": "projetos/deepwear/book/3.png",
-            "video": null
+            "img": "projetos/deepwear/book/3.png"
           },
           {
-            "img": "projetos/deepwear/book/4.png",
-            "video": null
+            "img": "projetos/deepwear/book/4.png"
           },
           {
-            "img": "projetos/deepwear/book/5.png",
-            "video": null
+            "img": "projetos/deepwear/book/5.png"
           },
           {
-            "img": "projetos/deepwear/book/6.png",
-            "video": null
+            "img": "projetos/deepwear/book/6.png"
           },
           {
-            "img": "projetos/deepwear/book/7.png",
-            "video": null
+            "img": "projetos/deepwear/book/7.png"
           },
           {
-            "img": "projetos/deepwear/book/8.png",
-            "video": null
+            "img": "projetos/deepwear/book/8.png"
           },
           {
-            "img": "projetos/deepwear/book/9.png",
-            "video": null
+            "img": "projetos/deepwear/book/9.png"
           },
           {
-            "img": "projetos/deepwear/book/10.png",
-            "video": null
+            "img": "projetos/deepwear/book/10.png"
           },
           {
-            "img": "projetos/deepwear/book/11.png",
-            "video": null
+            "img": "projetos/deepwear/book/11.png"
           },
           {
-            "img": "projetos/deepwear/book/12.png",
-            "video": null
+            "img": "projetos/deepwear/book/12.png"
           },
           {
-            "img": "projetos/deepwear/book/13.png",
-            "video": null
+            "img": "projetos/deepwear/book/13.png"
           },
           {
-            "img": "projetos/deepwear/book/14.png",
-            "video": null
+            "img": "projetos/deepwear/book/14.png"
           },
           {
-            "img": "projetos/deepwear/book/15.png",
-            "video": null
+            "img": "projetos/deepwear/book/15.png"
           },
           {
-            "img": "projetos/deepwear/book/16.png",
-            "video": null
+            "img": "projetos/deepwear/book/16.png"
           },
           {
-            "img": "projetos/deepwear/book/17.png",
-            "video": null
+            "img": "projetos/deepwear/book/17.png"
           },
           {
-            "img": "projetos/deepwear/book/18.png",
-            "video": null
+            "img": "projetos/deepwear/book/18.png"
           },
           {
-            "img": "projetos/deepwear/book/19.png",
-            "video": null
+            "img": "projetos/deepwear/book/19.png"
           },
           {
-            "img": "projetos/deepwear/book/20.png",
-            "video": null
+            "img": "projetos/deepwear/book/20.png"
           },
           {
-            "img": "projetos/deepwear/book/21.png",
-            "video": null
+            "img": "projetos/deepwear/book/21.png"
           },
           {
-            "img": "projetos/deepwear/book/22.png",
-            "video": null
+            "img": "projetos/deepwear/book/22.png"
           },
           {
-            "img": "projetos/deepwear/book/23.png",
-            "video": null
+            "img": "projetos/deepwear/book/23.png"
           },
           {
-            "img": "projetos/deepwear/book/24.png",
-            "video": null
+            "img": "projetos/deepwear/book/24.png"
           },
           {
-            "img": "projetos/deepwear/book/25.png",
-            "video": null
+            "img": "projetos/deepwear/book/25.png"
           },
           {
-            "img": "projetos/deepwear/book/26.png",
-            "video": null
+            "img": "projetos/deepwear/book/26.png"
           },
           {
-            "img": "projetos/deepwear/book/27.png",
-            "video": null
+            "img": "projetos/deepwear/book/27.png"
           },
           {
-            "img": "projetos/deepwear/book/28.png",
-            "video": null
+            "img": "projetos/deepwear/book/28.png"
           },
           {
-            "img": "projetos/deepwear/book/29.png",
-            "video": null
+            "img": "projetos/deepwear/book/29.png"
           },
           {
-            "img": "projetos/deepwear/book/30.png",
-            "video": null
+            "img": "projetos/deepwear/book/30.png"
           }
         ],
         "title": "catalogues",

@@ -1,11 +1,9 @@
 [
   {
     "banner": {
-      "img": null,
       "video": "/assets/projetos/firefly/spot_tv/shot.mp4"
     },
     "cardMedia": {
-      "img": null,
       "video": "/assets/projetos/firefly/card_media.mp4"
     },
     "categories": [
@@ -22,16 +20,13 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/firefly/mupis/1.png",
-            "video": null
+            "img": "projetos/firefly/mupis/1.png"
           },
           {
-            "img": "projetos/firefly/mupis/2.png",
-            "video": null
+            "img": "projetos/firefly/mupis/2.png"
           },
           {
-            "img": "projetos/firefly/mupis/3.png",
-            "video": null
+            "img": "projetos/firefly/mupis/3.png"
           }
         ],
         "title": "mupi's impressos e digitais",
@@ -40,36 +35,28 @@
       {
         "items": [
           {
-            "img": "projetos/firefly/paid_media/AD1.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD1.png"
           },
           {
-            "img": null,
             "video": "/assets/projetos/firefly/paid_media/AD2.mp4"
           },
           {
-            "img": "projetos/firefly/paid_media/AD3.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD3.png"
           },
           {
-            "img": "projetos/firefly/paid_media/AD4.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD4.png"
           },
           {
-            "img": "projetos/firefly/paid_media/AD5.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD5.png"
           },
           {
-            "img": null,
             "video": "/assets/projetos/firefly/paid_media/AD6.mp4"
           },
           {
-            "img": "projetos/firefly/paid_media/AD7.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD7.png"
           },
           {
-            "img": "projetos/firefly/paid_media/AD8.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD8.png"
           }
         ],
         "title": "paid media",
@@ -80,44 +67,34 @@
           {
             "items": [
               {
-                "img": "projetos/firefly/organic/Post1.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post1.png"
               },
               {
-                "img": "projetos/firefly/organic/Post2.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post2.png"
               },
               {
-                "img": "projetos/firefly/organic/Post3.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post3.png"
               },
               {
-                "img": "projetos/firefly/organic/Post4.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post4.png"
               },
               {
-                "img": "projetos/firefly/organic/Post5.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post5.png"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/firefly/organic/Story1.mp4"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/firefly/organic/Story2.mp4"
               },
               {
-                "img": "projetos/firefly/organic/Story3.png",
-                "video": null
+                "img": "projetos/firefly/organic/Story3.png"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/firefly/organic/Story4.mp4"
               },
               {
-                "img": "projetos/firefly/organic/Story5.png",
-                "video": null
+                "img": "projetos/firefly/organic/Story5.png"
               }
             ]
           }
@@ -129,16 +106,13 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/firefly/dealers/1.png",
-            "video": null
+            "img": "projetos/firefly/dealers/1.png"
           },
           {
-            "img": "projetos/firefly/dealers/2.png",
-            "video": null
+            "img": "projetos/firefly/dealers/2.png"
           },
           {
-            "img": "projetos/firefly/dealers/3.png",
-            "video": null
+            "img": "projetos/firefly/dealers/3.png"
           }
         ],
         "title": "suportes concessionários",
@@ -148,28 +122,22 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/firefly/events/1.png",
-            "video": null
+            "img": "projetos/firefly/events/1.png"
           },
           {
-            "img": "projetos/firefly/events/2.png",
-            "video": null
+            "img": "projetos/firefly/events/2.png"
           },
           {
-            "img": "projetos/firefly/events/3.png",
-            "video": null
+            "img": "projetos/firefly/events/3.png"
           },
           {
-            "img": "projetos/firefly/events/4.png",
-            "video": null
+            "img": "projetos/firefly/events/4.png"
           },
           {
-            "img": "projetos/firefly/events/5.png",
-            "video": null
+            "img": "projetos/firefly/events/5.png"
           },
           {
-            "img": "projetos/firefly/events/6.png",
-            "video": null
+            "img": "projetos/firefly/events/6.png"
           }
         ],
         "title": "eventos",
@@ -189,11 +157,9 @@
   },
   {
     "banner": {
-      "img": null,
       "video": "/assets/projetos/firefly/spot_tv/shot.mp4"
     },
     "cardMedia": {
-      "img": null,
       "video": "/assets/projetos/firefly/card_media.mp4"
     },
     "categories": [
@@ -210,16 +176,13 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/firefly/mupis/1.png",
-            "video": null
+            "img": "projetos/firefly/mupis/1.png"
           },
           {
-            "img": "projetos/firefly/mupis/2.png",
-            "video": null
+            "img": "projetos/firefly/mupis/2.png"
           },
           {
-            "img": "projetos/firefly/mupis/3.png",
-            "video": null
+            "img": "projetos/firefly/mupis/3.png"
           }
         ],
         "title": "printed and digital MUPIs",
@@ -228,36 +191,28 @@
       {
         "items": [
           {
-            "img": "projetos/firefly/paid_media/AD1.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD1.png"
           },
           {
-            "img": null,
             "video": "/assets/projetos/firefly/paid_media/AD2.mp4"
           },
           {
-            "img": "projetos/firefly/paid_media/AD3.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD3.png"
           },
           {
-            "img": "projetos/firefly/paid_media/AD4.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD4.png"
           },
           {
-            "img": "projetos/firefly/paid_media/AD5.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD5.png"
           },
           {
-            "img": null,
             "video": "/assets/projetos/firefly/paid_media/AD6.mp4"
           },
           {
-            "img": "projetos/firefly/paid_media/AD7.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD7.png"
           },
           {
-            "img": "projetos/firefly/paid_media/AD8.png",
-            "video": null
+            "img": "projetos/firefly/paid_media/AD8.png"
           }
         ],
         "title": "paid media",
@@ -268,44 +223,34 @@
           {
             "items": [
               {
-                "img": "projetos/firefly/organic/Post1.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post1.png"
               },
               {
-                "img": "projetos/firefly/organic/Post2.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post2.png"
               },
               {
-                "img": "projetos/firefly/organic/Post3.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post3.png"
               },
               {
-                "img": "projetos/firefly/organic/Post4.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post4.png"
               },
               {
-                "img": "projetos/firefly/organic/Post5.png",
-                "video": null
+                "img": "projetos/firefly/organic/Post5.png"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/firefly/organic/Story1.mp4"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/firefly/organic/Story2.mp4"
               },
               {
-                "img": "projetos/firefly/organic/Story3.png",
-                "video": null
+                "img": "projetos/firefly/organic/Story3.png"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/firefly/organic/Story4.mp4"
               },
               {
-                "img": "projetos/firefly/organic/Story5.png",
-                "video": null
+                "img": "projetos/firefly/organic/Story5.png"
               }
             ]
           }
@@ -317,16 +262,13 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/firefly/dealers/1.png",
-            "video": null
+            "img": "projetos/firefly/dealers/1.png"
           },
           {
-            "img": "projetos/firefly/dealers/2.png",
-            "video": null
+            "img": "projetos/firefly/dealers/2.png"
           },
           {
-            "img": "projetos/firefly/dealers/3.png",
-            "video": null
+            "img": "projetos/firefly/dealers/3.png"
           }
         ],
         "title": "dealer materials",
@@ -336,28 +278,22 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/firefly/events/1.png",
-            "video": null
+            "img": "projetos/firefly/events/1.png"
           },
           {
-            "img": "projetos/firefly/events/2.png",
-            "video": null
+            "img": "projetos/firefly/events/2.png"
           },
           {
-            "img": "projetos/firefly/events/3.png",
-            "video": null
+            "img": "projetos/firefly/events/3.png"
           },
           {
-            "img": "projetos/firefly/events/4.png",
-            "video": null
+            "img": "projetos/firefly/events/4.png"
           },
           {
-            "img": "projetos/firefly/events/5.png",
-            "video": null
+            "img": "projetos/firefly/events/5.png"
           },
           {
-            "img": "projetos/firefly/events/6.png",
-            "video": null
+            "img": "projetos/firefly/events/6.png"
           }
         ],
         "title": "events",

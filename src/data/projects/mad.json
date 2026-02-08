@@ -1,8 +1,7 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/mad/card_media.png",
-      "video": null
+      "img": "projetos/mad/card_media.png"
     },
     "categories": [
       "Campanhas",
@@ -14,20 +13,16 @@
       {
         "items": [
           {
-            "img": "projetos/mad/merch/1.png",
-            "video": null
+            "img": "projetos/mad/merch/1.png"
           },
           {
-            "img": "projetos/mad/merch/2.png",
-            "video": null
+            "img": "projetos/mad/merch/2.png"
           },
           {
-            "img": "projetos/mad/merch/3.png",
-            "video": null
+            "img": "projetos/mad/merch/3.png"
           },
           {
-            "img": "projetos/mad/merch/4.png",
-            "video": null
+            "img": "projetos/mad/merch/4.png"
           }
         ],
         "title": "merch",
@@ -38,44 +33,34 @@
           {
             "items": [
               {
-                "img": "projetos/mad/social_media/6.png",
-                "video": null
+                "img": "projetos/mad/social_media/6.png"
               },
               {
-                "img": "projetos/mad/social_media/7.png",
-                "video": null
+                "img": "projetos/mad/social_media/7.png"
               },
               {
-                "img": "projetos/mad/social_media/8.png",
-                "video": null
+                "img": "projetos/mad/social_media/8.png"
               },
               {
-                "img": "projetos/mad/social_media/9.png",
-                "video": null
+                "img": "projetos/mad/social_media/9.png"
               },
               {
-                "img": "projetos/mad/social_media/6.png",
-                "video": null
+                "img": "projetos/mad/social_media/6.png"
               },
               {
-                "img": "projetos/mad/social_media/1.png",
-                "video": null
+                "img": "projetos/mad/social_media/1.png"
               },
               {
-                "img": "projetos/mad/social_media/2.jpg",
-                "video": null
+                "img": "projetos/mad/social_media/2.jpg"
               },
               {
-                "img": "projetos/mad/social_media/3.jpg",
-                "video": null
+                "img": "projetos/mad/social_media/3.jpg"
               },
               {
-                "img": "projetos/mad/social_media/4.jpg",
-                "video": null
+                "img": "projetos/mad/social_media/4.jpg"
               },
               {
-                "img": "projetos/mad/social_media/5.jpg",
-                "video": null
+                "img": "projetos/mad/social_media/5.jpg"
               }
             ]
           }
@@ -86,28 +71,22 @@
       {
         "items": [
           {
-            "img": "projetos/mad/party/1.jpg",
-            "video": null
+            "img": "projetos/mad/party/1.jpg"
           },
           {
-            "img": "projetos/mad/party/2.jpg",
-            "video": null
+            "img": "projetos/mad/party/2.jpg"
           },
           {
-            "img": "projetos/mad/party/3.jpg",
-            "video": null
+            "img": "projetos/mad/party/3.jpg"
           },
           {
-            "img": "projetos/mad/party/4.jpg",
-            "video": null
+            "img": "projetos/mad/party/4.jpg"
           },
           {
-            "img": "projetos/mad/party/5.jpg",
-            "video": null
+            "img": "projetos/mad/party/5.jpg"
           },
           {
-            "img": "projetos/mad/party/6.jpg",
-            "video": null
+            "img": "projetos/mad/party/6.jpg"
           }
         ],
         "title": "eventos",
@@ -127,8 +106,7 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/mad/card_media.png",
-      "video": null
+      "img": "projetos/mad/card_media.png"
     },
     "categories": [
       "Campaigns",
@@ -140,20 +118,16 @@
       {
         "items": [
           {
-            "img": "projetos/mad/merch/1.png",
-            "video": null
+            "img": "projetos/mad/merch/1.png"
           },
           {
-            "img": "projetos/mad/merch/2.png",
-            "video": null
+            "img": "projetos/mad/merch/2.png"
           },
           {
-            "img": "projetos/mad/merch/3.png",
-            "video": null
+            "img": "projetos/mad/merch/3.png"
           },
           {
-            "img": "projetos/mad/merch/4.png",
-            "video": null
+            "img": "projetos/mad/merch/4.png"
           }
         ],
         "title": "merch",
@@ -164,44 +138,34 @@
           {
             "items": [
               {
-                "img": "projetos/mad/social_media/6.png",
-                "video": null
+                "img": "projetos/mad/social_media/6.png"
               },
               {
-                "img": "projetos/mad/social_media/7.png",
-                "video": null
+                "img": "projetos/mad/social_media/7.png"
               },
               {
-                "img": "projetos/mad/social_media/8.png",
-                "video": null
+                "img": "projetos/mad/social_media/8.png"
               },
               {
-                "img": "projetos/mad/social_media/9.png",
-                "video": null
+                "img": "projetos/mad/social_media/9.png"
               },
               {
-                "img": "projetos/mad/social_media/6.png",
-                "video": null
+                "img": "projetos/mad/social_media/6.png"
               },
               {
-                "img": "projetos/mad/social_media/1.png",
-                "video": null
+                "img": "projetos/mad/social_media/1.png"
               },
               {
-                "img": "projetos/mad/social_media/2.jpg",
-                "video": null
+                "img": "projetos/mad/social_media/2.jpg"
               },
               {
-                "img": "projetos/mad/social_media/3.jpg",
-                "video": null
+                "img": "projetos/mad/social_media/3.jpg"
               },
               {
-                "img": "projetos/mad/social_media/4.jpg",
-                "video": null
+                "img": "projetos/mad/social_media/4.jpg"
               },
               {
-                "img": "projetos/mad/social_media/5.jpg",
-                "video": null
+                "img": "projetos/mad/social_media/5.jpg"
               }
             ]
           }
@@ -212,28 +176,22 @@
       {
         "items": [
           {
-            "img": "projetos/mad/party/1.jpg",
-            "video": null
+            "img": "projetos/mad/party/1.jpg"
           },
           {
-            "img": "projetos/mad/party/2.jpg",
-            "video": null
+            "img": "projetos/mad/party/2.jpg"
           },
           {
-            "img": "projetos/mad/party/3.jpg",
-            "video": null
+            "img": "projetos/mad/party/3.jpg"
           },
           {
-            "img": "projetos/mad/party/4.jpg",
-            "video": null
+            "img": "projetos/mad/party/4.jpg"
           },
           {
-            "img": "projetos/mad/party/5.jpg",
-            "video": null
+            "img": "projetos/mad/party/5.jpg"
           },
           {
-            "img": "projetos/mad/party/6.jpg",
-            "video": null
+            "img": "projetos/mad/party/6.jpg"
           }
         ],
         "title": "events",

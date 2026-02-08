@@ -1,8 +1,7 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/medis/card_media.png",
-      "video": null
+      "img": "projetos/medis/card_media.png"
     },
     "categories": [
       "Campanhas",
@@ -22,8 +21,7 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/medis/card_media.png",
-      "video": null
+      "img": "projetos/medis/card_media.png"
     },
     "categories": [
       "Campaigns",

@@ -1,8 +1,7 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/feeting_room/card_media.png",
-      "video": null
+      "img": "projetos/feeting_room/card_media.png"
     },
     "categories": [
       "Campanhas",
@@ -16,15 +15,12 @@
         "columns": 3,
         "items": [
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
           }
         ],
@@ -35,23 +31,18 @@
       {
         "items": [
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/social_media/1.mp4"
           },
           {
-            "img": "projetos/feeting_room/social_media/2.png",
-            "video": null
+            "img": "projetos/feeting_room/social_media/2.png"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/social_media/3.mp4"
           },
           {
-            "img": "projetos/feeting_room/social_media/4.jpg",
-            "video": null
+            "img": "projetos/feeting_room/social_media/4.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/social_media/5.mp4"
           }
         ],
@@ -61,23 +52,18 @@
       {
         "items": [
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/1.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/2.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/3.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/4.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/5.mp4"
           }
         ],
@@ -109,8 +95,7 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/feeting_room/card_media.png",
-      "video": null
+      "img": "projetos/feeting_room/card_media.png"
     },
     "categories": [
       "Campaigns",
@@ -124,15 +109,12 @@
         "columns": 3,
         "items": [
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
           }
         ],
@@ -143,23 +125,18 @@
       {
         "items": [
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/social_media/1.mp4"
           },
           {
-            "img": "projetos/feeting_room/social_media/2.png",
-            "video": null
+            "img": "projetos/feeting_room/social_media/2.png"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/social_media/3.mp4"
           },
           {
-            "img": "projetos/feeting_room/social_media/4.jpg",
-            "video": null
+            "img": "projetos/feeting_room/social_media/4.jpg"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/social_media/5.mp4"
           }
         ],
@@ -169,23 +146,18 @@
       {
         "items": [
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/1.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/2.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/3.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/4.mp4"
           },
           {
-            "img": null,
             "video": "/assets/projetos/feeting_room/reels/5.mp4"
           }
         ],

@@ -1,11 +1,9 @@
 [
   {
     "banner": {
-      "img": null,
       "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4"
     },
     "cardMedia": {
-      "img": null,
       "video": "/assets/projetos/ipdj/card_media.mp4"
     },
     "categories": [
@@ -21,24 +19,19 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/key_visuals/1.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/1.png"
           },
           {
-            "img": "projetos/ipdj/key_visuals/2.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/2.png"
           },
           {
-            "img": "projetos/ipdj/key_visuals/3.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/3.png"
           },
           {
-            "img": "projetos/ipdj/key_visuals/4.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/4.png"
           },
           {
-            "img": "projetos/ipdj/key_visuals/5.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/5.png"
           }
         ],
         "title": "key visuals",
@@ -48,28 +41,22 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/mupis/1.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/1.png"
           },
           {
-            "img": "projetos/ipdj/mupis/2.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/2.png"
           },
           {
-            "img": "projetos/ipdj/mupis/3.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/3.png"
           },
           {
-            "img": "projetos/ipdj/mupis/4.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/4.png"
           },
           {
-            "img": "projetos/ipdj/mupis/5.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/5.png"
           },
           {
-            "img": "projetos/ipdj/mupis/6.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/6.png"
           }
         ],
         "title": "mupi's impressos e digitais",
@@ -80,44 +67,34 @@
           {
             "items": [
               {
-                "img": "projetos/ipdj/social_media/Post1.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post1.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Post2.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post2.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Post3.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post3.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Post4.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post4.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Post5.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post5.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Story1.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Story1.png"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/ipdj/social_media/Story2.mp4"
               },
               {
-                "img": "projetos/ipdj/social_media/Story3.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Story3.png"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/ipdj/social_media/Story4.mp4"
               },
               {
-                "img": "projetos/ipdj/social_media/Story5.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Story5.png"
               }
             ]
           }
@@ -128,24 +105,19 @@
       {
         "items": [
           {
-            "img": "projetos/ipdj/merch/1.png",
-            "video": null
+            "img": "projetos/ipdj/merch/1.png"
           },
           {
-            "img": "projetos/ipdj/merch/2.png",
-            "video": null
+            "img": "projetos/ipdj/merch/2.png"
           },
           {
-            "img": "projetos/ipdj/merch/3.png",
-            "video": null
+            "img": "projetos/ipdj/merch/3.png"
           },
           {
-            "img": "projetos/ipdj/merch/4.png",
-            "video": null
+            "img": "projetos/ipdj/merch/4.png"
           },
           {
-            "img": "projetos/ipdj/merch/5.png",
-            "video": null
+            "img": "projetos/ipdj/merch/5.png"
           }
         ],
         "title": "merch",
@@ -155,36 +127,28 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/roadshow/1.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/1.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/2.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/2.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/3.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/3.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/4.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/4.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/5.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/5.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/6.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/6.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/7.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/7.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/8.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/8.png"
           }
         ],
         "title": "roadshow",
@@ -204,11 +168,9 @@
   },
   {
     "banner": {
-      "img": null,
       "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4"
     },
     "cardMedia": {
-      "img": null,
       "video": "/assets/projetos/ipdj/card_media.mp4"
     },
     "categories": [
@@ -224,24 +186,19 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/key_visuals/1.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/1.png"
           },
           {
-            "img": "projetos/ipdj/key_visuals/2.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/2.png"
           },
           {
-            "img": "projetos/ipdj/key_visuals/3.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/3.png"
           },
           {
-            "img": "projetos/ipdj/key_visuals/4.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/4.png"
           },
           {
-            "img": "projetos/ipdj/key_visuals/5.png",
-            "video": null
+            "img": "projetos/ipdj/key_visuals/5.png"
           }
         ],
         "title": "key visuals",
@@ -251,28 +208,22 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/mupis/1.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/1.png"
           },
           {
-            "img": "projetos/ipdj/mupis/2.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/2.png"
           },
           {
-            "img": "projetos/ipdj/mupis/3.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/3.png"
           },
           {
-            "img": "projetos/ipdj/mupis/4.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/4.png"
           },
           {
-            "img": "projetos/ipdj/mupis/5.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/5.png"
           },
           {
-            "img": "projetos/ipdj/mupis/6.png",
-            "video": null
+            "img": "projetos/ipdj/mupis/6.png"
           }
         ],
         "title": "printed and digital MUPIs",
@@ -283,44 +234,34 @@
           {
             "items": [
               {
-                "img": "projetos/ipdj/social_media/Post1.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post1.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Post2.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post2.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Post3.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post3.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Post4.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post4.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Post5.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Post5.png"
               },
               {
-                "img": "projetos/ipdj/social_media/Story1.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Story1.png"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/ipdj/social_media/Story2.mp4"
               },
               {
-                "img": "projetos/ipdj/social_media/Story3.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Story3.png"
               },
               {
-                "img": null,
                 "video": "/assets/projetos/ipdj/social_media/Story4.mp4"
               },
               {
-                "img": "projetos/ipdj/social_media/Story5.png",
-                "video": null
+                "img": "projetos/ipdj/social_media/Story5.png"
               }
             ]
           }
@@ -331,24 +272,19 @@
       {
         "items": [
           {
-            "img": "projetos/ipdj/merch/1.png",
-            "video": null
+            "img": "projetos/ipdj/merch/1.png"
           },
           {
-            "img": "projetos/ipdj/merch/2.png",
-            "video": null
+            "img": "projetos/ipdj/merch/2.png"
           },
           {
-            "img": "projetos/ipdj/merch/3.png",
-            "video": null
+            "img": "projetos/ipdj/merch/3.png"
           },
           {
-            "img": "projetos/ipdj/merch/4.png",
-            "video": null
+            "img": "projetos/ipdj/merch/4.png"
           },
           {
-            "img": "projetos/ipdj/merch/5.png",
-            "video": null
+            "img": "projetos/ipdj/merch/5.png"
           }
         ],
         "title": "merch",
@@ -358,36 +294,28 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/roadshow/1.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/1.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/2.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/2.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/3.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/3.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/4.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/4.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/5.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/5.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/6.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/6.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/7.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/7.png"
           },
           {
-            "img": "projetos/ipdj/roadshow/8.png",
-            "video": null
+            "img": "projetos/ipdj/roadshow/8.png"
           }
         ],
         "title": "roadshow",
