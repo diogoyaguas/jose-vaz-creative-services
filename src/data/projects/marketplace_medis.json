@@ -6,7 +6,7 @@
     "index": 5,
     "seoTitle": "Marketplace Médis",
     "title": "marketplace médis",
-    "date": "2024–2026",
+    "date": "2024-2026",
     "categories": [
       "Campanhas",
       "Redes Sociais",
@@ -17,7 +17,8 @@
     "cardMedia": {
       "img": null,
       "video": "projects/studio54.mp4"
-    }
+    },
+    "content": []
   },
   {
     "translationKey": "marketplace_medis",
@@ -26,7 +27,7 @@
     "index": 5,
     "seoTitle": "Médis Marketplace",
     "title": "Médis Marketplace",
-    "date": "2024–2026",
+    "date": "2024-2026",
     "categories": [
       "Campaigns",
       "Social Media",
@@ -37,6 +38,7 @@
     "cardMedia": {
       "img": null,
       "video": "projects/studio54.mp4"
-    }
+    },
+    "content": []
   }
 ]

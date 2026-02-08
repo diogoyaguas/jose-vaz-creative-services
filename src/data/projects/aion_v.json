@@ -13,7 +13,8 @@
     "cardMedia": {
       "img": null,
       "video": "../assets/projetos/studio54.mp4"
-    }
+    },
+    "content": []
   },
   {
     "translationKey": "aion_v",
@@ -29,6 +30,7 @@
     "cardMedia": {
       "img": null,
       "video": "../assets/projetos/studio54.mp4"
-    }
+    },
+    "content": []
   }
 ]

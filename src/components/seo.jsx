@@ -60,10 +60,11 @@ function Seo({
         return `${siteUrl}${ensureLeadingSlash(img)}`
     }, [image, siteMeta.defaultImage, siteUrl])
 
-    const computedLang = lang || (locale === "pt" ? "pt-PT" : "en")
+    const computedLang = lang || (locale === "pt" ? "pt-PT" : "en-GB")
     const computedLocale = locale === "pt" ? "pt_PT" : "en_US"
     const computedType = type || "website"
     const computedRobots = robots || "index,follow"
+    const isPt = locale === "pt"
 
     const alternates = useMemo(() => {
         if (!siteUrl) return []
@@ -73,7 +74,6 @@ function Seo({
 
         if (!thisUrl) return []
 
-        const isPt = locale === "pt"
         return [
             {
                 hrefLang: isPt ? "pt-PT" : "en",
@@ -117,6 +117,7 @@ function Seo({
             <meta property="og:description" content={metaDescription} />
             <meta property="og:type" content={computedType} />
             <meta property="og:locale" content={computedLocale} />
+            <meta property="og:locale:alternate" content={isPt ? "en_US" : "pt_PT"} />
             {url ? <meta property="og:url" content={url} /> : null}
             {imageUrl ? <meta property="og:image" content={imageUrl} /> : null}
 

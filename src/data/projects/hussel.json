@@ -17,7 +17,8 @@
     "cardMedia": {
       "img": null,
       "video": "projects/studio54.mp4"
-    }
+    },
+    "content": []
   },
   {
     "translationKey": "hussel",
@@ -37,6 +38,7 @@
     "cardMedia": {
       "img": null,
       "video": "projects/studio54.mp4"
-    }
+    },
+    "content": []
   }
 ]
