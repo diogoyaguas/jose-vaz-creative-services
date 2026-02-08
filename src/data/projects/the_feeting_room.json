@@ -1,12 +1,9 @@
 [
   {
-    "translationKey": "the_feeting_room",
-    "locale": "pt",
-    "slug": "the_feeting_room",
-    "index": 8,
-    "seoTitle": "The Feeting room",
-    "title": "the feeting room",
-    "date": "2022",
+    "cardMedia": {
+      "img": "projetos/feeting_room/card_media.png",
+      "video": null
+    },
     "categories": [
       "Campanhas",
       "Conteúdo orgânico",
@@ -14,18 +11,8 @@
       "Fotografia",
       "Suportes impressos"
     ],
-    "seoDescription": "Estágio profissional como Designer Gráfico, em colaboração com as equipas de Marketing e Consulting. Desenvolvimento de visuais para campanhas, conteúdos para redes sociais e soluções gráficas físicas e digitais para a marca e parceiros. Responsável pela criação da série de vídeos Short Takes para Instagram, desde o conceito à pós-produção, bem como pelo apoio visual às lojas e campanhas online, assegurando uma comunicação coerente e alinhada com a identidade da marca.",
-    "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
-    "description": "Estágio profissional como Designer Gráfico, em colaboração com as equipas de Marketing e Consulting. Desenvolvimento de visuais para campanhas, conteúdos para redes sociais e soluções gráficas físicas e digitais para a marca e parceiros.<br><br>Responsável pela criação da série de vídeo Short Takes para Instagram, desde o conceito à pós-produção, bem como pelo apoio visual às lojas e campanhas online, garantindo uma comunicação coerente e alinhada com a identidade da marca.",
-    "cardMedia": {
-      "img": "projetos/feeting_room/card_media.png",
-      "video": null
-    },
     "content": [
       {
-        "type": "gallery",
-        "title": "short takes",
-        "subtitle": "with Janina Vaz",
         "columns": 3,
         "items": [
           {
@@ -40,11 +27,12 @@
             "img": null,
             "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
           }
-        ]
+        ],
+        "subtitle": "with Janina Vaz",
+        "title": "short takes",
+        "type": "gallery"
       },
       {
-        "type": "gallery",
-        "title": "redes sociais",
         "items": [
           {
             "img": null,
@@ -66,40 +54,64 @@
             "img": null,
             "video": "/assets/projetos/feeting_room/social_media/5.mp4"
           }
-        ]
+        ],
+        "title": "redes sociais",
+        "type": "gallery"
       },
       {
-        "type": "gallery",
-        "title": "instagram reels",
         "items": [
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/1.mp4" },
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/2.mp4" },
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/3.mp4" },
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/4.mp4" },
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/5.mp4" }
-        ]
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/1.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/2.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/3.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/4.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/5.mp4"
+          }
+        ],
+        "title": "instagram reels",
+        "type": "gallery"
       },
       {
-        "type": "tabbedImage",
-        "title": "campanhas",
         "imageTabs": [
           {
-            "label": "",
+            "alt": "website",
             "img": "projetos/feeting_room/social_media/website.png",
-            "alt": "website"
+            "label": ""
           }
-        ]
+        ],
+        "title": "campanhas",
+        "type": "tabbedImage"
       }
-    ]
+    ],
+    "date": "2022",
+    "description": "Estágio profissional como Designer Gráfico, em colaboração com as equipas de Marketing e Consulting. Desenvolvimento de visuais para campanhas, conteúdos para redes sociais e soluções gráficas físicas e digitais para a marca e parceiros.<br><br>Responsável pela criação da série de vídeo Short Takes para Instagram, desde o conceito à pós-produção, bem como pelo apoio visual às lojas e campanhas online, garantindo uma comunicação coerente e alinhada com a identidade da marca.",
+    "index": 8,
+    "locale": "pt",
+    "seoDescription": "Estágio profissional como Designer Gráfico, em colaboração com as equipas de Marketing e Consulting. Desenvolvimento de visuais para campanhas, conteúdos para redes sociais e soluções gráficas físicas e digitais para a marca e parceiros. Responsável pela criação da série de vídeos Short Takes para Instagram, desde o conceito à pós-produção, bem como pelo apoio visual às lojas e campanhas online, assegurando uma comunicação coerente e alinhada com a identidade da marca.",
+    "seoTitle": "The Feeting room",
+    "slug": "the_feeting_room",
+    "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
+    "title": "the feeting room",
+    "translationKey": "the_feeting_room"
   },
   {
-    "translationKey": "the_feeting_room",
-    "locale": "en",
-    "slug": "the_feeting_room",
-    "index": 8,
-    "seoTitle": "The Feeting Room",
-    "title": "the feeting room",
-    "date": "2022",
+    "cardMedia": {
+      "img": "projetos/feeting_room/card_media.png",
+      "video": null
+    },
     "categories": [
       "Campaigns",
       "Organic content",
@@ -107,18 +119,8 @@
       "Photography",
       "Print materials"
     ],
-    "seoDescription": "Professional internship as a Graphic Designer, working closely with Marketing and Consulting teams. Development of campaign visuals, social media content, and physical and digital graphic solutions for the brand and its partners. Responsible for creating the Short Takes video series for Instagram, from concept to post-production, as well as providing visual support for retail stores and online campaigns, ensuring consistent and brand-aligned communication.",
-    "smallDescription": "Organic content | Content creation",
-    "description": "Professional internship as a Graphic Designer, working alongside the Marketing and Consulting teams. Creation of campaign visuals, social media content, and physical and digital graphic solutions for the brand and its partners.<br><br>Responsible for creating the Instagram video series Short Takes from concept to post-production, as well as providing visual support for stores and online campaigns, ensuring consistent communication aligned with the brand's identity.",
-    "cardMedia": {
-      "img": "projetos/feeting_room/card_media.png",
-      "video": null
-    },
     "content": [
       {
-        "type": "gallery",
-        "title": "short takes",
-        "subtitle": "with Janina Vaz",
         "columns": 3,
         "items": [
           {
@@ -133,11 +135,12 @@
             "img": null,
             "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
           }
-        ]
+        ],
+        "subtitle": "with Janina Vaz",
+        "title": "short takes",
+        "type": "gallery"
       },
       {
-        "type": "gallery",
-        "title": "social media",
         "items": [
           {
             "img": null,
@@ -159,30 +162,57 @@
             "img": null,
             "video": "/assets/projetos/feeting_room/social_media/5.mp4"
           }
-        ]
+        ],
+        "title": "social media",
+        "type": "gallery"
       },
       {
-        "type": "gallery",
-        "title": "instagram reels",
         "items": [
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/1.mp4" },
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/2.mp4" },
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/3.mp4" },
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/4.mp4" },
-          { "img": null, "video": "/assets/projetos/feeting_room/reels/5.mp4" }
-        ]
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/1.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/2.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/3.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/4.mp4"
+          },
+          {
+            "img": null,
+            "video": "/assets/projetos/feeting_room/reels/5.mp4"
+          }
+        ],
+        "title": "instagram reels",
+        "type": "gallery"
       },
       {
-        "type": "tabbedImage",
-        "title": "campaigns",
         "imageTabs": [
           {
-            "label": "",
+            "alt": "website",
             "img": "projetos/feeting_room/social_media/website.png",
-            "alt": "website"
+            "label": ""
           }
-        ]
+        ],
+        "title": "campaigns",
+        "type": "tabbedImage"
       }
-    ]
+    ],
+    "date": "2022",
+    "description": "Professional internship as a Graphic Designer, working alongside the Marketing and Consulting teams. Creation of campaign visuals, social media content, and physical and digital graphic solutions for the brand and its partners.<br><br>Responsible for creating the Instagram video series Short Takes from concept to post-production, as well as providing visual support for stores and online campaigns, ensuring consistent communication aligned with the brand's identity.",
+    "index": 8,
+    "locale": "en",
+    "seoDescription": "Professional internship as a Graphic Designer, working closely with Marketing and Consulting teams. Development of campaign visuals, social media content, and physical and digital graphic solutions for the brand and its partners. Responsible for creating the Short Takes video series for Instagram, from concept to post-production, as well as providing visual support for retail stores and online campaigns, ensuring consistent and brand-aligned communication.",
+    "seoTitle": "The Feeting Room",
+    "slug": "the_feeting_room",
+    "smallDescription": "Organic content | Content creation",
+    "title": "the feeting room",
+    "translationKey": "the_feeting_room"
   }
 ]

@@ -1,15 +1,12 @@
 [
   {
-    "translationKey": "agora_tu",
-    "locale": "pt",
-    "slug": "agora_tu",
-    "index": 1,
-    "seoTitle": "Agora tu",
-    "title": "agora tu, ativa-te",
-    "date": "2024-2025",
     "banner": {
       "img": null,
       "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4"
+    },
+    "cardMedia": {
+      "img": null,
+      "video": "/assets/projetos/ipdj/card_media.mp4"
     },
     "categories": [
       "Campanhas",
@@ -19,42 +16,66 @@
       "Mupi's",
       "Imprensa"
     ],
-    "seoDescription": "Projeto desenvolvido para o IPDJ – Instituto Português de Desporto e Juventude, focado na criação do conceito e direção criativa da campanha. O trabalho incluiu desenvolvimento da identidade visual e logótipo, definição de moodboard, estratégia de influencers e embaixadores, bem como a adaptação de conteúdos para múltiplos formatos, desde digital e paid media até imprensa, mupis e suportes impressos.",
-    "smallDescription": "Campanha de Promoção à Atividade Física",
-    "description": "<span class=\"subtitle\">Cliente: IPDJ - Instituto Português de Desporto e Juventude<br>Produção Spot TV: <a href=\"https://www.averara.pt\" target=\"_blank\" rel=\"noopener noreferrer\">averara.pt</a></span><br><br>Criação do conceito e direção criativa da campanha, desde o desenvolvimento da identidade visual e logótipo até à definição do moodboard e estratégia de influencers e embaixadores. Desenvolvimento e adaptação de conteúdos para múltiplos formatos, incluindo digital, paid media, imprensa, mupis e diversos suportes impressos.",
-    "cardMedia": {
-      "img": null,
-      "video": "/assets/projetos/ipdj/card_media.mp4"
-    },
     "content": [
       {
-        "type": "gallery",
+        "columns": 3,
+        "items": [
+          {
+            "img": "projetos/ipdj/key_visuals/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/key_visuals/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/key_visuals/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/key_visuals/4.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/key_visuals/5.png",
+            "video": null
+          }
+        ],
         "title": "key visuals",
-        "columns": 3,
-        "items": [
-          { "img": "projetos/ipdj/key_visuals/1.png", "video": null },
-          { "img": "projetos/ipdj/key_visuals/2.png", "video": null },
-          { "img": "projetos/ipdj/key_visuals/3.png", "video": null },
-          { "img": "projetos/ipdj/key_visuals/4.png", "video": null },
-          { "img": "projetos/ipdj/key_visuals/5.png", "video": null }
-        ]
+        "type": "gallery"
       },
       {
-        "type": "gallery",
+        "columns": 3,
+        "items": [
+          {
+            "img": "projetos/ipdj/mupis/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/4.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/5.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/6.png",
+            "video": null
+          }
+        ],
         "title": "mupi's impressos e digitais",
-        "columns": 3,
-        "items": [
-          { "img": "projetos/ipdj/mupis/1.png", "video": null },
-          { "img": "projetos/ipdj/mupis/2.png", "video": null },
-          { "img": "projetos/ipdj/mupis/3.png", "video": null },
-          { "img": "projetos/ipdj/mupis/4.png", "video": null },
-          { "img": "projetos/ipdj/mupis/5.png", "video": null },
-          { "img": "projetos/ipdj/mupis/6.png", "video": null }
-        ]
+        "type": "gallery"
       },
       {
-        "type": "organicTabs",
-        "title": "conteúdo orgânico",
         "tabs": [
           {
             "items": [
@@ -100,47 +121,95 @@
               }
             ]
           }
-        ]
+        ],
+        "title": "conteúdo orgânico",
+        "type": "organicTabs"
       },
       {
-        "type": "gallery",
-        "title": "merch",
         "items": [
-          { "img": "projetos/ipdj/merch/1.png", "video": null },
-          { "img": "projetos/ipdj/merch/2.png", "video": null },
-          { "img": "projetos/ipdj/merch/3.png", "video": null },
-          { "img": "projetos/ipdj/merch/4.png", "video": null },
-          { "img": "projetos/ipdj/merch/5.png", "video": null }
-        ]
+          {
+            "img": "projetos/ipdj/merch/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/merch/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/merch/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/merch/4.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/merch/5.png",
+            "video": null
+          }
+        ],
+        "title": "merch",
+        "type": "gallery"
       },
       {
-        "type": "gallery",
-        "title": "roadshow",
         "columns": 3,
         "items": [
-          { "img": "projetos/ipdj/roadshow/1.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/2.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/3.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/4.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/5.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/6.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/7.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/8.png", "video": null }
-        ]
+          {
+            "img": "projetos/ipdj/roadshow/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/4.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/5.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/6.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/7.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/8.png",
+            "video": null
+          }
+        ],
+        "title": "roadshow",
+        "type": "gallery"
       }
-    ]
+    ],
+    "date": "2024-2025",
+    "description": "<span class=\"subtitle\">Cliente: IPDJ - Instituto Português de Desporto e Juventude<br>Produção Spot TV: <a href=\"https://www.averara.pt\" target=\"_blank\" rel=\"noopener noreferrer\">averara.pt</a></span><br><br>Criação do conceito e direção criativa da campanha, desde o desenvolvimento da identidade visual e logótipo até à definição do moodboard e estratégia de influencers e embaixadores. Desenvolvimento e adaptação de conteúdos para múltiplos formatos, incluindo digital, paid media, imprensa, mupis e diversos suportes impressos.",
+    "index": 1,
+    "locale": "pt",
+    "seoDescription": "Projeto desenvolvido para o IPDJ - Instituto Português de Desporto e Juventude, focado na criação do conceito e direção criativa da campanha. O trabalho incluiu desenvolvimento da identidade visual e logótipo, definição de moodboard, estratégia de influencers e embaixadores, bem como a adaptação de conteúdos para múltiplos formatos, desde digital e paid media até imprensa, mupis e suportes impressos.",
+    "seoTitle": "Agora tu",
+    "slug": "agora_tu",
+    "smallDescription": "Campanha de Promoção à Atividade Física",
+    "title": "agora tu, ativa-te",
+    "translationKey": "agora_tu"
   },
   {
-    "translationKey": "agora_tu",
-    "locale": "en",
-    "slug": "agora_tu",
-    "index": 1,
-    "seoTitle": "Agora Tu",
-    "title": "agora tu, ativa-te",
-    "date": "2024-2025",
     "banner": {
       "img": null,
       "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4"
+    },
+    "cardMedia": {
+      "img": null,
+      "video": "/assets/projetos/ipdj/card_media.mp4"
     },
     "categories": [
       "Campaigns",
@@ -150,42 +219,66 @@
       "MUPIs",
       "Press"
     ],
-    "seoDescription": "Project developed for IPDJ – Portuguese Institute for Sport and Youth, focused on concept creation and creative direction of the campaign. The work included visual identity and logo development, moodboard definition, influencer and ambassador strategy, and content adaptation across multiple formats, including digital, paid media, press, outdoor advertising, and print materials.",
-    "smallDescription": "Physical Activity Promotion Campaign",
-    "description": "<span class=\"subtitle\">Client: IPDJ – Portuguese Institute for Sport and Youth<br>TV Spot Production: <a href=\"https://www.averara.pt\" target=\"_blank\" rel=\"noopener noreferrer\">averara.pt</a></span><br><br>Concept creation and creative direction of the campaign, from visual identity and logo development to moodboard definition and influencer and ambassador strategy. Development and adaptation of content for multiple formats, including digital, paid media, press, MUPIs, and various printed materials.",
-    "cardMedia": {
-      "img": null,
-      "video": "/assets/projetos/ipdj/card_media.mp4"
-    },
     "content": [
       {
-        "type": "gallery",
+        "columns": 3,
+        "items": [
+          {
+            "img": "projetos/ipdj/key_visuals/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/key_visuals/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/key_visuals/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/key_visuals/4.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/key_visuals/5.png",
+            "video": null
+          }
+        ],
         "title": "key visuals",
-        "columns": 3,
-        "items": [
-          { "img": "projetos/ipdj/key_visuals/1.png", "video": null },
-          { "img": "projetos/ipdj/key_visuals/2.png", "video": null },
-          { "img": "projetos/ipdj/key_visuals/3.png", "video": null },
-          { "img": "projetos/ipdj/key_visuals/4.png", "video": null },
-          { "img": "projetos/ipdj/key_visuals/5.png", "video": null }
-        ]
+        "type": "gallery"
       },
       {
-        "type": "gallery",
+        "columns": 3,
+        "items": [
+          {
+            "img": "projetos/ipdj/mupis/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/4.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/5.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/mupis/6.png",
+            "video": null
+          }
+        ],
         "title": "printed and digital MUPIs",
-        "columns": 3,
-        "items": [
-          { "img": "projetos/ipdj/mupis/1.png", "video": null },
-          { "img": "projetos/ipdj/mupis/2.png", "video": null },
-          { "img": "projetos/ipdj/mupis/3.png", "video": null },
-          { "img": "projetos/ipdj/mupis/4.png", "video": null },
-          { "img": "projetos/ipdj/mupis/5.png", "video": null },
-          { "img": "projetos/ipdj/mupis/6.png", "video": null }
-        ]
+        "type": "gallery"
       },
       {
-        "type": "organicTabs",
-        "title": "organic content",
         "tabs": [
           {
             "items": [
@@ -231,34 +324,85 @@
               }
             ]
           }
-        ]
+        ],
+        "title": "organic content",
+        "type": "organicTabs"
       },
       {
-        "type": "gallery",
-        "title": "merch",
         "items": [
-          { "img": "projetos/ipdj/merch/1.png", "video": null },
-          { "img": "projetos/ipdj/merch/2.png", "video": null },
-          { "img": "projetos/ipdj/merch/3.png", "video": null },
-          { "img": "projetos/ipdj/merch/4.png", "video": null },
-          { "img": "projetos/ipdj/merch/5.png", "video": null }
-        ]
+          {
+            "img": "projetos/ipdj/merch/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/merch/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/merch/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/merch/4.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/merch/5.png",
+            "video": null
+          }
+        ],
+        "title": "merch",
+        "type": "gallery"
       },
       {
-        "type": "gallery",
-        "title": "roadshow",
         "columns": 3,
         "items": [
-          { "img": "projetos/ipdj/roadshow/1.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/2.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/3.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/4.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/5.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/6.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/7.png", "video": null },
-          { "img": "projetos/ipdj/roadshow/8.png", "video": null }
-        ]
+          {
+            "img": "projetos/ipdj/roadshow/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/4.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/5.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/6.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/7.png",
+            "video": null
+          },
+          {
+            "img": "projetos/ipdj/roadshow/8.png",
+            "video": null
+          }
+        ],
+        "title": "roadshow",
+        "type": "gallery"
       }
-    ]
+    ],
+    "date": "2024-2025",
+    "description": "<span class=\"subtitle\">Client: IPDJ - Portuguese Institute for Sport and Youth<br>TV Spot Production: <a href=\"https://www.averara.pt\" target=\"_blank\" rel=\"noopener noreferrer\">averara.pt</a></span><br><br>Concept creation and creative direction of the campaign, from visual identity and logo development to moodboard definition and influencer and ambassador strategy. Development and adaptation of content for multiple formats, including digital, paid media, press, MUPIs, and various printed materials.",
+    "index": 1,
+    "locale": "en",
+    "seoDescription": "Project developed for IPDJ - Portuguese Institute for Sport and Youth, focused on concept creation and creative direction of the campaign. The work included visual identity and logo development, moodboard definition, influencer and ambassador strategy, and content adaptation across multiple formats, including digital, paid media, press, outdoor advertising, and print materials.",
+    "seoTitle": "Agora Tu",
+    "slug": "agora_tu",
+    "smallDescription": "Physical Activity Promotion Campaign",
+    "title": "agora tu, ativa-te",
+    "translationKey": "agora_tu"
   }
 ]

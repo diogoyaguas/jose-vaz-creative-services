@@ -1,44 +1,44 @@
 [
   {
-    "translationKey": "marketplace_medis",
-    "locale": "pt",
-    "slug": "marketplace_medis",
-    "index": 5,
-    "seoTitle": "Marketplace Médis",
-    "title": "marketplace médis",
-    "date": "2024-2026",
+    "cardMedia": {
+      "img": "projetos/medis/card_media.png",
+      "video": null
+    },
     "categories": [
       "Campanhas",
       "Redes Sociais",
       "Criação de Conteúdo"
     ],
-    "smallDescription": "Campanhas Paid Media",
+    "content": [],
+    "date": "2024-2026",
     "description": "Projeto criativo com foco no desenvolvimento de campanhas digitais, combinando identidade visual, comunicação estratégica e conteúdos para diferentes plataformas, com o objetivo de reforçar a presença e o posicionamento da marca no mercado.",
+    "index": 5,
+    "locale": "pt",
+    "seoTitle": "Marketplace Médis",
+    "slug": "marketplace_medis",
+    "smallDescription": "Campanhas Paid Media",
+    "title": "marketplace médis",
+    "translationKey": "marketplace_medis"
+  },
+  {
     "cardMedia": {
       "img": "projetos/medis/card_media.png",
       "video": null
     },
-    "content": []
-  },
-  {
-    "translationKey": "marketplace_medis",
-    "locale": "en",
-    "slug": "marketplace_medis",
-    "index": 5,
-    "seoTitle": "Médis Marketplace",
-    "title": "Médis Marketplace",
-    "date": "2024-2026",
     "categories": [
       "Campaigns",
       "Social Media",
       "Content Creation"
     ],
-    "smallDescription": "Paid Media Campaigns",
+    "content": [],
+    "date": "2024-2026",
     "description": "Creative project focused on the development of digital campaigns, combining visual identity, strategic communication, and content for multiple platforms to strengthen the brand’s presence and positioning in the market.",
-    "cardMedia": {
-      "img": "projetos/medis/card_media.png",
-      "video": null
-    },
-    "content": []
+    "index": 5,
+    "locale": "en",
+    "seoTitle": "Médis Marketplace",
+    "slug": "marketplace_medis",
+    "smallDescription": "Paid Media Campaigns",
+    "title": "Médis Marketplace",
+    "translationKey": "marketplace_medis"
   }
 ]

@@ -1,134 +1,254 @@
 [
   {
-    "translationKey": "mad",
-    "locale": "pt",
-    "slug": "mad",
-    "index": 10,
-    "seoTitle": "M.A.D — Music Addiction Disorder",
-    "title": "m.a.d",
-    "date": "2023",
+    "cardMedia": {
+      "img": "projetos/mad/card_media.png",
+      "video": null
+    },
     "categories": [
       "Campanhas",
       "Redes Sociais",
       "Criação de Conteúdo",
       "Merchandising"
     ],
-    "seoDescription": "Projeto freelance focado no rebranding da marca e na criação de identidades visuais para eventos. O trabalho incluiu o desenvolvimento de conteúdos para redes sociais, materiais promocionais e merchandising, garantindo uma comunicação visual consistente e a criação de experiências memoráveis para a comunidade.",
-    "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
+    "content": [
+      {
+        "items": [
+          {
+            "img": "projetos/mad/merch/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/merch/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/merch/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/merch/4.png",
+            "video": null
+          }
+        ],
+        "title": "merch",
+        "type": "gallery"
+      },
+      {
+        "tabs": [
+          {
+            "items": [
+              {
+                "img": "projetos/mad/social_media/6.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/7.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/8.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/9.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/6.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/2.jpg",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/3.jpg",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/4.jpg",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/5.jpg",
+                "video": null
+              }
+            ]
+          }
+        ],
+        "title": "conteúdo orgânico",
+        "type": "organicTabs"
+      },
+      {
+        "items": [
+          {
+            "img": "projetos/mad/party/1.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/2.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/3.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/4.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/5.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/6.jpg",
+            "video": null
+          }
+        ],
+        "title": "eventos",
+        "type": "gallery"
+      }
+    ],
+    "date": "2023",
     "description": "Projeto freelance focado no rebranding da marca e na criação de identidades visuais para eventos. Desenvolvimento de conteúdos para redes sociais, materiais promocionais e merchandising, garantindo uma comunicação visual consistente e experiências memoráveis para a comunidade.",
+    "index": 10,
+    "locale": "pt",
+    "seoDescription": "Projeto freelance focado no rebranding da marca e na criação de identidades visuais para eventos. O trabalho incluiu o desenvolvimento de conteúdos para redes sociais, materiais promocionais e merchandising, garantindo uma comunicação visual consistente e a criação de experiências memoráveis para a comunidade.",
+    "seoTitle": "M.A.D — Music Addiction Disorder",
+    "slug": "mad",
+    "smallDescription": "Conteúdos orgânicos | Criação de Conteúdos",
+    "title": "m.a.d",
+    "translationKey": "mad"
+  },
+  {
     "cardMedia": {
       "img": "projetos/mad/card_media.png",
       "video": null
     },
-    "content": [
-      {
-        "type": "gallery",
-        "title": "merch",
-        "items": [
-          { "img": "projetos/mad/merch/1.png", "video": null },
-          { "img": "projetos/mad/merch/2.png", "video": null },
-          { "img": "projetos/mad/merch/3.png", "video": null },
-          { "img": "projetos/mad/merch/4.png", "video": null }
-        ]
-      },
-      {
-        "type": "organicTabs",
-        "title": "conteúdo orgânico",
-        "tabs": [
-          {
-            "items": [
-              { "img": "projetos/mad/social_media/6.png", "video": null },
-              { "img": "projetos/mad/social_media/7.png", "video": null },
-              { "img": "projetos/mad/social_media/8.png", "video": null },
-              { "img": "projetos/mad/social_media/9.png", "video": null },
-              { "img": "projetos/mad/social_media/6.png", "video": null },
-              { "img": "projetos/mad/social_media/1.png", "video": null },
-              { "img": "projetos/mad/social_media/2.jpg", "video": null },
-              { "img": "projetos/mad/social_media/3.jpg", "video": null },
-              { "img": "projetos/mad/social_media/4.jpg", "video": null },
-              { "img": "projetos/mad/social_media/5.jpg", "video": null }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "gallery",
-        "title": "eventos",
-        "items": [
-          { "img": "projetos/mad/party/1.jpg", "video": null },
-          { "img": "projetos/mad/party/2.jpg", "video": null },
-          { "img": "projetos/mad/party/3.jpg", "video": null },
-          { "img": "projetos/mad/party/4.jpg", "video": null },
-          { "img": "projetos/mad/party/5.jpg", "video": null },
-          { "img": "projetos/mad/party/6.jpg", "video": null }
-        ]
-      }
-    ]
-  },
-  {
-    "translationKey": "mad",
-    "locale": "en",
-    "slug": "mad",
-    "index": 10,
-    "seoTitle": "M.A.D — Music Addiction Disorder",
-    "title": "m.a.d",
-    "date": "2023",
     "categories": [
       "Campaigns",
       "Social Media",
       "Content Creation",
       "Merchandising"
     ],
-    "seoDescription": "Freelance project focused on brand rebranding and the creation of visual identities for events. The work included the development of social media content, promotional materials, and merchandising, ensuring consistent visual communication and memorable experiences for the community.",
-    "smallDescription": "Organic content | Content creation",
-    "description": "Freelance project focused on the brand's rebranding and the creation of visual identities for events. Development of social media content, promotional materials, and merchandising, ensuring consistent visual communication and memorable experiences for the community.",
-    "cardMedia": {
-      "img": "projetos/mad/card_media.png",
-      "video": null
-    },
     "content": [
       {
-        "type": "gallery",
-        "title": "merch",
         "items": [
-          { "img": "projetos/mad/merch/1.png", "video": null },
-          { "img": "projetos/mad/merch/2.png", "video": null },
-          { "img": "projetos/mad/merch/3.png", "video": null },
-          { "img": "projetos/mad/merch/4.png", "video": null }
-        ]
+          {
+            "img": "projetos/mad/merch/1.png",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/merch/2.png",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/merch/3.png",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/merch/4.png",
+            "video": null
+          }
+        ],
+        "title": "merch",
+        "type": "gallery"
       },
       {
-        "type": "organicTabs",
-        "title": "organic content",
         "tabs": [
           {
             "items": [
-              { "img": "projetos/mad/social_media/6.png", "video": null },
-              { "img": "projetos/mad/social_media/7.png", "video": null },
-              { "img": "projetos/mad/social_media/8.png", "video": null },
-              { "img": "projetos/mad/social_media/9.png", "video": null },
-              { "img": "projetos/mad/social_media/6.png", "video": null },
-              { "img": "projetos/mad/social_media/1.png", "video": null },
-              { "img": "projetos/mad/social_media/2.jpg", "video": null },
-              { "img": "projetos/mad/social_media/3.jpg", "video": null },
-              { "img": "projetos/mad/social_media/4.jpg", "video": null },
-              { "img": "projetos/mad/social_media/5.jpg", "video": null }
+              {
+                "img": "projetos/mad/social_media/6.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/7.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/8.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/9.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/6.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/2.jpg",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/3.jpg",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/4.jpg",
+                "video": null
+              },
+              {
+                "img": "projetos/mad/social_media/5.jpg",
+                "video": null
+              }
             ]
           }
-        ]
+        ],
+        "title": "organic content",
+        "type": "organicTabs"
       },
       {
-        "type": "gallery",
-        "title": "events",
         "items": [
-          { "img": "projetos/mad/party/1.jpg", "video": null },
-          { "img": "projetos/mad/party/2.jpg", "video": null },
-          { "img": "projetos/mad/party/3.jpg", "video": null },
-          { "img": "projetos/mad/party/4.jpg", "video": null },
-          { "img": "projetos/mad/party/5.jpg", "video": null },
-          { "img": "projetos/mad/party/6.jpg", "video": null }
-        ]
+          {
+            "img": "projetos/mad/party/1.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/2.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/3.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/4.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/5.jpg",
+            "video": null
+          },
+          {
+            "img": "projetos/mad/party/6.jpg",
+            "video": null
+          }
+        ],
+        "title": "events",
+        "type": "gallery"
       }
-    ]
+    ],
+    "date": "2023",
+    "description": "Freelance project focused on the brand's rebranding and the creation of visual identities for events. Development of social media content, promotional materials, and merchandising, ensuring consistent visual communication and memorable experiences for the community.",
+    "index": 10,
+    "locale": "en",
+    "seoDescription": "Freelance project focused on brand rebranding and the creation of visual identities for events. The work included the development of social media content, promotional materials, and merchandising, ensuring consistent visual communication and memorable experiences for the community.",
+    "seoTitle": "M.A.D — Music Addiction Disorder",
+    "slug": "mad",
+    "smallDescription": "Organic content | Content creation",
+    "title": "m.a.d",
+    "translationKey": "mad"
   }
 ]

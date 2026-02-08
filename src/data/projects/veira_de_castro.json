@@ -1,31 +1,19 @@
 [
   {
-    "translationKey": "vieira_de_castro",
-    "locale": "pt",
-    "slug": "vieira_de_castro",
-    "index": 4,
-    "seoTitle": "Vieira de Castro",
-    "title": "vieira de castro",
-    "date": "2024-2026",
+    "cardMedia": {
+      "img": null,
+      "video": "/assets/projetos/vieira/card_media.mp4"
+    },
     "categories": [
       "Campanhas Marketing",
       "Conteúdo Orgânico",
       "Paid Media",
       "Ações e Eventos"
     ],
-    "smallDescription": "Campanhas de Marketing | Conteúdos Orgânicos | Paid Media",
-    "description": "Desenvolvimento de visuais para campanhas sazonais, com adaptação dos elementos de marca para formatos digitais. Criação de conceitos e direção criativa das campanhas, incluindo estratégias de colaboração com influencers e ações de marca em eventos.",
-    "cardMedia": {
-      "img": null,
-      "video": "/assets/projetos/vieira/card_media.mp4"
-    },
     "content": [
       {
-        "type": "organicTabs",
-        "title": "campanha",
         "tabs": [
           {
-            "title": "halloween",
             "items": [
               {
                 "img": "projetos/vieira/halloween/Post1.png",
@@ -67,10 +55,10 @@
                 "img": "projetos/vieira/halloween/Story5.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "halloween"
           },
           {
-            "title": "natal",
             "items": [
               {
                 "img": "projetos/vieira/natal/Post1.png",
@@ -112,10 +100,10 @@
                 "img": "projetos/vieira/natal/Story5.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "natal"
           },
           {
-            "title": "digestive pepitas",
             "items": [
               {
                 "img": "projetos/vieira/pepitas/Post1.png",
@@ -157,10 +145,10 @@
                 "img": "projetos/vieira/pepitas/Story5.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "digestive pepitas"
           },
           {
-            "title": "regresso às aulas",
             "items": [
               {
                 "img": "projetos/vieira/aulas/Post1.png",
@@ -202,39 +190,39 @@
                 "img": "projetos/vieira/aulas/Story5.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "regresso às aulas"
           }
-        ]
+        ],
+        "title": "campanha",
+        "type": "organicTabs"
       }
-    ]
+    ],
+    "date": "2024-2026",
+    "description": "Desenvolvimento de visuais para campanhas sazonais, com adaptação dos elementos de marca para formatos digitais. Criação de conceitos e direção criativa das campanhas, incluindo estratégias de colaboração com influencers e ações de marca em eventos.",
+    "index": 4,
+    "locale": "pt",
+    "seoTitle": "Vieira de Castro",
+    "slug": "vieira_de_castro",
+    "smallDescription": "Campanhas de Marketing | Conteúdos Orgânicos | Paid Media",
+    "title": "vieira de castro",
+    "translationKey": "vieira_de_castro"
   },
   {
-    "translationKey": "vieira_de_castro",
-    "locale": "en",
-    "slug": "vieira_de_castro",
-    "index": 4,
-    "seoTitle": "Vieira de Castro",
-    "title": "Vieira de Castro",
-    "date": "2024-2026",
+    "cardMedia": {
+      "img": null,
+      "video": "/assets/projetos/vieira/card_media.mp4"
+    },
     "categories": [
       "Marketing Campaigns",
       "Organic Content",
       "Paid Media",
       "Activations & Events"
     ],
-    "smallDescription": "Marketing Campaigns | Organic Content | Paid Media",
-    "description": "Development of visuals for seasonal campaigns, adapting brand elements for digital formats. Creation of concepts and creative direction for campaigns, including influencer collaboration strategies and brand activations at events.",
-    "cardMedia": {
-      "img": null,
-      "video": "/assets/projetos/vieira/card_media.mp4"
-    },
     "content": [
       {
-        "type": "organicTabs",
-        "title": "campaign",
         "tabs": [
           {
-            "title": "halloween",
             "items": [
               {
                 "img": "projetos/vieira/halloween/Post1.png",
@@ -276,10 +264,10 @@
                 "img": "projetos/vieira/halloween/Story5.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "halloween"
           },
           {
-            "title": "christmas",
             "items": [
               {
                 "img": "projetos/vieira/natal/Post1.png",
@@ -321,10 +309,10 @@
                 "img": "projetos/vieira/natal/Story5.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "christmas"
           },
           {
-            "title": "digestive",
             "items": [
               {
                 "img": "projetos/vieira/pepitas/Post1.png",
@@ -366,10 +354,10 @@
                 "img": "projetos/vieira/pepitas/Story5.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "digestive"
           },
           {
-            "title": "back to school",
             "items": [
               {
                 "img": "projetos/vieira/aulas/Post1.png",
@@ -411,10 +399,22 @@
                 "img": "projetos/vieira/aulas/Story5.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "back to school"
           }
-        ]
+        ],
+        "title": "campaign",
+        "type": "organicTabs"
       }
-    ]
+    ],
+    "date": "2024-2026",
+    "description": "Development of visuals for seasonal campaigns, adapting brand elements for digital formats. Creation of concepts and creative direction for campaigns, including influencer collaboration strategies and brand activations at events.",
+    "index": 4,
+    "locale": "en",
+    "seoTitle": "Vieira de Castro",
+    "slug": "vieira_de_castro",
+    "smallDescription": "Marketing Campaigns | Organic Content | Paid Media",
+    "title": "Vieira de Castro",
+    "translationKey": "vieira_de_castro"
   }
 ]

@@ -1,36 +1,44 @@
 [
   {
-    "translationKey": "aion_v",
-    "locale": "pt",
-    "slug": "aion_v",
-    "index": 3,
-    "seoTitle": "Aion V",
-    "title": "aion v",
-    "date": "2025-2026",
-    "categories": ["Campanhas", "Redes Sociais", "Criação de Conteúdo"],
-    "smallDescription": "Campanha de Lançamento",
-    "description": "M.A.D é um projeto criativo com foco na música, que combina identidade visual, comunicação de eventos e conteúdos digitais para construir um universo de marca forte e imersivo.",
     "cardMedia": {
       "img": null,
       "video": "/assets/projetos/aion/card_media.mp4"
     },
-    "content": []
+    "categories": [
+      "Campanhas",
+      "Redes Sociais",
+      "Criação de Conteúdo"
+    ],
+    "content": [],
+    "date": "2025-2026",
+    "description": "M.A.D é um projeto criativo com foco na música, que combina identidade visual, comunicação de eventos e conteúdos digitais para construir um universo de marca forte e imersivo.",
+    "index": 3,
+    "locale": "pt",
+    "seoTitle": "Aion V",
+    "slug": "aion_v",
+    "smallDescription": "Campanha de Lançamento",
+    "title": "aion v",
+    "translationKey": "aion_v"
   },
   {
-    "translationKey": "aion_v",
-    "locale": "en",
-    "slug": "aion_v",
-    "index": 3,
-    "seoTitle": "Aion V",
-    "title": "Aion V",
-    "date": "2025-2026",
-    "categories": ["Campaigns", "Social Media", "Content Creation"],
-    "smallDescription": "Launch Campaign",
-    "description": "M.A.D is a music-focused creative project combining visual identity, event communication, and digital content to build a strong and immersive brand universe.",
     "cardMedia": {
       "img": null,
       "video": "/assets/projetos/aion/card_media.mp4"
     },
-    "content": []
+    "categories": [
+      "Campaigns",
+      "Social Media",
+      "Content Creation"
+    ],
+    "content": [],
+    "date": "2025-2026",
+    "description": "M.A.D is a music-focused creative project combining visual identity, event communication, and digital content to build a strong and immersive brand universe.",
+    "index": 3,
+    "locale": "en",
+    "seoTitle": "Aion V",
+    "slug": "aion_v",
+    "smallDescription": "Launch Campaign",
+    "title": "Aion V",
+    "translationKey": "aion_v"
   }
 ]

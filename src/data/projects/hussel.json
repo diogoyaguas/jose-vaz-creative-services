@@ -1,27 +1,18 @@
 [
   {
-    "translationKey": "hussel",
-    "locale": "pt",
-    "slug": "hussel",
-    "index": 6,
-    "seoTitle": "Hussel",
-    "title": "hussel",
-    "date": "2024-2025",
-    "categories": ["Conteúdo Orgânico", "Paid Media"],
-    "smallDescription": "Conteúdos Orgânicos | Paid Media",
-    "description": "Criação de visuais para campanhas sazonais da marca, assegurando coerência visual. Adaptação dos key visuals de packaging para formatos digitais, incluindo conteúdos orgânicos, paid media e banners digitais em loja.",
     "cardMedia": {
       "img": "projetos/hussel/card_media.png",
       "video": null
     },
+    "categories": [
+      "Conteúdo Orgânico",
+      "Paid Media"
+    ],
     "content": [
       {
-        "type": "organicTabs",
-        "title": "campanha",
         "columns": 4,
         "tabs": [
           {
-            "title": "chocolate dubai",
             "items": [
               {
                 "img": "projetos/hussel/chocolate_dubai/Post1.png",
@@ -55,10 +46,10 @@
                 "img": null,
                 "video": "/assets/projetos/hussel/chocolate_dubai/Story4.mp4"
               }
-            ]
+            ],
+            "title": "chocolate dubai"
           },
           {
-            "title": "dia do pai",
             "items": [
               {
                 "img": "projetos/hussel/dia_do_pai/Post1.png",
@@ -92,10 +83,10 @@
                 "img": "projetos/hussel/dia_do_pai/Story4.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "dia do pai"
           },
           {
-            "title": "35 anos",
             "items": [
               {
                 "img": "projetos/hussel/35_anos/Post1.png",
@@ -129,10 +120,10 @@
                 "img": "projetos/hussel/35_anos/Story4.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "35 anos"
           },
           {
-            "title": "páscoa",
             "items": [
               {
                 "img": "projetos/hussel/pascoa/Post1.png",
@@ -166,10 +157,10 @@
                 "img": "projetos/hussel/pascoa/Story4.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "páscoa"
           },
           {
-            "title": "halloween",
             "items": [
               {
                 "img": "projetos/hussel/halloween/Post1.png",
@@ -203,35 +194,38 @@
                 "img": "projetos/hussel/halloween/Story4.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "halloween"
           }
-        ]
+        ],
+        "title": "campanha",
+        "type": "organicTabs"
       }
-    ]
+    ],
+    "date": "2024-2025",
+    "description": "Criação de visuais para campanhas sazonais da marca, assegurando coerência visual. Adaptação dos key visuals de packaging para formatos digitais, incluindo conteúdos orgânicos, paid media e banners digitais em loja.",
+    "index": 6,
+    "locale": "pt",
+    "seoTitle": "Hussel",
+    "slug": "hussel",
+    "smallDescription": "Conteúdos Orgânicos | Paid Media",
+    "title": "hussel",
+    "translationKey": "hussel"
   },
   {
-    "translationKey": "hussel",
-    "locale": "en",
-    "slug": "hussel",
-    "index": 6,
-    "seoTitle": "Hussel",
-    "title": "Hussel",
-    "date": "2024-2025",
-    "categories": ["Organic Content", "Paid Media"],
-    "smallDescription": "Organic Content | Paid Media",
-    "description": "Creation of visuals for the brand's seasonal campaigns, ensuring visual consistency. Adaptation of packaging key visuals into digital formats, including organic content, paid media, and in-store digital banners.",
     "cardMedia": {
       "img": "projetos/hussel/card_media.png",
       "video": null
     },
+    "categories": [
+      "Organic Content",
+      "Paid Media"
+    ],
     "content": [
       {
-        "type": "organicTabs",
-        "title": "campanha",
         "columns": 4,
         "tabs": [
           {
-            "title": "dubai chocolate",
             "items": [
               {
                 "img": "projetos/hussel/chocolate_dubai/Post1.png",
@@ -265,10 +259,10 @@
                 "img": null,
                 "video": "/assets/projetos/hussel/chocolate_dubai/Story4.mp4"
               }
-            ]
+            ],
+            "title": "dubai chocolate"
           },
           {
-            "title": "father's day",
             "items": [
               {
                 "img": "projetos/hussel/dia_do_pai/Post1.png",
@@ -302,10 +296,10 @@
                 "img": "projetos/hussel/dia_do_pai/Story4.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "father's day"
           },
           {
-            "title": "35th birthday",
             "items": [
               {
                 "img": "projetos/hussel/35_anos/Post1.png",
@@ -339,10 +333,10 @@
                 "img": "projetos/hussel/35_anos/Story4.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "35th birthday"
           },
           {
-            "title": "easter",
             "items": [
               {
                 "img": "projetos/hussel/pascoa/Post1.png",
@@ -376,10 +370,10 @@
                 "img": "projetos/hussel/pascoa/Story4.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "easter"
           },
           {
-            "title": "halloween",
             "items": [
               {
                 "img": "projetos/hussel/halloween/Post1.png",
@@ -413,10 +407,22 @@
                 "img": "projetos/hussel/halloween/Story4.png",
                 "video": null
               }
-            ]
+            ],
+            "title": "halloween"
           }
-        ]
+        ],
+        "title": "campanha",
+        "type": "organicTabs"
       }
-    ]
+    ],
+    "date": "2024-2025",
+    "description": "Creation of visuals for the brand's seasonal campaigns, ensuring visual consistency. Adaptation of packaging key visuals into digital formats, including organic content, paid media, and in-store digital banners.",
+    "index": 6,
+    "locale": "en",
+    "seoTitle": "Hussel",
+    "slug": "hussel",
+    "smallDescription": "Organic Content | Paid Media",
+    "title": "Hussel",
+    "translationKey": "hussel"
   }
 ]
