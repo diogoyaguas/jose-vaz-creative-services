@@ -12,7 +12,7 @@
     "description": "M.A.D é um projeto criativo com foco na música, que combina identidade visual, comunicação de eventos e conteúdos digitais para construir um universo de marca forte e imersivo.",
     "cardMedia": {
       "img": null,
-      "video": "../assets/projetos/aion/card_media.mp4"
+      "video": "/assets/projetos/aion/card_media.mp4"
     },
     "content": []
   },
@@ -29,7 +29,7 @@
     "description": "M.A.D is a music-focused creative project combining visual identity, event communication, and digital content to build a strong and immersive brand universe.",
     "cardMedia": {
       "img": null,
-      "video": "../assets/projetos/aion/card_media.mp4"
+      "video": "/assets/projetos/aion/card_media.mp4"
     },
     "content": []
   }

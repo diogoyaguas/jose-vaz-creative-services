@@ -13,7 +13,6 @@
       color: var(--black);
     }
 
-
     .title-btn {
       font-size: 10px;
       margin-bottom: 0.5rem;
@@ -36,54 +35,59 @@
   }
 
   .main-images {
+    width: 100%;
+  }
+
+  .tab-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
+    width: 100%;
+  }
 
-    .main-image {
-      position: relative;
-      overflow: hidden;
-      transform: translateZ(0);
-      backface-visibility: hidden;
+  .main-image {
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 
-      img,
-      video {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: contain;
-        background: transparent;
-      }
+    img,
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      background: transparent;
+    }
 
-      .sound-toggle {
-        position: absolute;
-        bottom: 8px;
-        right: 8px;
-        border: 0;
-        background: transparent;
-        opacity: 0;
-        transition:
-          opacity 200ms ease,
-          transform 200ms ease;
-        cursor: pointer;
-        padding: 6px;
-        transform: translateY(2px);
+    .sound-toggle {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      border: 0;
+      background: transparent;
+      opacity: 0;
+      transition:
+        opacity 200ms ease,
+        transform 200ms ease;
+      cursor: pointer;
+      padding: 6px;
+      transform: translateY(2px);
 
-        svg {
-          width: 15px;
-          height: 15px;
+      svg {
+        width: 15px;
+        height: 15px;
 
-          g,
-          path {
-            fill: var(--white);
-          }
+        g,
+        path {
+          fill: var(--white);
         }
       }
+    }
 
-      &:hover .sound-toggle {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    &:hover .sound-toggle {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
@@ -144,7 +148,7 @@
 
 @media (hover: none) and (pointer: coarse) {
   .organic-content-section {
-    .main-images .main-image .sound-toggle {
+    .main-image .sound-toggle {
       opacity: 1;
       transform: translateY(0);
     }
@@ -153,10 +157,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .organic-content-section {
-    .main-images .main-image .sound-toggle {
-      transition: none;
-    }
-
     .titles .title-btn {
       transition: none;
     }

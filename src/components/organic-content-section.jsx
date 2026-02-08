@@ -1,6 +1,7 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import PropTypes from "prop-types"
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 
 import Mute from "../assets/icons/common/mute.svg"
 import Unmute from "../assets/icons/common/unmute.svg"
@@ -63,7 +64,6 @@ OrganicVideoItem.propTypes = {
 
 const OrganicImageItem = React.memo(function OrganicImageItem({ image, alt }) {
   const gImg = getImage(image)
-
   if (!gImg) return null
 
   return (
@@ -90,8 +90,10 @@ const OrganicContentSection = ({ title, tabs }) => {
 
   const [activeTab, setActiveTab] = useState(0)
   const [unmutedIndex, setUnmutedIndex] = useState(null)
+  const [direction, setDirection] = useState(1)
 
   const itemsPerPage = 10
+  const reduceMotion = useReducedMotion()
 
   const activeItems = useMemo(() => {
     const tab = tabArray[activeTab]
@@ -101,10 +103,15 @@ const OrganicContentSection = ({ title, tabs }) => {
   const firstFive = useMemo(() => activeItems.slice(0, 5), [activeItems])
   const secondFive = useMemo(() => activeItems.slice(5, 10), [activeItems])
 
-  const onTabSelect = useCallback((index) => {
-    setActiveTab(index)
-    setUnmutedIndex(null)
-  }, [])
+  const onTabSelect = useCallback(
+    (index) => {
+      if (index === activeTab) return
+      setDirection(index > activeTab ? 1 : -1)
+      setActiveTab(index)
+      setUnmutedIndex(null)
+    },
+    [activeTab]
+  )
 
   const toggleSound = useCallback((index) => {
     setUnmutedIndex((prev) => (prev === index ? null : index))
@@ -112,14 +119,24 @@ const OrganicContentSection = ({ title, tabs }) => {
 
   if (tabArray.length === 0) return null
 
+  const variants = reduceMotion
+    ? {
+      initial: { opacity: 1, x: 0 },
+      animate: { opacity: 1, x: 0 },
+      exit: { opacity: 1, x: 0 },
+    }
+    : {
+      initial: (dir) => ({ opacity: 0, x: dir * 18 }),
+      animate: { opacity: 1, x: 0, transition: { duration: 0.22, ease: "easeOut" } },
+      exit: (dir) => ({ opacity: 0, x: dir * -18, transition: { duration: 0.18, ease: "easeIn" } }),
+    }
+
   return (
     <div className="organic-content-section container">
       <div className="titles" role="tablist" aria-label="Conteúdo orgânico">
         <div className="title">{title}</div>
         {tabArray.map((tab, index) => {
           const isActive = activeTab === index
-          const label = tab.title
-
           return (
             <button
               key={tab.title || index}
@@ -129,42 +146,65 @@ const OrganicContentSection = ({ title, tabs }) => {
               role="tab"
               aria-selected={isActive}
             >
-              {label}
+              {tab.title}
             </button>
           )
         })}
       </div>
 
       <div className="main-images">
-        {activeItems.map((item, index) => {
-          if (item?.imgFile) {
-            return (
-              <OrganicImageItem
-                key={item.id || index}
-                image={item.imgFile}
-                alt={item.alt}
-              />
-            )
-          }
+        <AnimatePresence mode="wait" initial={false} custom={direction}>
+          <motion.div
+            key={activeTab}
+            className="tab-grid"
+            custom={direction}
+            variants={variants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            {activeItems.map((item, index) => {
+              if (item?.imgFile) {
+                return (
+                  <OrganicImageItem
+                    key={item.id || index}
+                    image={item.imgFile}
+                    alt={item.alt}
+                  />
+                )
+              }
 
-          if (item?.video) {
-            return (
-              <OrganicVideoItem
-                key={item.id || index}
-                src={item.video}
-                isMuted={unmutedIndex !== index}
-                onToggleSound={() => toggleSound(index)}
-              />
-            )
-          }
+              if (item?.video) {
+                return (
+                  <OrganicVideoItem
+                    key={item.id || index}
+                    src={item.video}
+                    isMuted={unmutedIndex !== index}
+                    onToggleSound={() => toggleSound(index)}
+                  />
+                )
+              }
 
-          return null
-        })}
+              return null
+            })}
+          </motion.div>
+        </AnimatePresence>
       </div>
 
       <div className="mobile-carousels">
-        <GallerySection title="" subtitle="" items={firstFive} columns={5} />
-        <GallerySection title="" subtitle="" items={secondFive} columns={5} />
+        <AnimatePresence mode="wait" initial={false} custom={direction}>
+          <motion.div
+            key={activeTab}
+            custom={direction}
+            variants={variants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            <GallerySection title="" subtitle="" items={firstFive} columns={5} />
+            <GallerySection title="" subtitle="" items={secondFive} columns={5} />
+          </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   )
@@ -181,6 +221,7 @@ OrganicContentSection.propTypes = {
             id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
             alt: PropTypes.string,
             image: PropTypes.any,
+            imgFile: PropTypes.any,
             video: PropTypes.string,
           })
         ),

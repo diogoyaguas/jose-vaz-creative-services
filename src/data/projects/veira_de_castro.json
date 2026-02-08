@@ -17,7 +17,7 @@
     "description": "Desenvolvimento de visuais para campanhas sazonais, com adaptação dos elementos de marca para formatos digitais. Criação de conceitos e direção criativa das campanhas, incluindo estratégias de colaboração com influencers e ações de marca em eventos.",
     "cardMedia": {
       "img": null,
-      "video": "../assets/projetos/vieira/card_media.mp4"
+      "video": "/assets/projetos/vieira/card_media.mp4"
     },
     "content": [
       {
@@ -216,12 +216,17 @@
     "seoTitle": "Vieira de Castro",
     "title": "Vieira de Castro",
     "date": "2024-2026",
-    "categories": ["Campaigns", "Social Media", "Content Creation"],
+    "categories": [
+      "Marketing Campaigns",
+      "Organic Content",
+      "Paid Media",
+      "Activations & Events"
+    ],
     "smallDescription": "Marketing Campaigns | Organic Content | Paid Media",
-    "description": "Creative project focused on the development of marketing campaigns, organic content, and paid media strategies, combining visual identity, strategic communication, and digital content to strengthen the brand’s presence and positioning.",
+    "description": "Development of visuals for seasonal campaigns, adapting brand elements for digital formats. Creation of concepts and creative direction for campaigns, including influencer collaboration strategies and brand activations at events.",
     "cardMedia": {
       "img": null,
-      "video": "../assets/projetos/vieira/card_media.mp4"
+      "video": "/assets/projetos/vieira/card_media.mp4"
     },
     "content": [
       {
