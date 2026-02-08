@@ -78,9 +78,9 @@
       },
       {
         "type": "organicTabs",
+        "title": "conteúdo orgânico",
         "tabs": [
           {
-            "title": "conteúdo orgânico",
             "items": [
               {
                 "img": "projetos/firefly/organic/Post1.png",
@@ -230,9 +230,9 @@
       },
       {
         "type": "organicTabs",
+        "title": "organic content",
         "tabs": [
           {
-            "title": "organic content",
             "items": [
               {
                 "img": "projetos/firefly/organic/Post1.png",

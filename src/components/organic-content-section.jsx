@@ -82,7 +82,7 @@ OrganicImageItem.defaultProps = {
   alt: "",
 }
 
-const OrganicContentSection = ({ tabs }) => {
+const OrganicContentSection = ({ title, tabs }) => {
   const tabArray = useMemo(() => {
     if (!tabs) return []
     return Array.isArray(tabs) ? tabs : [tabs]
@@ -115,9 +115,10 @@ const OrganicContentSection = ({ tabs }) => {
   return (
     <div className="organic-content-section container">
       <div className="titles" role="tablist" aria-label="Conteúdo orgânico">
+        <div className="title">{title}</div>
         {tabArray.map((tab, index) => {
           const isActive = activeTab === index
-          const label = tab.title || `Tab ${index + 1}`
+          const label = tab.title
 
           return (
             <button
@@ -170,6 +171,7 @@ const OrganicContentSection = ({ tabs }) => {
 }
 
 OrganicContentSection.propTypes = {
+  title: PropTypes.string,
   tabs: PropTypes.oneOfType([
     PropTypes.arrayOf(
       PropTypes.shape({

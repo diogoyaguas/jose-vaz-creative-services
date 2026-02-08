@@ -19,7 +19,194 @@
       "img": null,
       "video": "../assets/projetos/vieira/card_media.mp4"
     },
-    "content": []
+    "content": [
+      {
+        "type": "organicTabs",
+        "title": "campanha",
+        "tabs": [
+          {
+            "title": "halloween",
+            "items": [
+              {
+                "img": "projetos/vieira/halloween/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Post5.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story5.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "natal",
+            "items": [
+              {
+                "img": "projetos/vieira/natal/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Post5.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Story2.png",
+                "video": null
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/vieira/natal/Story3.mp4"
+              },
+              {
+                "img": "projetos/vieira/natal/Story4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Story5.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "digestive pepitas",
+            "items": [
+              {
+                "img": "projetos/vieira/pepitas/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Post5.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story5.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "regresso às aulas",
+            "items": [
+              {
+                "img": "projetos/vieira/aulas/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Post5.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story5.png",
+                "video": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "translationKey": "vieira_de_castro",
@@ -36,6 +223,193 @@
       "img": null,
       "video": "../assets/projetos/vieira/card_media.mp4"
     },
-    "content": []
+    "content": [
+      {
+        "type": "organicTabs",
+        "title": "campaign",
+        "tabs": [
+          {
+            "title": "halloween",
+            "items": [
+              {
+                "img": "projetos/vieira/halloween/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Post5.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/halloween/Story5.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "christmas",
+            "items": [
+              {
+                "img": "projetos/vieira/natal/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Post5.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Story2.png",
+                "video": null
+              },
+              {
+                "img": null,
+                "video": "/assets/projetos/vieira/natal/Story3.mp4"
+              },
+              {
+                "img": "projetos/vieira/natal/Story4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/natal/Story5.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "digestive",
+            "items": [
+              {
+                "img": "projetos/vieira/pepitas/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Post5.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/pepitas/Story5.png",
+                "video": null
+              }
+            ]
+          },
+          {
+            "title": "back to school",
+            "items": [
+              {
+                "img": "projetos/vieira/aulas/Post1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Post2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Post3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Post4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Post5.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story1.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story2.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story3.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story4.png",
+                "video": null
+              },
+              {
+                "img": "projetos/vieira/aulas/Story5.png",
+                "video": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

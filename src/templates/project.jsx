@@ -37,7 +37,10 @@ export default function ProjectTemplate({ data, pageContext }) {
       case "organicTabs":
         return (
           <Reveal key={idx}>
-            <OrganicContentSection tabs={section.tabs || []} />
+            <OrganicContentSection
+              title={section.title}
+              tabs={section.tabs || []}
+            />
           </Reveal>
         )
 

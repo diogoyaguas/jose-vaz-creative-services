@@ -36,7 +36,6 @@
         "title": "conteúdo orgânico",
         "tabs": [
           {
-            "title": "feed",
             "items": [
               { "img": "projetos/mad/social_media/6.png", "video": null },
               { "img": "projetos/mad/social_media/7.png", "video": null },
@@ -103,7 +102,6 @@
         "title": "organic content",
         "tabs": [
           {
-            "title": "feed",
             "items": [
               { "img": "projetos/mad/social_media/6.png", "video": null },
               { "img": "projetos/mad/social_media/7.png", "video": null },
