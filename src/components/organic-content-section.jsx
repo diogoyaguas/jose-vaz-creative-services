@@ -37,7 +37,10 @@ const OrganicVideoItem = React.memo(function OrganicVideoItem({
         muted={isMuted}
         playsInline
         preload="metadata"
-      />
+        aria-hidden="true"
+      >
+        <track kind="captions" />
+      </video>
 
       <button
         className="sound-toggle"

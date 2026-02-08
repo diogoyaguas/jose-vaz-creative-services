@@ -76,7 +76,10 @@ const HoverVideoCell = React.memo(function HoverVideoCell({
             playsInline
             preload="metadata"
             className="hover-video"
-          />
+            aria-hidden="true"
+          >
+            <track kind="captions" />
+          </video>
         </div>
       ) : null}
     </button>

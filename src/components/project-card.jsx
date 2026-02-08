@@ -33,7 +33,7 @@ const ProjectCard = ({ title, description, media, link }) => {
 
     if (inView) {
       const p = v.play()
-      if (p && typeof p.catch === "function") p.catch(() => {})
+      if (p && typeof p.catch === "function") p.catch(() => { })
     } else {
       v.pause()
     }
@@ -56,7 +56,10 @@ const ProjectCard = ({ title, description, media, link }) => {
             loop
             playsInline
             preload="metadata"
-          />
+            aria-hidden="true"
+          >
+            <track kind="captions" />
+          </video>
         ) : gatsbyImage ? (
           <GatsbyImage
             image={gatsbyImage}

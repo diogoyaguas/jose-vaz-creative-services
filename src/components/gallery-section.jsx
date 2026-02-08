@@ -16,7 +16,7 @@ const GalleryVideoItem = ({ src, muted, onToggleSound }) => {
 
     if (inView) {
       const p = v.play()
-      if (p && typeof p.catch === "function") p.catch(() => {})
+      if (p && typeof p.catch === "function") p.catch(() => { })
     } else {
       v.pause()
     }
@@ -33,7 +33,10 @@ const GalleryVideoItem = ({ src, muted, onToggleSound }) => {
         playsInline
         preload="metadata"
         controls={false}
-      />
+        aria-hidden="true"
+      >
+        <track kind="captions" />
+      </video>
 
       <button
         type="button"

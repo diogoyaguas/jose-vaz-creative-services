@@ -65,7 +65,10 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
                                 muted={muted}
                                 playsInline
                                 preload="metadata"
-                            />
+                                aria-hidden="true"
+                            >
+                                <track kind="captions" />
+                            </video>
 
                             <button
                                 type="button"

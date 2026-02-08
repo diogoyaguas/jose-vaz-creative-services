@@ -88,7 +88,7 @@ function Seo({
                 href: isPt ? thisUrl : otherUrl,
             },
         ]
-    }, [siteUrl, otherPath, url, locale, isPt])
+    }, [siteUrl, otherPath, url, isPt])
 
     const titleTemplate = `%s | ${siteMeta.title}`
 
