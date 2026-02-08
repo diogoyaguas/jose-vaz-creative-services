@@ -32,6 +32,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       items: [ProjectMediaItem!]
       tabs: [ProjectTab!]
       imageTabs: [ProjectImageTab!]
+      flipbookPages: [ProjectImageTab!]
     }
 
     type ProjectTab @dontInfer {

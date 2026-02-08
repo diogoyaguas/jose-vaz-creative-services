@@ -17,9 +17,7 @@ export default function ProjectTemplate({ data, pageContext }) {
   const sections = project?.content || []
 
   const seoImage =
-  project?.cardMedia?.imgFile?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
-
-  console.log(project);
+    project?.cardMedia?.imgFile?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
 
   const renderSection = (section, idx) => {
     switch (section.type) {
@@ -56,14 +54,19 @@ export default function ProjectTemplate({ data, pageContext }) {
       case "tabbedImage":
         return (
           <Reveal key={idx}>
-            <TabbedImageSection title={section.title} tabs={section.imageTabs || []} />
+            <TabbedImageSection
+              title={section.title}
+              subtitle={section.subtitle}
+              tabs={section.imageTabs || []}
+              initialTab={0}
+            />
           </Reveal>
         )
 
       case "flipbook":
         return (
           <Reveal key={idx}>
-            <FlipbookSection title={section.title} pages={section.items || []} />
+            <FlipbookSection title={section.title} subtitle={section.subtitle} pages={section.flipbookPages || []} />
           </Reveal>
         )
 
@@ -83,7 +86,8 @@ export default function ProjectTemplate({ data, pageContext }) {
         title={project.seoTitle || project.title}
         description={project.seoDescription}
         locale={project.locale}
-        image={seoImage} />
+        image={seoImage}
+      />
 
       <Reveal delay={0.05}>
         <ProjectHeader
@@ -101,6 +105,54 @@ export default function ProjectTemplate({ data, pageContext }) {
 }
 
 export const query = graphql`
+  fragment ProjectImageSmall on File {
+    childImageSharp {
+      gatsbyImageData(
+        placeholder: BLURRED
+        formats: [AUTO, WEBP, AVIF]
+        quality: 70
+        layout: CONSTRAINED
+        width: 400
+      )
+    }
+  }
+
+  fragment ProjectImageLarge on File {
+    childImageSharp {
+      gatsbyImageData(
+        placeholder: BLURRED
+        formats: [AUTO, WEBP, AVIF]
+        quality: 75
+        layout: CONSTRAINED
+        width: 900
+      )
+    }
+  }
+
+  fragment ProjectImageFlipbookLarge on File {
+    childImageSharp {
+      gatsbyImageData(
+        placeholder: BLURRED
+        formats: [AUTO, WEBP, AVIF]
+        quality: 75
+        layout: CONSTRAINED
+        width: 800
+      )
+    }
+  }
+
+  fragment ProjectSeoImage on File {
+    childImageSharp {
+      gatsbyImageData(
+        placeholder: DOMINANT_COLOR
+        formats: [AUTO, WEBP, AVIF]
+        quality: 70
+        layout: CONSTRAINED
+        width: 500
+      )
+    }
+  }
+
   query ProjectBySlug($slug: String!, $locale: String!, $translationKey: String!) {
     project(slug: { eq: $slug }, locale: { eq: $locale }) {
       slug
@@ -109,86 +161,48 @@ export const query = graphql`
       seoTitle
       title
       date
+
       banner {
-        imgFile {
-          childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-              quality: 70
-              layout: CONSTRAINED
-              width: 900
-            )
-          }
-        }
+        imgFile { ...ProjectImageLarge }
         video
       }
+
       cardMedia {
-        imgFile {
-          childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-              quality: 70
-              layout: CONSTRAINED
-              width: 900
-            )
-          }
-        }
+        imgFile { ...ProjectSeoImage }
         video
       }
+
       categories
       seoDescription
       description
+
       content {
         type
         title
         subtitle
         columns
+
         items {
-          imgFile {
-            childImageSharp {
-              gatsbyImageData(
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-                quality: 70
-                layout: CONSTRAINED
-                width: 900
-              )
-            }
-          }
+          imgFile { ...ProjectImageSmall }
           video
         }
+
         tabs {
           title
           items {
-            imgFile {
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                  quality: 70
-                  layout: CONSTRAINED
-                  width: 900
-                )
-              }
-            }
+            imgFile { ...ProjectImageSmall }
             video
           }
         }
+
         imageTabs {
           label
-          imgFile {
-            childImageSharp {
-              gatsbyImageData(
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-                quality: 70
-                layout: CONSTRAINED
-                width: 900
-              )
-            }
-          }
+          imgFile { ...ProjectImageLarge }
+          alt
+        }
+
+        flipbookPages {
+          imgFile { ...ProjectImageFlipbookLarge }
           alt
         }
       }
@@ -200,3 +214,4 @@ export const query = graphql`
     }
   }
 `
+

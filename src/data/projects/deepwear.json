@@ -140,7 +140,7 @@
       {
         "type": "flipbook",
         "title": "catalogues",
-        "items": [
+        "flipbookPages": [
           { "img": "projetos/deepwear/book/1.png", "video": null },
           { "img": "projetos/deepwear/book/2.png", "video": null },
           { "img": "projetos/deepwear/book/3.png", "video": null },
