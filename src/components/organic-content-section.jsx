@@ -82,7 +82,7 @@ OrganicImageItem.defaultProps = {
   alt: "",
 }
 
-const OrganicContentSection = ({ title, tabs }) => {
+const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
   const tabArray = useMemo(() => {
     if (!tabs) return []
     return Array.isArray(tabs) ? tabs : [tabs]
@@ -157,6 +157,7 @@ const OrganicContentSection = ({ title, tabs }) => {
           <motion.div
             key={activeTab}
             className="tab-grid"
+            style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
             custom={direction}
             variants={variants}
             initial="initial"
@@ -201,8 +202,8 @@ const OrganicContentSection = ({ title, tabs }) => {
             animate="animate"
             exit="exit"
           >
-            <GallerySection title="" subtitle="" items={firstFive} columns={5} />
-            <GallerySection title="" subtitle="" items={secondFive} columns={5} />
+            <GallerySection title="" subtitle="" items={firstFive} columns={columns} />
+            <GallerySection title="" subtitle="" items={secondFive} columns={columns} />
           </motion.div>
         </AnimatePresence>
       </div>
@@ -212,6 +213,7 @@ const OrganicContentSection = ({ title, tabs }) => {
 
 OrganicContentSection.propTypes = {
   title: PropTypes.string,
+  columns: PropTypes.number,
   tabs: PropTypes.oneOfType([
     PropTypes.arrayOf(
       PropTypes.shape({

@@ -40,6 +40,7 @@ export default function ProjectTemplate({ data, pageContext }) {
             <OrganicContentSection
               title={section.title}
               tabs={section.tabs || []}
+              columns={section.columns || 5}
             />
           </Reveal>
         )

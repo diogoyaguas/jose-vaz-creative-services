@@ -18,6 +18,7 @@
       {
         "type": "organicTabs",
         "title": "campanha",
+        "columns": 4,
         "tabs": [
           {
             "title": "chocolate dubai",
@@ -39,12 +40,8 @@
                 "video": null
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Post5.png",
-                "video": null
-              },
-              {
-                "img": "projetos/hussel/chocolate_dubai/Story1.png",
-                "video": null
+                "img": null,
+                "video": "/assets/projetos/hussel/chocolate_dubai/Story1.mp4"
               },
               {
                 "img": "projetos/hussel/chocolate_dubai/Story2.png",
@@ -55,12 +52,8 @@
                 "video": null
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Story4.png",
-                "video": null
-              },
-              {
-                "img": "projetos/hussel/chocolate_dubai/Story5.png",
-                "video": null
+                "img": null,
+                "video": "/assets/projetos/hussel/chocolate_dubai/Story4.mp4"
               }
             ]
           },
@@ -84,10 +77,6 @@
                 "video": null
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Post5.png",
-                "video": null
-              },
-              {
                 "img": "projetos/hussel/dia_do_pai/Story1.png",
                 "video": null
               },
@@ -101,10 +90,6 @@
               },
               {
                 "img": "projetos/hussel/dia_do_pai/Story4.png",
-                "video": null
-              },
-              {
-                "img": "projetos/hussel/dia_do_pai/Story5.png",
                 "video": null
               }
             ]
@@ -129,27 +114,19 @@
                 "video": null
               },
               {
-                "img": "projetos/hussel/35_anos/Post5.png",
-                "video": null
+                "img": null,
+                "video": "/assets/projetos/hussel/35_anos/Story1.mp4"
               },
               {
-                "img": "projetos/hussel/35_anos/Story1.png",
-                "video": null
+                "img": null,
+                "video": "/assets/projetos/hussel/35_anos/Story2.mp4"
               },
               {
-                "img": "projetos/hussel/35_anos/Story2.png",
-                "video": null
-              },
-              {
-                "img": "projetos/hussel/35_anos/Story3.png",
-                "video": null
+                "img": null,
+                "video": "/assets/projetos/hussel/35_anos/Story3.mp4"
               },
               {
                 "img": "projetos/hussel/35_anos/Story4.png",
-                "video": null
-              },
-              {
-                "img": "projetos/hussel/35_anos/Story5.png",
                 "video": null
               }
             ]
@@ -174,27 +151,19 @@
                 "video": null
               },
               {
-                "img": "projetos/hussel/pascoa/Post5.png",
-                "video": null
-              },
-              {
                 "img": "projetos/hussel/pascoa/Story1.png",
                 "video": null
               },
               {
-                "img": "projetos/hussel/pascoa/Story2.png",
-                "video": null
+                "img": null,
+                "video": "/assets/projetos/hussel/pascoa/Story2.mp4"
               },
               {
-                "img": null,
-                "video": "/assets/projetos/hussel/pascoa/Story3.mp4"
+                "img": "projetos/hussel/pascoa/Story3.png",
+                "video": null
               },
               {
                 "img": "projetos/hussel/pascoa/Story4.png",
-                "video": null
-              },
-              {
-                "img": "projetos/hussel/pascoa/Story5.png",
                 "video": null
               }
             ]
@@ -219,27 +188,19 @@
                 "video": null
               },
               {
-                "img": "projetos/hussel/halloween/Post5.png",
-                "video": null
-              },
-              {
-                "img": "projetos/hussel/halloween/Story1.png",
-                "video": null
+                "img": null,
+                "video": "/assets/projetos/hussel/halloween/Story1.mp4"
               },
               {
                 "img": "projetos/hussel/halloween/Story2.png",
                 "video": null
               },
               {
-                "img": null,
-                "video": "/assets/projetos/hussel/halloween/Story3.mp4"
-              },
-              {
-                "img": "projetos/hussel/halloween/Story4.png",
+                "img": "projetos/hussel/halloween/Story3.png",
                 "video": null
               },
               {
-                "img": "projetos/hussel/halloween/Story5.png",
+                "img": "projetos/hussel/halloween/Story4.png",
                 "video": null
               }
             ]
