@@ -1,8 +1,7 @@
-import React, { useRef, useState } from "react"
+import React, { useCallback, useMemo, useRef, useState } from "react"
 
 import Mute from "../assets/icons/common/mute.svg"
 import PropTypes from "prop-types"
-import ReactPlayer from "react-player"
 import Unmute from "../assets/icons/common/unmute.svg"
 
 const sanitizeHtml = (html = "") => {
@@ -16,22 +15,31 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
     const videoUrl = media?.video || null
     const imageUrl = media?.img || null
 
-    const playerRef = useRef(null)
+    const videoRef = useRef(null)
     const [muted, setMuted] = useState(true)
 
-    const safeDescriptionHtml = sanitizeHtml(description)
+    const safeDescriptionHtml = useMemo(
+        () => sanitizeHtml(description),
+        [description]
+    )
 
-    const toggleMute = async (e) => {
+    const toggleMute = useCallback((e) => {
         e.preventDefault()
         e.stopPropagation()
 
-        const nextMuted = !muted
-        setMuted(nextMuted)
-
-        try {
-            playerRef.current?.getInternalPlayer()?.play?.()
-        } catch { }
-    }
+        setMuted((prev) => {
+            const next = !prev
+            const v = videoRef.current
+            if (v) {
+                v.muted = next
+                if (!next) {
+                    const p = v.play()
+                    if (p && typeof p.catch === "function") p.catch(() => { })
+                }
+            }
+            return next
+        })
+    }, [])
 
     return (
         <header className="project-header">
@@ -39,16 +47,15 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
                 <div className="project-header-media">
                     {videoUrl ? (
                         <div className="project-header-media">
-                            <ReactPlayer
-                                ref={playerRef}
-                                url={videoUrl}
-                                playing
+                            <video
+                                ref={videoRef}
+                                className="project-header-video"
+                                src={videoUrl}
+                                autoPlay
                                 loop
                                 muted={muted}
-                                controls={false}
                                 playsInline
-                                width="100%"
-                                height="100%"
+                                preload="metadata"
                             />
 
                             <button
@@ -120,4 +127,4 @@ ProjectHeader.defaultProps = {
     media: null,
 }
 
-export default ProjectHeader
+export default React.memo(ProjectHeader)
