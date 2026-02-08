@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react"
 
 import { Link } from "gatsby"
-import Logo from "../assets/icons/common/creative_vaz.svg"
 import PropTypes from "prop-types"
 
 const Header = ({ locale = "pt", otherPath }) => {

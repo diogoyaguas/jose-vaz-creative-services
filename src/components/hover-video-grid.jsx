@@ -1,10 +1,84 @@
-import React, { useMemo, useState } from "react"
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 
 import PropTypes from "prop-types"
-import ReactPlayer from "react-player"
+
+const HoverVideoCell = React.memo(function HoverVideoCell({
+  item,
+  index,
+  isActive,
+  onActivate,
+  onDeactivate,
+}) {
+  const videoRef = useRef(null)
+  const hasVideo = Boolean(item.video)
+
+  useEffect(() => {
+    const v = videoRef.current
+    if (!v) return
+
+    if (isActive) {
+      const p = v.play()
+      if (p && typeof p.catch === "function") p.catch(() => { })
+    } else {
+      v.pause()
+      v.currentTime = 0
+    }
+  }, [isActive])
+
+  return (
+    <button
+      type="button"
+      className="cell"
+      onMouseEnter={() => onActivate(index)}
+      onMouseLeave={onDeactivate}
+      onFocus={() => onActivate(index)}
+      onBlur={onDeactivate}
+      aria-label={item.label || `Item ${index + 1}`}
+    >
+      {item.img ? (
+        <img
+          src={item.img}
+          alt={item.alt || ""}
+          className={`media image ${isActive && hasVideo ? "fade-out" : "fade-in"}`}
+          loading="lazy"
+          decoding="async"
+        />
+      ) : (
+        <div className="placeholder" />
+      )}
+
+      {hasVideo ? (
+        <div className={`media video ${isActive ? "fade-in" : "fade-out"}`}>
+          <video
+            ref={videoRef}
+            src={item.video}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="hover-video"
+          />
+        </div>
+      ) : null}
+    </button>
+  )
+})
+
+HoverVideoCell.propTypes = {
+  item: PropTypes.shape({
+    img: PropTypes.string,
+    video: PropTypes.string,
+    alt: PropTypes.string,
+    label: PropTypes.string,
+  }).isRequired,
+  index: PropTypes.number.isRequired,
+  isActive: PropTypes.bool.isRequired,
+  onActivate: PropTypes.func.isRequired,
+  onDeactivate: PropTypes.func.isRequired,
+}
 
 const HoverVideoGrid = ({ title, subtitle, items }) => {
-  const [hoveredIndex, setHoveredIndex] = useState(null)
+  const [activeIndex, setActiveIndex] = useState(null)
 
   const normalized = useMemo(() => {
     return (items || []).slice(0, 4).map((it) => ({
@@ -15,6 +89,9 @@ const HoverVideoGrid = ({ title, subtitle, items }) => {
     }))
   }, [items])
 
+  const onActivate = useCallback((index) => setActiveIndex(index), [])
+  const onDeactivate = useCallback(() => setActiveIndex(null), [])
+
   return (
     <section className="hover-video-grid container">
       <div className="header">
@@ -23,53 +100,16 @@ const HoverVideoGrid = ({ title, subtitle, items }) => {
       </div>
 
       <div className="grid">
-        {normalized.map((item, index) => {
-          const isHovered = hoveredIndex === index
-          const hasVideo = Boolean(item.video)
-
-          return (
-            <div
-              key={index}
-              className="cell"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              onFocus={() => setHoveredIndex(index)}
-              onBlur={() => setHoveredIndex(null)}
-              tabIndex={0}
-              role="button"
-              aria-label={item.label || `Item ${index + 1}`}
-            >
-              {item.img ? (
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className={`media image ${
-                    isHovered && hasVideo ? "fade-out" : "fade-in"
-                  }`}
-                  loading="lazy"
-                  decoding="async"
-                />
-              ) : (
-                <div className="placeholder" />
-              )}
-
-              {hasVideo ? (
-                <div className={`media video ${isHovered ? "fade-in" : "fade-out"}`}>
-                  <ReactPlayer
-                    url={item.video}
-                    playing={isHovered}
-                    loop
-                    muted
-                    controls={false}
-                    playsInline
-                    width="100%"
-                    height="100%"
-                  />
-                </div>
-              ) : null}
-            </div>
-          )
-        })}
+        {normalized.map((item, index) => (
+          <HoverVideoCell
+            key={index}
+            item={item}
+            index={index}
+            isActive={activeIndex === index}
+            onActivate={onActivate}
+            onDeactivate={onDeactivate}
+          />
+        ))}
       </div>
     </section>
   )
@@ -92,4 +132,4 @@ HoverVideoGrid.defaultProps = {
   subtitle: "",
 }
 
-export default HoverVideoGrid
+export default React.memo(HoverVideoGrid)
