@@ -1,9 +1,72 @@
-import React, { useMemo, useState } from "react"
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 
 import GallerySection from "./gallery-section"
 import Mute from "../assets/icons/common/mute.svg"
-import ReactPlayer from "react-player"
+import PropTypes from "prop-types"
 import Unmute from "../assets/icons/common/unmute.svg"
+import useInView from "../hooks/useInView"
+
+const OrganicVideoItem = React.memo(function OrganicVideoItem({
+  src,
+  isMuted,
+  onToggleSound,
+}) {
+  const { ref, inView } = useInView({ rootMargin: "250px", threshold: 0.15 })
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const v = videoRef.current
+    if (!v) return
+
+    if (inView) {
+      const p = v.play()
+      if (p && typeof p.catch === "function") p.catch(() => { })
+    } else {
+      v.pause()
+    }
+  }, [inView])
+
+  return (
+    <div ref={ref} className="main-image">
+      <video
+        ref={videoRef}
+        className="organic-video"
+        src={src}
+        loop
+        muted={isMuted}
+        playsInline
+        preload="metadata"
+      />
+
+      <button
+        className="sound-toggle"
+        onClick={onToggleSound}
+        aria-label={isMuted ? "Ativar som do vídeo" : "Desativar som do vídeo"}
+        type="button"
+      >
+        {isMuted ? <Unmute /> : <Mute />}
+      </button>
+    </div>
+  )
+})
+
+OrganicVideoItem.propTypes = {
+  src: PropTypes.string.isRequired,
+  isMuted: PropTypes.bool.isRequired,
+  onToggleSound: PropTypes.func.isRequired,
+}
+
+const OrganicImageItem = React.memo(function OrganicImageItem({ src }) {
+  return (
+    <div className="main-image">
+      <img src={src} alt="" loading="lazy" decoding="async" />
+    </div>
+  )
+})
+
+OrganicImageItem.propTypes = {
+  src: PropTypes.string.isRequired,
+}
 
 const OrganicContentSection = ({ tabs }) => {
   const tabArray = useMemo(() => {
@@ -13,6 +76,7 @@ const OrganicContentSection = ({ tabs }) => {
 
   const [activeTab, setActiveTab] = useState(0)
   const [unmutedIndex, setUnmutedIndex] = useState(null)
+
   const itemsPerPage = 10
 
   const activeItems = useMemo(() => {
@@ -23,80 +87,58 @@ const OrganicContentSection = ({ tabs }) => {
   const firstFive = useMemo(() => activeItems.slice(0, 5), [activeItems])
   const secondFive = useMemo(() => activeItems.slice(5, 10), [activeItems])
 
-  if (tabArray.length === 0) return null
+  const onTabSelect = useCallback((index) => {
+    setActiveTab(index)
+    setUnmutedIndex(null)
+  }, [])
 
-  const toggleSound = (index) => {
+  const toggleSound = useCallback((index) => {
     setUnmutedIndex((prev) => (prev === index ? null : index))
-  }
+  }, [])
+
+  if (tabArray.length === 0) return null
 
   return (
     <div className="organic-content-section container">
-      <div className="titles">
-        {tabArray.map((tab, index) => (
-          <div
-            key={tab.title || index}
-            className={`title-btn ${activeTab === index ? "active" : ""}`}
-            onClick={() => {
-              setActiveTab(index)
-              setUnmutedIndex(null)
-            }}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault()
-              }
-            }}
-            role="button"
-            tabIndex={0}
-          >
-            {tab.title}
-          </div>
-        ))}
+      <div className="titles" role="tablist" aria-label="Conteúdo orgânico">
+        {tabArray.map((tab, index) => {
+          const isActive = activeTab === index
+          const label = tab.title || `Tab ${index + 1}`
+
+          return (
+            <button
+              key={tab.title || index}
+              type="button"
+              className={`title-btn ${isActive ? "active" : ""}`}
+              onClick={() => onTabSelect(index)}
+              role="tab"
+              aria-selected={isActive}
+            >
+              {label}
+            </button>
+          )
+        })}
       </div>
 
       <div className="main-images">
-        {activeItems.map((item, index) => (
-          <div key={index} className="main-image">
-            {item?.img && (
-              <img src={item.img} alt="" loading="lazy" decoding="async" />
-            )}
+        {activeItems.map((item, index) => {
+          if (item?.img) {
+            return <OrganicImageItem key={index} src={item.img} />
+          }
 
-            {item?.video && (
-              <>
-                <ReactPlayer
-                  className="react-player"
-                  url={item.video}
-                  playing={true}
-                  loop={true}
-                  muted={unmutedIndex !== index}
-                  playsInline={true}
-                  controls={false}
-                  width="101%"
-                  height="100%"
-                  config={{
-                    file: {
-                      attributes: {
-                        playsInline: true,
-                        muted: true,
-                        autoPlay: true,
-                        loop: true,
-                        controls: false,
-                      },
-                    },
-                  }}
-                />
+          if (item?.video) {
+            return (
+              <OrganicVideoItem
+                key={index}
+                src={item.video}
+                isMuted={unmutedIndex !== index}
+                onToggleSound={() => toggleSound(index)}
+              />
+            )
+          }
 
-                <button
-                  className="sound-toggle"
-                  onClick={() => toggleSound(index)}
-                  aria-label={unmutedIndex === index ? "Mute video" : "Unmute video"}
-                  type="button"
-                >
-                  {unmutedIndex === index ? <Mute /> : <Unmute />}
-                </button>
-              </>
-            )}
-          </div>
-        ))}
+          return null
+        })}
       </div>
 
       <div className="mobile-carousels">
@@ -107,4 +149,28 @@ const OrganicContentSection = ({ tabs }) => {
   )
 }
 
-export default OrganicContentSection
+OrganicContentSection.propTypes = {
+  tabs: PropTypes.oneOfType([
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string,
+        items: PropTypes.arrayOf(
+          PropTypes.shape({
+            img: PropTypes.string,
+            video: PropTypes.string,
+          })
+        ),
+      })
+    ),
+    PropTypes.shape({
+      title: PropTypes.string,
+      items: PropTypes.array,
+    }),
+  ]),
+}
+
+OrganicContentSection.defaultProps = {
+  tabs: [],
+}
+
+export default React.memo(OrganicContentSection)

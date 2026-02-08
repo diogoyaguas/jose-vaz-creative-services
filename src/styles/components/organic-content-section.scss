@@ -13,9 +13,18 @@
       margin-bottom: 0.5rem;
       color: var(--grey);
       cursor: pointer;
+      background: none;
+      border: 0;
+      padding: 0;
+      transition: color 0.2s ease;
 
       &.active {
         color: var(--black);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--black);
+        outline-offset: 3px;
       }
     }
   }
@@ -28,6 +37,8 @@
     .main-image {
       position: relative;
       overflow: hidden;
+      transform: translateZ(0);
+      backface-visibility: hidden;
 
       img,
       video {
@@ -45,9 +56,12 @@
         border: 0;
         background: transparent;
         opacity: 0;
-        transition: opacity 200ms ease;
+        transition:
+          opacity 200ms ease,
+          transform 200ms ease;
         cursor: pointer;
-        padding: 0;
+        padding: 6px;
+        transform: translateY(2px);
 
         svg {
           width: 15px;
@@ -62,6 +76,7 @@
 
       &:hover .sound-toggle {
         opacity: 1;
+        transform: translateY(0);
       }
     }
   }
@@ -125,6 +140,19 @@
   .organic-content-section {
     .main-images .main-image .sound-toggle {
       opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .organic-content-section {
+    .main-images .main-image .sound-toggle {
+      transition: none;
+    }
+
+    .titles .title-btn {
+      transition: none;
     }
   }
 }
