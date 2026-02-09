@@ -1,14 +1,94 @@
 [
   {
+    "banner": {
+      "video": "/assets/projetos/aion/spot_tv/aion.mp4"
+    },
     "cardMedia": {
       "video": "/assets/projetos/aion/card_media.mp4"
     },
-    "categories": [
-      "Campanhas",
-      "Redes Sociais",
-      "Criação de Conteúdo"
+    "categories": ["Campanhas", "Redes Sociais", "Criação de Conteúdo"],
+    "content": [
+      {
+        "columns": 3,
+        "items": [
+          {
+            "img": "projetos/aion/mupis/1.png"
+          },
+          {
+            "img": "projetos/aion/mupis/2.png"
+          },
+          {
+            "img": "projetos/aion/mupis/3.png"
+          }
+        ],
+        "title": "mupi's impressos e digitais",
+        "type": "gallery"
+      },
+      {
+        "columns": 5,
+        "items": [
+          {
+            "img": "projetos/aion/ads/AD1.png"
+          },
+          {
+            "img": "projetos/aion/ads/AD2.png"
+          },
+          {
+            "img": "projetos/aion/ads/AD3.png"
+          },
+          {
+            "img": "projetos/aion/ads/AD4.png"
+          },
+          {
+            "img": "projetos/aion/ads/AD5.png"
+          }
+        ],
+
+        "title": "paid media",
+        "type": "gallery"
+      },
+      {
+        "tabs": [
+          {
+            "items": [
+              {
+                "img": "projetos/aion/organico/Post1.png"
+              },
+              {
+                "img": "projetos/aion/organico/Post2.png"
+              },
+              {
+                "img": "projetos/aion/organico/Post3.png"
+              },
+              {
+                "img": "projetos/aion/organico/Post4.png"
+              },
+              {
+                "img": "projetos/aion/organico/Post5.png"
+              },
+              {
+                "video": "/assets/projetos/aion/organico/Story1.mp4"
+              },
+              {
+                "img": "projetos/aion/organico/Story2.png"
+              },
+
+              {
+                "img": "projetos/aion/organico/Story3.png"
+              },
+              {
+                "img": "projetos/aion/organico/Story4.png"
+              },
+              {
+                "video": "/assets/projetos/aion/organico/Story5.mp4"
+              }
+            ]
+          }
+        ],
+        "title": "conteúdo orgânico",
+        "type": "organicTabs"
+      }
     ],
-    "content": [],
     "date": "2025-2026",
     "description": "M.A.D é um projeto criativo com foco na música, que combina identidade visual, comunicação de eventos e conteúdos digitais para construir um universo de marca forte e imersivo.",
     "index": 3,
@@ -20,15 +100,95 @@
     "translationKey": "aion_v"
   },
   {
+    "banner": {
+      "video": "/assets/projetos/aion/spot_tv/aion.mp4"
+    },
     "cardMedia": {
       "video": "/assets/projetos/aion/card_media.mp4"
     },
-    "categories": [
-      "Campaigns",
-      "Social Media",
-      "Content Creation"
+    "categories": ["Campaigns", "Social Media", "Content Creation"],
+    "content": [
+      {
+        "columns": 3,
+        "items": [
+          {
+            "img": "projetos/aion/mupis/1.png"
+          },
+          {
+            "img": "projetos/aion/mupis/2.png"
+          },
+          {
+            "img": "projetos/aion/mupis/3.png"
+          }
+        ],
+        "title": "printed and digital MUPIs",
+        "type": "gallery"
+      },
+      {
+        "columns": 5,
+        "items": [
+          {
+            "img": "projetos/aion/ads/AD1.png"
+          },
+          {
+            "img": "projetos/aion/ads/AD2.png"
+          },
+          {
+            "img": "projetos/aion/ads/AD3.png"
+          },
+          {
+            "img": "projetos/aion/ads/AD4.png"
+          },
+          {
+            "img": "projetos/aion/ads/AD5.png"
+          }
+        ],
+
+        "title": "paid media",
+        "type": "gallery"
+      },
+      {
+        "tabs": [
+          {
+            "items": [
+              {
+                "img": "projetos/aion/organico/Post1.png"
+              },
+              {
+                "img": "projetos/aion/organico/Post2.png"
+              },
+              {
+                "img": "projetos/aion/organico/Post3.png"
+              },
+              {
+                "img": "projetos/aion/organico/Post4.png"
+              },
+              {
+                "img": "projetos/aion/organico/Post5.png"
+              },
+              {
+                "video": "/assets/projetos/aion/organico/Story1.mp4"
+              },
+              {
+                "img": "projetos/aion/organico/Story2.png"
+              },
+
+              {
+                "img": "projetos/aion/organico/Story3.png"
+              },
+              {
+                "img": "projetos/aion/organico/Story4.png"
+              },
+              {
+                "video": "/assets/projetos/aion/organico/Story5.mp4"
+              }
+            ]
+          }
+        ],
+        "title": "organic content",
+        "type": "organicTabs"
+      }
     ],
-    "content": [],
     "date": "2025-2026",
     "description": "M.A.D is a music-focused creative project combining visual identity, event communication, and digital content to build a strong and immersive brand universe.",
     "index": 3,
