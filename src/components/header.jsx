@@ -14,7 +14,6 @@ const Header = ({ locale = "pt", otherPath }) => {
     if (locale === "en") {
       return {
         projects: "/en/projects",
-        contact: "/en/contact",
         about: "/en/about",
         labelProjects: "projects",
         labelContact: "contact",
@@ -24,7 +23,6 @@ const Header = ({ locale = "pt", otherPath }) => {
 
     return {
       projects: "/projetos",
-      contact: "/contacto",
       about: "/sobre",
       labelProjects: "projetos",
       labelContact: "contacto",
@@ -56,9 +54,6 @@ const Header = ({ locale = "pt", otherPath }) => {
           <div className="ms-auto d-flex gap-5 navbar-links">
             <Link to={nav.projects} className="nav-link" onClick={closeMenu}>
               {nav.labelProjects}
-            </Link>
-            <Link to={nav.contact} className="nav-link" onClick={closeMenu}>
-              {nav.labelContact}
             </Link>
             <Link to={nav.about} className="nav-link" onClick={closeMenu}>
               {nav.labelAbout}
