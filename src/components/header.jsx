@@ -2,6 +2,8 @@ import React, { useMemo, useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
+import ThemeSwitcher from "./theme-switcher"
+
 const Header = ({ locale = "pt", otherPath }) => {
   const [open, setOpen] = useState(false)
 
@@ -74,6 +76,8 @@ const Header = ({ locale = "pt", otherPath }) => {
                 <span className={locale === "en" ? "active" : ""}>en</span>
               </Link>
             ) : null}
+
+            <ThemeSwitcher />
           </div>
         </div>
       </div>

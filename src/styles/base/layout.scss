@@ -9,9 +9,10 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
+  background-color: var(--white);
+  transition: background-color 0.4s ease-in-out;
 
   main {
     padding-top: 3.6rem;
   }
-
 }
