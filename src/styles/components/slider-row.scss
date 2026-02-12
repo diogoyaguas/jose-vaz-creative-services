@@ -2,19 +2,52 @@ $transition: 0.25s ease;
 
 .slider-row {
   width: 100%;
-  overflow: hidden;
-  padding: 8px 0 6px;
+  position: relative;
+
+  .slider-viewport {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 24px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity $transition;
+      z-index: 1;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(to right, var(--white), rgba(255, 255, 255, 0));
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(to left, var(--white), rgba(255, 255, 255, 0));
+    }
+
+    &.has-left-overflow::before {
+      opacity: 1;
+    }
+
+    &.has-right-overflow::after {
+      opacity: 1;
+    }
+  }
 
   .section-track {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(72vw, 930px);
+    grid-auto-columns: 700px;
     gap: clamp(26px, 3.8vw, 54px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    mask-image: linear-gradient(to right, transparent 0, black 5%, black 92%, transparent 100%);
     padding-right: clamp(20px, 4vw, 40px);
 
     &::-webkit-scrollbar {
@@ -24,13 +57,8 @@ $transition: 0.25s ease;
 
   .section-slide {
     scroll-snap-align: start;
-    opacity: 0.2;
     transition: opacity $transition;
     min-width: 0;
-
-    &.is-visible {
-      opacity: 1;
-    }
   }
 
   .section-title {
@@ -86,7 +114,6 @@ $transition: 0.25s ease;
     .section-track {
       grid-auto-columns: 86vw;
       gap: 20px;
-      mask-image: linear-gradient(to right, transparent 0, black 7%, black 93%, transparent 100%);
       padding-right: 12px;
     }
 
