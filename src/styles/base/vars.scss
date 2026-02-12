@@ -1,13 +1,13 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --grey: #ababab;
+  --gray: #ababab;
   --blue: #1500ff;
 }
 
 :root[data-theme="dark"] {
   --white: #000000;
   --black: #ffffff;
-  --grey: #ababab;
+  --gray: #ababab;
   --blue: #1500ff;
 }

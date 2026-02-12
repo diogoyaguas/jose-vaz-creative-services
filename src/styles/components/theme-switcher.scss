@@ -9,13 +9,13 @@
 .theme-switcher-toggle__icon {
   width: 15px;
   height: auto;
-  color: var(--grey);
+  color: var(--gray);
   transition: color 0.7s linear;
 }
 
 .theme-switcher-toggle__icon--moon {
   width: 15px;
-  color: var(--grey);
+  color: var(--gray);
   opacity: 0.6;
   transition:
     opacity 0.7s linear,
