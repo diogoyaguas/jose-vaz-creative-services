@@ -88,25 +88,25 @@ function SliderRow({ id, clientsByYear, software, skills }) {
   }
 
   return (
-    <section id={id} className="sliderRow">
-      <div ref={trackRef} className="sectionTrack" onWheel={onWheelTrack}>
+    <section id={id} className="slider-row">
+      <div ref={trackRef} className="section-track" onWheel={onWheelTrack}>
         {sections.map((section, sectionIndex) => (
           <motion.article
             key={section.id}
-            className={`sectionSlide ${visibleSections.includes(sectionIndex) ? "isVisible" : "isDimmed"}`}
+            className={`section-slide ${visibleSections.includes(sectionIndex) ? "is-visible" : "is-dimmed"}`}
             variants={itemVariants}
             ref={(el) => {
               sectionRefs.current[sectionIndex] = el
             }}
             data-index={sectionIndex}
           >
-            <h2 className="sectionTitle">{section.title}</h2>
+            <h2 className="section-title">{section.title}</h2>
 
-            <div className="sectionColumns">
+            <div className="section-columns">
               {section.columns.map((column, idx) => (
-                <div className="rowColumn" key={`${section.id}-${idx}`}>
-                  {column.year ? <p className="rowYear">{column.year}</p> : <p className="rowYear isBlank">.</p>}
-                  <ul className="rowList">
+                <div className="row-column" key={`${section.id}-${idx}`}>
+                  {column.year ? <p className="row-year">{column.year}</p> : <p className="row-year is-blank">.</p>}
+                  <ul className="row-list">
                     {column.items.map((item) => (
                       <li key={`${section.id}-${item}`}>{item}</li>
                     ))}

@@ -42,27 +42,30 @@ const Sobre = ({ data }) => {
 
       <section className="about-page container">
         <motion.section
-          className="topGrid"
+          className="top-grid"
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
         >
-          <motion.div className="leftCol" variants={itemVariants}>
+          <motion.div className="left-col" variants={itemVariants}>
             <img
-              className="profilePhoto"
+              className="profile-photo"
               src={ensureLeadingSlash(about.profile.photo)}
               alt="Foto de perfil"
             />
           </motion.div>
 
-          <motion.div className="rightCol" variants={itemVariants}>
-            <p className="titleText">{about.profile.titleText}</p>
-            <p className="subText">{about.profile.subtitleText}</p>
+          <motion.div className="right-col" variants={itemVariants}>
+            <p
+              className="title-text"
+              dangerouslySetInnerHTML={{ __html: about.profile.titleText || "" }}
+            />
+            <p className="sub-text">{about.profile.subtitleText}</p>
           </motion.div>
         </motion.section>
 
-        <section className="tabsSection">
+        <section className="tabs-section">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -77,12 +80,6 @@ const Sobre = ({ data }) => {
             />
           </motion.div>
         </section>
-
-        <footer className="footerCta">
-          <a className="cvBtn" href={"/José-Vaz-CV.pdf"} download>
-            Download CV
-          </a>
-        </footer>
       </section>
     </Layout>
   )
