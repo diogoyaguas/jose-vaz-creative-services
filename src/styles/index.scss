@@ -1,3 +1,4 @@
+@use './base/about.scss';
 @use './base/global';
 @use './base/page-404';
 @use './base/vars';
@@ -12,5 +13,6 @@
 @use './components/password';
 @use './components/project-card';
 @use './components/project-header';
+@use './components//slider-row.scss';
 @use './components/tabbed-image-section';
 @use './components/theme-switcher';

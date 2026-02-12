@@ -1,83 +1,176 @@
 [
-    {
-        "experience": [
-            {
-                "title": "Degree in Design and Multimedia at University of Coimbra ",
-                "date": "September 2017 - March 2021",
-                "text": "<p>Faculty of Science and Technologies at the University of Coimbra.</p><p>In 2018, I embarked on my journey in design through a comprehensive program at the esteemed University of Coimbra. This degree equipped me with essential skills and knowledge in both traditional and digital design, enabling me to excel in areas such as Graphic and Web Design.</p><p>Through my education, I honed my ability to think critically, solve complex design challenges, and effectively communicate ideas through visual media, in areas such as:</p><p> Typography, Graphic Design, Communication Design, Project, Photography & Composition, Multimedia Programming, Audiovisual Production, Editorial Design, History of Design.</p>"
-            },
-            {
-                "title": "The Feeting Room - Professional Internship",
-                "date": "September 2021 - October 2022",
-                "text": "<p>In 2021, I joined The Feeting Room's Team, a brand that is home to Nacional and International Sustainable and Independent brands.</p><p>During my internship I worked with multiple partner brands in the Consulting Department, designing brand-books, collection presentations, copies and Content for Social Media and Websites. This was in addition to creating and developing content for the Marketing Department of The Feeting Room, for example:</p><ul><li>Printed Materials for Stores (Acrylics, Cards, Vinyls, Tags)</li><li>Social Media Content (Reels, Short Videos, Stories layouts, Ads...)</li><li>Campaigns: Christmas Edit, Ask Mr. Pinho, Mother's Day, Black Friday Weekend and Sales Campaigns</li><li>Newsletters and GiveAways</li><li>Supplies for Events (Invites, Stickers, Vouchers, Flyers)</li><li>Website Management (Banners, Gifs, Product Photos)</li><li>Product Photo Assistant</li><li>Creative Director Assistant in Photoshoots</li><li>Backstage Content Creator</li><li>Stylist</li></ul>"
-            },
-            {
-                "title": "Deepwear - Global Progressive Fashion Agency",
-                "date": "November 2022 - Present",
-                "text": "<p>As a Graphic Designer at Deepwear, I had the opportunity to immerse myself in various aspects of the fashion industry, in a global scale. My role involved visiting fashion factories, presenting new projects, and creating brochures and collections for our esteemed clients. I took charge of shooting captivating photos and videos to generate compelling content for our digital platforms.</p><p>Collaborating closely with project managers, I contributed to the development of brand identities, logos, and prints that resonated with our clients' visions. Additionally, I worked alongside the marketing team to craft visually appealing newsletters and engaging blog posts, enhancing our brand's online presence, writing copies for post and working as a social media manager.</p><p>Throughout my tenure at Deepwear, I gained invaluable experience in executing diverse design projects within the fashion realm. I honed my skills in visual storytelling, brand development, and creating impactful marketing material.</p>"
-            },
-            {
-                "title": "Working as a Freelancer",
-                "date": "September 2020 - Present",
-                "text": "<p>Following the completion of my degree, I embarked on a successful freelance career, collaborating with various small companies and entrepreneurs.</p><p>My responsibilities encompassed a range of deliverables, including: Brand Identity Development, Printed Support and Social Media Content Creation.</p><p> Throughout these freelance projects, I demonstrated a keen attention to detail, effective communication, and an ability to deliver exceptional results within set timelines.</p>"
-            },
-            {
-                "title": "Choreographer at Music Beats Events and Groovy Events",
-                "date": "May 2017 - Present",
-                "text": "<p>Currently, I'm a choreographer in 2 companies of animation and entertainment. It's a side job that occupies me mainly the summer which allows me to develop my social skills.</p><p>This opportunity was made possible after 6 years participating in Ballroom Dance Competitions where I was awarded a National Champion of Ballroom and Latin Styles in 2016 and 2017.</p>"
-            },
-            {
-                "title": "Retailer at Springfield from Cortefiel Group",
-                "date": "September 2020 - May 2021",
-                "text": "<p>During my final year of study in Coimbra, I proactively sought employment opportunities to support myself financially. This decision opened doors for me to explore various fields and gain valuable professional experience outside of my core discipline.</p><p>I successfully took on roles in different domains, including: Sales Assistant, Warehouse Manager and Customer Service Representative.</p><p>These experiences outside of my academic focus allowed me to cultivate a versatile skill set, including adaptability, effective communication, problem-solving, and the ability to thrive in dynamic work environments.</p>"
-            }
+  {
+    "clientsByYear": [
+      {
+        "clients": [
+          "IPDJ - Instituto Português do Desporto e Juventude",
+          "The Feeting Room",
+          "Deepwear"
         ],
-        "software": [
-            {
-                "name": "Adobe Premiere",
-                "stars": 5,
-                "icon": "/icons/PR-B.svg"
-            },
-            {
-                "name": "Adobe Photoshop",
-                "stars": 4,
-                "icon": "/icons/PS - B.svg"
-            },
-            {
-                "name": "Adobe Illustrator",
-                "stars": 5,
-                "icon": "/icons/AI - B.svg"
-            },
-            {
-                "name": "Adobe After Effects",
-                "stars": 3,
-                "icon": "/icons/AE -B.svg"
-            },
-            {
-                "name": "Adobe Indesign",
-                "stars": 5,
-                "icon": "/icons/ID -B.svg"
-            },
-            {
-                "name": "Behance",
-                "stars": 3,
-                "icon": "/icons/BE -B.svg"
-            },
-            {
-                "name": "Figma",
-                "stars": 4,
-                "icon": "/icons/FIGMA - B.svg"
-            },
-            {
-                "name": "Gempages",
-                "stars": 3,
-                "icon": "/icons/GEMPAGES-B.svg"
-            },
-            {
-                "name": "Microsoft Office",
-                "stars": 4,
-                "icon": "/icons/OFFICE-B.svg"
-            }
-        ]
-    }
+        "year": "2025"
+      },
+      {
+        "clients": [
+          "Marca de Moda Europeia",
+          "Marca Lifestyle Portuguesa",
+          "Projeto Freelance"
+        ],
+        "year": "2024"
+      },
+      {
+        "clients": [
+          "Deepwear Clients Portfolio",
+          "Fashion Factories (EU & Asia)"
+        ],
+        "year": "2023"
+      }
+    ],
+    "experience": [
+      {
+        "date": "September 2017 - March 2021",
+        "text": "<p>Faculty of Science and Technologies at the University of Coimbra.</p><p>This degree provided a strong foundation in both traditional and digital design, covering areas such as Graphic Design, Web Design and Multimedia.</p><p>Throughout the course, I developed critical thinking, problem-solving skills and the ability to communicate ideas visually, with a focus on:</p><p>Typography, Graphic Design, Communication Design, Project Methodology, Photography & Composition, Multimedia Programming, Audiovisual Production, Editorial Design and History of Design.</p>",
+        "title": "Degree in Design and Multimedia — University of Coimbra"
+      },
+      {
+        "date": "September 2021 - October 2022",
+        "text": "<p>Joined The Feeting Room team, a platform representing national and international sustainable and independent fashion brands.</p><p>Worked closely with the Consulting Department, developing brand-books, collection presentations, copy and content for social media and websites.</p><ul><li>Printed materials for stores (acrylics, cards, vinyls, tags)</li><li>Social media content (reels, short videos, stories, ads)</li><li>Campaigns (Christmas Edit, Ask Mr. Pinho, Mother’s Day, Black Friday, Sales)</li><li>Newsletters and giveaways</li><li>Event materials (invites, stickers, vouchers, flyers)</li><li>Website management (banners, gifs, product photography)</li><li>Creative direction and photoshoot assistance</li><li>Backstage content creation and styling</li></ul>",
+        "title": "The Feeting Room — Professional Internship"
+      },
+      {
+        "date": "November 2022 - Present",
+        "text": "<p>Graphic Designer working on a global scale within the fashion industry.</p><p>Responsibilities include visiting fashion factories, presenting new projects, developing brochures and collections, and creating photo and video content for digital platforms.</p><p>Worked closely with project managers and marketing teams to develop brand identities, logos, prints, newsletters and blog content, as well as social media management and copywriting.</p><p>This role strengthened my skills in visual storytelling, brand development and impactful marketing communication.</p>",
+        "title": "Deepwear — Global Progressive Fashion Agency"
+      },
+      {
+        "date": "September 2020 - Present",
+        "text": "<p>Freelance work with small businesses and entrepreneurs, focusing on brand identity development, printed materials and social media content.</p><p>Demonstrated strong attention to detail, effective communication and the ability to deliver high-quality results within defined timelines.</p>",
+        "title": "Freelance Graphic Designer"
+      },
+      {
+        "date": "May 2017 - Present",
+        "text": "<p>Choreographer in entertainment and event animation companies, primarily during the summer season.</p><p>This experience enhanced my communication, leadership and teamwork skills.</p><p>Background includes 6 years of Ballroom Dance competitions, achieving National Champion titles in Ballroom and Latin styles in 2016 and 2017.</p>",
+        "title": "Choreographer — Music Beats Events & Groovy Events"
+      },
+      {
+        "date": "September 2020 - May 2021",
+        "text": "<p>Worked in retail while completing my studies, gaining experience in sales, stock management and customer service.</p><p>This role contributed to the development of adaptability, problem-solving and interpersonal skills in a fast-paced environment.</p>",
+        "title": "Sales Assistant — Springfield (Cortefiel Group)"
+      }
+    ],
+    "locale": "pt",
+    "profile": {
+      "photo": "profile.png",
+      "subtitleText": "Procuro manter-me sempre a par das novas tendências de conteúdo e de mercado, para ajudar as marcas com que trabalho a acompanhar a evolução das plataformas digitais e offline, através de conteúdos relevantes e apelativos. Gosto de ter um olhar crítico sobre o design e sobre a forma como este performa.",
+      "titleText": "Olá, eu sou o José Vaz. Sou <blue>designer gráfico</blue> e <gray>creative specialist</gray>, o meu trabalho foca-se na criação de conteúdos digitais e campanhas de marketing."
+    },
+    "software": [
+      "Adobe Premiere Pro",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe After Effects",
+      "Adobe InDesign",
+      "Figma",
+      "Behance",
+      "Gempages",
+      "Microsoft Office"
+    ],
+    "skills": [
+      "Creative Direction",
+      "Brand Identity",
+      "Art Direction",
+      "Visual Storytelling",
+      "Content Strategy",
+      "Campaign Design",
+      "Social Media Design",
+      "Copywriting",
+      "Photo & Video Editing"
+    ]
+  },
+  {
+    "clientsByYear": [
+      {
+        "clients": [
+          "IPDJ - Portuguese Institute for Sport and Youth",
+          "The Feeting Room",
+          "Deepwear"
+        ],
+        "year": "2025"
+      },
+      {
+        "clients": [
+          "European Fashion Brand",
+          "Portuguese Lifestyle Brand",
+          "Freelance Project"
+        ],
+        "year": "2024"
+      },
+      {
+        "clients": [
+          "Deepwear Clients Portfolio",
+          "Fashion Factories (EU & Asia)"
+        ],
+        "year": "2023"
+      }
+    ],
+    "experience": [
+      {
+        "date": "September 2017 - March 2021",
+        "text": "<p>Faculty of Science and Technologies at the University of Coimbra.</p><p>This degree provided a strong foundation in both traditional and digital design, covering areas such as Graphic Design, Web Design, and Multimedia.</p><p>Throughout the course, I developed critical thinking, problem-solving skills, and the ability to communicate ideas visually, with a focus on:</p><p>Typography, Graphic Design, Communication Design, Project Methodology, Photography & Composition, Multimedia Programming, Audiovisual Production, Editorial Design, and History of Design.</p>",
+        "title": "Degree in Design and Multimedia — University of Coimbra"
+      },
+      {
+        "date": "September 2021 - October 2022",
+        "text": "<p>I joined The Feeting Room team, a platform representing national and international sustainable and independent fashion brands.</p><p>I worked closely with the Consulting Department, developing brand books, collection presentations, copy, and content for social media and websites.</p><ul><li>Printed materials for retail stores (acrylics, cards, vinyls, tags)</li><li>Social media content (reels, short videos, stories, ads)</li><li>Campaigns (Christmas Edit, Ask Mr. Pinho, Mother’s Day, Black Friday, Sales)</li><li>Newsletters and giveaways</li><li>Event materials (invites, stickers, vouchers, flyers)</li><li>Website management (banners, GIFs, product photography)</li><li>Creative direction and photoshoot assistance</li><li>Backstage content creation and styling</li></ul>",
+        "title": "The Feeting Room — Professional Internship"
+      },
+      {
+        "date": "November 2022 - Present",
+        "text": "<p>Graphic Designer working on a global scale within the fashion industry.</p><p>My responsibilities include visiting fashion factories, presenting new projects, developing brochures and collections, and producing photo and video content for digital platforms.</p><p>I collaborate closely with project managers and marketing teams to develop brand identities, logos, prints, newsletters, blog content, and social media copy.</p><p>This role strengthened my skills in visual storytelling, brand development, and impactful marketing communication.</p>",
+        "title": "Deepwear — Global Progressive Fashion Agency"
+      },
+      {
+        "date": "September 2020 - Present",
+        "text": "<p>I work as a freelance graphic designer with small businesses and entrepreneurs, focusing on brand identity development, printed materials, and social media content.</p><p>Across these projects, I demonstrate strong attention to detail, clear communication, and the ability to deliver high-quality results within defined timelines.</p>",
+        "title": "Freelance Graphic Designer"
+      },
+      {
+        "date": "May 2017 - Present",
+        "text": "<p>Choreographer in entertainment and event animation companies, primarily during the summer season.</p><p>This experience enhanced my communication, leadership, and teamwork skills.</p><p>My background includes six years of Ballroom Dance competitions, achieving National Champion titles in Ballroom and Latin styles in 2016 and 2017.</p>",
+        "title": "Choreographer — Music Beats Events & Groovy Events"
+      },
+      {
+        "date": "September 2020 - May 2021",
+        "text": "<p>I worked in retail while completing my studies, gaining experience in sales, stock management, and customer service.</p><p>This role contributed to the development of adaptability, problem-solving skills, and the ability to thrive in fast-paced environments.</p>",
+        "title": "Sales Assistant — Springfield (Cortefiel Group)"
+      }
+    ],
+    "locale": "en",
+    "profile": {
+      "photo": "profile.png",
+      "subtitleText": "I work collaboratively with marketing, product, and partner teams, ensuring visual consistency and communication aligned with each brand’s positioning.",
+      "titleText": "I am a designer focused on visual identity, creative direction, and brand content — from concept to digital and print execution."
+    },
+    "software": [
+      "Adobe Premiere Pro",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe After Effects",
+      "Adobe InDesign",
+      "Figma",
+      "Behance",
+      "Gempages",
+      "Microsoft Office"
+    ],
+    "skills": [
+      "Creative Direction",
+      "Brand Identity",
+      "Art Direction",
+      "Visual Storytelling",
+      "Content Strategy",
+      "Campaign Design",
+      "Social Media Design",
+      "Copywriting",
+      "Photo & Video Editing"
+    ]
+  }
 ]

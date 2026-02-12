@@ -1,0 +1,83 @@
+
+$transition: 0.25s ease;
+
+
+.about-page {
+  margin: 0 auto;
+  padding: 0 10rem 0 10rem;
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.leftCol {
+  position: sticky;
+  top: 24px;
+}
+
+.profilePhoto {
+  width: 100%;
+  display: block;
+}
+
+.rightCol {
+  padding-top: 4px;
+}
+
+.titleText {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.subText {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+.tabsSection {
+  margin-top: 40px;
+}
+
+.footerCta {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.cvBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid var(--gray);
+  background: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  transition: border-color $transition;
+}
+
+// ===============================
+// Responsive
+// ===============================
+@media (max-width: 900px) {
+  .topGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .leftCol {
+    position: static;
+  }
+
+  .titleText {
+    font-size: 24px;
+  }
+}

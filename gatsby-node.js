@@ -1,4 +1,6 @@
 const path = require("path")
+const fs = require("fs")
+const crypto = require("crypto")
 
 const SUPPORTED_LOCALES = new Set(["pt", "en"])
 
@@ -6,6 +8,38 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
   createTypes(`
+    type About implements Node @dontInfer {
+      locale: String!
+      profile: AboutProfile!
+      clientsByYear: [AboutClientsYear!]!
+      software: [String!]!
+      skills: [String!]!
+      experience: [AboutExperience!]!
+      cv: AboutCv
+    }
+
+    type AboutProfile @dontInfer {
+      photo: String!
+      titleText: String!
+      subtitleText: String!
+    }
+
+    type AboutClientsYear @dontInfer {
+      year: String!
+      clients: [String!]!
+    }
+
+    type AboutExperience @dontInfer {
+      title: String!
+      date: String!
+      text: String!
+    }
+
+    type AboutCv @dontInfer {
+      file: String!
+      label: String!
+    }
+
     type Project implements Node @dontInfer {
       slug: String!
       index: Int!
@@ -112,4 +146,61 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
+}
+
+
+exports.sourceNodes = ({ actions, createNodeId, reporter }) => {
+  const { createNode } = actions
+
+  // Ajusta este path caso o ficheiro esteja noutro sítio
+  const aboutPath = path.resolve("src/data/about.json")
+
+  reporter.info(`[about] Reading: ${aboutPath}`)
+
+  if (!fs.existsSync(aboutPath)) {
+    reporter.warn(`[about] File not found: ${aboutPath}`)
+    return
+  }
+
+  let parsed
+  try {
+    parsed = JSON.parse(fs.readFileSync(aboutPath, "utf8"))
+  } catch (e) {
+    reporter.panicOnBuild(`[about] Invalid JSON in ${aboutPath}: ${e.message}`)
+    return
+  }
+
+  const items = Array.isArray(parsed) ? parsed : [parsed]
+  reporter.info(`[about] Entries in JSON: ${items.length}`)
+
+  let created = 0
+
+  items.forEach((item, idx) => {
+    const locale = String(item.locale || "").toLowerCase()
+
+    if (!SUPPORTED_LOCALES.has(locale)) {
+      reporter.warn(
+        `[about] Skipping entry #${idx} because locale "${item.locale}" is not supported.`
+      )
+      return
+    }
+
+    const content = JSON.stringify(item)
+    const digest = crypto.createHash("md5").update(content).digest("hex")
+
+    createNode({
+      ...item,
+      id: createNodeId(`about-${locale}`),
+      parent: null,
+      children: [],
+      internal: {
+        type: "About",
+        contentDigest: digest,
+      },
+    })
+
+    created += 1
+  })
+
+  reporter.info(`[about] Created About nodes: ${created}`)
 }
