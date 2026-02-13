@@ -6,11 +6,18 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import Mute from "../assets/icons/mute.svg"
 import Unmute from "../assets/icons/unmute.svg"
 import useInView from "../hooks/useInView"
+import {
+  createVideoAudioScope,
+  requestVideoAudioFocus,
+  subscribeToVideoAudioFocus,
+} from "../utils/global-video-audio"
 
 import GallerySection from "./gallery-section"
 
 const OrganicVideoItem = React.memo(function OrganicVideoItem({
   src,
+  index,
+  scopeId,
   isMuted,
   onToggleSound,
 }) {
@@ -35,6 +42,8 @@ const OrganicVideoItem = React.memo(function OrganicVideoItem({
         ref={videoRef}
         className="organic-video"
         src={src}
+        data-audio-scope={scopeId}
+        data-video-index={index}
         loop
         muted={isMuted}
         playsInline
@@ -58,6 +67,8 @@ const OrganicVideoItem = React.memo(function OrganicVideoItem({
 
 OrganicVideoItem.propTypes = {
   src: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+  scopeId: PropTypes.string.isRequired,
   isMuted: PropTypes.bool.isRequired,
   onToggleSound: PropTypes.func.isRequired,
 }
@@ -83,6 +94,8 @@ OrganicImageItem.defaultProps = {
 }
 
 const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
+  const sectionRef = useRef(null)
+  const [audioScopeId] = useState(() => createVideoAudioScope("organic"))
   const tabArray = useMemo(() => {
     if (!tabs) return []
     return Array.isArray(tabs) ? tabs : [tabs]
@@ -103,19 +116,72 @@ const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
   const firstFive = useMemo(() => activeItems.slice(0, 5), [activeItems])
   const secondFive = useMemo(() => activeItems.slice(5, 10), [activeItems])
 
+  const pauseOtherScopedVideos = useCallback((allowedIndex = null) => {
+    const root = sectionRef.current
+    if (!root) return
+
+    const videos = root.querySelectorAll(
+      `video[data-audio-scope="${audioScopeId}"]`
+    )
+
+    videos.forEach((video) => {
+      const videoIndex = Number(video.dataset.videoIndex)
+      if (allowedIndex !== null && videoIndex === allowedIndex) return
+      video.muted = true
+      video.pause()
+    })
+  }, [audioScopeId])
+
   const onTabSelect = useCallback(
     (index) => {
       if (index === activeTab) return
+      pauseOtherScopedVideos()
       setDirection(index > activeTab ? 1 : -1)
       setActiveTab(index)
       setUnmutedIndex(null)
     },
-    [activeTab]
+    [activeTab, pauseOtherScopedVideos]
   )
 
-  const toggleSound = useCallback((index) => {
-    setUnmutedIndex((prev) => (prev === index ? null : index))
-  }, [])
+  useEffect(() => {
+    return subscribeToVideoAudioFocus(audioScopeId, () => {
+      setUnmutedIndex(null)
+      pauseOtherScopedVideos()
+    })
+  }, [audioScopeId, pauseOtherScopedVideos])
+
+  useEffect(() => {
+    if (unmutedIndex === null) return
+
+    const root = sectionRef.current
+    if (!root) return
+
+    const activeVideo = root.querySelector(
+      `video[data-audio-scope="${audioScopeId}"][data-video-index="${unmutedIndex}"]`
+    )
+    if (!activeVideo) return
+
+    activeVideo.muted = false
+    const p = activeVideo.play()
+    if (p && typeof p.catch === "function") p.catch(() => {})
+  }, [audioScopeId, unmutedIndex, activeTab])
+
+  const toggleSound = useCallback(
+    (index) => {
+      setUnmutedIndex((prev) => {
+        const next = prev === index ? null : index
+        if (next === null) {
+          pauseOtherScopedVideos()
+          return null
+        }
+
+        requestVideoAudioFocus(audioScopeId)
+        pauseOtherScopedVideos(next)
+        return next
+      })
+    },
+    [audioScopeId, pauseOtherScopedVideos]
+  )
 
   if (tabArray.length === 0) return null
 
@@ -132,7 +198,7 @@ const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
     }
 
   return (
-    <div className="organic-content-section container">
+    <div ref={sectionRef} className="organic-content-section container">
       <div className="titles" role="tablist" aria-label="Conteúdo orgânico">
         <div className="title">{title}</div>
         {tabArray.map((tab, index) => {
@@ -180,6 +246,8 @@ const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
                   <OrganicVideoItem
                     key={item.id || index}
                     src={item.video}
+                    index={index}
+                    scopeId={audioScopeId}
                     isMuted={unmutedIndex !== index}
                     onToggleSound={() => toggleSound(index)}
                   />

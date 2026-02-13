@@ -1,12 +1,17 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import React, { useEffect, useMemo, useRef, useState } from "react"
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import PropTypes from "prop-types"
 
 import Mute from "../assets/icons/mute.svg"
 import Unmute from "../assets/icons/unmute.svg"
 import useInView from "../hooks/useInView"
+import {
+  createVideoAudioScope,
+  requestVideoAudioFocus,
+  subscribeToVideoAudioFocus,
+} from "../utils/global-video-audio"
 
-const GalleryVideoItem = ({ src, muted, onToggleSound }) => {
+const GalleryVideoItem = ({ src, muted, onToggleSound, index, scopeId }) => {
   const { ref, inView } = useInView({ rootMargin: "250px", threshold: 0.15 })
   const videoRef = useRef(null)
 
@@ -28,6 +33,8 @@ const GalleryVideoItem = ({ src, muted, onToggleSound }) => {
         ref={videoRef}
         className="gallery-video"
         src={src}
+        data-audio-scope={scopeId}
+        data-video-index={index}
         loop
         muted={muted}
         playsInline
@@ -54,11 +61,14 @@ GalleryVideoItem.propTypes = {
   src: PropTypes.string.isRequired,
   muted: PropTypes.bool.isRequired,
   onToggleSound: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired,
+  scopeId: PropTypes.string.isRequired,
 }
 
 const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
   const gridRef = useRef(null)
   const rafRef = useRef(null)
+  const [audioScopeId] = useState(() => createVideoAudioScope("gallery"))
 
   const [isScrollable, setIsScrollable] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
@@ -141,9 +151,58 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
     el.scrollTo({ left: index * pageWidth, behavior: "smooth" })
   }
 
-  const toggleSound = (index) => {
-    setUnmutedIndex((prev) => (prev === index ? null : index))
-  }
+  const pauseOtherScopedVideos = useCallback((allowedIndex = null) => {
+    const root = gridRef.current
+    if (!root) return
+
+    const videos = root.querySelectorAll(
+      `video[data-audio-scope="${audioScopeId}"]`
+    )
+
+    videos.forEach((video) => {
+      const videoIndex = Number(video.dataset.videoIndex)
+      if (allowedIndex !== null && videoIndex === allowedIndex) return
+      video.muted = true
+      video.pause()
+    })
+  }, [audioScopeId])
+
+  const toggleSound = useCallback((index) => {
+    setUnmutedIndex((prev) => {
+      const next = prev === index ? null : index
+      if (next === null) {
+        pauseOtherScopedVideos()
+        return null
+      }
+
+      requestVideoAudioFocus(audioScopeId)
+      pauseOtherScopedVideos(next)
+      return next
+    })
+  }, [audioScopeId, pauseOtherScopedVideos])
+
+  useEffect(() => {
+    return subscribeToVideoAudioFocus(audioScopeId, () => {
+      setUnmutedIndex(null)
+      pauseOtherScopedVideos()
+    })
+  }, [audioScopeId, pauseOtherScopedVideos])
+
+  useEffect(() => {
+    if (unmutedIndex === null) return
+
+    const root = gridRef.current
+    if (!root) return
+
+    const activeVideo = root.querySelector(
+      `video[data-audio-scope="${audioScopeId}"][data-video-index="${unmutedIndex}"]`
+    )
+    if (!activeVideo) return
+
+    activeVideo.muted = false
+    const p = activeVideo.play()
+    if (p && typeof p.catch === "function") p.catch(() => {})
+  }, [audioScopeId, unmutedIndex])
 
   const renderImageItem = (item, index) => {
     const gatsbyImage = getImage(item?.imgFile)
@@ -190,6 +249,8 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
                   src={item.video}
                   muted={unmutedIndex !== index}
                   onToggleSound={() => toggleSound(index)}
+                  index={index}
+                  scopeId={audioScopeId}
                 />
               )
             }

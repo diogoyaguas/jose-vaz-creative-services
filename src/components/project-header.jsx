@@ -1,9 +1,14 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import React, { useCallback, useMemo, useRef, useState } from "react"
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import PropTypes from "prop-types"
 
 import Mute from "../assets/icons/mute.svg"
 import Unmute from "../assets/icons/unmute.svg"
+import {
+    createVideoAudioScope,
+    requestVideoAudioFocus,
+    subscribeToVideoAudioFocus,
+} from "../utils/global-video-audio"
 
 const sanitizeHtml = (html = "") => {
     return String(html)
@@ -23,12 +28,23 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
     const imageUrl = media?.img || null
 
     const videoRef = useRef(null)
+    const [audioScopeId] = useState(() => createVideoAudioScope("project-header"))
     const [muted, setMuted] = useState(true)
 
     const safeDescriptionHtml = useMemo(
         () => sanitizeHtml(description),
         [description]
     )
+
+    useEffect(() => {
+        return subscribeToVideoAudioFocus(audioScopeId, () => {
+            setMuted(true)
+            const v = videoRef.current
+            if (!v) return
+            v.muted = true
+            v.pause()
+        })
+    }, [audioScopeId])
 
     const toggleMute = useCallback((e) => {
         e.preventDefault()
@@ -38,15 +54,18 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
             const next = !prev
             const v = videoRef.current
             if (v) {
+                if (!next) requestVideoAudioFocus(audioScopeId)
                 v.muted = next
                 if (!next) {
                     const p = v.play()
                     if (p && typeof p.catch === "function") p.catch(() => { })
+                } else {
+                    v.pause()
                 }
             }
             return next
         })
-    }, [])
+    }, [audioScopeId])
 
     const hasMedia = Boolean(videoUrl || gatsbyImage || imageUrl)
 
