@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import SliderRow from "../components/slider-row"
 
 const containerVariants = {
   hidden: {},
@@ -62,24 +61,49 @@ const Sobre = ({ data }) => {
               dangerouslySetInnerHTML={{ __html: about.profile.titleText || "" }}
             />
             <p className="sub-text">{about.profile.subtitleText}</p>
+
+            <div className="right-sections">
+              <section className="about-section">
+                <h2 className="about-section-title">clientes</h2>
+                <div className="clients-grid">
+                  {(about.clientsByYear || []).map((entry) => (
+                    <article className="year-block" key={entry.year}>
+                      <p className="year-label">{entry.year}</p>
+                      <ul className="about-list">
+                        {(entry.clients || []).map((client) => (
+                          <li key={`${entry.year}-${client}`}>{client}</li>
+                        ))}
+                      </ul>
+                    </article>
+                  ))}
+                </div>
+              </section>
+
+              <section className="about-section">
+                <h2 className="about-section-title">software</h2>
+                <ul className="about-list">
+                  {(about.skills || []).map((skill) => (
+                    <li className="skill-row" key={skill.name}>
+                      <span className="skill-name">{skill.name}</span>
+                      <span className="skill-track">
+                        <span className="skill-fill" style={{ width: `${skill.percent}%` }} />
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section className="about-section">
+                <h2 className="about-section-title">skills</h2>
+                <ul className="about-list">
+                  {(about.software || []).map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </section>
+            </div>
           </motion.div>
         </motion.section>
-
-        <section className="tabs-section">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <SliderRow
-              id="about-slider-track"
-              clientsByYear={about.clientsByYear || []}
-              software={about.software || []}
-              skills={about.skills || []}
-            />
-          </motion.div>
-        </section>
       </section>
     </Layout>
   )
@@ -103,18 +127,12 @@ Sobre.propTypes = {
             })
           ).isRequired,
           software: PropTypes.arrayOf(PropTypes.string).isRequired,
-          skills: PropTypes.arrayOf(PropTypes.string).isRequired,
-          experience: PropTypes.arrayOf(
+          skills: PropTypes.arrayOf(
             PropTypes.shape({
-              title: PropTypes.string.isRequired,
-              date: PropTypes.string.isRequired,
-              text: PropTypes.string.isRequired,
+              name: PropTypes.string.isRequired,
+              percent: PropTypes.number.isRequired,
             })
           ).isRequired,
-          cv: PropTypes.shape({
-            file: PropTypes.string.isRequired,
-            label: PropTypes.string.isRequired,
-          }),
         })
       ).isRequired,
     }).isRequired,
@@ -136,15 +154,9 @@ export const query = graphql`
           clients
         }
         software
-        skills
-        experience {
-          title
-          date
-          text
-        }
-        cv {
-          file
-          label
+        skills {
+          name
+          percent
         }
       }
     }

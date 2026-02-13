@@ -19,7 +19,7 @@ function setInitialThemeAndEnableTransitionsLater() {
   } catch (e) {}
 })();
 `
-  return <script dangerouslySetInnerHTML={{ __html: code }} />
+  return <script key="initial-theme-script" dangerouslySetInnerHTML={{ __html: code }} />
 }
 
 exports.onRenderBody = ({ setPreBodyComponents, setHtmlAttributes }) => {

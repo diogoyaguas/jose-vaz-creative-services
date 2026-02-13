@@ -13,9 +13,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       profile: AboutProfile!
       clientsByYear: [AboutClientsYear!]!
       software: [String!]!
-      skills: [String!]!
-      experience: [AboutExperience!]!
-      cv: AboutCv
+      skills: [AboutSkill!]!
     }
 
     type AboutProfile @dontInfer {
@@ -29,15 +27,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       clients: [String!]!
     }
 
-    type AboutExperience @dontInfer {
-      title: String!
-      date: String!
-      text: String!
-    }
-
-    type AboutCv @dontInfer {
-      file: String!
-      label: String!
+    type AboutSkill @dontInfer {
+      name: String!
+      percent: Int!
     }
 
     type Project implements Node @dontInfer {

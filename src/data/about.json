@@ -3,58 +3,37 @@
     "clientsByYear": [
       {
         "clients": [
-          "IPDJ - Instituto Português do Desporto e Juventude",
           "The Feeting Room",
-          "Deepwear"
+          "Algori Brand",
+          "Dulis Shoes",
+          "Clash Fragrances",
+          "Deepwear",
+          "M.A.D"
         ],
-        "year": "2025"
+        "year": "2021-2013"
       },
       {
         "clients": [
-          "Marca de Moda Europeia",
-          "Marca Lifestyle Portuguesa",
-          "Projeto Freelance"
+          "Urban Foods",
+          "Sonatural",
+          "C.H. Conde Ferreira",
+          "Securitas Direct",
+          "Maami",
+          "MOME",
+          "Hussel"
         ],
-        "year": "2024"
+        "year": "2023-2024"
       },
       {
         "clients": [
-          "Deepwear Clients Portfolio",
-          "Fashion Factories (EU & Asia)"
+          "IPDJ | Apptiva",
+          "Marketplace Médis",
+          "Vieira de Castro",
+          "Jean Louis David",
+          "Firefly",
+          "Aion"
         ],
-        "year": "2023"
-      }
-    ],
-    "experience": [
-      {
-        "date": "September 2017 - March 2021",
-        "text": "<p>Faculty of Science and Technologies at the University of Coimbra.</p><p>This degree provided a strong foundation in both traditional and digital design, covering areas such as Graphic Design, Web Design and Multimedia.</p><p>Throughout the course, I developed critical thinking, problem-solving skills and the ability to communicate ideas visually, with a focus on:</p><p>Typography, Graphic Design, Communication Design, Project Methodology, Photography & Composition, Multimedia Programming, Audiovisual Production, Editorial Design and History of Design.</p>",
-        "title": "Degree in Design and Multimedia — University of Coimbra"
-      },
-      {
-        "date": "September 2021 - October 2022",
-        "text": "<p>Joined The Feeting Room team, a platform representing national and international sustainable and independent fashion brands.</p><p>Worked closely with the Consulting Department, developing brand-books, collection presentations, copy and content for social media and websites.</p><ul><li>Printed materials for stores (acrylics, cards, vinyls, tags)</li><li>Social media content (reels, short videos, stories, ads)</li><li>Campaigns (Christmas Edit, Ask Mr. Pinho, Mother’s Day, Black Friday, Sales)</li><li>Newsletters and giveaways</li><li>Event materials (invites, stickers, vouchers, flyers)</li><li>Website management (banners, gifs, product photography)</li><li>Creative direction and photoshoot assistance</li><li>Backstage content creation and styling</li></ul>",
-        "title": "The Feeting Room — Professional Internship"
-      },
-      {
-        "date": "November 2022 - Present",
-        "text": "<p>Graphic Designer working on a global scale within the fashion industry.</p><p>Responsibilities include visiting fashion factories, presenting new projects, developing brochures and collections, and creating photo and video content for digital platforms.</p><p>Worked closely with project managers and marketing teams to develop brand identities, logos, prints, newsletters and blog content, as well as social media management and copywriting.</p><p>This role strengthened my skills in visual storytelling, brand development and impactful marketing communication.</p>",
-        "title": "Deepwear — Global Progressive Fashion Agency"
-      },
-      {
-        "date": "September 2020 - Present",
-        "text": "<p>Freelance work with small businesses and entrepreneurs, focusing on brand identity development, printed materials and social media content.</p><p>Demonstrated strong attention to detail, effective communication and the ability to deliver high-quality results within defined timelines.</p>",
-        "title": "Freelance Graphic Designer"
-      },
-      {
-        "date": "May 2017 - Present",
-        "text": "<p>Choreographer in entertainment and event animation companies, primarily during the summer season.</p><p>This experience enhanced my communication, leadership and teamwork skills.</p><p>Background includes 6 years of Ballroom Dance competitions, achieving National Champion titles in Ballroom and Latin styles in 2016 and 2017.</p>",
-        "title": "Choreographer — Music Beats Events & Groovy Events"
-      },
-      {
-        "date": "September 2020 - May 2021",
-        "text": "<p>Worked in retail while completing my studies, gaining experience in sales, stock management and customer service.</p><p>This role contributed to the development of adaptability, problem-solving and interpersonal skills in a fast-paced environment.</p>",
-        "title": "Sales Assistant — Springfield (Cortefiel Group)"
+        "year": "2024-2026"
       }
     ],
     "locale": "pt",
@@ -63,85 +42,87 @@
       "subtitleText": "Procuro manter-me sempre a par das novas tendências de conteúdo e de mercado, para ajudar as marcas com que trabalho a acompanhar a evolução das plataformas digitais e offline, através de conteúdos relevantes e apelativos. Gosto de ter um olhar crítico sobre o design e sobre a forma como este performa.",
       "titleText": "Olá, eu sou o José Vaz. Sou <span class=\"blue\">designer gráfico</span> e <span class=\"gray\">creative specialist</span>, o meu trabalho foca-se na criação de conteúdos digitais e campanhas de marketing."
     },
-    "software": [
-      "Adobe Premiere Pro",
-      "Adobe Photoshop",
-      "Adobe Illustrator",
-      "Adobe After Effects",
-      "Adobe InDesign",
-      "Figma",
-      "Behance",
-      "Gempages",
-      "Microsoft Office"
-    ],
     "skills": [
-      "Creative Direction",
-      "Brand Identity",
-      "Art Direction",
-      "Visual Storytelling",
-      "Content Strategy",
-      "Campaign Design",
-      "Social Media Design",
-      "Copywriting",
-      "Photo & Video Editing"
+      {
+        "name": "Figma",
+        "percent": 90
+      },
+      {
+        "name": "Adobe Photoshop",
+        "percent": 80
+      },
+      {
+        "name": "Adobe Illustrator",
+        "percent": 95
+      },
+      {
+        "name": "Adobe Premiere",
+        "percent": 80
+      },
+      {
+        "name": "Adobe After Effects",
+        "percent": 70
+      },
+      {
+        "name": "Adobe InDesign",
+        "percent": 90
+      },
+      {
+        "name": "Midjourney",
+        "percent": 60
+      },
+      {
+        "name": "CapCut",
+        "percent": 85
+      }
+    ],
+    "software": [
+      "Design Gráfico",
+      "Design Editorial",
+      "Animação Motion",
+      "Criação de Conteúdo",
+      "Branding",
+      "Fotografia",
+      "Edição de Vídeo",
+      "Ilustração",
+      "Direção Criativa"
     ]
   },
   {
     "clientsByYear": [
       {
         "clients": [
-          "IPDJ - Portuguese Institute for Sport and Youth",
           "The Feeting Room",
-          "Deepwear"
+          "Algori Brand",
+          "Dulis Shoes",
+          "Clash Fragrances",
+          "Deepwear",
+          "M.A.D"
         ],
-        "year": "2025"
+        "year": "2021-2013"
       },
       {
         "clients": [
-          "European Fashion Brand",
-          "Portuguese Lifestyle Brand",
-          "Freelance Project"
+          "Urban Foods",
+          "Sonatural",
+          "C.H. Conde Ferreira",
+          "Securitas Direct",
+          "Maami",
+          "MOME",
+          "Hussel"
         ],
-        "year": "2024"
+        "year": "2023-2024"
       },
       {
         "clients": [
-          "Deepwear Clients Portfolio",
-          "Fashion Factories (EU & Asia)"
+          "IPDJ | Apptiva",
+          "Marketplace Médis",
+          "Vieira de Castro",
+          "Jean Louis David",
+          "Firefly",
+          "Aion"
         ],
-        "year": "2023"
-      }
-    ],
-    "experience": [
-      {
-        "date": "September 2017 - March 2021",
-        "text": "<p>Faculty of Science and Technologies at the University of Coimbra.</p><p>This degree provided a strong foundation in both traditional and digital design, covering areas such as Graphic Design, Web Design, and Multimedia.</p><p>Throughout the course, I developed critical thinking, problem-solving skills, and the ability to communicate ideas visually, with a focus on:</p><p>Typography, Graphic Design, Communication Design, Project Methodology, Photography & Composition, Multimedia Programming, Audiovisual Production, Editorial Design, and History of Design.</p>",
-        "title": "Degree in Design and Multimedia — University of Coimbra"
-      },
-      {
-        "date": "September 2021 - October 2022",
-        "text": "<p>I joined The Feeting Room team, a platform representing national and international sustainable and independent fashion brands.</p><p>I worked closely with the Consulting Department, developing brand books, collection presentations, copy, and content for social media and websites.</p><ul><li>Printed materials for retail stores (acrylics, cards, vinyls, tags)</li><li>Social media content (reels, short videos, stories, ads)</li><li>Campaigns (Christmas Edit, Ask Mr. Pinho, Mother’s Day, Black Friday, Sales)</li><li>Newsletters and giveaways</li><li>Event materials (invites, stickers, vouchers, flyers)</li><li>Website management (banners, GIFs, product photography)</li><li>Creative direction and photoshoot assistance</li><li>Backstage content creation and styling</li></ul>",
-        "title": "The Feeting Room — Professional Internship"
-      },
-      {
-        "date": "November 2022 - Present",
-        "text": "<p>Graphic Designer working on a global scale within the fashion industry.</p><p>My responsibilities include visiting fashion factories, presenting new projects, developing brochures and collections, and producing photo and video content for digital platforms.</p><p>I collaborate closely with project managers and marketing teams to develop brand identities, logos, prints, newsletters, blog content, and social media copy.</p><p>This role strengthened my skills in visual storytelling, brand development, and impactful marketing communication.</p>",
-        "title": "Deepwear — Global Progressive Fashion Agency"
-      },
-      {
-        "date": "September 2020 - Present",
-        "text": "<p>I work as a freelance graphic designer with small businesses and entrepreneurs, focusing on brand identity development, printed materials, and social media content.</p><p>Across these projects, I demonstrate strong attention to detail, clear communication, and the ability to deliver high-quality results within defined timelines.</p>",
-        "title": "Freelance Graphic Designer"
-      },
-      {
-        "date": "May 2017 - Present",
-        "text": "<p>Choreographer in entertainment and event animation companies, primarily during the summer season.</p><p>This experience enhanced my communication, leadership, and teamwork skills.</p><p>My background includes six years of Ballroom Dance competitions, achieving National Champion titles in Ballroom and Latin styles in 2016 and 2017.</p>",
-        "title": "Choreographer — Music Beats Events & Groovy Events"
-      },
-      {
-        "date": "September 2020 - May 2021",
-        "text": "<p>I worked in retail while completing my studies, gaining experience in sales, stock management, and customer service.</p><p>This role contributed to the development of adaptability, problem-solving skills, and the ability to thrive in fast-paced environments.</p>",
-        "title": "Sales Assistant — Springfield (Cortefiel Group)"
+        "year": "2024-2026"
       }
     ],
     "locale": "en",
@@ -150,27 +131,50 @@
       "subtitleText": "I work collaboratively with marketing, product, and partner teams, ensuring visual consistency and communication aligned with each brand’s positioning.",
       "titleText": "I am a designer focused on visual identity, creative direction, and brand content — from concept to digital and print execution."
     },
-    "software": [
-      "Adobe Premiere Pro",
-      "Adobe Photoshop",
-      "Adobe Illustrator",
-      "Adobe After Effects",
-      "Adobe InDesign",
-      "Figma",
-      "Behance",
-      "Gempages",
-      "Microsoft Office"
-    ],
     "skills": [
-      "Creative Direction",
-      "Brand Identity",
-      "Art Direction",
-      "Visual Storytelling",
-      "Content Strategy",
-      "Campaign Design",
-      "Social Media Design",
-      "Copywriting",
-      "Photo & Video Editing"
+      {
+        "name": "Figma",
+        "percent": 90
+      },
+      {
+        "name": "Adobe Photoshop",
+        "percent": 80
+      },
+      {
+        "name": "Adobe Illustrator",
+        "percent": 95
+      },
+      {
+        "name": "Adobe Premiere",
+        "percent": 80
+      },
+      {
+        "name": "Adobe After Effects",
+        "percent": 70
+      },
+      {
+        "name": "Adobe InDesign",
+        "percent": 90
+      },
+      {
+        "name": "Midjourney",
+        "percent": 60
+      },
+      {
+        "name": "CapCut",
+        "percent": 85
+      }
+    ],
+    "software": [
+      "Design Gráfico",
+      "Design Editorial",
+      "Animação Motion",
+      "Criação de Conteúdo",
+      "Branding",
+      "Fotografia",
+      "Edição de Vídeo",
+      "Ilustração",
+      "Direção Criativa"
     ]
   }
 ]
