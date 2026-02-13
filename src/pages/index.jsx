@@ -20,6 +20,10 @@ const IndexPage = () => {
   const overlayInputRef = useRef(null)
 
   useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.documentElement.classList.remove("auth-pending")
+    }
+
     if (isDevMode && localStorage.getItem(STORAGE_KEY) === "true") {
       navigate("/projetos")
     }

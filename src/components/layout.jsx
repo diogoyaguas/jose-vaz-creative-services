@@ -13,6 +13,10 @@ const NETLIFY_CONTEXT =
 
 const isProdNetlify = NETLIFY_CONTEXT === "production"
 const isDevMode = !isProdNetlify
+const clearAuthPendingClass = () => {
+  if (typeof document === "undefined") return
+  document.documentElement.classList.remove("auth-pending")
+}
 
 const Layout = ({ children, locale = "pt", other, otherPath }) => {
   const data = useStaticQuery(graphql`
@@ -35,13 +39,21 @@ const Layout = ({ children, locale = "pt", other, otherPath }) => {
     const run = async () => {
       if (isDevMode) {
         const authorized = localStorage.getItem(STORAGE_KEY)
-        if (authorized !== "true") navigate("/")
+        if (authorized !== "true") {
+          navigate("/")
+          return
+        }
+        clearAuthPendingClass()
         return
       }
 
       try {
         const res = await fetch("/.netlify/functions/verify", { method: "GET" })
-        if (!res.ok) navigate("/")
+        if (!res.ok) {
+          navigate("/")
+          return
+        }
+        clearAuthPendingClass()
       } catch {
         navigate("/")
       }
