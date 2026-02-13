@@ -76,6 +76,7 @@
   }
 
   .about-section-title {
+    color: var(--black);
     margin: 0;
     font-size: 12px;
     text-transform: lowercase;
@@ -136,5 +137,131 @@
     height: 100%;
     background: var(--black);
     border-radius: inherit;
+  }
+}
+
+@media (max-width: 1400px) {
+  .about-page {
+    padding: 0 6rem 3rem 6rem;
+
+    .top-grid {
+      grid-template-columns: 360px 1fr;
+      gap: 1.25rem;
+    }
+
+    .profile-photo {
+      width: 82%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about-page {
+    padding: 0 3rem 2.5rem 3rem;
+
+    .top-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .left-col {
+      position: relative;
+      top: auto;
+    }
+
+    .profile-photo {
+      width: 280px;
+      max-width: 100%;
+    }
+
+    .title-text {
+      font-size: 24px;
+    }
+
+    .clients-grid {
+      grid-template-columns: repeat(2, minmax(140px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-name {
+      width: 32%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 0 1.5rem 2rem 1.5rem;
+
+    .right-col {
+      gap: 1.5rem;
+    }
+
+    .title-text {
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .sub-text {
+      font-size: 11px;
+      line-height: 1.55;
+    }
+
+    .about-section {
+      gap: 0.85rem;
+    }
+
+    .clients-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .about-list {
+      gap: 0.3rem;
+
+      li {
+        white-space: normal;
+      }
+    }
+
+    .skill-row {
+      gap: 0.5rem;
+    }
+
+    .skill-name {
+      width: 38%;
+    }
+
+    .cv-download-btn {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 0 1rem 1.75rem 1rem;
+
+    .profile-photo {
+      width: 220px;
+    }
+
+    .title-text {
+      font-size: 18px;
+    }
+
+    .about-section-title {
+      font-size: 11px;
+    }
+
+    .year-label,
+    .about-list li,
+    .cv-download-btn {
+      font-size: 9px;
+    }
+
+    .skill-name {
+      width: 42%;
+    }
   }
 }
