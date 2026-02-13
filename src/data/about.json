@@ -128,8 +128,8 @@
     "locale": "en",
     "profile": {
       "photo": "profile.png",
-      "subtitleText": "I work collaboratively with marketing, product, and partner teams, ensuring visual consistency and communication aligned with each brand’s positioning.",
-      "titleText": "I am a designer focused on visual identity, creative direction, and brand content — from concept to digital and print execution."
+      "subtitleText": "I strive to stay up to date with new content and market trends, helping the brands I work with keep pace with the evolution of digital and offline platforms through relevant and engaging content. I like to maintain a critical eye on design and on how it performs.",
+      "titleText": "Hi, I'm José Vaz. I'm a <span class=\"blue\">graphic designer</span> and <span class=\"gray\">creative specialist</span>, and my work focuses on creating digital content and marketing campaigns."
     },
     "skills": [
       {
@@ -166,15 +166,15 @@
       }
     ],
     "software": [
-      "Design Gráfico",
-      "Design Editorial",
-      "Animação Motion",
-      "Criação de Conteúdo",
+      "Graphic Design",
+      "Editorial Design",
+      "Motion Design",
+      "Content Creation",
       "Branding",
-      "Fotografia",
-      "Edição de Vídeo",
-      "Ilustração",
-      "Direção Criativa"
+      "Photography",
+      "Video Editing",
+      "Illustration",
+      "Creative Direction"
     ]
   }
 ]
