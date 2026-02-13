@@ -62,46 +62,44 @@ const Sobre = ({ data }) => {
             />
             <p className="sub-text">{about.profile.subtitleText}</p>
 
-            <div className="right-sections">
-              <section className="about-section">
-                <h2 className="about-section-title">clientes</h2>
-                <div className="clients-grid">
-                  {(about.clientsByYear || []).map((entry) => (
-                    <article className="year-block" key={entry.year}>
-                      <p className="year-label">{entry.year}</p>
-                      <ul className="about-list">
-                        {(entry.clients || []).map((client) => (
-                          <li key={`${entry.year}-${client}`}>{client}</li>
-                        ))}
-                      </ul>
-                    </article>
-                  ))}
-                </div>
-              </section>
+            <section className="about-section">
+              <h2 className="about-section-title">clientes</h2>
+              <div className="clients-grid">
+                {(about.clientsByYear || []).map((entry) => (
+                  <article className="year-block" key={entry.year}>
+                    <p className="year-label">{entry.year}</p>
+                    <ul className="about-list">
+                      {(entry.clients || []).map((client) => (
+                        <li key={`${entry.year}-${client}`}>{client}</li>
+                      ))}
+                    </ul>
+                  </article>
+                ))}
+              </div>
+            </section>
 
-              <section className="about-section">
-                <h2 className="about-section-title">software</h2>
-                <ul className="about-list">
-                  {(about.skills || []).map((skill) => (
-                    <li className="skill-row" key={skill.name}>
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-track">
-                        <span className="skill-fill" style={{ width: `${skill.percent}%` }} />
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </section>
+            <section className="about-section">
+              <h2 className="about-section-title">software</h2>
+              <ul className="about-list">
+                {(about.skills || []).map((skill) => (
+                  <li className="skill-row" key={skill.name}>
+                    <span className="skill-name">{skill.name}</span>
+                    <span className="skill-track">
+                      <span className="skill-fill" style={{ width: `${skill.percent}%` }} />
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </section>
 
-              <section className="about-section">
-                <h2 className="about-section-title">skills</h2>
-                <ul className="about-list">
-                  {(about.software || []).map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </section>
-            </div>
+            <section className="about-section">
+              <h2 className="about-section-title">skills</h2>
+              <ul className="about-list">
+                {(about.software || []).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </section>
           </motion.div>
         </motion.section>
       </section>
