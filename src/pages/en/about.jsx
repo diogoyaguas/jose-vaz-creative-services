@@ -78,6 +78,17 @@ const About = ({ data }) => {
               {about.profile.subtitleText}
             </motion.p>
 
+            <motion.a
+              className="cv-download-btn"
+              variants={rightPartVariants}
+              href="/Jos%C3%A9-Vaz-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              Download CV
+            </motion.a>
+
             <motion.section
               className="about-section"
               variants={rightPartVariants}

@@ -48,6 +48,23 @@
     color: var(--gray);
   }
 
+  .cv-download-btn {
+    width: fit-content;
+    font-size: 10px;
+    color: var(--black);
+    border: 1px solid var(--gray);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+
+    &:hover {
+      background: var(--black);
+      color: var(--white);
+    }
+  }
+
   .right-sections {
     display: grid;
     gap: 3rem;
