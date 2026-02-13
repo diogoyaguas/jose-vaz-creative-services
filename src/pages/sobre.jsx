@@ -8,12 +8,7 @@ import Seo from "../components/seo"
 
 const containerVariants = {
   hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.05,
-    },
-  },
+  show: {},
 }
 
 const itemVariants = {
@@ -22,6 +17,24 @@ const itemVariants = {
     opacity: 1,
     y: 0,
     transition: { duration: 0.45, ease: "easeOut" },
+  },
+}
+
+const rightColVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+}
+
+const rightPartVariants = {
+  hidden: { opacity: 0, y: 28 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.55, ease: "easeOut" },
   },
 }
 
@@ -55,14 +68,20 @@ const Sobre = ({ data }) => {
             />
           </motion.div>
 
-          <motion.div className="right-col" variants={itemVariants}>
-            <p
+          <motion.div className="right-col" variants={rightColVariants}>
+            <motion.p
               className="title-text"
+              variants={rightPartVariants}
               dangerouslySetInnerHTML={{ __html: about.profile.titleText || "" }}
             />
-            <p className="sub-text">{about.profile.subtitleText}</p>
+            <motion.p className="sub-text" variants={rightPartVariants}>
+              {about.profile.subtitleText}
+            </motion.p>
 
-            <section className="about-section">
+            <motion.section
+              className="about-section"
+              variants={rightPartVariants}
+            >
               <h2 className="about-section-title">clientes</h2>
               <div className="clients-grid">
                 {(about.clientsByYear || []).map((entry) => (
@@ -76,9 +95,12 @@ const Sobre = ({ data }) => {
                   </article>
                 ))}
               </div>
-            </section>
+            </motion.section>
 
-            <section className="about-section">
+            <motion.section
+              className="about-section"
+              variants={rightPartVariants}
+            >
               <h2 className="about-section-title">software</h2>
               <ul className="about-list">
                 {(about.skills || []).map((skill) => (
@@ -90,16 +112,19 @@ const Sobre = ({ data }) => {
                   </li>
                 ))}
               </ul>
-            </section>
+            </motion.section>
 
-            <section className="about-section">
+            <motion.section
+              className="about-section"
+              variants={rightPartVariants}
+            >
               <h2 className="about-section-title">skills</h2>
               <ul className="about-list">
                 {(about.software || []).map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-            </section>
+            </motion.section>
           </motion.div>
         </motion.section>
       </section>
