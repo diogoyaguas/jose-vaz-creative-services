@@ -1,4 +1,6 @@
 :root {
+  --always-back: #000000;
+  --always-white: #ffffff;
   --white: #ffffff;
   --black: #000000;
   --gray: #ababab;
@@ -6,6 +8,8 @@
 }
 
 :root[data-theme="dark"] {
+  --always-back: #000000;
+  --always-white: #ffffff;
   --white: #000000;
   --black: #ffffff;
   --gray: #ababab;
