@@ -1,6 +1,7 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const Footer = () => {
+const Footer = ({ locale }) => {
     const date = new Date();
     let year = date.getFullYear();
 
@@ -24,13 +25,18 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/in/jos%C3%A9-vaz-45144a1b9/" target="_blank" rel="noreferrer" title="Linkedin">
                         LinkedIn
                     </a>
-                    <a href="/José-Vaz-CV.pdf" download>
+                    <a href={locale == "en" ? "/José-Vaz-CV-EN.pdf" : "/José-Vaz-CV-PT.pdf"} download>
                         Download CV
                     </a>
                 </div>
             </div>
         </div>
     </footer >)
+}
+
+Footer.propTypes = {
+    children: PropTypes.node.isRequired,
+    locale: PropTypes.oneOf(["pt", "en"]),
 }
 
 export default Footer

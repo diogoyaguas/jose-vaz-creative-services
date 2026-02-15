@@ -81,7 +81,9 @@ const Layout = ({ children, locale = "pt", other, otherPath }) => {
 
       <main>{children}</main>
 
-      <Footer />
+      <Footer
+        locale={locale}
+      />
     </div>
   )
 }

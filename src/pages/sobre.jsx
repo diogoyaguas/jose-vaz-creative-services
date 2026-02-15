@@ -81,7 +81,7 @@ const Sobre = ({ data }) => {
             <motion.a
               className="cv-download-btn"
               variants={rightPartVariants}
-              href="/Jos%C3%A9-Vaz-CV.pdf"
+              href="/Jos%C3%A9-Vaz-CV-PT.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
