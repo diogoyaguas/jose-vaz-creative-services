@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import FlipbookSection from "../components/flipbook"
 import GallerySection from "../components/gallery-section"
@@ -140,28 +140,28 @@ export default function ProjectTemplate({ data, pageContext }) {
         <Reveal>
           <nav className="project-pagination container" aria-label="Project navigation">
             <div className="project-pagination-box">
-              <Link
-                to={`${projectBasePath}/${prevProject.slug}`}
+              <a
+                href={`${projectBasePath}/${prevProject.slug}`}
                 className="project-pagination-link is-prev"
               >
                 <span className="project-pagination-label">
                   {pageContext.locale === "en" ? "previous" : "anterior"}
                 </span>
-              </Link>
+              </a>
               <span className="project-pagination-title">{prevProject.title}</span>
             </div>
 
             <div className="project-pagination-box">
               <span className="project-pagination-title">{nextProject.title}</span>
 
-              <Link
-                to={`${projectBasePath}/${nextProject.slug}`}
+              <a
+                href={`${projectBasePath}/${nextProject.slug}`}
                 className="project-pagination-link is-next"
               >
                 <span className="project-pagination-label">
                   {pageContext.locale === "en" ? "next" : "próximo"}
                 </span>
-              </Link>
+              </a>
             </div>
           </nav>
         </Reveal>
