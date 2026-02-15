@@ -145,7 +145,7 @@ export default function ProjectTemplate({ data, pageContext }) {
                 className="project-pagination-link is-prev"
               >
                 <span className="project-pagination-label">
-                  {pageContext.locale === "en" ? "previous project" : "projeto anterior"}
+                  {pageContext.locale === "en" ? "previous" : "anterior"}
                 </span>
               </Link>
               <span className="project-pagination-title">{prevProject.title}</span>
@@ -159,7 +159,7 @@ export default function ProjectTemplate({ data, pageContext }) {
                 className="project-pagination-link is-next"
               >
                 <span className="project-pagination-label">
-                  {pageContext.locale === "en" ? "next project" : "próximo projeto"}
+                  {pageContext.locale === "en" ? "next" : "próximo"}
                 </span>
               </Link>
             </div>
