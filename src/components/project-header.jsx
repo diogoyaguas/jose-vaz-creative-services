@@ -42,7 +42,6 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
             const v = videoRef.current
             if (!v) return
             v.muted = true
-            v.pause()
         })
     }, [audioScopeId])
 
@@ -59,8 +58,6 @@ const ProjectHeader = ({ title, date, categories, description, media }) => {
                 if (!next) {
                     const p = v.play()
                     if (p && typeof p.catch === "function") p.catch(() => { })
-                } else {
-                    v.pause()
                 }
             }
             return next

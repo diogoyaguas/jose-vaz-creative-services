@@ -116,7 +116,7 @@ const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
   const firstFive = useMemo(() => activeItems.slice(0, 5), [activeItems])
   const secondFive = useMemo(() => activeItems.slice(5, 10), [activeItems])
 
-  const pauseOtherScopedVideos = useCallback((allowedIndex = null) => {
+  const muteOtherScopedVideos = useCallback((allowedIndex = null) => {
     const root = sectionRef.current
     if (!root) return
 
@@ -128,27 +128,26 @@ const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
       const videoIndex = Number(video.dataset.videoIndex)
       if (allowedIndex !== null && videoIndex === allowedIndex) return
       video.muted = true
-      video.pause()
     })
   }, [audioScopeId])
 
   const onTabSelect = useCallback(
     (index) => {
       if (index === activeTab) return
-      pauseOtherScopedVideos()
+      muteOtherScopedVideos()
       setDirection(index > activeTab ? 1 : -1)
       setActiveTab(index)
       setUnmutedIndex(null)
     },
-    [activeTab, pauseOtherScopedVideos]
+    [activeTab, muteOtherScopedVideos]
   )
 
   useEffect(() => {
     return subscribeToVideoAudioFocus(audioScopeId, () => {
       setUnmutedIndex(null)
-      pauseOtherScopedVideos()
+      muteOtherScopedVideos()
     })
-  }, [audioScopeId, pauseOtherScopedVideos])
+  }, [audioScopeId, muteOtherScopedVideos])
 
   useEffect(() => {
     if (unmutedIndex === null) return
@@ -171,16 +170,16 @@ const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
       setUnmutedIndex((prev) => {
         const next = prev === index ? null : index
         if (next === null) {
-          pauseOtherScopedVideos()
+          muteOtherScopedVideos()
           return null
         }
 
         requestVideoAudioFocus(audioScopeId)
-        pauseOtherScopedVideos(next)
+        muteOtherScopedVideos(next)
         return next
       })
     },
-    [audioScopeId, pauseOtherScopedVideos]
+    [audioScopeId, muteOtherScopedVideos]
   )
 
   if (tabArray.length === 0) return null

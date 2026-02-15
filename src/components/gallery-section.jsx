@@ -151,7 +151,7 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
     el.scrollTo({ left: index * pageWidth, behavior: "smooth" })
   }
 
-  const pauseOtherScopedVideos = useCallback((allowedIndex = null) => {
+  const muteOtherScopedVideos = useCallback((allowedIndex = null) => {
     const root = gridRef.current
     if (!root) return
 
@@ -163,7 +163,6 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
       const videoIndex = Number(video.dataset.videoIndex)
       if (allowedIndex !== null && videoIndex === allowedIndex) return
       video.muted = true
-      video.pause()
     })
   }, [audioScopeId])
 
@@ -171,22 +170,22 @@ const GallerySection = ({ title, subtitle, items = [], columns = 5 }) => {
     setUnmutedIndex((prev) => {
       const next = prev === index ? null : index
       if (next === null) {
-        pauseOtherScopedVideos()
+        muteOtherScopedVideos()
         return null
       }
 
       requestVideoAudioFocus(audioScopeId)
-      pauseOtherScopedVideos(next)
+      muteOtherScopedVideos(next)
       return next
     })
-  }, [audioScopeId, pauseOtherScopedVideos])
+  }, [audioScopeId, muteOtherScopedVideos])
 
   useEffect(() => {
     return subscribeToVideoAudioFocus(audioScopeId, () => {
       setUnmutedIndex(null)
-      pauseOtherScopedVideos()
+      muteOtherScopedVideos()
     })
-  }, [audioScopeId, pauseOtherScopedVideos])
+  }, [audioScopeId, muteOtherScopedVideos])
 
   useEffect(() => {
     if (unmutedIndex === null) return
