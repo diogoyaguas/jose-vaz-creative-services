@@ -34,7 +34,7 @@ const Projects = ({ data }) => {
       <Seo title="Projetos" />
 
       <motion.div
-        className="projects-page row"
+        className="projects-page row container"
         variants={containerVariants}
         initial="hidden"
         whileInView="show"

@@ -3,14 +3,37 @@
     "cardMedia": {
       "img": "projetos/medis/card_media.png"
     },
-    "categories": [
-      "Campanhas",
-      "Redes Sociais",
-      "Criação de Conteúdo"
+    "categories": ["Paid Media"],
+    "content": [
+      {
+        "type": "mediaGrid5x4",
+        "title": "",
+        "items": [
+          { "img": "/assets/projetos/medis/grid/1.png" },
+          { "img": "/assets/projetos/medis/grid/2.png" },
+          { "img": "/assets/projetos/medis/grid/3.png" },
+          { "img": "/assets/projetos/medis/grid/4.png" },
+          { "img": "/assets/projetos/medis/grid/5.png" },
+          { "img": "/assets/projetos/medis/grid/6.png" },
+          { "video": "/assets/projetos/medis/grid/7.mp4" },
+          { "img": "/assets/projetos/medis/grid/8.png" },
+          { "video": "/assets/projetos/medis/grid/9.mp4" },
+          { "img": "/assets/projetos/medis/grid/10.png" },
+          { "img": "/assets/projetos/medis/grid/11.png" },
+          { "img": "/assets/projetos/medis/grid/12.png" },
+          { "img": "/assets/projetos/medis/grid/13.png" },
+          { "img": "/assets/projetos/medis/grid/14.png" },
+          { "img": "/assets/projetos/medis/grid/15.png" },
+          { "img": "/assets/projetos/medis/grid/16.png" },
+          { "img": "/assets/projetos/medis/grid/17.png" },
+          { "img": "/assets/projetos/medis/grid/18.png" },
+          { "img": "/assets/projetos/medis/grid/19.png" },
+          { "img": "/assets/projetos/medis/grid/20.png" }
+        ]
+      }
     ],
-    "content": [],
     "date": "2024-2026",
-    "description": "Projeto criativo com foco no desenvolvimento de campanhas digitais, combinando identidade visual, comunicação estratégica e conteúdos para diferentes plataformas, com o objetivo de reforçar a presença e o posicionamento da marca no mercado.",
+    "description": "Criação de visuais para campanhas sazonais e diferentes ativações, da marca, assegurando coerência visual de diferentes produtos e serviços.",
     "index": 5,
     "locale": "pt",
     "seoTitle": "Marketplace Médis",
@@ -23,14 +46,37 @@
     "cardMedia": {
       "img": "projetos/medis/card_media.png"
     },
-    "categories": [
-      "Campaigns",
-      "Social Media",
-      "Content Creation"
+    "categories": ["Paid Media"],
+    "content": [
+      {
+        "type": "mediaGrid5x4",
+        "title": "",
+        "items": [
+          { "img": "/assets/projetos/medis/grid/1.png" },
+          { "img": "/assets/projetos/medis/grid/2.png" },
+          { "img": "/assets/projetos/medis/grid/3.png" },
+          { "img": "/assets/projetos/medis/grid/4.png" },
+          { "img": "/assets/projetos/medis/grid/5.png" },
+          { "img": "/assets/projetos/medis/grid/6.png" },
+          { "video": "/assets/projetos/medis/grid/7.mp4" },
+          { "img": "/assets/projetos/medis/grid/8.png" },
+          { "video": "/assets/projetos/medis/grid/9.mp4" },
+          { "img": "/assets/projetos/medis/grid/10.png" },
+          { "img": "/assets/projetos/medis/grid/11.png" },
+          { "img": "/assets/projetos/medis/grid/12.png" },
+          { "img": "/assets/projetos/medis/grid/13.png" },
+          { "img": "/assets/projetos/medis/grid/14.png" },
+          { "img": "/assets/projetos/medis/grid/15.png" },
+          { "img": "/assets/projetos/medis/grid/16.png" },
+          { "img": "/assets/projetos/medis/grid/17.png" },
+          { "img": "/assets/projetos/medis/grid/18.png" },
+          { "img": "/assets/projetos/medis/grid/19.png" },
+          { "img": "/assets/projetos/medis/grid/20.png" }
+        ]
+      }
     ],
-    "content": [],
     "date": "2024-2026",
-    "description": "Creative project focused on the development of digital campaigns, combining visual identity, strategic communication, and content for multiple platforms to strengthen the brand’s presence and positioning in the market.",
+    "description": "Creation of visuals for seasonal campaigns and various brand activations, ensuring visual consistency across different products and services.",
     "index": 5,
     "locale": "en",
     "seoTitle": "Médis Marketplace",

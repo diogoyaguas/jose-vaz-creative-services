@@ -6,6 +6,7 @@ import FlipbookSection from "../components/flipbook"
 import GallerySection from "../components/gallery-section"
 import HoverVideoGrid from "../components/hover-video-grid"
 import Layout from "../components/layout"
+import MediaGrid5x4 from "../components/media-grid-5x4"
 import OrganicContentSection from "../components/organic-content-section"
 import ProjectHeader from "../components/project-header"
 import Reveal from "../components/reveal"
@@ -75,6 +76,18 @@ export default function ProjectTemplate({ data, pageContext }) {
               title={section.title}
               subtitle={section.subtitle}
               pages={section.flipbookPages || []}
+            />
+          </Reveal>
+        )
+
+      case "mediaGrid5x4":
+      case "grid5x4":
+        return (
+          <Reveal key={idx}>
+            <MediaGrid5x4
+              title={section.title}
+              subtitle={section.subtitle}
+              items={section.items || []}
             />
           </Reveal>
         )
@@ -157,8 +170,10 @@ ProjectTemplate.propTypes = {
           columns: PropTypes.number,
           items: PropTypes.arrayOf(
             PropTypes.shape({
+              img: PropTypes.string,
               video: PropTypes.string,
               imgFile: PropTypes.object,
+              alt: PropTypes.string,
             })
           ),
           tabs: PropTypes.arrayOf(
@@ -166,8 +181,10 @@ ProjectTemplate.propTypes = {
               title: PropTypes.string,
               items: PropTypes.arrayOf(
                 PropTypes.shape({
+                  img: PropTypes.string,
                   video: PropTypes.string,
                   imgFile: PropTypes.object,
+                  alt: PropTypes.string,
                 })
               ),
             })
@@ -279,15 +296,19 @@ export const query = graphql`
         columns
 
         items {
+          img
           imgFile { ...ProjectImageSmall }
           video
+          alt
         }
 
         tabs {
           title
           items {
+            img
             imgFile { ...ProjectImageSmall }
             video
+            alt
           }
         }
 

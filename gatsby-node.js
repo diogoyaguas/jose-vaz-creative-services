@@ -77,6 +77,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       img: String
       imgFile: File @link(from: "img", by: "relativePath")
       video: String
+      alt: String
     }
   `)
 }
