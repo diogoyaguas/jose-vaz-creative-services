@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import FlipbookSection from "../components/flipbook"
 import GallerySection from "../components/gallery-section"
@@ -17,9 +17,22 @@ export default function ProjectTemplate({ data, pageContext }) {
   const project = data.project
   const other = data.other
   const sections = project?.content || []
+  const projectList = data?.allProject?.nodes || []
 
   const seoImage =
     project?.cardMedia?.imgFile?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+
+  const currentIndex = projectList.findIndex((item) => item.slug === project.slug)
+  const hasProjectNav = projectList.length > 1 && currentIndex >= 0
+
+  const prevProject = hasProjectNav
+    ? projectList[(currentIndex - 1 + projectList.length) % projectList.length]
+    : null
+  const nextProject = hasProjectNav
+    ? projectList[(currentIndex + 1) % projectList.length]
+    : null
+
+  const projectBasePath = pageContext.locale === "en" ? "/en/projects" : "/projetos"
 
   const renderSection = (section, idx) => {
     switch (section.type) {
@@ -122,6 +135,37 @@ export default function ProjectTemplate({ data, pageContext }) {
       </Reveal>
 
       {sections.map(renderSection)}
+
+      {hasProjectNav ? (
+        <Reveal>
+          <nav className="project-pagination container" aria-label="Project navigation">
+            <div className="project-pagination-box">
+              <Link
+                to={`${projectBasePath}/${prevProject.slug}`}
+                className="project-pagination-link is-prev"
+              >
+                <span className="project-pagination-label">
+                  {pageContext.locale === "en" ? "previous project" : "projeto anterior"}
+                </span>
+              </Link>
+              <span className="project-pagination-title">{prevProject.title}</span>
+            </div>
+
+            <div className="project-pagination-box">
+              <span className="project-pagination-title">{nextProject.title}</span>
+
+              <Link
+                to={`${projectBasePath}/${nextProject.slug}`}
+                className="project-pagination-link is-next"
+              >
+                <span className="project-pagination-label">
+                  {pageContext.locale === "en" ? "next project" : "próximo projeto"}
+                </span>
+              </Link>
+            </div>
+          </nav>
+        </Reveal>
+      ) : null}
     </Layout>
   )
 }
@@ -133,6 +177,7 @@ ProjectTemplate.propTypes = {
   }).isRequired,
   data: PropTypes.shape({
     project: PropTypes.shape({
+      slug: PropTypes.string,
       title: PropTypes.string,
       seoTitle: PropTypes.string,
       seoDescription: PropTypes.string,
@@ -208,6 +253,15 @@ ProjectTemplate.propTypes = {
     other: PropTypes.shape({
       slug: PropTypes.string.isRequired,
       locale: PropTypes.oneOf(["pt", "en"]).isRequired,
+    }),
+    allProject: PropTypes.shape({
+      nodes: PropTypes.arrayOf(
+        PropTypes.shape({
+          slug: PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired,
+          index: PropTypes.number.isRequired,
+        })
+      ),
     }),
   }).isRequired,
 }
@@ -328,6 +382,14 @@ export const query = graphql`
     other: project(translationKey: { eq: $translationKey }, locale: { ne: $locale }) {
       slug
       locale
+    }
+
+    allProject(sort: { index: ASC }, filter: { locale: { eq: $locale } }) {
+      nodes {
+        slug
+        title
+        index
+      }
     }
   }
 `

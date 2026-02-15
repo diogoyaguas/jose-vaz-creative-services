@@ -1,0 +1,80 @@
+.project-pagination {
+  padding: 0 10rem 3rem 10rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-pagination-box {
+  display: inline-flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-pagination-link {
+  font-size: 10px;
+  color: var(--black);
+  border: 1px solid var(--gray);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+}
+
+.project-pagination-link.is-next {
+  margin-left: auto;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.project-pagination-label {
+  font-size: 10px;
+}
+
+.project-pagination-title {
+  font-size: 10px;
+  color: var(--gray);
+}
+
+@media (max-width: 1400px) {
+  .project-pagination {
+    padding: 0 6rem 3rem 6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .project-pagination {
+    padding: 0 3rem 2.5rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-pagination {
+    padding: 0 1.5rem 2rem 1.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .project-pagination-link,
+  .project-pagination-link.is-next {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-pagination {
+    padding: 0 1rem 1.75rem 1rem;
+  }
+}
