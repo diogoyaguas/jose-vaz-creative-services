@@ -1,7 +1,8 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/mad/card_media.png"
+      "img": "projetos/mad/card_media.png",
+      "alt": "Imagem: m.a.d (1)"
     },
     "categories": [
       "Campanhas",
@@ -13,16 +14,20 @@
       {
         "items": [
           {
-            "img": "projetos/mad/merch/1.png"
+            "img": "projetos/mad/merch/1.png",
+            "alt": "Imagem: m.a.d - merch (1)"
           },
           {
-            "img": "projetos/mad/merch/2.png"
+            "img": "projetos/mad/merch/2.png",
+            "alt": "Imagem: m.a.d - merch (2)"
           },
           {
-            "img": "projetos/mad/merch/3.png"
+            "img": "projetos/mad/merch/3.png",
+            "alt": "Imagem: m.a.d - merch (3)"
           },
           {
-            "img": "projetos/mad/merch/4.png"
+            "img": "projetos/mad/merch/4.png",
+            "alt": "Imagem: m.a.d - merch (4)"
           }
         ],
         "title": "merch",
@@ -33,34 +38,44 @@
           {
             "items": [
               {
-                "img": "projetos/mad/social_media/6.png"
+                "img": "projetos/mad/social_media/6.png",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (1)"
               },
               {
-                "img": "projetos/mad/social_media/7.png"
+                "img": "projetos/mad/social_media/7.png",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (2)"
               },
               {
-                "img": "projetos/mad/social_media/8.png"
+                "img": "projetos/mad/social_media/8.png",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (3)"
               },
               {
-                "img": "projetos/mad/social_media/9.png"
+                "img": "projetos/mad/social_media/9.png",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (4)"
               },
               {
-                "img": "projetos/mad/social_media/6.png"
+                "img": "projetos/mad/social_media/6.png",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (5)"
               },
               {
-                "img": "projetos/mad/social_media/1.png"
+                "img": "projetos/mad/social_media/1.png",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (6)"
               },
               {
-                "img": "projetos/mad/social_media/2.jpg"
+                "img": "projetos/mad/social_media/2.jpg",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (7)"
               },
               {
-                "img": "projetos/mad/social_media/3.jpg"
+                "img": "projetos/mad/social_media/3.jpg",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (8)"
               },
               {
-                "img": "projetos/mad/social_media/4.jpg"
+                "img": "projetos/mad/social_media/4.jpg",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (9)"
               },
               {
-                "img": "projetos/mad/social_media/5.jpg"
+                "img": "projetos/mad/social_media/5.jpg",
+                "alt": "Imagem: m.a.d - conteúdo orgânico (10)"
               }
             ]
           }
@@ -71,22 +86,28 @@
       {
         "items": [
           {
-            "img": "projetos/mad/party/1.jpg"
+            "img": "projetos/mad/party/1.jpg",
+            "alt": "Imagem: m.a.d - eventos (1)"
           },
           {
-            "img": "projetos/mad/party/2.jpg"
+            "img": "projetos/mad/party/2.jpg",
+            "alt": "Imagem: m.a.d - eventos (2)"
           },
           {
-            "img": "projetos/mad/party/3.jpg"
+            "img": "projetos/mad/party/3.jpg",
+            "alt": "Imagem: m.a.d - eventos (3)"
           },
           {
-            "img": "projetos/mad/party/4.jpg"
+            "img": "projetos/mad/party/4.jpg",
+            "alt": "Imagem: m.a.d - eventos (4)"
           },
           {
-            "img": "projetos/mad/party/5.jpg"
+            "img": "projetos/mad/party/5.jpg",
+            "alt": "Imagem: m.a.d - eventos (5)"
           },
           {
-            "img": "projetos/mad/party/6.jpg"
+            "img": "projetos/mad/party/6.jpg",
+            "alt": "Imagem: m.a.d - eventos (6)"
           }
         ],
         "title": "eventos",
@@ -106,7 +127,8 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/mad/card_media.png"
+      "img": "projetos/mad/card_media.png",
+      "alt": "Image: m.a.d (1)"
     },
     "categories": [
       "Campaigns",
@@ -118,16 +140,20 @@
       {
         "items": [
           {
-            "img": "projetos/mad/merch/1.png"
+            "img": "projetos/mad/merch/1.png",
+            "alt": "Image: m.a.d - merch (1)"
           },
           {
-            "img": "projetos/mad/merch/2.png"
+            "img": "projetos/mad/merch/2.png",
+            "alt": "Image: m.a.d - merch (2)"
           },
           {
-            "img": "projetos/mad/merch/3.png"
+            "img": "projetos/mad/merch/3.png",
+            "alt": "Image: m.a.d - merch (3)"
           },
           {
-            "img": "projetos/mad/merch/4.png"
+            "img": "projetos/mad/merch/4.png",
+            "alt": "Image: m.a.d - merch (4)"
           }
         ],
         "title": "merch",
@@ -138,34 +164,44 @@
           {
             "items": [
               {
-                "img": "projetos/mad/social_media/6.png"
+                "img": "projetos/mad/social_media/6.png",
+                "alt": "Image: m.a.d - organic content (1)"
               },
               {
-                "img": "projetos/mad/social_media/7.png"
+                "img": "projetos/mad/social_media/7.png",
+                "alt": "Image: m.a.d - organic content (2)"
               },
               {
-                "img": "projetos/mad/social_media/8.png"
+                "img": "projetos/mad/social_media/8.png",
+                "alt": "Image: m.a.d - organic content (3)"
               },
               {
-                "img": "projetos/mad/social_media/9.png"
+                "img": "projetos/mad/social_media/9.png",
+                "alt": "Image: m.a.d - organic content (4)"
               },
               {
-                "img": "projetos/mad/social_media/6.png"
+                "img": "projetos/mad/social_media/6.png",
+                "alt": "Image: m.a.d - organic content (5)"
               },
               {
-                "img": "projetos/mad/social_media/1.png"
+                "img": "projetos/mad/social_media/1.png",
+                "alt": "Image: m.a.d - organic content (6)"
               },
               {
-                "img": "projetos/mad/social_media/2.jpg"
+                "img": "projetos/mad/social_media/2.jpg",
+                "alt": "Image: m.a.d - organic content (7)"
               },
               {
-                "img": "projetos/mad/social_media/3.jpg"
+                "img": "projetos/mad/social_media/3.jpg",
+                "alt": "Image: m.a.d - organic content (8)"
               },
               {
-                "img": "projetos/mad/social_media/4.jpg"
+                "img": "projetos/mad/social_media/4.jpg",
+                "alt": "Image: m.a.d - organic content (9)"
               },
               {
-                "img": "projetos/mad/social_media/5.jpg"
+                "img": "projetos/mad/social_media/5.jpg",
+                "alt": "Image: m.a.d - organic content (10)"
               }
             ]
           }
@@ -176,22 +212,28 @@
       {
         "items": [
           {
-            "img": "projetos/mad/party/1.jpg"
+            "img": "projetos/mad/party/1.jpg",
+            "alt": "Image: m.a.d - events (1)"
           },
           {
-            "img": "projetos/mad/party/2.jpg"
+            "img": "projetos/mad/party/2.jpg",
+            "alt": "Image: m.a.d - events (2)"
           },
           {
-            "img": "projetos/mad/party/3.jpg"
+            "img": "projetos/mad/party/3.jpg",
+            "alt": "Image: m.a.d - events (3)"
           },
           {
-            "img": "projetos/mad/party/4.jpg"
+            "img": "projetos/mad/party/4.jpg",
+            "alt": "Image: m.a.d - events (4)"
           },
           {
-            "img": "projetos/mad/party/5.jpg"
+            "img": "projetos/mad/party/5.jpg",
+            "alt": "Image: m.a.d - events (5)"
           },
           {
-            "img": "projetos/mad/party/6.jpg"
+            "img": "projetos/mad/party/6.jpg",
+            "alt": "Image: m.a.d - events (6)"
           }
         ],
         "title": "events",

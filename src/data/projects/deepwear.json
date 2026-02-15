@@ -1,21 +1,29 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/deepwear/card_media.png"
+      "img": "projetos/deepwear/card_media.png",
+      "alt": "Imagem: deepwear (1)"
     },
-    "categories": ["Conteúdo orgânico", "Fotografia / Vídeo", "Catálogos"],
+    "categories": [
+      "Conteúdo orgânico",
+      "Fotografia / Vídeo",
+      "Catálogos"
+    ],
     "content": [
       {
         "columns": 3,
         "items": [
           {
-            "video": "/assets/projetos/deepwear/reels/1.mp4"
+            "video": "/assets/projetos/deepwear/reels/1.mp4",
+            "alt": "Vídeo: deepwear - instagram reels (1)"
           },
           {
-            "video": "/assets/projetos/deepwear/reels/2.mp4"
+            "video": "/assets/projetos/deepwear/reels/2.mp4",
+            "alt": "Vídeo: deepwear - instagram reels (2)"
           },
           {
-            "video": "/assets/projetos/deepwear/reels/3.mp4"
+            "video": "/assets/projetos/deepwear/reels/3.mp4",
+            "alt": "Vídeo: deepwear - instagram reels (3)"
           }
         ],
         "title": "instagram reels",
@@ -25,16 +33,20 @@
         "columns": 4,
         "items": [
           {
-            "img": "projetos/deepwear/social_media/1.png"
+            "img": "projetos/deepwear/social_media/1.png",
+            "alt": "Imagem: deepwear - redes sociais (1)"
           },
           {
-            "img": "projetos/deepwear/social_media/2.png"
+            "img": "projetos/deepwear/social_media/2.png",
+            "alt": "Imagem: deepwear - redes sociais (2)"
           },
           {
-            "img": "projetos/deepwear/social_media/3.png"
+            "img": "projetos/deepwear/social_media/3.png",
+            "alt": "Imagem: deepwear - redes sociais (3)"
           },
           {
-            "img": "projetos/deepwear/social_media/4.png"
+            "img": "projetos/deepwear/social_media/4.png",
+            "alt": "Imagem: deepwear - redes sociais (4)"
           }
         ],
         "title": "redes sociais",
@@ -43,94 +55,124 @@
       {
         "items": [
           {
-            "img": "projetos/deepwear/book/1.png"
+            "img": "projetos/deepwear/book/1.png",
+            "alt": "Imagem: deepwear - catálogos (1)"
           },
           {
-            "img": "projetos/deepwear/book/2.png"
+            "img": "projetos/deepwear/book/2.png",
+            "alt": "Imagem: deepwear - catálogos (2)"
           },
           {
-            "img": "projetos/deepwear/book/3.png"
+            "img": "projetos/deepwear/book/3.png",
+            "alt": "Imagem: deepwear - catálogos (3)"
           },
           {
-            "img": "projetos/deepwear/book/4.png"
+            "img": "projetos/deepwear/book/4.png",
+            "alt": "Imagem: deepwear - catálogos (4)"
           },
           {
-            "img": "projetos/deepwear/book/5.png"
+            "img": "projetos/deepwear/book/5.png",
+            "alt": "Imagem: deepwear - catálogos (5)"
           },
           {
-            "img": "projetos/deepwear/book/6.png"
+            "img": "projetos/deepwear/book/6.png",
+            "alt": "Imagem: deepwear - catálogos (6)"
           },
           {
-            "img": "projetos/deepwear/book/7.png"
+            "img": "projetos/deepwear/book/7.png",
+            "alt": "Imagem: deepwear - catálogos (7)"
           },
           {
-            "img": "projetos/deepwear/book/8.png"
+            "img": "projetos/deepwear/book/8.png",
+            "alt": "Imagem: deepwear - catálogos (8)"
           },
           {
-            "img": "projetos/deepwear/book/9.png"
+            "img": "projetos/deepwear/book/9.png",
+            "alt": "Imagem: deepwear - catálogos (9)"
           },
           {
-            "img": "projetos/deepwear/book/10.png"
+            "img": "projetos/deepwear/book/10.png",
+            "alt": "Imagem: deepwear - catálogos (10)"
           },
           {
-            "img": "projetos/deepwear/book/11.png"
+            "img": "projetos/deepwear/book/11.png",
+            "alt": "Imagem: deepwear - catálogos (11)"
           },
           {
-            "img": "projetos/deepwear/book/12.png"
+            "img": "projetos/deepwear/book/12.png",
+            "alt": "Imagem: deepwear - catálogos (12)"
           },
           {
-            "img": "projetos/deepwear/book/13.png"
+            "img": "projetos/deepwear/book/13.png",
+            "alt": "Imagem: deepwear - catálogos (13)"
           },
           {
-            "img": "projetos/deepwear/book/14.png"
+            "img": "projetos/deepwear/book/14.png",
+            "alt": "Imagem: deepwear - catálogos (14)"
           },
           {
-            "img": "projetos/deepwear/book/15.png"
+            "img": "projetos/deepwear/book/15.png",
+            "alt": "Imagem: deepwear - catálogos (15)"
           },
           {
-            "img": "projetos/deepwear/book/16.png"
+            "img": "projetos/deepwear/book/16.png",
+            "alt": "Imagem: deepwear - catálogos (16)"
           },
           {
-            "img": "projetos/deepwear/book/17.png"
+            "img": "projetos/deepwear/book/17.png",
+            "alt": "Imagem: deepwear - catálogos (17)"
           },
           {
-            "img": "projetos/deepwear/book/18.png"
+            "img": "projetos/deepwear/book/18.png",
+            "alt": "Imagem: deepwear - catálogos (18)"
           },
           {
-            "img": "projetos/deepwear/book/19.png"
+            "img": "projetos/deepwear/book/19.png",
+            "alt": "Imagem: deepwear - catálogos (19)"
           },
           {
-            "img": "projetos/deepwear/book/20.png"
+            "img": "projetos/deepwear/book/20.png",
+            "alt": "Imagem: deepwear - catálogos (20)"
           },
           {
-            "img": "projetos/deepwear/book/21.png"
+            "img": "projetos/deepwear/book/21.png",
+            "alt": "Imagem: deepwear - catálogos (21)"
           },
           {
-            "img": "projetos/deepwear/book/22.png"
+            "img": "projetos/deepwear/book/22.png",
+            "alt": "Imagem: deepwear - catálogos (22)"
           },
           {
-            "img": "projetos/deepwear/book/23.png"
+            "img": "projetos/deepwear/book/23.png",
+            "alt": "Imagem: deepwear - catálogos (23)"
           },
           {
-            "img": "projetos/deepwear/book/24.png"
+            "img": "projetos/deepwear/book/24.png",
+            "alt": "Imagem: deepwear - catálogos (24)"
           },
           {
-            "img": "projetos/deepwear/book/25.png"
+            "img": "projetos/deepwear/book/25.png",
+            "alt": "Imagem: deepwear - catálogos (25)"
           },
           {
-            "img": "projetos/deepwear/book/26.png"
+            "img": "projetos/deepwear/book/26.png",
+            "alt": "Imagem: deepwear - catálogos (26)"
           },
           {
-            "img": "projetos/deepwear/book/27.png"
+            "img": "projetos/deepwear/book/27.png",
+            "alt": "Imagem: deepwear - catálogos (27)"
           },
           {
-            "img": "projetos/deepwear/book/28.png"
+            "img": "projetos/deepwear/book/28.png",
+            "alt": "Imagem: deepwear - catálogos (28)"
           },
           {
-            "img": "projetos/deepwear/book/29.png"
+            "img": "projetos/deepwear/book/29.png",
+            "alt": "Imagem: deepwear - catálogos (29)"
           },
           {
-            "img": "projetos/deepwear/book/30.png"
+            "img": "projetos/deepwear/book/30.png",
+            "alt": "Imagem: deepwear - catálogos (30)"
           }
         ],
         "title": "catálogos",
@@ -150,21 +192,29 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/deepwear/card_media.png"
+      "img": "projetos/deepwear/card_media.png",
+      "alt": "Image: deepwear (1)"
     },
-    "categories": ["Organic Content", "Photography / Video", "Catalogues"],
+    "categories": [
+      "Organic Content",
+      "Photography / Video",
+      "Catalogues"
+    ],
     "content": [
       {
         "columns": 3,
         "items": [
           {
-            "video": "/assets/projetos/deepwear/reels/1.mp4"
+            "video": "/assets/projetos/deepwear/reels/1.mp4",
+            "alt": "Video: deepwear - instagram reels (1)"
           },
           {
-            "video": "/assets/projetos/deepwear/reels/2.mp4"
+            "video": "/assets/projetos/deepwear/reels/2.mp4",
+            "alt": "Video: deepwear - instagram reels (2)"
           },
           {
-            "video": "/assets/projetos/deepwear/reels/3.mp4"
+            "video": "/assets/projetos/deepwear/reels/3.mp4",
+            "alt": "Video: deepwear - instagram reels (3)"
           }
         ],
         "title": "instagram reels",
@@ -174,16 +224,20 @@
         "columns": 4,
         "items": [
           {
-            "img": "projetos/deepwear/social_media/1.png"
+            "img": "projetos/deepwear/social_media/1.png",
+            "alt": "Image: deepwear - social media (1)"
           },
           {
-            "img": "projetos/deepwear/social_media/2.png"
+            "img": "projetos/deepwear/social_media/2.png",
+            "alt": "Image: deepwear - social media (2)"
           },
           {
-            "img": "projetos/deepwear/social_media/3.png"
+            "img": "projetos/deepwear/social_media/3.png",
+            "alt": "Image: deepwear - social media (3)"
           },
           {
-            "img": "projetos/deepwear/social_media/4.png"
+            "img": "projetos/deepwear/social_media/4.png",
+            "alt": "Image: deepwear - social media (4)"
           }
         ],
         "title": "social media",
@@ -192,94 +246,124 @@
       {
         "flipbookPages": [
           {
-            "img": "projetos/deepwear/book/1.png"
+            "img": "projetos/deepwear/book/1.png",
+            "alt": "Image: deepwear - catalogues (1)"
           },
           {
-            "img": "projetos/deepwear/book/2.png"
+            "img": "projetos/deepwear/book/2.png",
+            "alt": "Image: deepwear - catalogues (2)"
           },
           {
-            "img": "projetos/deepwear/book/3.png"
+            "img": "projetos/deepwear/book/3.png",
+            "alt": "Image: deepwear - catalogues (3)"
           },
           {
-            "img": "projetos/deepwear/book/4.png"
+            "img": "projetos/deepwear/book/4.png",
+            "alt": "Image: deepwear - catalogues (4)"
           },
           {
-            "img": "projetos/deepwear/book/5.png"
+            "img": "projetos/deepwear/book/5.png",
+            "alt": "Image: deepwear - catalogues (5)"
           },
           {
-            "img": "projetos/deepwear/book/6.png"
+            "img": "projetos/deepwear/book/6.png",
+            "alt": "Image: deepwear - catalogues (6)"
           },
           {
-            "img": "projetos/deepwear/book/7.png"
+            "img": "projetos/deepwear/book/7.png",
+            "alt": "Image: deepwear - catalogues (7)"
           },
           {
-            "img": "projetos/deepwear/book/8.png"
+            "img": "projetos/deepwear/book/8.png",
+            "alt": "Image: deepwear - catalogues (8)"
           },
           {
-            "img": "projetos/deepwear/book/9.png"
+            "img": "projetos/deepwear/book/9.png",
+            "alt": "Image: deepwear - catalogues (9)"
           },
           {
-            "img": "projetos/deepwear/book/10.png"
+            "img": "projetos/deepwear/book/10.png",
+            "alt": "Image: deepwear - catalogues (10)"
           },
           {
-            "img": "projetos/deepwear/book/11.png"
+            "img": "projetos/deepwear/book/11.png",
+            "alt": "Image: deepwear - catalogues (11)"
           },
           {
-            "img": "projetos/deepwear/book/12.png"
+            "img": "projetos/deepwear/book/12.png",
+            "alt": "Image: deepwear - catalogues (12)"
           },
           {
-            "img": "projetos/deepwear/book/13.png"
+            "img": "projetos/deepwear/book/13.png",
+            "alt": "Image: deepwear - catalogues (13)"
           },
           {
-            "img": "projetos/deepwear/book/14.png"
+            "img": "projetos/deepwear/book/14.png",
+            "alt": "Image: deepwear - catalogues (14)"
           },
           {
-            "img": "projetos/deepwear/book/15.png"
+            "img": "projetos/deepwear/book/15.png",
+            "alt": "Image: deepwear - catalogues (15)"
           },
           {
-            "img": "projetos/deepwear/book/16.png"
+            "img": "projetos/deepwear/book/16.png",
+            "alt": "Image: deepwear - catalogues (16)"
           },
           {
-            "img": "projetos/deepwear/book/17.png"
+            "img": "projetos/deepwear/book/17.png",
+            "alt": "Image: deepwear - catalogues (17)"
           },
           {
-            "img": "projetos/deepwear/book/18.png"
+            "img": "projetos/deepwear/book/18.png",
+            "alt": "Image: deepwear - catalogues (18)"
           },
           {
-            "img": "projetos/deepwear/book/19.png"
+            "img": "projetos/deepwear/book/19.png",
+            "alt": "Image: deepwear - catalogues (19)"
           },
           {
-            "img": "projetos/deepwear/book/20.png"
+            "img": "projetos/deepwear/book/20.png",
+            "alt": "Image: deepwear - catalogues (20)"
           },
           {
-            "img": "projetos/deepwear/book/21.png"
+            "img": "projetos/deepwear/book/21.png",
+            "alt": "Image: deepwear - catalogues (21)"
           },
           {
-            "img": "projetos/deepwear/book/22.png"
+            "img": "projetos/deepwear/book/22.png",
+            "alt": "Image: deepwear - catalogues (22)"
           },
           {
-            "img": "projetos/deepwear/book/23.png"
+            "img": "projetos/deepwear/book/23.png",
+            "alt": "Image: deepwear - catalogues (23)"
           },
           {
-            "img": "projetos/deepwear/book/24.png"
+            "img": "projetos/deepwear/book/24.png",
+            "alt": "Image: deepwear - catalogues (24)"
           },
           {
-            "img": "projetos/deepwear/book/25.png"
+            "img": "projetos/deepwear/book/25.png",
+            "alt": "Image: deepwear - catalogues (25)"
           },
           {
-            "img": "projetos/deepwear/book/26.png"
+            "img": "projetos/deepwear/book/26.png",
+            "alt": "Image: deepwear - catalogues (26)"
           },
           {
-            "img": "projetos/deepwear/book/27.png"
+            "img": "projetos/deepwear/book/27.png",
+            "alt": "Image: deepwear - catalogues (27)"
           },
           {
-            "img": "projetos/deepwear/book/28.png"
+            "img": "projetos/deepwear/book/28.png",
+            "alt": "Image: deepwear - catalogues (28)"
           },
           {
-            "img": "projetos/deepwear/book/29.png"
+            "img": "projetos/deepwear/book/29.png",
+            "alt": "Image: deepwear - catalogues (29)"
           },
           {
-            "img": "projetos/deepwear/book/30.png"
+            "img": "projetos/deepwear/book/30.png",
+            "alt": "Image: deepwear - catalogues (30)"
           }
         ],
         "title": "catalogues",

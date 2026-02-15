@@ -1,7 +1,8 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/hussel/card_media.png"
+      "img": "projetos/hussel/card_media.png",
+      "alt": "Imagem: hussel (1)"
     },
     "categories": [
       "Conteúdo Orgânico",
@@ -14,28 +15,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/chocolate_dubai/Post1.png"
+                "img": "projetos/hussel/chocolate_dubai/Post1.png",
+                "alt": "Imagem: hussel - campanha - chocolate dubai (1)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Post2.png"
+                "img": "projetos/hussel/chocolate_dubai/Post2.png",
+                "alt": "Imagem: hussel - campanha - chocolate dubai (2)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Post3.png"
+                "img": "projetos/hussel/chocolate_dubai/Post3.png",
+                "alt": "Imagem: hussel - campanha - chocolate dubai (3)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Post4.png"
+                "img": "projetos/hussel/chocolate_dubai/Post4.png",
+                "alt": "Imagem: hussel - campanha - chocolate dubai (4)"
               },
               {
-                "video": "/assets/projetos/hussel/chocolate_dubai/Story1.mp4"
+                "video": "/assets/projetos/hussel/chocolate_dubai/Story1.mp4",
+                "alt": "Vídeo: hussel - campanha - chocolate dubai (1)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Story2.png"
+                "img": "projetos/hussel/chocolate_dubai/Story2.png",
+                "alt": "Imagem: hussel - campanha - chocolate dubai (5)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Story3.png"
+                "img": "projetos/hussel/chocolate_dubai/Story3.png",
+                "alt": "Imagem: hussel - campanha - chocolate dubai (6)"
               },
               {
-                "video": "/assets/projetos/hussel/chocolate_dubai/Story4.mp4"
+                "video": "/assets/projetos/hussel/chocolate_dubai/Story4.mp4",
+                "alt": "Vídeo: hussel - campanha - chocolate dubai (2)"
               }
             ],
             "title": "chocolate dubai"
@@ -43,28 +52,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/dia_do_pai/Post1.png"
+                "img": "projetos/hussel/dia_do_pai/Post1.png",
+                "alt": "Imagem: hussel - campanha - dia do pai (1)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Post2.png"
+                "img": "projetos/hussel/dia_do_pai/Post2.png",
+                "alt": "Imagem: hussel - campanha - dia do pai (2)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Post3.png"
+                "img": "projetos/hussel/dia_do_pai/Post3.png",
+                "alt": "Imagem: hussel - campanha - dia do pai (3)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Post4.png"
+                "img": "projetos/hussel/dia_do_pai/Post4.png",
+                "alt": "Imagem: hussel - campanha - dia do pai (4)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Story1.png"
+                "img": "projetos/hussel/dia_do_pai/Story1.png",
+                "alt": "Imagem: hussel - campanha - dia do pai (5)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Story2.png"
+                "img": "projetos/hussel/dia_do_pai/Story2.png",
+                "alt": "Imagem: hussel - campanha - dia do pai (6)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Story3.png"
+                "img": "projetos/hussel/dia_do_pai/Story3.png",
+                "alt": "Imagem: hussel - campanha - dia do pai (7)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Story4.png"
+                "img": "projetos/hussel/dia_do_pai/Story4.png",
+                "alt": "Imagem: hussel - campanha - dia do pai (8)"
               }
             ],
             "title": "dia do pai"
@@ -72,28 +89,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/35_anos/Post1.png"
+                "img": "projetos/hussel/35_anos/Post1.png",
+                "alt": "Imagem: hussel - campanha - 35 anos (1)"
               },
               {
-                "img": "projetos/hussel/35_anos/Post2.png"
+                "img": "projetos/hussel/35_anos/Post2.png",
+                "alt": "Imagem: hussel - campanha - 35 anos (2)"
               },
               {
-                "img": "projetos/hussel/35_anos/Post3.png"
+                "img": "projetos/hussel/35_anos/Post3.png",
+                "alt": "Imagem: hussel - campanha - 35 anos (3)"
               },
               {
-                "img": "projetos/hussel/35_anos/Post4.png"
+                "img": "projetos/hussel/35_anos/Post4.png",
+                "alt": "Imagem: hussel - campanha - 35 anos (4)"
               },
               {
-                "video": "/assets/projetos/hussel/35_anos/Story1.mp4"
+                "video": "/assets/projetos/hussel/35_anos/Story1.mp4",
+                "alt": "Vídeo: hussel - campanha - 35 anos (1)"
               },
               {
-                "video": "/assets/projetos/hussel/35_anos/Story2.mp4"
+                "video": "/assets/projetos/hussel/35_anos/Story2.mp4",
+                "alt": "Vídeo: hussel - campanha - 35 anos (2)"
               },
               {
-                "video": "/assets/projetos/hussel/35_anos/Story3.mp4"
+                "video": "/assets/projetos/hussel/35_anos/Story3.mp4",
+                "alt": "Vídeo: hussel - campanha - 35 anos (3)"
               },
               {
-                "img": "projetos/hussel/35_anos/Story4.png"
+                "img": "projetos/hussel/35_anos/Story4.png",
+                "alt": "Imagem: hussel - campanha - 35 anos (5)"
               }
             ],
             "title": "35 anos"
@@ -101,28 +126,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/pascoa/Post1.png"
+                "img": "projetos/hussel/pascoa/Post1.png",
+                "alt": "Imagem: hussel - campanha - páscoa (1)"
               },
               {
-                "img": "projetos/hussel/pascoa/Post2.png"
+                "img": "projetos/hussel/pascoa/Post2.png",
+                "alt": "Imagem: hussel - campanha - páscoa (2)"
               },
               {
-                "img": "projetos/hussel/pascoa/Post3.png"
+                "img": "projetos/hussel/pascoa/Post3.png",
+                "alt": "Imagem: hussel - campanha - páscoa (3)"
               },
               {
-                "img": "projetos/hussel/pascoa/Post4.png"
+                "img": "projetos/hussel/pascoa/Post4.png",
+                "alt": "Imagem: hussel - campanha - páscoa (4)"
               },
               {
-                "img": "projetos/hussel/pascoa/Story1.png"
+                "img": "projetos/hussel/pascoa/Story1.png",
+                "alt": "Imagem: hussel - campanha - páscoa (5)"
               },
               {
-                "video": "/assets/projetos/hussel/pascoa/Story2.mp4"
+                "video": "/assets/projetos/hussel/pascoa/Story2.mp4",
+                "alt": "Vídeo: hussel - campanha - páscoa (1)"
               },
               {
-                "img": "projetos/hussel/pascoa/Story3.png"
+                "img": "projetos/hussel/pascoa/Story3.png",
+                "alt": "Imagem: hussel - campanha - páscoa (6)"
               },
               {
-                "img": "projetos/hussel/pascoa/Story4.png"
+                "img": "projetos/hussel/pascoa/Story4.png",
+                "alt": "Imagem: hussel - campanha - páscoa (7)"
               }
             ],
             "title": "páscoa"
@@ -130,28 +163,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/halloween/Post1.png"
+                "img": "projetos/hussel/halloween/Post1.png",
+                "alt": "Imagem: hussel - campanha - halloween (1)"
               },
               {
-                "img": "projetos/hussel/halloween/Post2.png"
+                "img": "projetos/hussel/halloween/Post2.png",
+                "alt": "Imagem: hussel - campanha - halloween (2)"
               },
               {
-                "img": "projetos/hussel/halloween/Post3.png"
+                "img": "projetos/hussel/halloween/Post3.png",
+                "alt": "Imagem: hussel - campanha - halloween (3)"
               },
               {
-                "img": "projetos/hussel/halloween/Post4.png"
+                "img": "projetos/hussel/halloween/Post4.png",
+                "alt": "Imagem: hussel - campanha - halloween (4)"
               },
               {
-                "video": "/assets/projetos/hussel/halloween/Story1.mp4"
+                "video": "/assets/projetos/hussel/halloween/Story1.mp4",
+                "alt": "Vídeo: hussel - campanha - halloween (1)"
               },
               {
-                "img": "projetos/hussel/halloween/Story2.png"
+                "img": "projetos/hussel/halloween/Story2.png",
+                "alt": "Imagem: hussel - campanha - halloween (5)"
               },
               {
-                "img": "projetos/hussel/halloween/Story3.png"
+                "img": "projetos/hussel/halloween/Story3.png",
+                "alt": "Imagem: hussel - campanha - halloween (6)"
               },
               {
-                "img": "projetos/hussel/halloween/Story4.png"
+                "img": "projetos/hussel/halloween/Story4.png",
+                "alt": "Imagem: hussel - campanha - halloween (7)"
               }
             ],
             "title": "halloween"
@@ -173,7 +214,8 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/hussel/card_media.png"
+      "img": "projetos/hussel/card_media.png",
+      "alt": "Image: hussel (1)"
     },
     "categories": [
       "Organic Content",
@@ -186,28 +228,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/chocolate_dubai/Post1.png"
+                "img": "projetos/hussel/chocolate_dubai/Post1.png",
+                "alt": "Image: hussel - campanha - dubai chocolate (1)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Post2.png"
+                "img": "projetos/hussel/chocolate_dubai/Post2.png",
+                "alt": "Image: hussel - campanha - dubai chocolate (2)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Post3.png"
+                "img": "projetos/hussel/chocolate_dubai/Post3.png",
+                "alt": "Image: hussel - campanha - dubai chocolate (3)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Post4.png"
+                "img": "projetos/hussel/chocolate_dubai/Post4.png",
+                "alt": "Image: hussel - campanha - dubai chocolate (4)"
               },
               {
-                "video": "/assets/projetos/hussel/chocolate_dubai/Story1.mp4"
+                "video": "/assets/projetos/hussel/chocolate_dubai/Story1.mp4",
+                "alt": "Video: hussel - campanha - dubai chocolate (1)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Story2.png"
+                "img": "projetos/hussel/chocolate_dubai/Story2.png",
+                "alt": "Image: hussel - campanha - dubai chocolate (5)"
               },
               {
-                "img": "projetos/hussel/chocolate_dubai/Story3.png"
+                "img": "projetos/hussel/chocolate_dubai/Story3.png",
+                "alt": "Image: hussel - campanha - dubai chocolate (6)"
               },
               {
-                "video": "/assets/projetos/hussel/chocolate_dubai/Story4.mp4"
+                "video": "/assets/projetos/hussel/chocolate_dubai/Story4.mp4",
+                "alt": "Video: hussel - campanha - dubai chocolate (2)"
               }
             ],
             "title": "dubai chocolate"
@@ -215,28 +265,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/dia_do_pai/Post1.png"
+                "img": "projetos/hussel/dia_do_pai/Post1.png",
+                "alt": "Image: hussel - campanha - father's day (1)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Post2.png"
+                "img": "projetos/hussel/dia_do_pai/Post2.png",
+                "alt": "Image: hussel - campanha - father's day (2)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Post3.png"
+                "img": "projetos/hussel/dia_do_pai/Post3.png",
+                "alt": "Image: hussel - campanha - father's day (3)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Post4.png"
+                "img": "projetos/hussel/dia_do_pai/Post4.png",
+                "alt": "Image: hussel - campanha - father's day (4)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Story1.png"
+                "img": "projetos/hussel/dia_do_pai/Story1.png",
+                "alt": "Image: hussel - campanha - father's day (5)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Story2.png"
+                "img": "projetos/hussel/dia_do_pai/Story2.png",
+                "alt": "Image: hussel - campanha - father's day (6)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Story3.png"
+                "img": "projetos/hussel/dia_do_pai/Story3.png",
+                "alt": "Image: hussel - campanha - father's day (7)"
               },
               {
-                "img": "projetos/hussel/dia_do_pai/Story4.png"
+                "img": "projetos/hussel/dia_do_pai/Story4.png",
+                "alt": "Image: hussel - campanha - father's day (8)"
               }
             ],
             "title": "father's day"
@@ -244,28 +302,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/35_anos/Post1.png"
+                "img": "projetos/hussel/35_anos/Post1.png",
+                "alt": "Image: hussel - campanha - 35th birthday (1)"
               },
               {
-                "img": "projetos/hussel/35_anos/Post2.png"
+                "img": "projetos/hussel/35_anos/Post2.png",
+                "alt": "Image: hussel - campanha - 35th birthday (2)"
               },
               {
-                "img": "projetos/hussel/35_anos/Post3.png"
+                "img": "projetos/hussel/35_anos/Post3.png",
+                "alt": "Image: hussel - campanha - 35th birthday (3)"
               },
               {
-                "img": "projetos/hussel/35_anos/Post4.png"
+                "img": "projetos/hussel/35_anos/Post4.png",
+                "alt": "Image: hussel - campanha - 35th birthday (4)"
               },
               {
-                "video": "/assets/projetos/hussel/35_anos/Story1.mp4"
+                "video": "/assets/projetos/hussel/35_anos/Story1.mp4",
+                "alt": "Video: hussel - campanha - 35th birthday (1)"
               },
               {
-                "video": "/assets/projetos/hussel/35_anos/Story2.mp4"
+                "video": "/assets/projetos/hussel/35_anos/Story2.mp4",
+                "alt": "Video: hussel - campanha - 35th birthday (2)"
               },
               {
-                "video": "/assets/projetos/hussel/35_anos/Story3.mp4"
+                "video": "/assets/projetos/hussel/35_anos/Story3.mp4",
+                "alt": "Video: hussel - campanha - 35th birthday (3)"
               },
               {
-                "img": "projetos/hussel/35_anos/Story4.png"
+                "img": "projetos/hussel/35_anos/Story4.png",
+                "alt": "Image: hussel - campanha - 35th birthday (5)"
               }
             ],
             "title": "35th birthday"
@@ -273,28 +339,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/pascoa/Post1.png"
+                "img": "projetos/hussel/pascoa/Post1.png",
+                "alt": "Image: hussel - campanha - easter (1)"
               },
               {
-                "img": "projetos/hussel/pascoa/Post2.png"
+                "img": "projetos/hussel/pascoa/Post2.png",
+                "alt": "Image: hussel - campanha - easter (2)"
               },
               {
-                "img": "projetos/hussel/pascoa/Post3.png"
+                "img": "projetos/hussel/pascoa/Post3.png",
+                "alt": "Image: hussel - campanha - easter (3)"
               },
               {
-                "img": "projetos/hussel/pascoa/Post4.png"
+                "img": "projetos/hussel/pascoa/Post4.png",
+                "alt": "Image: hussel - campanha - easter (4)"
               },
               {
-                "img": "projetos/hussel/pascoa/Story1.png"
+                "img": "projetos/hussel/pascoa/Story1.png",
+                "alt": "Image: hussel - campanha - easter (5)"
               },
               {
-                "video": "/assets/projetos/hussel/pascoa/Story2.mp4"
+                "video": "/assets/projetos/hussel/pascoa/Story2.mp4",
+                "alt": "Video: hussel - campanha - easter (1)"
               },
               {
-                "img": "projetos/hussel/pascoa/Story3.png"
+                "img": "projetos/hussel/pascoa/Story3.png",
+                "alt": "Image: hussel - campanha - easter (6)"
               },
               {
-                "img": "projetos/hussel/pascoa/Story4.png"
+                "img": "projetos/hussel/pascoa/Story4.png",
+                "alt": "Image: hussel - campanha - easter (7)"
               }
             ],
             "title": "easter"
@@ -302,28 +376,36 @@
           {
             "items": [
               {
-                "img": "projetos/hussel/halloween/Post1.png"
+                "img": "projetos/hussel/halloween/Post1.png",
+                "alt": "Image: hussel - campanha - halloween (1)"
               },
               {
-                "img": "projetos/hussel/halloween/Post2.png"
+                "img": "projetos/hussel/halloween/Post2.png",
+                "alt": "Image: hussel - campanha - halloween (2)"
               },
               {
-                "img": "projetos/hussel/halloween/Post3.png"
+                "img": "projetos/hussel/halloween/Post3.png",
+                "alt": "Image: hussel - campanha - halloween (3)"
               },
               {
-                "img": "projetos/hussel/halloween/Post4.png"
+                "img": "projetos/hussel/halloween/Post4.png",
+                "alt": "Image: hussel - campanha - halloween (4)"
               },
               {
-                "video": "/assets/projetos/hussel/halloween/Story1.mp4"
+                "video": "/assets/projetos/hussel/halloween/Story1.mp4",
+                "alt": "Video: hussel - campanha - halloween (1)"
               },
               {
-                "img": "projetos/hussel/halloween/Story2.png"
+                "img": "projetos/hussel/halloween/Story2.png",
+                "alt": "Image: hussel - campanha - halloween (5)"
               },
               {
-                "img": "projetos/hussel/halloween/Story3.png"
+                "img": "projetos/hussel/halloween/Story3.png",
+                "alt": "Image: hussel - campanha - halloween (6)"
               },
               {
-                "img": "projetos/hussel/halloween/Story4.png"
+                "img": "projetos/hussel/halloween/Story4.png",
+                "alt": "Image: hussel - campanha - halloween (7)"
               }
             ],
             "title": "halloween"

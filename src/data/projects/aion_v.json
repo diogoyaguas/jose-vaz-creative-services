@@ -1,24 +1,33 @@
 [
   {
     "banner": {
-      "video": "/assets/projetos/aion/spot_tv/aion.mp4"
+      "video": "/assets/projetos/aion/spot_tv/aion.mp4",
+      "alt": "Vídeo: aion v (1)"
     },
     "cardMedia": {
-      "video": "/assets/projetos/aion/card_media.mp4"
+      "video": "/assets/projetos/aion/card_media.mp4",
+      "alt": "Vídeo: aion v (2)"
     },
-    "categories": ["Campanhas", "Redes Sociais", "Criação de Conteúdo"],
+    "categories": [
+      "Campanhas",
+      "Redes Sociais",
+      "Criação de Conteúdo"
+    ],
     "content": [
       {
         "columns": 3,
         "items": [
           {
-            "img": "projetos/aion/mupis/1.png"
+            "img": "projetos/aion/mupis/1.png",
+            "alt": "Imagem: aion v - mupi's impressos e digitais (1)"
           },
           {
-            "img": "projetos/aion/mupis/2.png"
+            "img": "projetos/aion/mupis/2.png",
+            "alt": "Imagem: aion v - mupi's impressos e digitais (2)"
           },
           {
-            "img": "projetos/aion/mupis/3.png"
+            "img": "projetos/aion/mupis/3.png",
+            "alt": "Imagem: aion v - mupi's impressos e digitais (3)"
           }
         ],
         "title": "mupi's impressos e digitais",
@@ -28,22 +37,26 @@
         "columns": 5,
         "items": [
           {
-            "img": "projetos/aion/ads/AD1.png"
+            "img": "projetos/aion/ads/AD1.png",
+            "alt": "Imagem: aion v - paid media (1)"
           },
           {
-            "img": "projetos/aion/ads/AD2.png"
+            "img": "projetos/aion/ads/AD2.png",
+            "alt": "Imagem: aion v - paid media (2)"
           },
           {
-            "img": "projetos/aion/ads/AD3.png"
+            "img": "projetos/aion/ads/AD3.png",
+            "alt": "Imagem: aion v - paid media (3)"
           },
           {
-            "img": "projetos/aion/ads/AD4.png"
+            "img": "projetos/aion/ads/AD4.png",
+            "alt": "Imagem: aion v - paid media (4)"
           },
           {
-            "img": "projetos/aion/ads/AD5.png"
+            "img": "projetos/aion/ads/AD5.png",
+            "alt": "Imagem: aion v - paid media (5)"
           }
         ],
-
         "title": "paid media",
         "type": "gallery"
       },
@@ -52,35 +65,44 @@
           {
             "items": [
               {
-                "img": "projetos/aion/organico/Post1.png"
+                "img": "projetos/aion/organico/Post1.png",
+                "alt": "Imagem: aion v - conteúdo orgânico (1)"
               },
               {
-                "img": "projetos/aion/organico/Post2.png"
+                "img": "projetos/aion/organico/Post2.png",
+                "alt": "Imagem: aion v - conteúdo orgânico (2)"
               },
               {
-                "img": "projetos/aion/organico/Post3.png"
+                "img": "projetos/aion/organico/Post3.png",
+                "alt": "Imagem: aion v - conteúdo orgânico (3)"
               },
               {
-                "img": "projetos/aion/organico/Post4.png"
+                "img": "projetos/aion/organico/Post4.png",
+                "alt": "Imagem: aion v - conteúdo orgânico (4)"
               },
               {
-                "img": "projetos/aion/organico/Post5.png"
+                "img": "projetos/aion/organico/Post5.png",
+                "alt": "Imagem: aion v - conteúdo orgânico (5)"
               },
               {
-                "video": "/assets/projetos/aion/organico/Story1.mp4"
+                "video": "/assets/projetos/aion/organico/Story1.mp4",
+                "alt": "Vídeo: aion v - conteúdo orgânico (1)"
               },
               {
-                "img": "projetos/aion/organico/Story2.png"
-              },
-
-              {
-                "img": "projetos/aion/organico/Story3.png"
+                "img": "projetos/aion/organico/Story2.png",
+                "alt": "Imagem: aion v - conteúdo orgânico (6)"
               },
               {
-                "img": "projetos/aion/organico/Story4.png"
+                "img": "projetos/aion/organico/Story3.png",
+                "alt": "Imagem: aion v - conteúdo orgânico (7)"
               },
               {
-                "video": "/assets/projetos/aion/organico/Story5.mp4"
+                "img": "projetos/aion/organico/Story4.png",
+                "alt": "Imagem: aion v - conteúdo orgânico (8)"
+              },
+              {
+                "video": "/assets/projetos/aion/organico/Story5.mp4",
+                "alt": "Vídeo: aion v - conteúdo orgânico (2)"
               }
             ]
           }
@@ -101,24 +123,33 @@
   },
   {
     "banner": {
-      "video": "/assets/projetos/aion/spot_tv/aion.mp4"
+      "video": "/assets/projetos/aion/spot_tv/aion.mp4",
+      "alt": "Video: aion v (1)"
     },
     "cardMedia": {
-      "video": "/assets/projetos/aion/card_media.mp4"
+      "video": "/assets/projetos/aion/card_media.mp4",
+      "alt": "Video: aion v (2)"
     },
-    "categories": ["Campaigns", "Social Media", "Content Creation"],
+    "categories": [
+      "Campaigns",
+      "Social Media",
+      "Content Creation"
+    ],
     "content": [
       {
         "columns": 3,
         "items": [
           {
-            "img": "projetos/aion/mupis/1.png"
+            "img": "projetos/aion/mupis/1.png",
+            "alt": "Image: aion v - printed and digital MUPIs (1)"
           },
           {
-            "img": "projetos/aion/mupis/2.png"
+            "img": "projetos/aion/mupis/2.png",
+            "alt": "Image: aion v - printed and digital MUPIs (2)"
           },
           {
-            "img": "projetos/aion/mupis/3.png"
+            "img": "projetos/aion/mupis/3.png",
+            "alt": "Image: aion v - printed and digital MUPIs (3)"
           }
         ],
         "title": "printed and digital MUPIs",
@@ -128,22 +159,26 @@
         "columns": 5,
         "items": [
           {
-            "img": "projetos/aion/ads/AD1.png"
+            "img": "projetos/aion/ads/AD1.png",
+            "alt": "Image: aion v - paid media (1)"
           },
           {
-            "img": "projetos/aion/ads/AD2.png"
+            "img": "projetos/aion/ads/AD2.png",
+            "alt": "Image: aion v - paid media (2)"
           },
           {
-            "img": "projetos/aion/ads/AD3.png"
+            "img": "projetos/aion/ads/AD3.png",
+            "alt": "Image: aion v - paid media (3)"
           },
           {
-            "img": "projetos/aion/ads/AD4.png"
+            "img": "projetos/aion/ads/AD4.png",
+            "alt": "Image: aion v - paid media (4)"
           },
           {
-            "img": "projetos/aion/ads/AD5.png"
+            "img": "projetos/aion/ads/AD5.png",
+            "alt": "Image: aion v - paid media (5)"
           }
         ],
-
         "title": "paid media",
         "type": "gallery"
       },
@@ -152,35 +187,44 @@
           {
             "items": [
               {
-                "img": "projetos/aion/organico/Post1.png"
+                "img": "projetos/aion/organico/Post1.png",
+                "alt": "Image: aion v - organic content (1)"
               },
               {
-                "img": "projetos/aion/organico/Post2.png"
+                "img": "projetos/aion/organico/Post2.png",
+                "alt": "Image: aion v - organic content (2)"
               },
               {
-                "img": "projetos/aion/organico/Post3.png"
+                "img": "projetos/aion/organico/Post3.png",
+                "alt": "Image: aion v - organic content (3)"
               },
               {
-                "img": "projetos/aion/organico/Post4.png"
+                "img": "projetos/aion/organico/Post4.png",
+                "alt": "Image: aion v - organic content (4)"
               },
               {
-                "img": "projetos/aion/organico/Post5.png"
+                "img": "projetos/aion/organico/Post5.png",
+                "alt": "Image: aion v - organic content (5)"
               },
               {
-                "video": "/assets/projetos/aion/organico/Story1.mp4"
+                "video": "/assets/projetos/aion/organico/Story1.mp4",
+                "alt": "Video: aion v - organic content (1)"
               },
               {
-                "img": "projetos/aion/organico/Story2.png"
-              },
-
-              {
-                "img": "projetos/aion/organico/Story3.png"
+                "img": "projetos/aion/organico/Story2.png",
+                "alt": "Image: aion v - organic content (6)"
               },
               {
-                "img": "projetos/aion/organico/Story4.png"
+                "img": "projetos/aion/organico/Story3.png",
+                "alt": "Image: aion v - organic content (7)"
               },
               {
-                "video": "/assets/projetos/aion/organico/Story5.mp4"
+                "img": "projetos/aion/organico/Story4.png",
+                "alt": "Image: aion v - organic content (8)"
+              },
+              {
+                "video": "/assets/projetos/aion/organico/Story5.mp4",
+                "alt": "Video: aion v - organic content (2)"
               }
             ]
           }

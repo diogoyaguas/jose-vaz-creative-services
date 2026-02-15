@@ -1,7 +1,8 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/feeting_room/card_media.png"
+      "img": "projetos/feeting_room/card_media.png",
+      "alt": "Imagem: the feeting room (1)"
     },
     "categories": [
       "Campanhas",
@@ -15,13 +16,16 @@
         "columns": 3,
         "items": [
           {
-            "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4"
+            "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4",
+            "alt": "Vídeo: the feeting room - short takes (1)"
           },
           {
-            "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4"
+            "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4",
+            "alt": "Vídeo: the feeting room - short takes (2)"
           },
           {
-            "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
+            "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4",
+            "alt": "Vídeo: the feeting room - short takes (3)"
           }
         ],
         "subtitle": "with Janina Vaz",
@@ -31,19 +35,24 @@
       {
         "items": [
           {
-            "video": "/assets/projetos/feeting_room/social_media/1.mp4"
+            "video": "/assets/projetos/feeting_room/social_media/1.mp4",
+            "alt": "Vídeo: the feeting room - redes sociais (1)"
           },
           {
-            "img": "projetos/feeting_room/social_media/2.png"
+            "img": "projetos/feeting_room/social_media/2.png",
+            "alt": "Imagem: the feeting room - redes sociais (1)"
           },
           {
-            "video": "/assets/projetos/feeting_room/social_media/3.mp4"
+            "video": "/assets/projetos/feeting_room/social_media/3.mp4",
+            "alt": "Vídeo: the feeting room - redes sociais (2)"
           },
           {
-            "img": "projetos/feeting_room/social_media/4.jpg"
+            "img": "projetos/feeting_room/social_media/4.jpg",
+            "alt": "Imagem: the feeting room - redes sociais (2)"
           },
           {
-            "video": "/assets/projetos/feeting_room/social_media/5.mp4"
+            "video": "/assets/projetos/feeting_room/social_media/5.mp4",
+            "alt": "Vídeo: the feeting room - redes sociais (3)"
           }
         ],
         "title": "redes sociais",
@@ -52,19 +61,24 @@
       {
         "items": [
           {
-            "video": "/assets/projetos/feeting_room/reels/1.mp4"
+            "video": "/assets/projetos/feeting_room/reels/1.mp4",
+            "alt": "Vídeo: the feeting room - instagram reels (1)"
           },
           {
-            "video": "/assets/projetos/feeting_room/reels/2.mp4"
+            "video": "/assets/projetos/feeting_room/reels/2.mp4",
+            "alt": "Vídeo: the feeting room - instagram reels (2)"
           },
           {
-            "video": "/assets/projetos/feeting_room/reels/3.mp4"
+            "video": "/assets/projetos/feeting_room/reels/3.mp4",
+            "alt": "Vídeo: the feeting room - instagram reels (3)"
           },
           {
-            "video": "/assets/projetos/feeting_room/reels/4.mp4"
+            "video": "/assets/projetos/feeting_room/reels/4.mp4",
+            "alt": "Vídeo: the feeting room - instagram reels (4)"
           },
           {
-            "video": "/assets/projetos/feeting_room/reels/5.mp4"
+            "video": "/assets/projetos/feeting_room/reels/5.mp4",
+            "alt": "Vídeo: the feeting room - instagram reels (5)"
           }
         ],
         "title": "instagram reels",
@@ -95,7 +109,8 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/feeting_room/card_media.png"
+      "img": "projetos/feeting_room/card_media.png",
+      "alt": "Image: the feeting room (1)"
     },
     "categories": [
       "Campaigns",
@@ -109,13 +124,16 @@
         "columns": 3,
         "items": [
           {
-            "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4"
+            "video": "/assets/projetos/feeting_room/short_takes/1-Cover.mp4",
+            "alt": "Video: the feeting room - short takes (1)"
           },
           {
-            "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4"
+            "video": "/assets/projetos/feeting_room/short_takes/2-Cover.mp4",
+            "alt": "Video: the feeting room - short takes (2)"
           },
           {
-            "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4"
+            "video": "/assets/projetos/feeting_room/short_takes/3-Cover.mp4",
+            "alt": "Video: the feeting room - short takes (3)"
           }
         ],
         "subtitle": "with Janina Vaz",
@@ -125,19 +143,24 @@
       {
         "items": [
           {
-            "video": "/assets/projetos/feeting_room/social_media/1.mp4"
+            "video": "/assets/projetos/feeting_room/social_media/1.mp4",
+            "alt": "Video: the feeting room - social media (1)"
           },
           {
-            "img": "projetos/feeting_room/social_media/2.png"
+            "img": "projetos/feeting_room/social_media/2.png",
+            "alt": "Image: the feeting room - social media (1)"
           },
           {
-            "video": "/assets/projetos/feeting_room/social_media/3.mp4"
+            "video": "/assets/projetos/feeting_room/social_media/3.mp4",
+            "alt": "Video: the feeting room - social media (2)"
           },
           {
-            "img": "projetos/feeting_room/social_media/4.jpg"
+            "img": "projetos/feeting_room/social_media/4.jpg",
+            "alt": "Image: the feeting room - social media (2)"
           },
           {
-            "video": "/assets/projetos/feeting_room/social_media/5.mp4"
+            "video": "/assets/projetos/feeting_room/social_media/5.mp4",
+            "alt": "Video: the feeting room - social media (3)"
           }
         ],
         "title": "social media",
@@ -146,19 +169,24 @@
       {
         "items": [
           {
-            "video": "/assets/projetos/feeting_room/reels/1.mp4"
+            "video": "/assets/projetos/feeting_room/reels/1.mp4",
+            "alt": "Video: the feeting room - instagram reels (1)"
           },
           {
-            "video": "/assets/projetos/feeting_room/reels/2.mp4"
+            "video": "/assets/projetos/feeting_room/reels/2.mp4",
+            "alt": "Video: the feeting room - instagram reels (2)"
           },
           {
-            "video": "/assets/projetos/feeting_room/reels/3.mp4"
+            "video": "/assets/projetos/feeting_room/reels/3.mp4",
+            "alt": "Video: the feeting room - instagram reels (3)"
           },
           {
-            "video": "/assets/projetos/feeting_room/reels/4.mp4"
+            "video": "/assets/projetos/feeting_room/reels/4.mp4",
+            "alt": "Video: the feeting room - instagram reels (4)"
           },
           {
-            "video": "/assets/projetos/feeting_room/reels/5.mp4"
+            "video": "/assets/projetos/feeting_room/reels/5.mp4",
+            "alt": "Video: the feeting room - instagram reels (5)"
           }
         ],
         "title": "instagram reels",

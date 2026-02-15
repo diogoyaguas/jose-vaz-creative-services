@@ -1,34 +1,97 @@
 [
   {
     "cardMedia": {
-      "img": "projetos/medis/card_media.png"
+      "img": "projetos/medis/card_media.png",
+      "alt": "Imagem: marketplace médis (1)"
     },
-    "categories": ["Paid Media"],
+    "categories": [
+      "Paid Media"
+    ],
     "content": [
       {
         "type": "mediaGrid5x4",
         "title": "",
         "items": [
-          { "img": "/assets/projetos/medis/grid/1.png" },
-          { "img": "/assets/projetos/medis/grid/2.png" },
-          { "img": "/assets/projetos/medis/grid/3.png" },
-          { "img": "/assets/projetos/medis/grid/4.png" },
-          { "img": "/assets/projetos/medis/grid/5.png" },
-          { "img": "/assets/projetos/medis/grid/6.png" },
-          { "video": "/assets/projetos/medis/grid/7.mp4" },
-          { "img": "/assets/projetos/medis/grid/8.png" },
-          { "video": "/assets/projetos/medis/grid/9.mp4" },
-          { "img": "/assets/projetos/medis/grid/10.png" },
-          { "img": "/assets/projetos/medis/grid/11.png" },
-          { "img": "/assets/projetos/medis/grid/12.png" },
-          { "img": "/assets/projetos/medis/grid/13.png" },
-          { "img": "/assets/projetos/medis/grid/14.png" },
-          { "img": "/assets/projetos/medis/grid/15.png" },
-          { "img": "/assets/projetos/medis/grid/16.png" },
-          { "img": "/assets/projetos/medis/grid/17.png" },
-          { "img": "/assets/projetos/medis/grid/18.png" },
-          { "img": "/assets/projetos/medis/grid/19.png" },
-          { "img": "/assets/projetos/medis/grid/20.png" }
+          {
+            "img": "/assets/projetos/medis/grid/1.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (1)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/2.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (2)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/3.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (3)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/4.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (4)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/5.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (5)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/6.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (6)"
+          },
+          {
+            "video": "/assets/projetos/medis/grid/7.mp4",
+            "alt": "Vídeo: marketplace médis - mediaGrid5x4 (1)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/8.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (7)"
+          },
+          {
+            "video": "/assets/projetos/medis/grid/9.mp4",
+            "alt": "Vídeo: marketplace médis - mediaGrid5x4 (2)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/10.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (8)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/11.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (9)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/12.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (10)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/13.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (11)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/14.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (12)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/15.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (13)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/16.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (14)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/17.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (15)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/18.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (16)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/19.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (17)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/20.png",
+            "alt": "Imagem: marketplace médis - mediaGrid5x4 (18)"
+          }
         ]
       }
     ],
@@ -44,34 +107,97 @@
   },
   {
     "cardMedia": {
-      "img": "projetos/medis/card_media.png"
+      "img": "projetos/medis/card_media.png",
+      "alt": "Image: médis marketplace (1)"
     },
-    "categories": ["Paid Media"],
+    "categories": [
+      "Paid Media"
+    ],
     "content": [
       {
         "type": "mediaGrid5x4",
         "title": "",
         "items": [
-          { "img": "/assets/projetos/medis/grid/1.png" },
-          { "img": "/assets/projetos/medis/grid/2.png" },
-          { "img": "/assets/projetos/medis/grid/3.png" },
-          { "img": "/assets/projetos/medis/grid/4.png" },
-          { "img": "/assets/projetos/medis/grid/5.png" },
-          { "img": "/assets/projetos/medis/grid/6.png" },
-          { "video": "/assets/projetos/medis/grid/7.mp4" },
-          { "img": "/assets/projetos/medis/grid/8.png" },
-          { "video": "/assets/projetos/medis/grid/9.mp4" },
-          { "img": "/assets/projetos/medis/grid/10.png" },
-          { "img": "/assets/projetos/medis/grid/11.png" },
-          { "img": "/assets/projetos/medis/grid/12.png" },
-          { "img": "/assets/projetos/medis/grid/13.png" },
-          { "img": "/assets/projetos/medis/grid/14.png" },
-          { "img": "/assets/projetos/medis/grid/15.png" },
-          { "img": "/assets/projetos/medis/grid/16.png" },
-          { "img": "/assets/projetos/medis/grid/17.png" },
-          { "img": "/assets/projetos/medis/grid/18.png" },
-          { "img": "/assets/projetos/medis/grid/19.png" },
-          { "img": "/assets/projetos/medis/grid/20.png" }
+          {
+            "img": "/assets/projetos/medis/grid/1.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (1)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/2.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (2)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/3.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (3)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/4.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (4)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/5.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (5)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/6.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (6)"
+          },
+          {
+            "video": "/assets/projetos/medis/grid/7.mp4",
+            "alt": "Video: médis marketplace - mediaGrid5x4 (1)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/8.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (7)"
+          },
+          {
+            "video": "/assets/projetos/medis/grid/9.mp4",
+            "alt": "Video: médis marketplace - mediaGrid5x4 (2)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/10.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (8)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/11.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (9)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/12.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (10)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/13.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (11)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/14.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (12)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/15.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (13)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/16.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (14)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/17.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (15)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/18.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (16)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/19.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (17)"
+          },
+          {
+            "img": "/assets/projetos/medis/grid/20.png",
+            "alt": "Image: médis marketplace - mediaGrid5x4 (18)"
+          }
         ]
       }
     ],

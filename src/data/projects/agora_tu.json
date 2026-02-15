@@ -1,10 +1,12 @@
 [
   {
     "banner": {
-      "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4"
+      "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4",
+      "alt": "Vídeo: agora tu, ativa-te (1)"
     },
     "cardMedia": {
-      "video": "/assets/projetos/ipdj/card_media.mp4"
+      "video": "/assets/projetos/ipdj/card_media.mp4",
+      "alt": "Vídeo: agora tu, ativa-te (2)"
     },
     "categories": [
       "Campanhas",
@@ -19,19 +21,24 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/key_visuals/1.png"
+            "img": "projetos/ipdj/key_visuals/1.png",
+            "alt": "Imagem: agora tu, ativa-te - key visuals (1)"
           },
           {
-            "img": "projetos/ipdj/key_visuals/2.png"
+            "img": "projetos/ipdj/key_visuals/2.png",
+            "alt": "Imagem: agora tu, ativa-te - key visuals (2)"
           },
           {
-            "img": "projetos/ipdj/key_visuals/3.png"
+            "img": "projetos/ipdj/key_visuals/3.png",
+            "alt": "Imagem: agora tu, ativa-te - key visuals (3)"
           },
           {
-            "img": "projetos/ipdj/key_visuals/4.png"
+            "img": "projetos/ipdj/key_visuals/4.png",
+            "alt": "Imagem: agora tu, ativa-te - key visuals (4)"
           },
           {
-            "img": "projetos/ipdj/key_visuals/5.png"
+            "img": "projetos/ipdj/key_visuals/5.png",
+            "alt": "Imagem: agora tu, ativa-te - key visuals (5)"
           }
         ],
         "title": "key visuals",
@@ -41,22 +48,28 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/mupis/1.png"
+            "img": "projetos/ipdj/mupis/1.png",
+            "alt": "Imagem: agora tu, ativa-te - mupi's impressos e digitais (1)"
           },
           {
-            "img": "projetos/ipdj/mupis/2.png"
+            "img": "projetos/ipdj/mupis/2.png",
+            "alt": "Imagem: agora tu, ativa-te - mupi's impressos e digitais (2)"
           },
           {
-            "img": "projetos/ipdj/mupis/3.png"
+            "img": "projetos/ipdj/mupis/3.png",
+            "alt": "Imagem: agora tu, ativa-te - mupi's impressos e digitais (3)"
           },
           {
-            "img": "projetos/ipdj/mupis/4.png"
+            "img": "projetos/ipdj/mupis/4.png",
+            "alt": "Imagem: agora tu, ativa-te - mupi's impressos e digitais (4)"
           },
           {
-            "img": "projetos/ipdj/mupis/5.png"
+            "img": "projetos/ipdj/mupis/5.png",
+            "alt": "Imagem: agora tu, ativa-te - mupi's impressos e digitais (5)"
           },
           {
-            "img": "projetos/ipdj/mupis/6.png"
+            "img": "projetos/ipdj/mupis/6.png",
+            "alt": "Imagem: agora tu, ativa-te - mupi's impressos e digitais (6)"
           }
         ],
         "title": "mupi's impressos e digitais",
@@ -67,34 +80,44 @@
           {
             "items": [
               {
-                "img": "projetos/ipdj/social_media/Post1.png"
+                "img": "projetos/ipdj/social_media/Post1.png",
+                "alt": "Imagem: agora tu, ativa-te - conteúdo orgânico (1)"
               },
               {
-                "img": "projetos/ipdj/social_media/Post2.png"
+                "img": "projetos/ipdj/social_media/Post2.png",
+                "alt": "Imagem: agora tu, ativa-te - conteúdo orgânico (2)"
               },
               {
-                "img": "projetos/ipdj/social_media/Post3.png"
+                "img": "projetos/ipdj/social_media/Post3.png",
+                "alt": "Imagem: agora tu, ativa-te - conteúdo orgânico (3)"
               },
               {
-                "img": "projetos/ipdj/social_media/Post4.png"
+                "img": "projetos/ipdj/social_media/Post4.png",
+                "alt": "Imagem: agora tu, ativa-te - conteúdo orgânico (4)"
               },
               {
-                "img": "projetos/ipdj/social_media/Post5.png"
+                "img": "projetos/ipdj/social_media/Post5.png",
+                "alt": "Imagem: agora tu, ativa-te - conteúdo orgânico (5)"
               },
               {
-                "img": "projetos/ipdj/social_media/Story1.png"
+                "img": "projetos/ipdj/social_media/Story1.png",
+                "alt": "Imagem: agora tu, ativa-te - conteúdo orgânico (6)"
               },
               {
-                "video": "/assets/projetos/ipdj/social_media/Story2.mp4"
+                "video": "/assets/projetos/ipdj/social_media/Story2.mp4",
+                "alt": "Vídeo: agora tu, ativa-te - conteúdo orgânico (1)"
               },
               {
-                "img": "projetos/ipdj/social_media/Story3.png"
+                "img": "projetos/ipdj/social_media/Story3.png",
+                "alt": "Imagem: agora tu, ativa-te - conteúdo orgânico (7)"
               },
               {
-                "video": "/assets/projetos/ipdj/social_media/Story4.mp4"
+                "video": "/assets/projetos/ipdj/social_media/Story4.mp4",
+                "alt": "Vídeo: agora tu, ativa-te - conteúdo orgânico (2)"
               },
               {
-                "img": "projetos/ipdj/social_media/Story5.png"
+                "img": "projetos/ipdj/social_media/Story5.png",
+                "alt": "Imagem: agora tu, ativa-te - conteúdo orgânico (8)"
               }
             ]
           }
@@ -105,19 +128,24 @@
       {
         "items": [
           {
-            "img": "projetos/ipdj/merch/1.png"
+            "img": "projetos/ipdj/merch/1.png",
+            "alt": "Imagem: agora tu, ativa-te - merch (1)"
           },
           {
-            "img": "projetos/ipdj/merch/2.png"
+            "img": "projetos/ipdj/merch/2.png",
+            "alt": "Imagem: agora tu, ativa-te - merch (2)"
           },
           {
-            "img": "projetos/ipdj/merch/3.png"
+            "img": "projetos/ipdj/merch/3.png",
+            "alt": "Imagem: agora tu, ativa-te - merch (3)"
           },
           {
-            "img": "projetos/ipdj/merch/4.png"
+            "img": "projetos/ipdj/merch/4.png",
+            "alt": "Imagem: agora tu, ativa-te - merch (4)"
           },
           {
-            "img": "projetos/ipdj/merch/5.png"
+            "img": "projetos/ipdj/merch/5.png",
+            "alt": "Imagem: agora tu, ativa-te - merch (5)"
           }
         ],
         "title": "merch",
@@ -127,28 +155,36 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/roadshow/1.png"
+            "img": "projetos/ipdj/roadshow/1.png",
+            "alt": "Imagem: agora tu, ativa-te - roadshow (1)"
           },
           {
-            "img": "projetos/ipdj/roadshow/2.png"
+            "img": "projetos/ipdj/roadshow/2.png",
+            "alt": "Imagem: agora tu, ativa-te - roadshow (2)"
           },
           {
-            "img": "projetos/ipdj/roadshow/3.png"
+            "img": "projetos/ipdj/roadshow/3.png",
+            "alt": "Imagem: agora tu, ativa-te - roadshow (3)"
           },
           {
-            "img": "projetos/ipdj/roadshow/4.png"
+            "img": "projetos/ipdj/roadshow/4.png",
+            "alt": "Imagem: agora tu, ativa-te - roadshow (4)"
           },
           {
-            "img": "projetos/ipdj/roadshow/5.png"
+            "img": "projetos/ipdj/roadshow/5.png",
+            "alt": "Imagem: agora tu, ativa-te - roadshow (5)"
           },
           {
-            "img": "projetos/ipdj/roadshow/6.png"
+            "img": "projetos/ipdj/roadshow/6.png",
+            "alt": "Imagem: agora tu, ativa-te - roadshow (6)"
           },
           {
-            "img": "projetos/ipdj/roadshow/7.png"
+            "img": "projetos/ipdj/roadshow/7.png",
+            "alt": "Imagem: agora tu, ativa-te - roadshow (7)"
           },
           {
-            "img": "projetos/ipdj/roadshow/8.png"
+            "img": "projetos/ipdj/roadshow/8.png",
+            "alt": "Imagem: agora tu, ativa-te - roadshow (8)"
           }
         ],
         "title": "roadshow",
@@ -168,10 +204,12 @@
   },
   {
     "banner": {
-      "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4"
+      "video": "/assets/projetos/ipdj/spot_tv/ipdj.mp4",
+      "alt": "Video: agora tu, ativa-te (1)"
     },
     "cardMedia": {
-      "video": "/assets/projetos/ipdj/card_media.mp4"
+      "video": "/assets/projetos/ipdj/card_media.mp4",
+      "alt": "Video: agora tu, ativa-te (2)"
     },
     "categories": [
       "Campaigns",
@@ -186,19 +224,24 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/key_visuals/1.png"
+            "img": "projetos/ipdj/key_visuals/1.png",
+            "alt": "Image: agora tu, ativa-te - key visuals (1)"
           },
           {
-            "img": "projetos/ipdj/key_visuals/2.png"
+            "img": "projetos/ipdj/key_visuals/2.png",
+            "alt": "Image: agora tu, ativa-te - key visuals (2)"
           },
           {
-            "img": "projetos/ipdj/key_visuals/3.png"
+            "img": "projetos/ipdj/key_visuals/3.png",
+            "alt": "Image: agora tu, ativa-te - key visuals (3)"
           },
           {
-            "img": "projetos/ipdj/key_visuals/4.png"
+            "img": "projetos/ipdj/key_visuals/4.png",
+            "alt": "Image: agora tu, ativa-te - key visuals (4)"
           },
           {
-            "img": "projetos/ipdj/key_visuals/5.png"
+            "img": "projetos/ipdj/key_visuals/5.png",
+            "alt": "Image: agora tu, ativa-te - key visuals (5)"
           }
         ],
         "title": "key visuals",
@@ -208,22 +251,28 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/mupis/1.png"
+            "img": "projetos/ipdj/mupis/1.png",
+            "alt": "Image: agora tu, ativa-te - printed and digital MUPIs (1)"
           },
           {
-            "img": "projetos/ipdj/mupis/2.png"
+            "img": "projetos/ipdj/mupis/2.png",
+            "alt": "Image: agora tu, ativa-te - printed and digital MUPIs (2)"
           },
           {
-            "img": "projetos/ipdj/mupis/3.png"
+            "img": "projetos/ipdj/mupis/3.png",
+            "alt": "Image: agora tu, ativa-te - printed and digital MUPIs (3)"
           },
           {
-            "img": "projetos/ipdj/mupis/4.png"
+            "img": "projetos/ipdj/mupis/4.png",
+            "alt": "Image: agora tu, ativa-te - printed and digital MUPIs (4)"
           },
           {
-            "img": "projetos/ipdj/mupis/5.png"
+            "img": "projetos/ipdj/mupis/5.png",
+            "alt": "Image: agora tu, ativa-te - printed and digital MUPIs (5)"
           },
           {
-            "img": "projetos/ipdj/mupis/6.png"
+            "img": "projetos/ipdj/mupis/6.png",
+            "alt": "Image: agora tu, ativa-te - printed and digital MUPIs (6)"
           }
         ],
         "title": "printed and digital MUPIs",
@@ -234,34 +283,44 @@
           {
             "items": [
               {
-                "img": "projetos/ipdj/social_media/Post1.png"
+                "img": "projetos/ipdj/social_media/Post1.png",
+                "alt": "Image: agora tu, ativa-te - organic content (1)"
               },
               {
-                "img": "projetos/ipdj/social_media/Post2.png"
+                "img": "projetos/ipdj/social_media/Post2.png",
+                "alt": "Image: agora tu, ativa-te - organic content (2)"
               },
               {
-                "img": "projetos/ipdj/social_media/Post3.png"
+                "img": "projetos/ipdj/social_media/Post3.png",
+                "alt": "Image: agora tu, ativa-te - organic content (3)"
               },
               {
-                "img": "projetos/ipdj/social_media/Post4.png"
+                "img": "projetos/ipdj/social_media/Post4.png",
+                "alt": "Image: agora tu, ativa-te - organic content (4)"
               },
               {
-                "img": "projetos/ipdj/social_media/Post5.png"
+                "img": "projetos/ipdj/social_media/Post5.png",
+                "alt": "Image: agora tu, ativa-te - organic content (5)"
               },
               {
-                "img": "projetos/ipdj/social_media/Story1.png"
+                "img": "projetos/ipdj/social_media/Story1.png",
+                "alt": "Image: agora tu, ativa-te - organic content (6)"
               },
               {
-                "video": "/assets/projetos/ipdj/social_media/Story2.mp4"
+                "video": "/assets/projetos/ipdj/social_media/Story2.mp4",
+                "alt": "Video: agora tu, ativa-te - organic content (1)"
               },
               {
-                "img": "projetos/ipdj/social_media/Story3.png"
+                "img": "projetos/ipdj/social_media/Story3.png",
+                "alt": "Image: agora tu, ativa-te - organic content (7)"
               },
               {
-                "video": "/assets/projetos/ipdj/social_media/Story4.mp4"
+                "video": "/assets/projetos/ipdj/social_media/Story4.mp4",
+                "alt": "Video: agora tu, ativa-te - organic content (2)"
               },
               {
-                "img": "projetos/ipdj/social_media/Story5.png"
+                "img": "projetos/ipdj/social_media/Story5.png",
+                "alt": "Image: agora tu, ativa-te - organic content (8)"
               }
             ]
           }
@@ -272,19 +331,24 @@
       {
         "items": [
           {
-            "img": "projetos/ipdj/merch/1.png"
+            "img": "projetos/ipdj/merch/1.png",
+            "alt": "Image: agora tu, ativa-te - merch (1)"
           },
           {
-            "img": "projetos/ipdj/merch/2.png"
+            "img": "projetos/ipdj/merch/2.png",
+            "alt": "Image: agora tu, ativa-te - merch (2)"
           },
           {
-            "img": "projetos/ipdj/merch/3.png"
+            "img": "projetos/ipdj/merch/3.png",
+            "alt": "Image: agora tu, ativa-te - merch (3)"
           },
           {
-            "img": "projetos/ipdj/merch/4.png"
+            "img": "projetos/ipdj/merch/4.png",
+            "alt": "Image: agora tu, ativa-te - merch (4)"
           },
           {
-            "img": "projetos/ipdj/merch/5.png"
+            "img": "projetos/ipdj/merch/5.png",
+            "alt": "Image: agora tu, ativa-te - merch (5)"
           }
         ],
         "title": "merch",
@@ -294,28 +358,36 @@
         "columns": 3,
         "items": [
           {
-            "img": "projetos/ipdj/roadshow/1.png"
+            "img": "projetos/ipdj/roadshow/1.png",
+            "alt": "Image: agora tu, ativa-te - roadshow (1)"
           },
           {
-            "img": "projetos/ipdj/roadshow/2.png"
+            "img": "projetos/ipdj/roadshow/2.png",
+            "alt": "Image: agora tu, ativa-te - roadshow (2)"
           },
           {
-            "img": "projetos/ipdj/roadshow/3.png"
+            "img": "projetos/ipdj/roadshow/3.png",
+            "alt": "Image: agora tu, ativa-te - roadshow (3)"
           },
           {
-            "img": "projetos/ipdj/roadshow/4.png"
+            "img": "projetos/ipdj/roadshow/4.png",
+            "alt": "Image: agora tu, ativa-te - roadshow (4)"
           },
           {
-            "img": "projetos/ipdj/roadshow/5.png"
+            "img": "projetos/ipdj/roadshow/5.png",
+            "alt": "Image: agora tu, ativa-te - roadshow (5)"
           },
           {
-            "img": "projetos/ipdj/roadshow/6.png"
+            "img": "projetos/ipdj/roadshow/6.png",
+            "alt": "Image: agora tu, ativa-te - roadshow (6)"
           },
           {
-            "img": "projetos/ipdj/roadshow/7.png"
+            "img": "projetos/ipdj/roadshow/7.png",
+            "alt": "Image: agora tu, ativa-te - roadshow (7)"
           },
           {
-            "img": "projetos/ipdj/roadshow/8.png"
+            "img": "projetos/ipdj/roadshow/8.png",
+            "alt": "Image: agora tu, ativa-te - roadshow (8)"
           }
         ],
         "title": "roadshow",

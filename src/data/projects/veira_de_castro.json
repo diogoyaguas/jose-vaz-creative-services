@@ -1,7 +1,8 @@
 [
   {
     "cardMedia": {
-      "video": "/assets/projetos/vieira/card_media.mp4"
+      "video": "/assets/projetos/vieira/card_media.mp4",
+      "alt": "Vídeo: vieira de castro (1)"
     },
     "categories": [
       "Campanhas Marketing",
@@ -15,34 +16,44 @@
           {
             "items": [
               {
-                "img": "projetos/vieira/halloween/Post1.png"
+                "img": "projetos/vieira/halloween/Post1.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (1)"
               },
               {
-                "img": "projetos/vieira/halloween/Post2.png"
+                "img": "projetos/vieira/halloween/Post2.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (2)"
               },
               {
-                "img": "projetos/vieira/halloween/Post3.png"
+                "img": "projetos/vieira/halloween/Post3.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (3)"
               },
               {
-                "img": "projetos/vieira/halloween/Post4.png"
+                "img": "projetos/vieira/halloween/Post4.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (4)"
               },
               {
-                "img": "projetos/vieira/halloween/Post5.png"
+                "img": "projetos/vieira/halloween/Post5.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (5)"
               },
               {
-                "img": "projetos/vieira/halloween/Story1.png"
+                "img": "projetos/vieira/halloween/Story1.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (6)"
               },
               {
-                "img": "projetos/vieira/halloween/Story2.png"
+                "img": "projetos/vieira/halloween/Story2.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (7)"
               },
               {
-                "img": "projetos/vieira/halloween/Story3.png"
+                "img": "projetos/vieira/halloween/Story3.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (8)"
               },
               {
-                "img": "projetos/vieira/halloween/Story4.png"
+                "img": "projetos/vieira/halloween/Story4.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (9)"
               },
               {
-                "img": "projetos/vieira/halloween/Story5.png"
+                "img": "projetos/vieira/halloween/Story5.png",
+                "alt": "Imagem: vieira de castro - campanha - halloween (10)"
               }
             ],
             "title": "halloween"
@@ -50,34 +61,44 @@
           {
             "items": [
               {
-                "img": "projetos/vieira/natal/Post1.png"
+                "img": "projetos/vieira/natal/Post1.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (1)"
               },
               {
-                "img": "projetos/vieira/natal/Post2.png"
+                "img": "projetos/vieira/natal/Post2.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (2)"
               },
               {
-                "img": "projetos/vieira/natal/Post3.png"
+                "img": "projetos/vieira/natal/Post3.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (3)"
               },
               {
-                "img": "projetos/vieira/natal/Post4.png"
+                "img": "projetos/vieira/natal/Post4.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (4)"
               },
               {
-                "img": "projetos/vieira/natal/Post5.png"
+                "img": "projetos/vieira/natal/Post5.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (5)"
               },
               {
-                "img": "projetos/vieira/natal/Story1.png"
+                "img": "projetos/vieira/natal/Story1.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (6)"
               },
               {
-                "img": "projetos/vieira/natal/Story2.png"
+                "img": "projetos/vieira/natal/Story2.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (7)"
               },
               {
-                "video": "/assets/projetos/vieira/natal/Story3.mp4"
+                "video": "/assets/projetos/vieira/natal/Story3.mp4",
+                "alt": "Vídeo: vieira de castro - campanha - natal (1)"
               },
               {
-                "img": "projetos/vieira/natal/Story4.png"
+                "img": "projetos/vieira/natal/Story4.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (8)"
               },
               {
-                "img": "projetos/vieira/natal/Story5.png"
+                "img": "projetos/vieira/natal/Story5.png",
+                "alt": "Imagem: vieira de castro - campanha - natal (9)"
               }
             ],
             "title": "natal"
@@ -85,34 +106,44 @@
           {
             "items": [
               {
-                "img": "projetos/vieira/pepitas/Post1.png"
+                "img": "projetos/vieira/pepitas/Post1.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (1)"
               },
               {
-                "img": "projetos/vieira/pepitas/Post2.png"
+                "img": "projetos/vieira/pepitas/Post2.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (2)"
               },
               {
-                "img": "projetos/vieira/pepitas/Post3.png"
+                "img": "projetos/vieira/pepitas/Post3.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (3)"
               },
               {
-                "img": "projetos/vieira/pepitas/Post4.png"
+                "img": "projetos/vieira/pepitas/Post4.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (4)"
               },
               {
-                "img": "projetos/vieira/pepitas/Post5.png"
+                "img": "projetos/vieira/pepitas/Post5.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (5)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story1.png"
+                "img": "projetos/vieira/pepitas/Story1.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (6)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story2.png"
+                "img": "projetos/vieira/pepitas/Story2.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (7)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story3.png"
+                "img": "projetos/vieira/pepitas/Story3.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (8)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story4.png"
+                "img": "projetos/vieira/pepitas/Story4.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (9)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story5.png"
+                "img": "projetos/vieira/pepitas/Story5.png",
+                "alt": "Imagem: vieira de castro - campanha - digestive pepitas (10)"
               }
             ],
             "title": "digestive pepitas"
@@ -120,34 +151,44 @@
           {
             "items": [
               {
-                "img": "projetos/vieira/aulas/Post1.png"
+                "img": "projetos/vieira/aulas/Post1.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (1)"
               },
               {
-                "img": "projetos/vieira/aulas/Post2.png"
+                "img": "projetos/vieira/aulas/Post2.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (2)"
               },
               {
-                "img": "projetos/vieira/aulas/Post3.png"
+                "img": "projetos/vieira/aulas/Post3.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (3)"
               },
               {
-                "img": "projetos/vieira/aulas/Post4.png"
+                "img": "projetos/vieira/aulas/Post4.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (4)"
               },
               {
-                "img": "projetos/vieira/aulas/Post5.png"
+                "img": "projetos/vieira/aulas/Post5.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (5)"
               },
               {
-                "img": "projetos/vieira/aulas/Story1.png"
+                "img": "projetos/vieira/aulas/Story1.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (6)"
               },
               {
-                "img": "projetos/vieira/aulas/Story2.png"
+                "img": "projetos/vieira/aulas/Story2.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (7)"
               },
               {
-                "img": "projetos/vieira/aulas/Story3.png"
+                "img": "projetos/vieira/aulas/Story3.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (8)"
               },
               {
-                "img": "projetos/vieira/aulas/Story4.png"
+                "img": "projetos/vieira/aulas/Story4.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (9)"
               },
               {
-                "img": "projetos/vieira/aulas/Story5.png"
+                "img": "projetos/vieira/aulas/Story5.png",
+                "alt": "Imagem: vieira de castro - campanha - regresso às aulas (10)"
               }
             ],
             "title": "regresso às aulas"
@@ -169,7 +210,8 @@
   },
   {
     "cardMedia": {
-      "video": "/assets/projetos/vieira/card_media.mp4"
+      "video": "/assets/projetos/vieira/card_media.mp4",
+      "alt": "Video: vieira de castro (1)"
     },
     "categories": [
       "Marketing Campaigns",
@@ -183,34 +225,44 @@
           {
             "items": [
               {
-                "img": "projetos/vieira/halloween/Post1.png"
+                "img": "projetos/vieira/halloween/Post1.png",
+                "alt": "Image: vieira de castro - campaign - halloween (1)"
               },
               {
-                "img": "projetos/vieira/halloween/Post2.png"
+                "img": "projetos/vieira/halloween/Post2.png",
+                "alt": "Image: vieira de castro - campaign - halloween (2)"
               },
               {
-                "img": "projetos/vieira/halloween/Post3.png"
+                "img": "projetos/vieira/halloween/Post3.png",
+                "alt": "Image: vieira de castro - campaign - halloween (3)"
               },
               {
-                "img": "projetos/vieira/halloween/Post4.png"
+                "img": "projetos/vieira/halloween/Post4.png",
+                "alt": "Image: vieira de castro - campaign - halloween (4)"
               },
               {
-                "img": "projetos/vieira/halloween/Post5.png"
+                "img": "projetos/vieira/halloween/Post5.png",
+                "alt": "Image: vieira de castro - campaign - halloween (5)"
               },
               {
-                "img": "projetos/vieira/halloween/Story1.png"
+                "img": "projetos/vieira/halloween/Story1.png",
+                "alt": "Image: vieira de castro - campaign - halloween (6)"
               },
               {
-                "img": "projetos/vieira/halloween/Story2.png"
+                "img": "projetos/vieira/halloween/Story2.png",
+                "alt": "Image: vieira de castro - campaign - halloween (7)"
               },
               {
-                "img": "projetos/vieira/halloween/Story3.png"
+                "img": "projetos/vieira/halloween/Story3.png",
+                "alt": "Image: vieira de castro - campaign - halloween (8)"
               },
               {
-                "img": "projetos/vieira/halloween/Story4.png"
+                "img": "projetos/vieira/halloween/Story4.png",
+                "alt": "Image: vieira de castro - campaign - halloween (9)"
               },
               {
-                "img": "projetos/vieira/halloween/Story5.png"
+                "img": "projetos/vieira/halloween/Story5.png",
+                "alt": "Image: vieira de castro - campaign - halloween (10)"
               }
             ],
             "title": "halloween"
@@ -218,34 +270,44 @@
           {
             "items": [
               {
-                "img": "projetos/vieira/natal/Post1.png"
+                "img": "projetos/vieira/natal/Post1.png",
+                "alt": "Image: vieira de castro - campaign - christmas (1)"
               },
               {
-                "img": "projetos/vieira/natal/Post2.png"
+                "img": "projetos/vieira/natal/Post2.png",
+                "alt": "Image: vieira de castro - campaign - christmas (2)"
               },
               {
-                "img": "projetos/vieira/natal/Post3.png"
+                "img": "projetos/vieira/natal/Post3.png",
+                "alt": "Image: vieira de castro - campaign - christmas (3)"
               },
               {
-                "img": "projetos/vieira/natal/Post4.png"
+                "img": "projetos/vieira/natal/Post4.png",
+                "alt": "Image: vieira de castro - campaign - christmas (4)"
               },
               {
-                "img": "projetos/vieira/natal/Post5.png"
+                "img": "projetos/vieira/natal/Post5.png",
+                "alt": "Image: vieira de castro - campaign - christmas (5)"
               },
               {
-                "img": "projetos/vieira/natal/Story1.png"
+                "img": "projetos/vieira/natal/Story1.png",
+                "alt": "Image: vieira de castro - campaign - christmas (6)"
               },
               {
-                "img": "projetos/vieira/natal/Story2.png"
+                "img": "projetos/vieira/natal/Story2.png",
+                "alt": "Image: vieira de castro - campaign - christmas (7)"
               },
               {
-                "video": "/assets/projetos/vieira/natal/Story3.mp4"
+                "video": "/assets/projetos/vieira/natal/Story3.mp4",
+                "alt": "Video: vieira de castro - campaign - christmas (1)"
               },
               {
-                "img": "projetos/vieira/natal/Story4.png"
+                "img": "projetos/vieira/natal/Story4.png",
+                "alt": "Image: vieira de castro - campaign - christmas (8)"
               },
               {
-                "img": "projetos/vieira/natal/Story5.png"
+                "img": "projetos/vieira/natal/Story5.png",
+                "alt": "Image: vieira de castro - campaign - christmas (9)"
               }
             ],
             "title": "christmas"
@@ -253,34 +315,44 @@
           {
             "items": [
               {
-                "img": "projetos/vieira/pepitas/Post1.png"
+                "img": "projetos/vieira/pepitas/Post1.png",
+                "alt": "Image: vieira de castro - campaign - digestive (1)"
               },
               {
-                "img": "projetos/vieira/pepitas/Post2.png"
+                "img": "projetos/vieira/pepitas/Post2.png",
+                "alt": "Image: vieira de castro - campaign - digestive (2)"
               },
               {
-                "img": "projetos/vieira/pepitas/Post3.png"
+                "img": "projetos/vieira/pepitas/Post3.png",
+                "alt": "Image: vieira de castro - campaign - digestive (3)"
               },
               {
-                "img": "projetos/vieira/pepitas/Post4.png"
+                "img": "projetos/vieira/pepitas/Post4.png",
+                "alt": "Image: vieira de castro - campaign - digestive (4)"
               },
               {
-                "img": "projetos/vieira/pepitas/Post5.png"
+                "img": "projetos/vieira/pepitas/Post5.png",
+                "alt": "Image: vieira de castro - campaign - digestive (5)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story1.png"
+                "img": "projetos/vieira/pepitas/Story1.png",
+                "alt": "Image: vieira de castro - campaign - digestive (6)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story2.png"
+                "img": "projetos/vieira/pepitas/Story2.png",
+                "alt": "Image: vieira de castro - campaign - digestive (7)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story3.png"
+                "img": "projetos/vieira/pepitas/Story3.png",
+                "alt": "Image: vieira de castro - campaign - digestive (8)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story4.png"
+                "img": "projetos/vieira/pepitas/Story4.png",
+                "alt": "Image: vieira de castro - campaign - digestive (9)"
               },
               {
-                "img": "projetos/vieira/pepitas/Story5.png"
+                "img": "projetos/vieira/pepitas/Story5.png",
+                "alt": "Image: vieira de castro - campaign - digestive (10)"
               }
             ],
             "title": "digestive"
@@ -288,34 +360,44 @@
           {
             "items": [
               {
-                "img": "projetos/vieira/aulas/Post1.png"
+                "img": "projetos/vieira/aulas/Post1.png",
+                "alt": "Image: vieira de castro - campaign - back to school (1)"
               },
               {
-                "img": "projetos/vieira/aulas/Post2.png"
+                "img": "projetos/vieira/aulas/Post2.png",
+                "alt": "Image: vieira de castro - campaign - back to school (2)"
               },
               {
-                "img": "projetos/vieira/aulas/Post3.png"
+                "img": "projetos/vieira/aulas/Post3.png",
+                "alt": "Image: vieira de castro - campaign - back to school (3)"
               },
               {
-                "img": "projetos/vieira/aulas/Post4.png"
+                "img": "projetos/vieira/aulas/Post4.png",
+                "alt": "Image: vieira de castro - campaign - back to school (4)"
               },
               {
-                "img": "projetos/vieira/aulas/Post5.png"
+                "img": "projetos/vieira/aulas/Post5.png",
+                "alt": "Image: vieira de castro - campaign - back to school (5)"
               },
               {
-                "img": "projetos/vieira/aulas/Story1.png"
+                "img": "projetos/vieira/aulas/Story1.png",
+                "alt": "Image: vieira de castro - campaign - back to school (6)"
               },
               {
-                "img": "projetos/vieira/aulas/Story2.png"
+                "img": "projetos/vieira/aulas/Story2.png",
+                "alt": "Image: vieira de castro - campaign - back to school (7)"
               },
               {
-                "img": "projetos/vieira/aulas/Story3.png"
+                "img": "projetos/vieira/aulas/Story3.png",
+                "alt": "Image: vieira de castro - campaign - back to school (8)"
               },
               {
-                "img": "projetos/vieira/aulas/Story4.png"
+                "img": "projetos/vieira/aulas/Story4.png",
+                "alt": "Image: vieira de castro - campaign - back to school (9)"
               },
               {
-                "img": "projetos/vieira/aulas/Story5.png"
+                "img": "projetos/vieira/aulas/Story5.png",
+                "alt": "Image: vieira de castro - campaign - back to school (10)"
               }
             ],
             "title": "back to school"
