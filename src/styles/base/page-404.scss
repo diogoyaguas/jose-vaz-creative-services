@@ -50,3 +50,40 @@
   border: 1px solid var(--blue);
   color: var(--white);
 }
+
+@media (max-width: 768px) {
+  .notfound-page {
+    padding: 16px;
+  }
+
+  .notfound-code {
+    font-size: 28px;
+  }
+
+  .notfound-title {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notfound-page {
+    padding: 12px;
+  }
+
+  .notfound-content {
+    max-width: 320px;
+  }
+
+  .notfound-code {
+    font-size: 24px;
+  }
+
+  .notfound-title {
+    font-size: 10px;
+  }
+
+  .notfound-text,
+  .notfound-button {
+    font-size: 9px;
+  }
+}

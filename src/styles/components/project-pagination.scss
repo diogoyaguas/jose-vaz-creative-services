@@ -59,17 +59,38 @@
 @media (max-width: 768px) {
   .project-pagination {
     padding: 0 1.5rem 2rem 1.5rem;
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 0.75rem;
   }
 
-  .project-pagination-link,
-  .project-pagination-link.is-next {
-    max-width: 100%;
-    width: 100%;
-    margin-left: 0;
-    text-align: left;
+  .project-pagination-box {
+    width: 48%;
+    flex-direction: column;
     align-items: flex-start;
+    gap: 0.45rem;
+    min-width: 0;
+  }
+
+  .project-pagination-box .project-pagination-link {
+    order: 1;
+    width: fit-content;
+  }
+
+  .project-pagination-box .project-pagination-title {
+    order: 2;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .project-pagination-box:last-child {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .project-pagination-box:last-child .project-pagination-link {
+    margin-left: 0;
   }
 }
 
