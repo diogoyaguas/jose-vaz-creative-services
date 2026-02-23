@@ -16,6 +16,51 @@
           {
             "items": [
               {
+                "img": "projetos/vieira/pascoa/Post1.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (1)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Post2.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (2)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Post3.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (3)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Post4.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (4)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Post5.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (5)"
+              },
+              {
+                "video": "/assets/projetos/vieira/pascoa/Story1.mp4",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (6)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Story2.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (7)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Story3.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (8)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Story4.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (9)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Story5.png",
+                "alt": "Imagem: vieira de castro - campanha - pascoa (10)"
+              }
+            ],
+            "title": "páscoa"
+          },
+          {
+            "items": [
+              {
                 "img": "projetos/vieira/halloween/Post1.png",
                 "alt": "Imagem: vieira de castro - campanha - halloween (1)"
               },
@@ -222,6 +267,51 @@
     "content": [
       {
         "tabs": [
+          {
+            "items": [
+              {
+                "img": "projetos/vieira/pascoa/Post1.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (1)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Post2.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (2)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Post3.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (3)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Post4.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (4)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Post5.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (5)"
+              },
+              {
+                "video": "/assets/projetos/vieira/pascoa/Story1.mp4",
+                "alt": "Image: vieira de castro - campaign - pascoa (6)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Story2.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (7)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Story3.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (8)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Story4.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (9)"
+              },
+              {
+                "img": "projetos/vieira/pascoa/Story5.png",
+                "alt": "Image: vieira de castro - campaign - pascoa (10)"
+              }
+            ],
+            "title": "easter"
+          },
           {
             "items": [
               {
