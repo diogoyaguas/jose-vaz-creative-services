@@ -113,8 +113,18 @@ const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
     return tab?.items ? tab.items.slice(0, itemsPerPage) : []
   }, [tabArray, activeTab])
 
-  const firstFive = useMemo(() => activeItems.slice(0, 5), [activeItems])
-  const secondFive = useMemo(() => activeItems.slice(5, 10), [activeItems])
+  const mobileChunkSize = useMemo(
+    () => Math.max(1, Math.min(columns || 5, itemsPerPage)),
+    [columns]
+  )
+
+  const mobileChunks = useMemo(() => {
+    const chunks = []
+    for (let i = 0; i < activeItems.length; i += mobileChunkSize) {
+      chunks.push(activeItems.slice(i, i + mobileChunkSize))
+    }
+    return chunks
+  }, [activeItems, mobileChunkSize])
 
   const muteOtherScopedVideos = useCallback((allowedIndex = null) => {
     const root = sectionRef.current
@@ -269,8 +279,15 @@ const OrganicContentSection = ({ title, tabs, columns = 5 }) => {
             animate="animate"
             exit="exit"
           >
-            <GallerySection title="" subtitle="" items={firstFive} columns={columns} />
-            <GallerySection title="" subtitle="" items={secondFive} columns={columns} />
+            {mobileChunks.map((chunk, index) => (
+              <GallerySection
+                key={`mobile-chunk-${activeTab}-${index}`}
+                title=""
+                subtitle=""
+                items={chunk}
+                columns={columns}
+              />
+            ))}
           </motion.div>
         </AnimatePresence>
       </div>
