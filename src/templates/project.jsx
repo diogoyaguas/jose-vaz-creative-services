@@ -88,7 +88,7 @@ export default function ProjectTemplate({ data, pageContext }) {
             <FlipbookSection
               title={section.title}
               subtitle={section.subtitle}
-              pages={section.flipbookPages || []}
+              pages={section.flipbookPages || section.items || []}
             />
           </Reveal>
         )
