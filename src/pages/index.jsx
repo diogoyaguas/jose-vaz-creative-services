@@ -119,6 +119,27 @@ const IndexPage = () => {
     overlayInputRef.current?.focus({ preventScroll: true })
   }
 
+  const keepFocus = () => {
+    overlayInputRef.current?.focus({ preventScroll: true })
+  }
+
+  useEffect(() => {
+    keepFocus()
+
+    const onVisibilityOrWindowFocus = () => {
+      if (document.hidden) return
+      keepFocus()
+    }
+
+    document.addEventListener("visibilitychange", onVisibilityOrWindowFocus)
+    window.addEventListener("focus", onVisibilityOrWindowFocus)
+
+    return () => {
+      document.removeEventListener("visibilitychange", onVisibilityOrWindowFocus)
+      window.removeEventListener("focus", onVisibilityOrWindowFocus)
+    }
+  }, [])
+
   const slotsLen = isDevMode ? DEV_PASSWORD.length : 4
 
   return (
@@ -136,6 +157,7 @@ const IndexPage = () => {
         autoComplete="one-time-code"
         aria-label="Password"
         onChange={handleOverlayChange}
+        onBlur={keepFocus}
       />
 
       <div
