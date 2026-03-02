@@ -5,11 +5,7 @@ import { navigate } from "gatsby"
 const DEV_PASSWORD = "1234"
 const STORAGE_KEY = "creative_vaz_auth"
 
-const NETLIFY_CONTEXT =
-  typeof process !== "undefined" ? process.env.GATSBY_NETLIFY_CONTEXT : undefined
-
-const isProdNetlify = NETLIFY_CONTEXT === "production"
-const isDevMode = !isProdNetlify
+const isDevMode = process.env.NODE_ENV !== "production"
 
 const IndexPage = () => {
   const [input, setInput] = useState("")
