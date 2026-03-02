@@ -7,12 +7,8 @@ import Header from "./header"
 
 
 const STORAGE_KEY = "creative_vaz_auth"
+const isDevMode = process.env.NODE_ENV !== "production"
 
-const NETLIFY_CONTEXT =
-  typeof process !== "undefined" ? process.env.GATSBY_NETLIFY_CONTEXT : undefined
-
-const isProdNetlify = NETLIFY_CONTEXT === "production"
-const isDevMode = !isProdNetlify
 const clearAuthPendingClass = () => {
   if (typeof document === "undefined") return
   document.documentElement.classList.remove("auth-pending")

@@ -1,9 +1,7 @@
 const React = require("react")
 
 const STORAGE_KEY = "creative_vaz_auth"
-const NETLIFY_CONTEXT =
-  typeof process !== "undefined" ? process.env.GATSBY_NETLIFY_CONTEXT : undefined
-const isProdNetlify = NETLIFY_CONTEXT === "production"
+const isProdNetlify = process.env.NODE_ENV === "production"
 
 function setInitialThemeAndEnableTransitionsLater() {
   const code = `
